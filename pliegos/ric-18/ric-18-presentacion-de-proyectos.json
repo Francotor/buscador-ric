@@ -1,0 +1,363 @@
+{
+  "pliego_id": "RIC-18",
+  "numero": "18",
+  "materia": "Presentación de proyectos",
+  "metadata": {
+    "fuente_legal": "Decreto con Fuerza de Ley N° 4/20.018, de 2006, del Ministerio de Economía, Fomento y Reconstrucción, Ley General de Servicios Eléctricos",
+    "fuente_reglamentaria": "Decreto N°8, de 2019, del Ministerio de Energía, Reglamento de Seguridad de las Instalaciones de Consumo de Energía Eléctrica",
+    "dictado_por": "Resolución Exenta N° 33.877, de fecha 30/12/2020, de la Superintendencia de Electricidad y Combustibles",
+    "vigencia_desde": "2021-07-12",
+    "estado": "vigente",
+    "paginas_documento_fuente": 17,
+    "archivo_fuente": "RIC-N18-Presentacion-de-Proyectos.pdf"
+  },
+  "referencias_normativas": [
+    { "id": "3.1", "norma": "NCh 13.Of 93", "anio": 1993, "titulo": "Dibujos técnicos - Formatos y elementos gráficos de las hojas de dibujo." }
+  ],
+  "terminologia": [
+    { "id": "4.1", "termino": "Empresa distribuidora o distribuidora", "definicion": "Empresa(s) distribuidora(s) concesionaria(s) del servicio público de distribución o todo aquel que preste el servicio de distribución, ya sea en calidad de propietario, arrendatario, usufructuario o que opere, a cualquier título, instalaciones de distribución de energía eléctrica." },
+    { "id": "4.2", "termino": "Instalación de consumo", "definicion": "Instalación eléctrica destinada al uso exclusivo de sus usuarios o propietarios." },
+    { "id": "4.3", "termino": "Instalador eléctrico", "definicion": "Profesional autorizado por la Superintendencia, para proyectar, mantener, inspeccionar, dirigir y/o ejecutar instalaciones eléctricas, conforme a lo dispuesto en el Decreto Supremo de Economía, N°92 de 1983 y las disposiciones que a futuro lo reemplacen." },
+    { "id": "4.4", "termino": "Proyecto", "definicion": "Conjunto de planos y memoria explicativa, confeccionados con el fin de indicar las características técnicas y constructivas de la instalación eléctrica de consumo, la cantidad y el tipo de materiales que la componen." },
+    { "id": "4.5", "termino": "Puesta en servicio", "definicion": "Es la conexión de una instalación de consumo de energía eléctrica a la red de una empresa distribuidora o a un sistema de generación autónomo, de manera que se pueda producir el adecuado funcionamiento de sus componentes y de los artefactos conectados a ella." },
+    { "id": "4.6", "termino": "Superintendencia", "definicion": "Superintendencia de Electricidad y Combustibles." }
+  ],
+  "secciones": [
+    {
+      "numero": "1",
+      "titulo": "Objetivos",
+      "puntos": [
+        { "numero": "1.1", "texto": "El objetivo del presente pliego técnico es establecer las disposiciones técnicas que deben cumplirse en la elaboración y presentación de proyectos de las instalaciones de consumo de energía eléctrica del país." }
+      ]
+    },
+    {
+      "numero": "2",
+      "titulo": "Alcance y campo de aplicación",
+      "puntos": [
+        { "numero": "2.1", "texto": "Las disposiciones de este pliego técnico serán aplicables a los proyectos de todas las instalaciones de consumo de energía eléctrica, en adelante e indistintamente, instalaciones, que se elaboren con el objeto de ser posteriormente ejecutados y presentados ante la Superintendencia de Electricidad y Combustibles." }
+      ]
+    },
+    {
+      "numero": "5",
+      "titulo": "Exigencias generales",
+      "puntos": [
+        { "numero": "5.1", "texto": "Toda instalación de consumo de energía eléctrica debe contar con un proyecto, el cual debe ser desarrollado de acuerdo con las normas y los pliegos técnicos aplicables de este reglamento, de modo de asegurar que la instalación construida de acuerdo con este no presente riesgos para los usuarios, proporcione un buen servicio, permita un fácil y adecuado mantenimiento, tenga la flexibilidad necesaria para permitir ampliaciones y sea eficiente." },
+        { "numero": "5.2", "texto": "Toda ejecución de un proyecto de instalación de consumo de energía eléctrica deberá ser realizada y declarada por un instalador eléctrico, autorizado en la clase que corresponda, de acuerdo con lo establecido en el Decreto Supremo de Economía, N°92 de 1983, Reglamento de Instaladores Eléctricos y de Electricistas de Recintos de Espectáculos Públicos o el que lo reemplace. Dichos profesionales serán ante la Superintendencia los únicos responsables de la presentación y del contenido de los documentos correspondientes a la instalación de consumo de electricidad ejecutada, sin perjuicio de las responsabilidades reglamentarias y judiciales del propietario." },
+        { "numero": "5.3", "texto": "La potencia instalada a declarar en todo proyecto eléctrico corresponderá a la suma total de todos los artefactos que componen la instalación. No obstante, para los efectos del empalme se podrá solicitar uno de capacidad igual o inferior a esta potencia instalada total declarada, de acuerdo con lo dispuesto en el punto 5.4 del presente pliego técnico.", "refs_cruzadas": ["5.4"] },
+        { "numero": "5.4", "texto": "La capacidad del empalme se determinará considerando la potencia instalada total corregida por los factores de demanda indicados en la sección 6 del Pliego Técnico Normativo RIC N°03 y los correspondientes factores de corrección relacionados a las condiciones de diseño y funcionamiento de la instalación. Por tanto, la empresa distribuidora no podrá otorgar empalmes de capacidad superior a la potencia instalada total declarada en la Superintendencia, con excepción de lo establecido en el punto 5.2.1 del Pliego Técnico Normativo RIC N°10.", "refs_cruzadas": ["RIC N°03 sección 6", "RIC N°10 punto 5.2.1"] },
+        { "numero": "5.5", "texto": "En el proyecto de instalación eléctrica de consumo de un edificio se deberá incluir un detalle de montaje de los empalmes de acuerdo al Pliego Técnico Normativo RIC N°01, en el cual se mostrará una vista de elevación donde se indique el punto de conexión, las cajas de conexión, las cajas de empalme de cada dependencia o servicio, el espacio y volúmenes disponibles verticales de alimentadores y empalmes, los tableros de la instalación, si existen en ese punto, y el recorrido y características de la canalización que interconecta estos elementos.", "refs_cruzadas": ["RIC N°01"] },
+        { "numero": "5.6", "texto": "No se podrá proyectar arranques o circuitos con potencias futuras. Todo circuito que no cuente con una carga definida deberá ser declarado con una potencia igual a 0 W." },
+        { "numero": "5.7", "texto": "En el desarrollo de un proyecto eléctrico se usarán las unidades del Sistema Internacional de Unidades (SI)." },
+        { "numero": "5.8", "texto": "La presentación de proyectos correspondientes a las instalaciones de infraestructura de recarga de vehículos eléctricos definidas en el Pliego Técnico Normativo RIC N°15 y los sistemas de autogeneración incluidos en el Pliego Técnico Normativo RIC N°09, deberán ser comunicados, conforme a procedimientos específicos que establecerá la Superintendencia para tales efectos.", "refs_cruzadas": ["RIC N°15", "RIC N°09"] },
+        { "numero": "5.9", "texto": "Los proyectos correspondientes a instalaciones eléctricas de producción, transporte y distribución de electricidad, a diferencia de los proyectos de instalaciones de consumo de energía eléctrica, se deberán elaborar y comunicar a la Superintendencia, conforme a lo dispuesto en la normativa pertinente." }
+      ]
+    },
+    {
+      "numero": "6",
+      "titulo": "Proyectos de instalaciones de consumo de energía eléctrica",
+      "puntos": [
+        {
+          "numero": "6.1",
+          "titulo": "Condiciones generales",
+          "subpuntos": [
+            {
+              "numero": "6.1.1",
+              "texto": "Todo proyecto de instalación de consumo de energía eléctrica deberá incluir a lo menos las siguientes partes:",
+              "subpuntos": [
+                { "numero": "6.1.1.1", "texto": "Memoria explicativa." },
+                { "numero": "6.1.1.2", "texto": "Planos." },
+                { "numero": "6.1.1.3", "texto": "Informe de verificación inicial." },
+                { "numero": "6.1.1.4", "texto": "Informe de imágenes." }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "6.2",
+          "titulo": "Memoria explicativa",
+          "subpuntos": [
+            {
+              "numero": "6.2.1",
+              "texto": "Exigencia de la memoria explicativa. Será obligatoria su presentación:",
+              "subpuntos": [
+                { "numero": "6.2.1.1", "texto": "Para todos los proyectos eléctricos cuya potencia declarada sea superior a 10 kW." },
+                { "numero": "6.2.1.2", "texto": "Para todos los proyectos eléctricos de edificios y conjuntos habitacionales, independiente de la potencia a declarar." },
+                { "numero": "6.2.1.3", "texto": "Para instalaciones clasificadas como locales de reunión de personas e instalaciones en ambientes explosivos, independiente de la potencia a declarar." },
+                { "numero": "6.2.1.4", "texto": "Para instalaciones conectadas a través de un empalme de media tensión, independiente de la potencia a declarar." }
+              ]
+            },
+            {
+              "numero": "6.2.2",
+              "titulo": "Descripción de la obra",
+              "subpuntos": [
+                { "numero": "6.2.2.1", "texto": "En este apartado se indicará la finalidad de la instalación y su ubicación geográfica. Se hará una descripción de su funcionamiento, destacando las partes más importantes del proceso, indicando, además, los criterios de diseño con el que fue elaborado el proyecto." }
+              ]
+            },
+            {
+              "numero": "6.2.3",
+              "titulo": "Cálculos justificativos",
+              "subpuntos": [
+                { "numero": "6.2.3.1", "texto": "Se deberán presentar en documentos denominados memorias de cálculo y en ellos se incluirá en general, las características eléctricas del sistema desde el cual la instalación será alimentada, como los valores de cortocircuito en el punto de suministro y las mediciones que se hayan realizado en terreno, y todo otro dato y cálculos que sean necesarios para la correcta interpretación del proyecto y posterior ejecución de la obra." },
+                {
+                  "numero": "6.2.3.2",
+                  "texto": "Los cálculos presentados en las memorias de cálculo se basarán en datos fidedignos, aceptados por la Superintendencia o avalados por entidades responsables y entre otras justificaciones se deberá incluir:",
+                  "subpuntos": [
+                    { "numero": "6.2.3.2.1", "texto": "Análisis de cargas." },
+                    { "numero": "6.2.3.2.2", "texto": "Cálculos de intensidades de corrientes." },
+                    { "numero": "6.2.3.2.3", "texto": "Cálculos de alimentadores y conductores." },
+                    { "numero": "6.2.3.2.4", "texto": "Cálculos de canalizaciones. Sección, tipo y código utilizado." },
+                    { "numero": "6.2.3.2.5", "texto": "Cálculos de caídas de tensión de alimentadores y circuitos finales." },
+                    { "numero": "6.2.3.2.6", "texto": "Análisis de distancias de seguridad." },
+                    { "numero": "6.2.3.2.7", "texto": "Cálculos de cortocircuito o los niveles de cortocircuito informados por la empresa distribuidora." },
+                    {
+                      "numero": "6.2.3.2.8",
+                      "texto": "Para instalaciones cuya potencia declarada sea superior a 20 kW o para instalaciones conectadas a través de un empalme en media tensión, se deberá incluir adicionalmente lo siguiente:",
+                      "lista": [
+                        "1. Estudio de coordinación y selectividad de protecciones.",
+                        "2. Cálculos de iluminación.",
+                        "3. Cálculo y diseño del sistema de puesta a tierra. Dentro de este anexo se debe disponer un registro de los valores de medición de resistencia del terreno indicando la fecha de la realización de la medición, el método utilizado (Schlumberger o Wenner), determinación de la configuración geoeléctrica del terreno (número de estratos, espesores y resistividad de cada uno), curva patrón con los puntos de medición representados sobre la misma, cálculo de resistividad equivalente de terreno, cálculos del diseño de la puesta a tierra, valores de medición y valores curva de la resistencia del sistema de puesta a tierra obtenida según lo dispuesto en el anexo 6.3 del Pliego Técnico Normativo RIC N°06."
+                      ],
+                      "refs_cruzadas": ["RIC N°06 anexo 6.3"]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "numero": "6.2.4",
+              "titulo": "Especificaciones técnicas.",
+              "subpuntos": [
+                { "numero": "6.2.4.1", "texto": "Las especificaciones técnicas contendrán las características de funcionamiento, designación de tipo, características de instalación, dimensionales, constructivas y de materiales, además de toda otra indicación que haga claramente identificable a los distintos componentes de la instalación. Además, cuando corresponda, se deberán incluir los respectivos certificados de productos, teniendo presente que éstos no sólo deberán cumplir con las certificaciones de seguridad que correspondan, sino que también serán exigibles para la elaboración del informe de verificación inicial." },
+                { "numero": "6.2.4.2", "texto": "Las características y designaciones establecidas en el punto 6.2.4.1 anterior, serán las fijadas por los reglamentos y las normas técnicas nacionales correspondientes. En ausencia de éstas, se aceptará la mención de normas extranjeras o, de otra manera, la mención de alguna marca comercial incluyendo identificación de tipo o número de catálogo, como referencia de características.", "refs_cruzadas": ["6.2.4.1"] },
+                { "numero": "6.2.4.3", "texto": "Dentro de las especificaciones técnicas, se deberá describir el sistema de puesta a tierra con sus detalles (ubicación física, sección del conductor, tipo de conductor, longitud, conexiones con conductores que ingresan, tipos de uniones empleadas, puntos de puesta a tierra accesibles o camarillas de registro), su tipo de conexión (MT/BT, BT, etc.) y sus interconexiones con otros sistemas de puesta a tierra en conformidad al anexo 6.5 del Pliego Técnico Normativo RIC N°06.", "refs_cruzadas": ["RIC N°06 anexo 6.5"] },
+                { "numero": "6.2.4.4", "texto": "En el proyecto de instalación eléctrica de un edificio, dentro de las especificaciones técnicas se deberá detallar cómo se calculó el dimensionamiento del recinto o gabinete de empalmes y la forma en que se determinaron las dimensiones del shaft vertical, para cumplir con lo exigido en el Pliego Técnico Normativo RIC N°01.", "refs_cruzadas": ["RIC N°01"] }
+              ]
+            },
+            {
+              "numero": "6.2.5",
+              "titulo": "Cubicación de materiales",
+              "subpuntos": [
+                { "numero": "6.2.5.1", "texto": "En la cubicación de materiales se detallará en forma clara cada uno de los equipos, materiales y accesorios que componen la instalación terminada o que se han utilizado en su ejecución, indicando las cantidades totales empleadas." },
+                { "numero": "6.2.5.2", "texto": "Cuando se utilicen estructuras o montajes normalizados, o en casos similares, cuya cubicación de materiales es conocida, se podrá obviar la cubicación en detalle de ellos haciendo referencia a la norma que los fija e indicando sólo la cantidad global de estructuras, montajes u otros, utilizados en el proyecto." }
+              ]
+            },
+            {
+              "numero": "6.2.6",
+              "titulo": "Informe de verificación inicial",
+              "subpuntos": [
+                { "numero": "6.2.6.1", "texto": "Todo proyecto eléctrico declarado ante la Superintendencia deberá contar con un informe de verificación inicial, que contenga los resultados de los ensayos y las mediciones, de acuerdo con lo indicado en el punto 8.1.2.3 del Pliego Técnico Normativo RIC N°19, y el detalle de los instrumentos utilizados.", "refs_cruzadas": ["RIC N°19 punto 8.1.2.3"] },
+                { "numero": "6.2.6.2", "texto": "Junto al informe de verificación inicial, se deberán entregar los certificados vigentes de calibración de los instrumentos utilizados en los ensayos y las mediciones, indicando la marca y el modelo de los instrumentos, los cuales deberán ser emitidos por algún organismo acreditado que determine el fabricante." }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "6.3",
+          "titulo": "Planos de una instalación eléctrica de consumo",
+          "subpuntos": [
+            { "numero": "6.3.1", "texto": "En los planos de un proyecto se mostrará gráficamente el esquema eléctrico y la forma constructiva de la instalación que incluya la vista planta, frontal, lateral, según corresponda, indicándose la ubicación de los componentes, las dimensiones de las canalizaciones, su recorrido y tipo, en general, las características de las protecciones y de todos los elementos que componen el sistema eléctrico proyectado." },
+            { "numero": "6.3.2", "texto": "Los planos correspondientes al proyecto de una instalación se dibujarán mediante software de dibujos AUTOCAD (formato .DWG) o equivalente, quedando resaltado en el mismo circuitos, cuadros de cargas, diagramas unilineales y componentes, por lo que se deberán utilizar para esta finalidad layers de un color que resalten del fondo y de una sección mayor que las utilizadas en la planta de arquitectura, evitando problemas de contraste (ejemplo: letras amarillas sobre fondo blanco)." },
+            { "numero": "6.3.3", "texto": "Los planos se dibujarán sobre alguno de los formatos normales de la serie A, de acuerdo con la norma NCh 13. Of 93. Se evitará en lo posible el empleo de los formatos alargados indicados en dicha norma, para lo cual se recomienda efectuar cortes en los respectivos planos de planta. En el anexo 18.1 de este pliego se muestran los formatos indicados.", "refs_cruzadas": ["NCh 13.Of 93"], "anexos_relacionados": ["18.1"] },
+            { "numero": "6.3.4", "texto": "Las rotulaciones de los planos correspondientes a instalaciones de consumo tendrán la forma y distribución mostrada en el anexo 18.2 de este pliego. En caso de ser necesario se podrá agregar algún otro tipo de rotulación, la que no deberá interferir con lo prescrito en este pliego técnico.", "anexos_relacionados": ["18.2"] },
+            { "numero": "6.3.5", "texto": "En la primera lámina que compone el proyecto eléctrico, deberá mostrarse la ubicación geográfica de la instalación indicando las coordenadas geográficas cartesianas UTM o geodésicas DATUM WGS8 de ubicación." },
+            { "numero": "6.3.6", "texto": "Adicionalmente a lo indicado en el punto 6.3.5 anterior, los planos deberán contar con un croquis de ubicación donde se muestren las calles que delimitan la manzana en que la propiedad está ubicada. En caso de que esto no sea posible, se incluirá alguna referencia con respecto a un camino, calle pública más próxima, punto de referencia o de relevancia más cercano. Este croquis se colocará en el recuadro rotulado como \"Croquis de ubicación\" del formato mostrado en el anexo 18.2 de este pliego.", "refs_cruzadas": ["6.3.5"], "anexos_relacionados": ["18.2"] },
+            { "numero": "6.3.7", "texto": "Todas las láminas de los planos deberán indicar, a lo menos, el destino de la instalación y los números correlativos y total de cada lámina. (Ejemplos: Casa habitación, lámina 1 de 1: edificio de departamentos, lámina 1 de 3, 2 de 3 y 3 de 3, etc., según corresponda)." },
+            { "numero": "6.3.8", "texto": "En los proyectos que comprendan más de una lámina se deberá indicar, en la primera de ellas, una lista con el título y descripción de cada una de las mismas. Esta lista se repetirá también en las especificaciones técnicas de la memoria explicativa." },
+            { "numero": "6.3.9", "texto": "Todos los símbolos utilizados en los planos del proyecto eléctrico deberán ser claramente descritos en un cuadro de simbología, en el cual se indicarán las características técnicas de cada uno de ellos (Ejemplo: nombre, función, uso, corriente nominal, corriente de ruptura, grado de protección IP, materialidad, etc.)." },
+            { "numero": "6.3.10", "texto": "Los componentes de una instalación se deberán representar gráficamente en los planos de arquitectura y/o topográficos con la simbología indicada en el anexo 18.3 de este pliego. En el caso que el componente no se encuentre en el catálogo de simbología de este pliego, alternativamente se podrá utilizar una simbología distinta o complementaria, la cual deberá cumplir lo indicado en el punto 6.3.9 anterior.", "refs_cruzadas": ["6.3.9"], "anexos_relacionados": ["18.3"] },
+            { "numero": "6.3.11", "texto": "En los dibujos de los planos de arquitectura correspondientes a instalaciones de consumo, se utilizará preferentemente la escala 1:50, pudiendo utilizarse en caso de necesidad las escalas 1:20, 1: 100 y 1:200. En casos justificados podrá utilizarse la escala 1:500 o múltiplos enteros de ella." },
+            { "numero": "6.3.12", "texto": "En el dibujo de disposición de las instalaciones y detalles de montaje o similares se podrá usar cualquiera de las escalas indicadas en el punto 6.3.11 anterior, de acuerdo con las necesidades, o bien, en casos justificados, podrá dibujarse los detalles sin escala, adecuadamente acotados. El dibujo debe ser fácilmente legible y contener toda la información necesaria. La simbología debe ser la indicada en el punto 6.3.9 de este pliego.", "refs_cruzadas": ["6.3.11", "6.3.9"] },
+            { "numero": "6.3.13", "texto": "En casos especiales, podrán usarse distintas escalas en un mismo dibujo. Por ejemplo, en el plano de perfil de una línea podrá usarse una escala en el sentido horizontal y otra distinta en el vertical." },
+            { "numero": "6.3.14", "texto": "La interconexión eléctrica de los distintos alimentadores, circuitos y equipos, así como sus principales características dimensionales y las características de las protecciones de toda la instalación, se mostrarán en un diagrama unilineal." },
+            {
+              "numero": "6.3.15",
+              "texto": "Todo proyecto debe contener un diagrama unilineal que muestre los detalles desde la acometida hasta la última protección de la instalación, en el cual estará incluido lo siguiente (Ver anexo 18.5 de este pliego):",
+              "anexos_relacionados": ["18.5"],
+              "subpuntos": [
+                { "numero": "6.3.15.1", "texto": "Diseño y disposición de la acometida, alimentadores y subalimentadores." },
+                { "numero": "6.3.15.2", "texto": "Cantidad, longitud, disposición y sección transversal correspondiente a la acometida, alimentadores, subalimentadores, tanto de los conductores como de las canalizaciones y la capacidad de transporte de corriente luego de aplicadas las disposiciones normativas vigentes." },
+                { "numero": "6.3.15.3", "texto": "Tipo de protección, para media y/o baja tensión, valor de la corriente nominal, nivel de corriente de ruptura, curvas de operación, marcas, modelo de la protección y número de polos." },
+                { "numero": "6.3.15.4", "texto": "Para los empalmes de media tensión debe incluirse los datos técnicos de los transformadores, condensadores, baterías de acumuladores y grupos electrógenos, si existen." },
+                { "numero": "6.3.15.5", "texto": "Detalle de la distribución de los circuitos en media y baja tensión cuando corresponda, además, la sección de los alimentadores primarios y secundarios y su canalización, y la capacidad nominal de cada uno de los tableros." },
+                { "numero": "6.3.15.6", "texto": "Sistema de puesta a tierra, donde se indique el valor de la resistencia de puesta a tierra y todas las características técnicas de cada uno de los elementos pertenecientes a ésta, incluyendo los instrumentos utilizados en la medición. Además, para proyectos eléctricos de instalaciones de consumo conectadas a través de empalmes en media tensión, deberá informarse los niveles de tensión de paso y de contacto tolerables." }
+              ]
+            },
+            { "numero": "6.3.16", "texto": "Se deberá incluir un detalle de los consumos de la instalación en un cuadro de cargas. La forma y datos que se deben anotar en los cuadros de carga de alumbrado, fuerza o climatización se muestran en el anexo 18.4, figuras 18.4.1, 18.4.2, y 18.4.3 de este pliego.", "anexos_relacionados": ["18.4"] },
+            { "numero": "6.3.17", "texto": "En todo proyecto eléctrico, cuando exista más de un cuadro de carga se deberá incluir un cuadro resumen de cargas como el indicado en el anexo 18.4, figura 18.4.4 de este pliego.", "anexos_relacionados": ["18.4"] },
+            { "numero": "6.3.18", "texto": "En todo proyecto eléctrico, se deberá incluir un cuadro resumen de alimentadores y subalimentadores, según lo indicado en el anexo 18.4, figura 18.4.5 de este pliego.", "anexos_relacionados": ["18.4"] },
+            { "numero": "6.3.19", "texto": "El dibujo, escritura, acotamientos, etc. de los planos de instalaciones eléctricas deberán ceñirse a la norma NCh, 13. Of 93, sobre dibujos técnicos, en la parte pertinente.", "refs_cruzadas": ["NCh 13.Of 93"] }
+          ]
+        },
+        {
+          "numero": "6.4",
+          "titulo": "Informe de imágenes",
+          "subpuntos": [
+            { "numero": "6.4.1", "texto": "Exigencia del informe de imágenes. Será obligatoria su presentación cada vez que el proyecto requiera de una memoria explicativa de acuerdo con lo indicado en el punto 6.2.1 de este pliego técnico.", "refs_cruzadas": ["6.2.1"] },
+            {
+              "numero": "6.4.2",
+              "texto": "Antes de comunicar la puesta en servicio de la instalación el instalador deberá realizar un informe de imágenes que muestre gráficamente la instalación ejecutada, el que deberá contener como mínimo los siguientes puntos, si corresponde, respetando el siguiente orden:",
+              "subpuntos": [
+                { "numero": "6.4.2.1", "texto": "Numeración de la propiedad" },
+                { "numero": "6.4.2.2", "texto": "Tablero general (puerta exterior, cubierta cubre equipo e instalación interior) junto a su rotulación (nombre de tablero, nombre de circuitos, equipos de medición, etc.)." },
+                { "numero": "6.4.2.3", "texto": "Tablero de distribución con lo indicado en el número 6.4.2.2 precedente.", "refs_cruzadas": ["6.4.2.2"] },
+                { "numero": "6.4.2.4", "texto": "Tablero de banco de condensadores (protecciones eléctricas, luces pilotos, equipos de medición y actuación, condensadores con sus datos técnicos, rotulación) en caso de contar con él." },
+                { "numero": "6.4.2.5", "texto": "Tablero de transferencia automática (protecciones, luces pilotos, equipos de medición, rotulación) en caso de contar con él." },
+                { "numero": "6.4.2.6", "texto": "Canalización (conductores, tuberías, bandejas, cajas de derivación, cajas de paso o accesorios de alimentadores generales)." },
+                { "numero": "6.4.2.7", "texto": "Canalización subterránea (cámaras subterráneas, disposición de conductores en tuberías junto a sus separadores, conductores y su tipo de aislación, tuberías y su clasificación, uniones y derivaciones, zanja donde se canalizaron los conductores, etc.)" },
+                { "numero": "6.4.2.8", "texto": "Canalización aérea (postes y su anclaje, disposición de conductores aéreos, conductores y su tipo de aislación, equipos de protección, uniones y derivaciones, etc.)" },
+                {
+                  "numero": "6.4.2.9",
+                  "texto": "Sistema de puesta a tierra nuevo:",
+                  "lista": [
+                    "1. Mostrar las imágenes de su construcción en la que se aprecie la profundidad de aterramiento, las dimensiones, uniones y camarillas de registro, imágenes panorámicas del lugar.",
+                    "2. En caso de unirse a un sistema de puesta a tierra, mostrar los valores de las mediciones de puesta a tierra, junto a su ubicación y camarilla de registro o puntos accesibles.",
+                    "3. Imágenes de los equipos utilizados en la medición, mostrando algunas mediciones.",
+                    "4. Imágenes de la medición de resistencia de puesta a tierra, mostrando el valor final obtenido según el procedimiento descrito en el anexo 6.3 del Pliego Técnico Normativo RIC N°06."
+                  ],
+                  "refs_cruzadas": ["RIC N°06 anexo 6.3"]
+                },
+                { "numero": "6.4.2.10", "texto": "Aparatos eléctricos (interruptores y enchufes junto a sus uniones y derivaciones al interior de cajas de derivación)." },
+                { "numero": "6.4.2.11", "texto": "Equipos de iluminación (luminarias interiores y exteriores indicando sus uniones, derivaciones y aterrizajes, además de su protección IP)." },
+                { "numero": "6.4.2.12", "texto": "Debe entenderse que las imágenes solicitadas son una representación de la instalación en general y que se solicitará en función del equipamiento que tenga la instalación, por lo que no es necesario detallar tablero o circuito de la instalación." },
+                {
+                  "numero": "6.4.2.13",
+                  "texto": "En el caso de que la instalación cuente con un sistema de respaldo de energía, el informe deberá contar con la siguiente información:",
+                  "lista": [
+                    "1. Tipo sistema (UPS, generador, batería, etc).",
+                    "2. Placa.",
+                    "3. Protecciones.",
+                    "4. Canalización de conductores.",
+                    "5. Señaléticas empleadas."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "6.5",
+          "titulo": "De los proyectos tipo",
+          "subpuntos": [
+            { "numero": "6.5.1", "texto": "En el caso de instalaciones que se ejecuten en forma repetitiva basadas en una misma planta de arquitectura, se aceptará la presentación de un proyecto tipo, lo cual deberá ser indicado en la primera lámina del proyecto y en la memoria explicativa, detallando la cantidad de instalaciones repetitivas." }
+          ]
+        }
+      ]
+    }
+  ],
+  "anexos": [
+    {
+      "numero": "18.1",
+      "titulo": "Formatos de presentación de proyectos eléctricos",
+      "tipo": "mixto",
+      "referenciado_por": ["6.3.3"],
+      "texto_introductorio": "Por ser la norma NCh 13. Of 93 una norma oficial del país que fija los formatos, no sólo para la presentación de planos, sino que para todo tipo de documentos, se incluye a título informativo en este apéndice un resumen de ella, el cual será de utilidad en la presentación de proyectos eléctricos.\nLa serie de formatos de la norma NCh 13. Of 93, se define en función a un formato base cuyas características son la de tener una superficie de 1 m² y sus lados estar en la relación 1:2. De estas condiciones se deduce que para el formato base, denominado A0, las dimensiones serán 1189 X 841 mm.\nLa serie normal de formatos se obtiene multiplicando o dividiendo sucesivamente por dos el formato base. En la tabla N°18.1.1, se muestran los formatos normales usados en la presentación de proyectos.\nEn la figura 18.1.1 se muestra gráficamente la obtención de los formatos y ubicación de márgenes.\nFormatos alargados: estos formatos se obtienen agregando sucesivamente uno o varios formatos normales al lado del formato inicial, tal como se muestra en la figura 18.1.2, pudiendo agregarse en forma vertical o apaisada, haciendo coincidir los lados de igual dimensión.",
+      "tabla": {
+        "nombre": "Tabla N°18.1.1",
+        "columnas": ["Formatos", "Dimensiones mm", "Márgenes Izquierdo (mm)", "Márgenes Otros (mm)"],
+        "filas": [
+          ["4A0", "1682 X 2378", "35", "15"],
+          ["2A0", "1189 X 1682", "35", "15"],
+          ["A0", "841 X 1189", "35", "10"],
+          ["A1", "594 X 841", "30", "10"],
+          ["A2", "420 X 594", "30", "10"],
+          ["A3", "297 X 420", "30", "10"],
+          ["A4", "210 X 297", "30", "10"]
+        ],
+        "notas": ["* No corresponde a los márgenes fijados por la norma Nch 13. Of 93, sólo son aplicables para los proyectos eléctricos."]
+      },
+      "figuras": [
+        { "numero": "18.1.1", "titulo": "Obtención de formatos y ubicación de márgenes", "imagen": "pagina-10.png", "leyenda": { "a": "Relación Y=X^2 y obtención de formatos A0, A1, A2, A3, A4 por división sucesiva", "b": "Margen izquierdo, formato normal y superficie útil de dibujo, con recuadro de rotulación en la esquina inferior derecha" } },
+        { "numero": "18.1.2", "titulo": "Formatos alargados", "imagen": "pagina-11.png", "leyenda": { "arriba": "Formato inicial y formatos agregados en posición vertical", "abajo": "Formato inicial y formatos agregados en posición apaisada" } }
+      ]
+    },
+    {
+      "numero": "18.2",
+      "titulo": "Rotulación de planos de proyectos eléctricos",
+      "tipo": "figura",
+      "referenciado_por": ["6.3.4", "6.3.6"],
+      "figuras": [
+        { "numero": "18.2.1", "titulo": "Rotulación de planos de proyectos eléctricos — recuadro general", "imagen": "pagina-12.png", "leyenda": { "croquis_de_ubicacion": "80 mm de ancho", "timbre_de_incripcion": "110 mm de ancho", "rotulacion": "110 mm de ancho", "modificaciones": "columna lateral derecha de acuerdo a las necesidades", "espacio_cuadro_de_cargas": "en este espacio puede eventualmente ubicarse un cuadro de cargas si sus dimensiones lo permiten" } },
+        { "numero": "18.2.2", "titulo": "Recuadro de rotulación — detalle", "imagen": "pagina-12.png", "leyenda": { "titulo_del_proyecto": "80 mm alto, letras de 4 a 6mm de alto", "comuna_calle": "20 mm alto", "lamina_escala_fecha_otros_datos": "35 mm alto", "aceptacion_propietario": "35 mm alto — firma, RUT (55 mm ancho)", "instalador": "35 mm alto — firma, licencia o título, domicilio comercial, teléfono (55 mm ancho)" }, "nota_final": "Los restantes datos se escribirán con letra 2 o 3mm." }
+      ]
+    },
+    {
+      "numero": "18.3",
+      "titulo": "Simbología de proyectos eléctricos",
+      "tipo": "figura",
+      "referenciado_por": ["6.3.10"],
+      "figuras": [
+        {
+          "numero": "18.3.1", "titulo": "Símbolos eléctricos para planos de arquitectura (1)", "imagen": "pagina-13.png",
+          "tabla": {
+            "nombre": "Designaciones — Figura 18.3.1 (columna Símbolo omitida por ser gráfica, ver imagen)",
+            "columnas": ["N°", "Designación"],
+            "filas": [
+              ["1.1", "Corriente alterna"], ["1.2", "Corriente continua"], ["1.3", "Toma corriente protección"], ["1.4", "Toma tierra de servicio"],
+              ["2.1", "Alimentación desde el piso inferior"], ["2.2", "Alimentación desde el piso superior"], ["2.3", "Alimentación hacia el piso inferior"], ["2.4", "Alimentación hacia el piso superior"], ["2.5", "Arranque o derivación"], ["2.6", "Bandeja o escalerilla portacable"], ["2.7", "Cable concéntrico"], ["2.8", "Cable flexible"], ["2.9", "Caja de derivación"], ["2.10", "Cámara de paso"], ["2.11", "Cámara de registro"], ["2.12", "Canalización subterránea"], ["2.13", "Cruce"], ["2.14", "Línea de n conductores"], ["2.15", "Símbolo general de canalización"],
+              ["3.1", "Alternador"], ["3.2", "Artefactos de calefacción"], ["3.3", "Artefacto fluorescente de n tubos"], ["3.4", "Batería"], ["3.5", "Bocina"], ["3.6", "Calentador de agua"], ["3.7", "Campanilla"], ["3.8", "Cocina eléctrica"], ["3.9", "Condensador"], ["3.10", "Condensador sincrónico"], ["3.11", "Chicharra"], ["3.12", "Empalme"], ["3.13", "Enchufe hembra para alumbrado"], ["3.14", "Enchufe hembra doble de alumbrado"], ["3.15", "Enchufe hembra para calefacción"], ["3.16", "Enchufe hembra para fuerza monofásico"], ["3.17", "Enchufe hembra para fuerza trifásico"], ["3.18", "Enchufe hembra para usos especiales"], ["3.19", "Gancho de una luz"], ["3.20", "Gancho de n luces"]
+            ]
+          },
+          "nota_final": "Secciones 1 y 2 tituladas ambas 'Símbolos generales' en el documento fuente (la primera de símbolos eléctricos básicos, la segunda de canalización). Sección 3 'Símbolos de aparatos y artefactos' continúa en la figura 18.3.2."
+        },
+        {
+          "numero": "18.3.2", "titulo": "Símbolos eléctricos para planos de arquitectura (2)", "imagen": "pagina-14.png",
+          "tabla": {
+            "nombre": "Designaciones — Figura 18.3.2 (columna Símbolo omitida por ser gráfica, ver imagen)",
+            "columnas": ["N°", "Designación"],
+            "filas": [
+              ["3.21", "Generador"], ["3.22", "Interruptor de un efecto"], ["3.23", "Interruptor de dos efectos"], ["3.24", "Interruptor de tres efectos"], ["3.25", "Interruptor de combinación"], ["3.26", "Interruptor de doble combinación"], ["3.27", "Interruptor de botón (pulsador)"], ["3.28", "Interruptor enchufe"], ["3.29", "Interruptor enchufe con dos interruptores"], ["3.30", "Interruptor de puerta"], ["3.31", "Interruptor de tirador"], ["3.32", "Lámpara de gas"], ["3.33", "Lámpara portátil"], ["3.34", "Medidor"], ["3.35", "Motor de corriente continua"], ["3.36", "Motor de inducción"], ["3.37", "Motor de inducción con motor bobinado"], ["3.38", "Partidor de motores"], ["3.39", "Portalámpara con caja de derivación"], ["3.40", "Portalámpara con interruptor"], ["3.41", "Portalámpara de emergencia"], ["3.42", "Portalámpara de emergencia autoenergizada"], ["3.43", "Portalámpara de n luces"], ["3.44", "Portalámpara mural (aplique)"], ["3.45", "Portalámpara mural con interruptor"], ["3.46", "Portalámpara bajo en pasillos"], ["3.47", "Portalámpara simple"], ["3.48", "Rectificador"], ["3.49", "Soldadora estática al arco"], ["3.50", "Soldadora estática por resistencia"], ["3.51", "Soldadora tipo motor generador"], ["3.52", "Tablero de alumbrado"], ["3.53", "Tablero de calefacción"], ["3.54", "Tablero de fuerza motriz"], ["3.55", "Tablero rayos X"], ["3.56", "Tablero para usos especiales"], ["3.57", "Ventilador o extractor"],
+              ["4.1", "Poste de concreto"], ["4.2", "Poste de concreto con extensión metálica"], ["4.3", "Poste de madera"], ["4.4", "Poste estructural metálico"], ["4.5", "Poste tubular metálico"]
+            ]
+          },
+          "nota_final": "Sección 4 del documento fuente: 'Postación'."
+        }
+      ]
+    },
+    {
+      "numero": "18.4",
+      "titulo": "Cuadros de cargas y cuadro resumen de alimentadores",
+      "tipo": "figura",
+      "referenciado_por": ["6.3.16", "6.3.17", "6.3.18"],
+      "figuras": [
+        { "numero": "18.4.1", "titulo": "Cuadro de cargas de alumbrado", "imagen": "pagina-15.png", "leyenda": { "columnas": "TDA, CTO N°, PORT., ENCH., OTROS, TOTAL CENTROS, POTENCIA W, FASE, PROTECCIONES (DIF./DISY.), CANALIZACIÓN (COND. mm/DUCTO Ø), UBICACIÓN" }, "nota_final": "Este cuadro es básico; en función a las necesidades, podrán suprimirse o agregarse otras columnas para identificar otros consumos de alumbrado no detallados en este modelo." },
+        { "numero": "18.4.2", "titulo": "Cuadro de cargas de fuerza", "imagen": "pagina-15.png", "leyenda": { "columnas": "TDF, CTO N°, CANALIZACIÓN (COND. mm/DUCTO Ø), TAB. DE COMANDOS (DIF./DISY./TERM.), PROTEC. MOTOR N°, In A, FASE, POTENCIA (H.P./KW.), PARTIDA (DIRECTA/INDIRECTA), TOTAL, UBICACIÓN" }, "nota_final": "Este cuadro de cargas es básico, en función a las necesidades podrán agregarse otras columnas o eventualmente suprimirse las innecesarias en planos muy simples." },
+        { "numero": "18.4.3", "titulo": "Cuadro de cargas de calefacción", "imagen": "pagina-15.png", "leyenda": { "columnas": "TDA, CIRCUITO N°, ARTEFACTOS, ENCH., TOTAL CENTROS, POTENCIA W, FASE, PROTECCIONES (DIF./DISY.), CANALIZACIÓN (COND. mm/DUCTO Ø), UBICACIÓN" } },
+        { "numero": "18.4.4", "titulo": "Cuadro resumen de cargas", "imagen": "pagina-16.png", "leyenda": { "columnas": "T.D.A. (Designación/Cantidad Ctos./Potencia kW), T.D.F. (Designación/Cantidad Motores u Otros/Potencia kW), T.D.C. (Designación/Cantidad Ctos./Potencia kW), Potencia Total, Totales" }, "nota_final": "De acuerdo a las necesidades pueden suprimirse columnas innecesarias." },
+        { "numero": "18.4.5", "titulo": "Cuadro de resumen de alimentadores", "imagen": "pagina-16.png", "leyenda": { "columnas": "Alimentador o subalimentador (Nombre/Desde/Hasta), Alimentador o subalimentador (Fase mm2/Neutro mm2/T.P. mm2), Tipo Aislación, Long. (mts), Potencia (kW), Protección Asignada (A)/Vp (V), Canalización (Ducto/EPC)" } }
+      ]
+    },
+    {
+      "numero": "18.5",
+      "titulo": "Diagrama unilineal",
+      "tipo": "figura",
+      "referenciado_por": ["6.3.15"],
+      "figuras": [
+        {
+          "numero": "18.5.1", "titulo": "Diagrama unilineal — contenido mínimo exigido", "imagen": "pagina-17.png",
+          "leyenda": {
+            "empalme": "Tipo de Empalme, Potencia, Tensión, Tipo de Acometida, Sección y Longitud, Capacidad y Curva de Interruptor",
+            "puesta_a_tierra": "Información de Puesta a tierra, Información de conductores TP y TS, Valor Medidos TP y TS, Método de medición e instrumento utilizado",
+            "alimentador": "Alimentador, Tipo de conductor, Sección y Caída de tensión, Canalización, Tipo y Sección",
+            "barra_de_distribucion": "Sección de barra de distribución y capacidad de transporte",
+            "tablero": "Tablero metálico/plástico, IP, Dimensiones",
+            "proteccion": "Protección - Marca, Capacidad en Amperes, Corriente de Ruptura, Curva de Operación",
+            "proteccion_diferencial": "Protección Dif. - Marca, Tipo de Diferencial, Capacidad Nominal, Corriente Diferencial"
+          }
+        }
+      ]
+    }
+  ],
+  "referencias_a_otros_pliegos": [
+    { "pliego": "RIC N°01", "puntos": [], "citado_en": ["5.5", "6.2.4.4"] },
+    { "pliego": "RIC N°03", "puntos": ["sección 6"], "citado_en": ["5.4"] },
+    { "pliego": "RIC N°06", "puntos": ["anexo 6.3", "anexo 6.5"], "citado_en": ["6.2.3.2.8", "6.2.4.3", "6.4.2.9"] },
+    { "pliego": "RIC N°09", "puntos": [], "citado_en": ["5.8"] },
+    { "pliego": "RIC N°10", "puntos": ["punto 5.2.1"], "citado_en": ["5.4"] },
+    { "pliego": "RIC N°15", "puntos": [], "citado_en": ["5.8"] },
+    { "pliego": "RIC N°19", "puntos": ["punto 8.1.2.3"], "citado_en": ["6.2.6.1"] }
+  ],
+  "extensiones_no_previstas_en_v1": {
+    "tabla_de_simbologia_sin_columna_grafica": "Los anexos 18.3 (figuras 18.3.1 y 18.3.2) son tablas de simbología normativa cuya columna 'Símbolo' contiene glifos gráficos que no pueden representarse fielmente como texto. Se conservó únicamente la columna 'Designación' (texto normativo, íntegramente buscable) en un objeto `tabla` dentro de la figura, documentando en `nota_final` que la columna de símbolos gráficos se omite y remite a la imagen. Esto preserva el contenido textual normativo sin inventar una representación textual de los glifos.",
+    "anexo_de_tipo_mixto_con_tabla_y_multiples_figuras": "El anexo 18.1 combina texto introductorio, una tabla normativa (formatos de papel) y dos figuras con diagramas — se usó `\"tipo\": \"mixto\"` con los campos `texto_introductorio`, `tabla` y `figuras` coexistiendo al mismo nivel del anexo, patrón ya validado en pliegos anteriores para anexos que combinan varios tipos de contenido."
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "pliego_id": "RIC-14",
+  "numero": "14",
+  "materia": "Exigencias de eficiencia energética para edificios",
+  "metadata": {
+    "fuente_legal": "Decreto con Fuerza de Ley N° 4/20.018, de 2006, del Ministerio de Economía, Fomento y Reconstrucción, Ley General de Servicios Eléctricos",
+    "fuente_reglamentaria": "Decreto N°8, de 2019, del Ministerio de Energía, Reglamento de Seguridad de las Instalaciones de Consumo de Energía Eléctrica",
+    "dictado_por": "Resolución Exenta N° 33.877, de fecha 30/12/2020, de la Superintendencia de Electricidad y Combustibles",
+    "vigencia_desde": "2021-07-12",
+    "estado": "vigente",
+    "paginas_documento_fuente": 5,
+    "archivo_fuente": "RIC-N14-Exigencias-de-eficiencia-energetica-para-edificios.pdf"
+  },
+  "referencias_normativas": [
+    { "id": "3.1", "norma": "IEC 60669-2-1", "anio": "2002 AMD1:2008 CSV", "titulo": "Switches for household and similar fixed electrical installations - Part 2-1: Particular requirements - Electronic switches." },
+    { "id": "3.2", "norma": "IEC TS 60034-31", "anio": 2010, "titulo": "Rotating electrical machines - Part 31: Selection of energy-efficient motors including variable speed applications - Application guide." },
+    { "id": "3.3", "norma": "ANSI/ASHRAE/IES Standard 90.1", "anio": 2016, "titulo": "Energy Standard for Buildings Except Low-Rise Residential Buildings (I-P Edition)." }
+  ],
+  "notas_referencias": "Nota: Para la aplicación de este pliego técnico se podrá utilizar, en reemplazo de las normas IEC, las normas UNE equivalentes.",
+  "terminologia": [
+    { "id": "4.1", "termino": "Control", "definicion": "Análisis, síntesis y acciones necesarias para modificar un proceso o mantenerlo dentro de un estado predeterminado." },
+    { "id": "4.2", "termino": "Monitoreo", "definicion": "Inspección o vigilancia de un sistema para disponer de información y/o conocer su estado." },
+    { "id": "4.3", "termino": "Sensor", "definicion": "dispositivo que, a partir de la energía del medio donde se mide, da una señal de salida que es función de la variable medida y que puede ser adquirida e interpretada por un equipo diseñado para tal efecto." }
+  ],
+  "secciones": [
+    {
+      "numero": "1",
+      "titulo": "Objetivos",
+      "puntos": [
+        { "numero": "1.1", "texto": "El objetivo del presente pliego técnico es establecer las exigencias de eficiencia energética que deben cumplir las instalaciones de consumo de energía eléctrica de edificios del país." }
+      ]
+    },
+    {
+      "numero": "2",
+      "titulo": "Alcance y campo de aplicación",
+      "puntos": [
+        { "numero": "2.1", "texto": "Este pliego técnico se aplica a todos los edificios nuevos y sólo a los equipos que aquí se describen." },
+        { "numero": "2.2", "texto": "Los equipos que se instalen en edificios existentes con posterioridad a la entrada en vigencia de este pliego técnico deberán cumplir con estas exigencias." },
+        {
+          "numero": "2.3",
+          "texto": "Se exceptúan de la aplicación de este pliego las siguientes instalaciones:",
+          "subpuntos": [
+            { "numero": "2.3.1", "texto": "Edificios residenciales u oficinas de menos de 2.500 m² totales construidos." },
+            { "numero": "2.3.2", "texto": "Los departamentos habitacionales de superficie menor a 300 m² construidos." },
+            { "numero": "2.3.3", "texto": "Áreas comunes de edificios de viviendas de menos de 5 pisos o que posean menos de 1.000 m² de áreas comunes." }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "5",
+      "titulo": "Exigencias generales",
+      "puntos": [
+        {
+          "numero": "5.1",
+          "titulo": "Caída de tensión",
+          "subpuntos": [
+            { "numero": "5.1.1", "texto": "Los conductores de los alimentadores deberán ser dimensionados para una caída máxima de tensión de 2% a la carga nominal." },
+            { "numero": "5.1.2", "texto": "Los conductores de las derivaciones deberán ser dimensionados para una caída máxima de tensión de 3% a la carga nominal en el punto más desfavorable." }
+          ]
+        },
+        {
+          "numero": "5.2",
+          "titulo": "Supervisión de energía eléctrica",
+          "subpuntos": [
+            {
+              "numero": "5.2.1",
+              "texto": "Se deberán instalar dispositivos de medición en los edificios nuevos para supervisar el uso de la energía eléctrica por separado para cada uno de los siguientes aspectos:",
+              "subpuntos": [
+                { "numero": "5.2.1.1", "texto": "Energía eléctrica total." },
+                { "numero": "5.2.1.2", "texto": "Sistema de calefacción, ventilación, aire acondicionado HVAC y agua caliente sanitaria." },
+                { "numero": "5.2.1.3", "texto": "Iluminación interior." },
+                { "numero": "5.2.1.4", "texto": "Iluminación exterior." },
+                { "numero": "5.2.1.5", "texto": "Circuitos de enchufes." },
+                { "numero": "5.2.1.6", "texto": "Sistema sanitario (agua potable y alcantarillado)." },
+                { "numero": "5.2.1.7", "texto": "Ascensores." }
+              ]
+            },
+            { "numero": "5.2.2", "texto": "Para edificios residenciales, estos sistemas se medirán y controlarán por separado para los servicios comunes y por cada inquilino individual." },
+            { "numero": "5.2.3", "texto": "Se registrará cada 15 minutos como mínimo, todos los consumos indicados en el punto 5.2.1 precedente y se llevará un registro en forma horaria, diaria, mensual y anual. El sistema deberá ser capaz de mantener los registros en forma electrónica o manual durante un mínimo de 12 meses.", "refs_cruzadas": ["5.2.1"] },
+            {
+              "numero": "5.2.4",
+              "texto": "Documentación",
+              "subpuntos": [
+                {
+                  "numero": "5.2.4.1",
+                  "texto": "En el plazo de 30 días después de la fecha de recepción del sistema, se deberá entregar al propietario y/o administrador del edificio los planos \"as built\" de la instalación eléctrica, incluyendo:",
+                  "subpuntos": [
+                    { "numero": "5.2.4.1.1", "texto": "Un diagrama unilineal del sistema de distribución eléctrica con el monitoreo y/o control del edificio." },
+                    { "numero": "5.2.4.1.2", "texto": "Planos de la disposición de cada piso, en que se indique la ubicación y el área servida por el sistema de distribución monitoreado y/o controlado." }
+                  ]
+                },
+                {
+                  "numero": "5.2.4.2",
+                  "texto": "La documentación y elementos mínimos a entregar serán:",
+                  "subpuntos": [
+                    { "numero": "5.2.4.2.1", "texto": "Manuales de usuario." },
+                    { "numero": "5.2.4.2.2", "texto": "Manuales de mantenimiento." },
+                    { "numero": "5.2.4.2.3", "texto": "Llaves de acceso a los tableros." },
+                    { "numero": "5.2.4.2.4", "texto": "Claves de ingreso a software: como operador, como administrador, como programador (no se debe impedir el acceso mediante clave)." }
+                  ]
+                },
+                {
+                  "numero": "5.2.4.3",
+                  "texto": "Se deberá entregar al propietario del edificio y/o administrador, un manual de operación y mantenimiento, el que incluirá lo siguiente:",
+                  "subpuntos": [
+                    { "numero": "5.2.4.3.1", "texto": "Datos de las características nominales de los equipos y las opciones seleccionadas para cada pieza de equipo que requiera mantenimiento." },
+                    { "numero": "5.2.4.3.2", "texto": "Manuales de operación y mantenimiento para cada pieza de equipo que requiera mantenimiento. Las acciones de mantenimiento de rutina requeridas deberán ser fácilmente identificables." },
+                    { "numero": "5.2.4.3.3", "texto": "Nombre y dirección de por lo menos un servicio técnico calificado." },
+                    { "numero": "5.2.4.3.4", "texto": "Una descripción completa del uso previsto para cada sistema a operar." }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "5.3",
+          "titulo": "Iluminación",
+          "subpuntos": [
+            {
+              "numero": "5.3.1",
+              "texto": "La potencia de la luminaria, cuando se utiliza para calcular la potencia instalada de iluminación interior o exterior, se determinará de acuerdo con los siguientes criterios:",
+              "subpuntos": [
+                { "numero": "5.3.1.1", "texto": "La potencia de las luminarias que no contienen ballast instalados de forma permanente, transformadores o dispositivos similares deberán considerarse como la potencia máxima de la luminaria indicada por el fabricante." },
+                { "numero": "5.3.1.2", "texto": "La potencia de las luminarias con ballast permanentemente instalados, transformadores o dispositivos similares será la potencia de entrada de funcionamiento de la combinación lámpara y auxiliares, basada en los valores informados por los fabricantes o pruebas de laboratorios reconocidos, o será la potencia máxima declarada de la luminaria." },
+                {
+                  "numero": "5.3.1.3",
+                  "texto": "Para carriles y ductos de barra de iluminación diseñados para permitir la adición y/o reubicación de luminarias sin alterar el cableado del sistema, la potencia será:",
+                  "subpuntos": [
+                    { "numero": "5.3.1.3.1", "texto": "La potencia especificada de las luminarias incluidas en el sistema con un mínimo de 100 W/m lineal." },
+                    { "numero": "5.3.1.3.2", "texto": "El límite de potencia del interruptor del sistema o;" },
+                    { "numero": "5.3.1.3.3", "texto": "El límite de potencia de otro dispositivo limitador de corriente permanente en el sistema." }
+                  ]
+                },
+                { "numero": "5.3.1.4", "texto": "La potencia de canales de iluminación, cable conductor, riel conductor y otros sistemas de iluminación flexibles que permiten la adición y/o reubicación de luminarias sin alterar el cableado del sistema, será la potencia especificada del transformador de alimentación del sistema." }
+              ]
+            },
+            {
+              "numero": "5.3.2",
+              "texto": "Control automático de iluminación interior",
+              "subpuntos": [
+                { "numero": "5.3.2.1", "texto": "Los sensores utilizados para el control de la iluminación interior deberán permitir el encendido manual a través de un aparato eléctrico, para el espacio que controla. Al menos uno de esos interruptores deberá estar en el acceso de la dependencia a controlar." },
+                { "numero": "5.3.2.2", "texto": "Cada dispositivo de control (sensor), controlará una zona de no más de 200 m², si la superficie total a controlar es menor o igual a 1.000 m²." },
+                { "numero": "5.3.2.3", "texto": "Se deberá tener en consideración el lugar de instalación de los sensores al interior del edificio, de manera de protegerlos contra el agua y el polvo, con un índice IP20, como mínimo para recintos cerrados, como oficinas; IP42 como mínimo para espacios de circulación, como pasillos y un IP44 para espacios o recintos considerados húmedos." },
+                { "numero": "5.3.2.4", "texto": "El dispositivo instalado para cumplir con lo indicado en el punto 5.3.2.3 precedente, será de fácil acceso y estará ubicado de forma que los ocupantes puedan ver la iluminación controlada cuando se utiliza el dispositivo de control. Los dispositivos de control deberán ser compatibles con el sistema automático de la iluminación, a su vez, este deberá ser compatible con los sistemas de monitoreo que reporta la medición de este consumo.", "refs_cruzadas": ["5.3.2.3"] },
+                { "numero": "5.3.2.5", "texto": "Se privilegiará el uso de sensores en donde la configuración no pueda ser alterada por los usuarios, sino que solamente pueda ser modificada por el personal a cargo de mantención o instalación de los mismos." },
+                { "numero": "5.3.2.6", "texto": "Los sensores utilizados, deberán cumplir con en el protocolo de análisis y/o ensayos de productos eléctricos respectivo definido por la Superintendencia. En ausencia de éste, se deberá cumplir con lo indicado en la norma IEC 60669-2-1:2002+AMD1:2008 CSV.", "refs_cruzadas": ["IEC 60669-2-1"] },
+                { "numero": "5.3.2.7", "texto": "Todo el sistema de iluminación de las áreas comunes deberá contar con un sistema de control automático de iluminación interior, que permita controlar la potencia de iluminación, cuando no hay actividad detectada dentro de una zona de iluminación durante 20 minutos." }
+              ]
+            },
+            {
+              "numero": "5.3.3",
+              "texto": "Control de iluminación de zonas de estacionamientos",
+              "subpuntos": [
+                { "numero": "5.3.3.1", "texto": "La iluminación de zonas de estacionamientos será monitoreada y controlada." },
+                { "numero": "5.3.3.2", "texto": "La potencia de iluminación de cada luminaria se reducirá 30% (como mínimo) automáticamente, cuando no hay actividad detectada dentro de una zona de iluminación durante 20 minutos. Las zonas controladas de iluminación, para esta exigencia, no deberán ser superiores a 350 m². Se aceptará en casos justificados, que el control permita el apagado de luminarias para alcanzar este 30%, siempre que el tipo de luminaria lo permita y se mantenga el mismo grado de seguridad." }
+              ]
+            },
+            {
+              "numero": "5.3.4",
+              "texto": "Control de iluminación exterior",
+              "subpuntos": [
+                { "numero": "5.3.4.1", "texto": "Toda la iluminación exterior será monitoreada y controlada." },
+                { "numero": "5.3.4.2", "texto": "La iluminación será controlada por un dispositivo que apague automáticamente la iluminación cuando haya suficiente luz natural disponible." },
+                { "numero": "5.3.4.3", "texto": "La iluminación de fachada del edificio y de paisaje se apagará automáticamente entre la medianoche o cierre de negocios, lo que ocurra más tarde, y las 6:00 horas o la apertura de negocios, lo que ocurra primero, o entre los tiempos establecidos por la autoridad competente, a no ser que por aspectos de seguridad se decida dejar algunas luminarias encendidas más allá del horario antes señalado. Se exceptúa de la disposición anterior, si la energía está almacenada y haya sido provista por un sistema de generación renovable o de cogeneración eficiente particular del edificio." },
+                {
+                  "numero": "5.3.4.4",
+                  "texto": "La iluminación no especificada en el párrafo anterior y la iluminación para la señalización deberá ser controlada por un dispositivo que reduzca automáticamente la potencia de iluminación conectada por al menos 30% para al menos una de las siguientes condiciones:",
+                  "subpuntos": [
+                    { "numero": "5.3.4.4.1", "texto": "De 12 de la noche o dentro de una (1) hora del fin de las operaciones de negocio, lo que ocurra más tarde, hasta las 6 de la mañana o la apertura de negocios, lo que ocurra primero." },
+                    { "numero": "5.3.4.4.2", "texto": "Durante cualquier período en que no se ha detectado actividad durante un tiempo de no más de 15 minutos." }
+                  ]
+                },
+                { "numero": "5.3.4.5", "texto": "Todos los temporizadores de control de encendido y apagado, deberán ser capaces de mantener la programación y el ajuste de hora durante la pérdida de suministro por un período de al menos diez horas." }
+              ]
+            }
+          ]
+        },
+        { "numero": "5.4", "texto": "Para implementar eficiencia energética en recintos hospitalarios nuevos o remodelaciones, deberá seguirse lo indicado en el estándar de la ANSI/ASHRAE/IES Standard 90.1.", "refs_cruzadas": ["ANSI/ASHRAE/IES Standard 90.1"] },
+        { "numero": "5.5", "texto": "Para instalaciones que requieren contar con sistemas de eficiencia energética, los motores deberán ser eficientes, es decir, se deberán seleccionar de modo que tengan las menores pérdidas posibles. Para esto deben cumplir con la norma IEC TS 60034-31.", "refs_cruzadas": ["IEC TS 60034-31"] },
+        { "numero": "5.6", "texto": "Los edificios que requieran ser clasificados como \"Edificios preparados para Electromovilidad\", deberán ser diseñados según lo establecido en el punto 13.2.1 del Pliego Técnico Normativo RIC N°15.", "refs_cruzadas": ["RIC N°15 punto 13.2.1"] },
+        { "numero": "5.7", "texto": "De acuerdo con lo establecido en la Ley Nº 18.410, cualquier duda en cuanto a la interpretación de las disposiciones de este pliego técnico será resuelta por la Superintendencia." },
+        { "numero": "5.8", "texto": "En materias de diseño, construcción, operación, mantenimiento, reparación, modificación, inspección y término de operación, la Superintendencia podrá permitir el uso de tecnologías diferentes a las establecidas en el presente pliego técnico, siempre que se mantenga el nivel de seguridad que el texto normativo contempla. Estas tecnologías deberán estar técnicamente respaldadas en normas, códigos o especificaciones nacionales o extranjeras, así como en prácticas recomendadas de ingeniería internacionalmente reconocidas, o bien ser parte de instalaciones de prueba para nueva tecnología. Para ello el instalador deberá presentar el proyecto y un ejemplar completo de la versión vigente de la norma, código o especificación extranjera utilizada debidamente traducida, cuando corresponda, así como cualquier otro antecedente que solicite la Superintendencia." },
+        {
+          "numero": "5.9",
+          "titulo": "Pruebas funcionales",
+          "subpuntos": [
+            { "numero": "5.9.1", "texto": "Los dispositivos de control de iluminación y sistemas de control se someterán a prueba para asegurar que el hardware y el software de control están calibrados, ajustados, programados y en buena condición de trabajo, de acuerdo con los documentos de instalación e instrucciones del fabricante." },
+            {
+              "numero": "5.9.2",
+              "texto": "Cuando se instalen sensores de presencia, temporizadores, controles horarios programables o fotosensores, como mínimo se llevarán a cabo los siguientes procedimientos:",
+              "subpuntos": [
+                {
+                  "numero": "5.9.2.1",
+                  "texto": "Sensores de presencia:",
+                  "subpuntos": [
+                    { "numero": "5.9.2.1.1", "texto": "Certificar que el sensor ha sido instalado y dirigido de acuerdo con las recomendaciones del fabricante." },
+                    { "numero": "5.9.2.1.2", "texto": "Para proyectos con hasta siete sensores de ocupación, todos deberán ser probados, esto deberá quedar reflejado en un protocolo de entrega, firmado por el instalador." },
+                    { "numero": "5.9.2.1.3", "texto": "Para los proyectos con más de siete sensores de ocupación, la prueba se realizará para cada combinación diferente de tipo de sensor y de geometría del espacio, esto deberá quedar reflejado en un protocolo de entrega, firmado por el instalador." }
+                  ]
+                },
+                {
+                  "numero": "5.9.2.2",
+                  "texto": "Interruptores de tiempo automáticos (temporizadores):",
+                  "subpuntos": [
+                    { "numero": "5.9.2.2.1", "texto": "Verificar que el control del interruptor de tiempo automático está programado debidamente con los horarios de día de la semana, fin de semana y vacaciones, según corresponda." },
+                    { "numero": "5.9.2.2.2", "texto": "Documentar para el propietario, la programación de tiempo de desconexión automática, incluyendo los días de semana, fin de semana, y calendarios de vacaciones, así como la configuración de los ajustes del programa." },
+                    { "numero": "5.9.2.2.3", "texto": "Verificar que el ajuste de las horas y fechas en el interruptor de tiempo esté correcto." },
+                    { "numero": "5.9.2.2.4", "texto": "Comprobar que cualquier batería de respaldo (si es aplicable) esté instalada, energizada y funcionando adecuadamente." }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "anexos": [],
+  "referencias_a_otros_pliegos": [
+    { "pliego": "RIC N°15", "puntos": ["punto 13.2.1"], "citado_en": ["5.6"] }
+  ],
+  "extensiones_no_previstas_en_v1": {}
+}

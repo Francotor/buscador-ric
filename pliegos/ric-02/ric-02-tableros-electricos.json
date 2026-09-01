@@ -1,0 +1,508 @@
+{
+  "pliego_id": "RIC-02",
+  "numero": "02",
+  "materia": "Tableros Eléctricos",
+  "metadata": {
+    "fuente_legal": "Decreto con Fuerza de Ley N°4/20.018, de 2006, del Ministerio de Economía, Fomento y Reconstrucción, Ley General de Servicios Eléctricos",
+    "fuente_reglamentaria": "Decreto N°8, de 2019, del Ministerio de Energía, Reglamento de Seguridad de las Instalaciones de Consumo de Energía Eléctrica",
+    "dictado_por": "Resolución Exenta N° 33.877, de fecha 30/12/2020, de la Superintendencia de Electricidad y Combustibles",
+    "vigencia_desde": "2021-07-12",
+    "estado": "vigente",
+    "paginas_documento_fuente": 18,
+    "archivo_fuente": "RIC-N02-Tableros-Electricos-170621-2.pdf",
+    "notas_version": "Se modificó referencia numérica de 4.24.1 por 4.25.1 en la versión del PDF publicada el 12.01.2021 (ver nota_pie del punto 6.6.1)."
+  },
+  "referencias_normativas": [
+    { "id": "3.1", "norma": "IEC 61439-1", "anio": 2011, "titulo": "Low-voltage switchgear and controlgear assemblies - Part 1: General rules" },
+    { "id": "3.2", "norma": "IEC 61439-2", "anio": 2011, "titulo": "Low-voltage switchgear and controlgear assemblies - Part 2: Power switchgear and controlgear assemblies" },
+    { "id": "3.3", "norma": "IEC 61439-5", "anio": 2014, "titulo": "Low-voltage switchgear and controlgear assemblies - Part 5: Assemblies for power distribution in public networks" },
+    { "id": "3.4", "norma": "IEC TR 61641", "anio": 2014, "titulo": "Enclosed low-voltage switchgear and controlgear assemblies - Guide for testing under conditions of arcing due to internal fault" },
+    { "id": "3.5", "norma": "IEC 60417", "anio": 2002, "titulo": "Graphical symbols for use on equipment" },
+    { "id": "3.6", "norma": "IEC 62606:2013+AMD1:2017 CSV", "anio": 2017, "titulo": "General requirements for arc fault detection devices" },
+    { "id": "3.7", "norma": "IEC 61039", "anio": 2008, "titulo": "Classification of insulating liquids" },
+    { "id": "3.8", "norma": "NFPA 101", "anio": 2018, "titulo": "Life Safety Code" }
+  ],
+  "notas_referencias": "Para la aplicación de este pliego técnico se podrá utilizar, en reemplazo de las normas IEC, las normas UNE equivalentes.",
+  "terminologia": [
+    {
+      "id": "4.1", "termino": "Accesible", "definicion": null,
+      "subterminos": [
+        { "id": "4.1.1", "termino": "Aplicado a canalizaciones", "definicion": "Son aquellas canalizaciones que pueden ser inspeccionadas, sometidas a mantenimiento o modificadas, sin afectar la estructura de la construcción o sus terminaciones." },
+        { "id": "4.1.2", "termino": "Aplicado a equipos", "definicion": "Son aquellos equipos que no están protegidos mediante puertas cerradas con llave, barreras fijas u otros medios similares." },
+        { "id": "4.1.3", "termino": "Accesible fácilmente", "definicion": "Son aquellas canalizaciones o equipos accesibles que pueden ser alcanzados sin necesidad de trepar, quitar obstáculos, etc., para repararlos, inspeccionarlos u operarlos." }
+      ]
+    },
+    { "id": "4.2", "termino": "Aparato", "definicion": "Elemento de la instalación destinado a controlar el paso de la energía eléctrica." },
+    { "id": "4.3", "termino": "Artefacto", "definicion": "Elemento fijo o portátil, parte de una instalación, que consume energía eléctrica." },
+    { "id": "4.4", "termino": "Carga", "definicion": "Es todo artefacto, equipo o instalación cuyo mecanismo u operación requiere del consumo de energía eléctrica para su funcionamiento." },
+    { "id": "4.5", "termino": "Centro de distribución de cargas", "definicion": "Los centros de distribución de cargas son aparatos utilizados para distribuir y controlar la energía para todo tipo de cargas, destinados a aplicaciones industriales, comerciales y similares en los que solo intervienen personas calificadas." },
+    { "id": "4.6", "termino": "Circuito", "definicion": "Conjunto de artefactos y aparatos alimentados por una línea común de distribución, la cual es protegida por un único dispositivo de protección." },
+    { "id": "4.7", "termino": "Corte omnipolar", "definicion": "Corte de todos los conductores activos en forma simultánea. La conexión y desconexión se efectúa al mismo tiempo en el conductor neutro y en las fases. Para dispositivos bipolares se permitirá que un solo polo esté protegido; para dispositivos tetrapolares todos los polos deberán estar protegidos incluyendo el neutro." },
+    { "id": "4.8", "termino": "Cortocircuito", "definicion": "Falla en que su valor de impedancia es muy pequeño, lo cual causa una circulación de corriente particularmente alta con respecto a la capacidad normal del circuito, equipo o parte de la instalación que la soporta." },
+    { "id": "4.9", "termino": "Dispositivo", "definicion": "Pieza o conjunto de piezas o elementos preparados para realizar una función determinada y que generalmente forman parte de un conjunto más complejo." },
+    { "id": "4.10", "termino": "Disyuntor (protección termomagnética)", "definicion": "Dispositivo de protección provisto de un comando manual y cuya función es desconectar automáticamente una instalación o la parte fallada de ella, por la acción de un elemento termomagnético u otro de características de accionamiento equivalentes, cuando la corriente que circula por ella excede valores preestablecidos durante un tiempo dado." },
+    { "id": "4.11", "termino": "Envolvente", "definicion": "Elemento que asegura la protección de los dispositivos y elementos en su interior contra ciertas influencias externas, en cualquier dirección." },
+    { "id": "4.12", "termino": "Equipo eléctrico", "definicion": "Término aplicable a aparatos de maniobra, regulación, seguridad o control y a los artefactos y accesorios que forman parte de una instalación eléctrica. Dependiendo de su forma constructiva y características de resistencia a la acción del medio ambiente." },
+    { "id": "4.13", "termino": "Falla", "definicion": "Unión entre dos puntos a potencial diferente o ausencia temporal o permanente de la energía al interior o exterior de una instalación, que provoca una condición anormal de funcionamiento de ella, de alguno de sus circuitos o de parte de éstos." },
+    { "id": "4.14", "termino": "Falla a masa", "definicion": "Es la unión accidental que se produce entre un conductor activo y la cubierta o bastidor metálico de un aparato, artefacto o equipo eléctrico." },
+    { "id": "4.15", "termino": "Fusible", "definicion": "Dispositivo de protección cuya función es desconectar automáticamente una instalación o la parte fallada de ella, por la fusión de un elemento conductor, que es uno de sus componentes, cuando la corriente que circula por ella excede valores preestablecidos durante un tiempo dado." },
+    { "id": "4.16", "termino": "Masa", "definicion": "Parte conductora de un equipo eléctrico, normalmente aislada respecto de los conductores activos, que en ciertos circuitos puede ser utilizada como conductor de retorno y que en condiciones de falla puede quedar energizada y presentar un potencial respecto del suelo." },
+    { "id": "4.17", "termino": "Personal calificado", "definicion": "Obrero o trabajador que está certificado por una institución que consta que esa persona está calificada para el montaje, operación y mantenimiento de equipos e instalaciones eléctricas y en los riesgos que en ello pueda presentarse." },
+    { "id": "4.18", "termino": "Protecciones", "definicion": "Dispositivos destinados a desenergizar un sistema, circuito, artefacto o fuentes de alimentación cuando en ellos se alteran las condiciones normales de funcionamiento." },
+    { "id": "4.19", "termino": "Protector diferencial", "definicion": "Dispositivo de protección destinado a desenergizar una instalación, circuito o artefacto cuando existe una falla a masa; opera cuando la suma fasorial de las corrientes a través de los conductores de alimentación es superior a un valor preestablecido." },
+    { "id": "4.20", "termino": "Ruptura, capacidad de", "definicion": "Valor de corriente característico de una protección que corresponde al máximo valor de corriente de cortocircuito que la protección puede despejar, en condiciones preestablecidas, sin que se alteren sus características constructivas ni de funcionamiento." },
+    { "id": "4.21", "termino": "Sensibilidad, protector diferencial", "definicion": "Valor de corriente diferencial que hace operar a un protector diferencial. Se entenderá por corriente diferencial a la suma fasorial de los valores instantáneos de las corrientes que circulan a través de todos los conductores del circuito principal del protector." },
+    { "id": "4.22", "termino": "Señales de seguridad", "definicion": "Señales que, mediante una combinación de formas geométricas y colores estandarizados, entregan una indicación general relacionada con la seguridad y que a través de símbolos o textos muestran un mensaje particular relativo a una condición de seguridad." },
+    { "id": "4.23", "termino": "Sobrecarga", "definicion": "Aumento de la potencia o corriente absorbida por un artefacto más allá de su valor nominal." },
+    { "id": "4.24", "termino": "Superintendencia", "definicion": "Superintendencia de Electricidad y Combustibles." },
+    {
+      "id": "4.25", "termino": "Tablero eléctrico",
+      "definicion": "Los tableros son equipos eléctricos de una instalación, que concentran dispositivos de protección y de maniobra o comando, desde los cuales se puede proteger y operar toda la instalación o parte de ella.",
+      "subterminos": [
+        { "id": "4.25.1", "termino": "Clasificación según función y ubicación", "definicion": "Los Tableros eléctricos se clasifican según la función y ubicación dentro de la instalación, en:",
+          "subterminos": [
+            { "id": "4.25.1.1", "termino": "Tableros generales", "definicion": "Son los tableros principales de las instalaciones. En ellos estarán montados los dispositivos de protección y de maniobra que protegen los alimentadores y que permiten operar sobre toda la instalación de consumo en forma conjunta o fraccionada." },
+            { "id": "4.25.1.2", "termino": "Tableros generales auxiliares", "definicion": "Son tableros que son alimentados desde un tablero general y desde ellos se protegen y operan subalimentadores que energizan tableros de distribución." },
+            { "id": "4.25.1.3", "termino": "Tableros de distribución", "definicion": "Son tableros que contienen dispositivos de protección y de maniobra que permiten proteger y operar directamente sobre los circuitos en que está dividida una instalación o parte de ella; pueden ser alimentados desde un tablero general, un tablero general auxiliar o directamente desde el empalme." },
+            { "id": "4.25.1.4", "termino": "Tableros de paso", "definicion": "Son tableros que contienen protecciones cuya finalidad es proteger derivaciones que por su capacidad de transporte no pueden ser conectadas directamente a un alimentador, subalimentador o línea de distribución del cual están tomadas." },
+            { "id": "4.25.1.5", "termino": "Tableros de comando", "definicion": "Son tableros que contienen los dispositivos de protección y de maniobra que permiten proteger y operar sobre artefactos individuales o sobre grupos de artefactos." },
+            { "id": "4.25.1.6", "termino": "Centros de control", "definicion": "Son tableros que contienen dispositivos de maniobra, de señalización y de control que permiten controlar uno o más dispositivos." },
+            { "id": "4.25.1.7", "termino": "Tablero eléctrico móvil", "definicion": "Es toda caja con puerta especialmente diseñada y señalizada, en cuyo interior se instalan interruptores, cables, dispositivos de protección y de maniobra de circuitos eléctricos en terreno y se pueden trasladar según se requiera." },
+            { "id": "4.25.1.8", "termino": "Centro de control de motores (CCM)", "definicion": "Es una envolvente común de una o varias secciones verticales u horizontales (cubículos o gavetas), desde donde se conectan, protegen y se controlan motores." },
+            { "id": "4.25.1.9", "termino": "Tableros de transferencia (TT)", "definicion": "Son tableros que contienen dispositivos automáticos y/o manuales que permiten realizar el intercambio de energía entre la red y una fuente de alimentación alternativa, garantizando que jamás estas dos fuentes estén presentes simultáneamente en la carga." },
+            { "id": "4.25.1.10", "termino": "Tableros de autogeneración", "definicion": "Son tableros que contienen dispositivos automáticos y manuales que permiten realizar la conexión y desconexión de equipos de generación fotovoltaica, eólica o de algún otro medio de generación desde el cual se podrá desconectar el equipamiento de generación." }
+          ]
+        },
+        { "id": "4.25.2", "termino": "Clasificación según tipo de carga controlada", "definicion": "Tableros eléctricos según el tipo de carga controlada, se clasifican en:",
+          "subterminos": [
+            { "id": "4.25.2.1", "termino": "Tableros de alumbrado", "definicion": null },
+            { "id": "4.25.2.2", "termino": "Tableros de fuerza", "definicion": null },
+            { "id": "4.25.2.3", "termino": "Tableros de climatización", "definicion": null },
+            { "id": "4.25.2.4", "termino": "Tableros de control", "definicion": null },
+            { "id": "4.25.2.5", "termino": "Tableros de computación", "definicion": null },
+            { "id": "4.25.2.6", "termino": "Tableros de uso especial", "definicion": "Tales como tableros domóticos, tableros fotovoltaicos, tableros de automatización, tableros médicos o de rayos X, centros de distribución de carga, tableros de autogeneración." }
+          ]
+        }
+      ]
+    },
+    { "id": "4.26", "termino": "Tensión de servicio", "definicion": "Es el valor de la tensión en el que opera una instalación." }
+  ],
+  "secciones": [
+    {
+      "numero": "1",
+      "titulo": "Objetivos",
+      "puntos": [
+        { "numero": "1", "texto": "El objetivo del presente pliego técnico es establecer los requisitos de seguridad que deben cumplir los tableros eléctricos en las instalaciones de consumo de energía eléctrica del país." }
+      ]
+    },
+    {
+      "numero": "2",
+      "titulo": "Alcance y campo de aplicación",
+      "puntos": [
+        { "numero": "2", "texto": "Este pliego técnico aplica a todos los tipos de tableros de las instalaciones de consumo de energía eléctrica, en adelante e indistintamente, instalaciones." }
+      ]
+    },
+    {
+      "numero": "5",
+      "titulo": "Conceptos generales",
+      "puntos": [
+        {
+          "numero": "5.1",
+          "texto": "La cantidad de tableros que sea necesario para el comando y protección de una instalación se determinará buscando salvaguardar la seguridad, y tratando de obtener la mejor funcionalidad y flexibilidad en la operación de dicha instalación, tomando en cuenta la distribución y finalidad de cada uno de los recintos en que estén subdivididos el o los edificios componentes de la propiedad."
+        },
+        {
+          "numero": "5.2",
+          "texto": "Los tableros serán instalados en lugares seguros y fácilmente accesibles, teniendo en cuenta las condiciones particulares siguientes:",
+          "subpuntos": [
+            { "numero": "5.2.1", "texto": "Los tableros de locales de reunión de personas se ubicarán en recintos, nichos, gabinetes o cajas cerrados con llave, con acceso al interior del tablero solo de personal calificado de operación y mantenimiento." },
+            { "numero": "5.2.2", "texto": "En caso de ser necesaria la instalación de tableros en recintos peligrosos, éstos deberán ser construidos utilizando los equipos y métodos que dispone el Pliego Técnico Normativo RIC N°12.", "refs_cruzadas": ["RIC N°12"] }
+          ]
+        },
+        {
+          "numero": "5.3",
+          "texto": "Todas las rotulaciones, señalizaciones, procedimientos y advertencias requeridas en este pliego deberán cumplir con lo siguiente:",
+          "subpuntos": [
+            { "numero": "5.3.1", "texto": "Ser indelebles." },
+            { "numero": "5.3.2", "texto": "Ser legibles." },
+            { "numero": "5.3.3", "texto": "Estar diseñadas y fijas de manera que sean legibles durante la vida útil del equipo, protección, tablero o alimentador al que están adheridas o relacionadas." },
+            { "numero": "5.3.4", "texto": "Ser simples y comprensibles." },
+            { "numero": "5.3.5", "texto": "Todos los tableros, sin excepción, deberán llevar estampada en forma visible, legible e indeleble la marca de fabricación, el nombre del tablero, la tensión de servicio, la corriente nominal y el número de fases. El responsable de la instalación deberá agregar en su oportunidad su nombre o marca registrada.", "plantilla_rotulo": ["Marca de Fabricación", "Nombre del Tablero (Ejemplo: TGAux A. y F.)", "Tipo de servicio (Normal o Emergencia)", "Tensión de servicio", "Corriente nominal", "Empresa desarrolladora", "Año de instalación", "Grado de Protección IP", "Tipo de ambiente para el que fue diseñado en caso de ser un tablero especial"] },
+            { "numero": "5.3.6", "texto": "Todos los tableros deberán tener adherida la siguiente información:",
+              "subpuntos": [
+                { "numero": "5.3.6.1", "texto": "Cuadro indicador y rotulado para identificar los circuitos, su número y su función." },
+                { "numero": "5.3.6.2", "texto": "Diagrama unilineal actualizado, de tamaño legible, y con protección permanente para mantener su condición." }
+              ]
+            },
+            { "numero": "5.3.7", "texto": "Todas las protecciones y aparatos de maniobra deberán ser rotulados indicando cuál es su Número de circuito y servicio." },
+            { "numero": "5.3.8", "texto": "Cuando el tablero cuente con seccionador, éste deberá tener claramente marcado la posición abierto o cerrado." },
+            { "numero": "5.3.9", "texto": "Se deberá identificar claramente la sección milimétrica de los alimentadores que ingresen a la barra de distribución de un tablero o a la protección general." }
+          ]
+        },
+        {
+          "numero": "5.4",
+          "titulo": "Espacios de trabajo en tableros y salas eléctricas",
+          "texto": "Requisitos de espacios de trabajo y distancias mínimas de seguridad en tableros y salas eléctricas.",
+          "subpuntos": [
+            { "numero": "5.4.1", "texto": "Para los efectos de fijación de los espacios de trabajo y distancias mínimas de seguridad, se considerará como zona alcanzable por una persona, a aquella que medida desde el punto donde ésta pueda situarse, esté a una distancia límite de 2,50 m por arriba, 1,0 m lateralmente y 1,0 m hacia abajo.", "anexos_relacionados": ["2.1"] },
+            {
+              "numero": "5.4.2",
+              "texto": "Los espacios de trabajo y accesos a partes energizadas descubiertas que requieran de inspección, ajustes o mantenimiento estando bajo tensión, se dimensionarán tomando como mínimo los valores de distancias indicadas en la tabla N°2.1, salvo que en otros artículos de este pliego se establezcan valores distintos para condiciones especiales.",
+              "tabla": {
+                "nombre": "Tabla N°2.1: Espacios de trabajo",
+                "columnas": ["Tensión respecto a tierra [V]", "Condición 1 - Espacio libre mínimo [m]", "Condición 2 - Espacio libre mínimo [m]", "Condición 3 - Espacio libre mínimo [m]"],
+                "filas": [
+                  ["0 - 1000", 0.90, 1.20, 1.50]
+                ],
+                "nota": "Condición N°1: existen partes energizadas descubiertas en un lado y el lado opuesto es no conductor, o partes energizadas a ambos lados protegidas con cubiertas aislantes removibles. Condición N°2: partes energizadas descubiertas en un lado y el lado opuesto es material conductor puesto a tierra (muros de hormigón, ladrillo, o revestidos en cerámico se consideran conductores puestos a tierra). Condición N°3: partes energizadas descubiertas a ambos lados con el operario trabajando entre ellas. Excepción: no se requieren estos espacios detrás de tableros o centros de control con acceso a todos sus controles por la parte frontal o los costados, pero deben respetarse igual los valores mínimos de esta tabla."
+              }
+            },
+            { "numero": "5.4.3", "texto": "Si la parte energizada descubierta está ubicada en la parte frontal de un tablero o centro de control, el espacio de trabajo libre mínimo será de 1,50 m." },
+            { "numero": "5.4.4", "texto": "El acceso a los espacios de trabajo debe estar asegurado por lo menos por una entrada de ancho mínimo de 0,80 m y altura mínima de 2,20 m, salvo que la presencia de equipos de gran volumen exija mayores dimensiones. Las puertas deberán abrir hacia fuera y estar premunidas de cerraduras que permitan abrir desde el interior sin el uso de llaves o herramientas." },
+            { "numero": "5.4.5", "texto": "La altura libre sobre los espacios de trabajo no debe ser inferior a 1,0 m." },
+            { "numero": "5.4.6", "texto": "Los espacios de trabajo deben tener una iluminancia mínima de 500 lux." },
+            { "numero": "5.4.7", "texto": "Los espacios libres y de trabajo de estos recintos no podrán ser usados como lugares de almacenamiento de ningún tipo de material, equipo o mobiliario, ni como recinto de estadía de personal." },
+            { "numero": "5.4.8", "texto": "En este tipo de recintos no podrán instalarse tuberías o equipos de medida de otros servicios tales como agua potable o gas." },
+            { "numero": "5.4.9", "texto": "Las salas eléctricas deberán cumplir con los siguientes requisitos:",
+              "subpuntos": [
+                { "numero": "5.4.9.1", "texto": "Estar destinadas exclusivamente a la instalación de equipos eléctricos." },
+                { "numero": "5.4.9.2", "texto": "Los recintos donde se ubiquen las salas eléctricas deberán ofrecer una resistencia al fuego RF 120." },
+                { "numero": "5.4.9.3", "texto": "Los equipos eléctricos que se ubiquen en el interior de las salas eléctricas deberán utilizar aislantes tipo seco o líquido clase K, de acuerdo con la Norma IEC 61039 (aislantes con T° de ignición superior a 300°C).", "refs_cruzadas": ["3.7"] }
+              ]
+            },
+            { "numero": "5.4.10", "texto": "Las salas eléctricas deberán estar provistas de suficiente espacio de trabajo, que permita el correcto montaje y mantenimiento de los tableros eléctricos y equipos asociados, y disponer de piso antideslizante e iluminación suficiente. Además, deberán contar con equipos autónomos de alumbrado de emergencia, de autonomía no inferior a 2 horas que proporcione un nivel mínimo de iluminación de 5 lux presentes en el acceso a los tableros, en conformidad con el Pliego Técnico Normativo RIC N°08.", "refs_cruzadas": ["RIC N°08"] },
+            { "numero": "5.4.11", "texto": "En los puntos de acceso a los espacios de trabajo se deberá colocar en forma destacada letreros prohibiendo el acceso a personal no calificado." },
+            { "numero": "5.4.12", "texto": "Los tableros que dependan de la circulación natural de aire y de los principios de la convección, para el enfriamiento de sus componentes, se deben instalar de modo que tengan el suficiente espacio para la circulación de este." },
+            { "numero": "5.4.13", "texto": "Los tableros que cuenten con aberturas de ventilación deben instalarse de modo que las paredes u otros obstáculos no impidan la libre circulación del aire a través de este." }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "6",
+      "titulo": "Especificaciones de construcción",
+      "puntos": [
+        {
+          "numero": "6.1",
+          "titulo": "Formas constructivas",
+          "texto": "Requisitos constructivos de cajas, gabinetes y armarios que forman la envolvente de los tableros eléctricos.",
+          "subpuntos": [
+            { "numero": "6.1.1", "texto": "Todos los dispositivos y componentes de un tablero deberán montarse dentro de cajas, gabinetes murales o armarios autosoportados, dependiendo del tamaño requerido." },
+            { "numero": "6.1.2", "texto": "Los materiales empleados en la construcción de gabinetes, armarios o cajas que formen parte de la envolvente de los tableros eléctricos, deberán ser no propagadores de la llama, resistentes a la corrosión o estar adecuadamente protegidos contra ella, en conformidad con los protocolos de análisis y/o ensayos de seguridad de productos eléctricos respectivos establecidos por la Superintendencia." },
+            { "numero": "6.1.3", "texto": "Todos los tableros deberán contar con una cubierta cubre equipos y con una puerta exterior. La puerta exterior será totalmente cerrada y su fijación se hará mediante bisagras en disposición vertical u horizontal. Se permite montar sobre ella luces piloto de indicación de tablero energizado, y equipos de medida u otro elemento de maniobra o control, siempre que se mantenga el grado IP de protección del tablero. La cubierta cubre equipos deberá ser del mismo material que el gabinete, armario o caja.", "refs_cruzadas": ["6.1.2"] },
+            { "numero": "6.1.4", "texto": "Las protecciones sólo serán accesibles abriendo la puerta exterior la que deberá permanecer cerrada, para lo cual se deberá contar con un dispositivo que permita el cierre y cuando corresponda, deberá ser cerrado con llave." },
+            { "numero": "6.1.5", "texto": "Se podrán exceptuar de cumplir con lo indicado en los puntos 6.1.3 y 6.1.4 precedentes aquellos tableros que cuenten con un seccionador bajo carga que permita su accionamiento desde el exterior de la caja, sin que exista la exposición de personas al contacto con partes con tensión.", "excepcion": "Tableros con seccionador bajo carga accionable desde el exterior" },
+            { "numero": "6.1.6", "texto": "Las exigencias descritas en el punto 6.1.4 no serán aplicables para los tableros de tipo centros de control de motores (CCM)." },
+            { "numero": "6.1.7", "texto": "Tanto la envolvente como la tapa de un tablero, deberá ser capaz de resistir los esfuerzos mecánicos, eléctricos y térmicos, para los que fueron diseñados." },
+            { "numero": "6.1.8", "texto": "La cubierta cubre equipos tendrá por finalidad principal, impedir el contacto de cuerpos extraños con las partes energizadas, o bien, que partes energizadas queden al alcance del usuario al operar las protecciones o dispositivos de maniobra." },
+            { "numero": "6.1.9", "texto": "La cubierta cubre equipos deberá contar con perforaciones de tamaño adecuado para dejar pasar libremente las manillas o palancas de operación, si procede, de los dispositivos de maniobra, protección, control y señalización, según sea su uso. En casos justificados en que se perfore la cubierta cubre equipos o la tapa del tablero, deberá eliminarse las rebabas y mantenerse el proceso de galvanizado con el que contaba este material antes de su modificación." },
+            { "numero": "6.1.10", "texto": "La cubierta cubre equipos se fijará mediante bisagras en disposición vertical, elementos de cierre a presión o cierres de tipo atornillado; en este último caso los tornillos de fijación empleados deberán ser del tipo imperdible." },
+            { "numero": "6.1.11", "texto": "Las partes energizadas de un tablero sólo podrán alcanzarse removiendo la cubierta cubre equipos, entendiéndose que esta maniobra solo se realizará por necesidad de efectuar trabajos de inspección, mantenimiento o modificaciones en el interior del tablero, ejecutadas por personal calificado." },
+            { "numero": "6.1.12", "texto": "Las cajas mencionadas en el punto 6.1.1 se utilizarán para montajes embutidos o sobrepuestos en muros o tabiques y se utilizarán en el montaje de tableros de baja capacidad y dimensiones reducidas." },
+            { "numero": "6.1.13", "texto": "Los gabinetes mencionados en el punto 6.1.1 se utilizarán para montajes embutidos o sobrepuestos en muros o bien sobre estructuras autosoportantes y se utilizarán en el montaje de tableros de mediana capacidad y dimensiones." },
+            { "numero": "6.1.14", "texto": "Los armarios mencionados en el punto 6.1.1 se utilizarán en el montaje de tableros de gran capacidad, se construirán de modo tal que sean autosoportantes y se montarán anclados al piso. Además de ser accesibles frontalmente a través de puertas y cubiertas cubre equipos como las indicadas en el punto 6.1.3 y siguientes, podrán ser accesibles por los costados o por su parte trasera mediante tapas removibles fijadas mediante pernos del tipo imperdible." },
+            { "numero": "6.1.15", "texto": "El conjunto de elementos que constituyen la parte eléctrica de un tablero deberá ser montado sobre un bastidor, placa de montaje o riel DIN fijado sobre montantes, mecánicamente independiente de la caja, gabinete o armario los que se fijarán a éstos mediante pernos, de modo de ser fácilmente removidos en caso de ser necesario. Se deberá asegurar la correcta conexión a tierra de todos los elementos metálicos que componen el tablero." },
+            { "numero": "6.1.16", "texto": "El tamaño de caja, gabinete o armario se seleccionará considerando que:",
+              "subpuntos": [
+                { "numero": "6.1.16.1", "texto": "El cableado utilizado para la interconexión entre sus dispositivos en el tablero deberá hacerse a través de bandejas portaconductores no metálicas que permitan el paso cómodo y seguro de los conductores, ocupando como máximo el 50% de la sección transversal de cada bandeja.", "excepcion": "Tableros eléctricos con menos de 8 circuitos" },
+                { "numero": "6.1.16.2", "texto": "Deberá quedar un espacio suficiente entre las paredes de los gabinetes o envolvente y las protecciones o dispositivos de comando y/o maniobra de modo tal de permitir un fácil mantenimiento e inspección del tablero." },
+                { "numero": "6.1.16.3", "texto": "Para una instalación nueva, el tamaño inicial de los gabinetes y armarios deberá prever una ampliación de un 25% de la capacidad total por cada tipo de servicio que contenga el tablero eléctrico, dejando espacios disponibles en barras de distribución y riel DIN o soporte de las protecciones." }
+              ]
+            },
+            { "numero": "6.1.17", "texto": "Las cajas y gabinetes metálicos podrán estar constituidos por placas de acero plegadas y soldadas las que le darán forma y rigidez mecánica. Los armarios metálicos se estructurarán sobre bastidores de perfiles de resistencia mecánica adecuada a las exigencias del montaje y se cerrarán con placas plegadas las que formarán sus cubiertas y puertas. Será recomendable la construcción modular de estos contenedores de modo de poder construir tableros de gran tamaño mediante el montaje de grupos de estos módulos." },
+            { "numero": "6.1.18", "texto": "Todos los componentes metálicos de cajas, gabinetes y armarios deberán someterse a un proceso de acabado que garantice una adecuada resistencia a la corrosión." },
+            { "numero": "6.1.19", "texto": "Los materiales no metálicos empleados en la construcción de cajas, gabinetes o armarios deberán cumplir las siguientes condiciones:",
+              "subpuntos": [
+                { "numero": "6.1.19.1", "texto": "Serán no higroscópicos." },
+                { "numero": "6.1.19.2", "texto": "En caso de combustión deberán ser autoextinguentes, arder sin llama y emitir humos de baja opacidad, sus residuos gaseosos serán no tóxicos." },
+                { "numero": "6.1.19.3", "texto": "Tendrán una resistencia mecánica suficiente como para soportar una energía de choque de 2 Joules (IK 07)." },
+                { "numero": "6.1.19.4", "texto": "En caso de que estén instalados a la intemperie, tendrán una resistencia a los agentes climáticos, y deberán ser resistentes a la radiación UV." },
+                { "numero": "6.1.19.5", "texto": "En caso de que estén instalados en locales de reunión de personas, deberán ser libre de halógenos." }
+              ]
+            },
+            {
+              "numero": "6.1.20",
+              "texto": "Las distancias mínimas entre partes desnudas energizadas dentro de un tablero serán determinadas de acuerdo con la tabla N°2.2. Se exceptúan de esta exigencia a las distancias entre contactos de dispositivos de protección y de maniobra las cuales deberán cumplir con las normas específicas respectivas.",
+              "tabla": {
+                "nombre": "Tabla N°2.2: Distancias entre partes energizadas desnudas dentro de un tablero",
+                "columnas": ["Tensiones de servicio [V]", "Distinta polaridad tendido al aire [mm]", "Distinta polaridad montada sobre la misma superficie [mm]", "Partes energizadas con respecto a tierra [mm]"],
+                "filas": [
+                  ["0 a 200", 15, 20, 15],
+                  ["201 a 400", 20, 35, 15],
+                  ["401 a 1000", 30, 50, 30]
+                ]
+              },
+              "referenciado_por_otro_pliego": "Este punto (6.1.20) es citado desde RIC N°01, punto 6.5"
+            },
+            { "numero": "6.1.21", "texto": "Los tableros deberán construirse con un índice de protección (grado IP) adecuado al medio ambiente y a las condiciones de instalación considerando lo siguiente:",
+              "subpuntos": [
+                { "numero": "6.1.21.1", "texto": "No se aceptará la construcción de tableros de tipo abierto." },
+                { "numero": "6.1.21.2", "texto": "Se deberá considerar un grado IP 41, como mínimo, para tableros en interior." },
+                { "numero": "6.1.21.3", "texto": "Se deberá considerar un grado IP 44, como mínimo, para tableros instalados en exterior bajo techo y si no se encuentra bajo esta condición, debe ser de grado IP 54 mínimo." },
+                { "numero": "6.1.21.4", "texto": "En recintos considerados como húmedos o mojados, las cajas, gabinetes y armarios deberán estar instalados y/o equipados de modo que se evite que la humedad y/o el agua entren al tablero. Se deberán separar como mínimo 6,5 milímetros de paredes u otra superficie de soporte." },
+                { "numero": "6.1.21.5", "texto": "Los gabinetes o cajas de tableros instalados en lugares mojados deberán tener un grado de protección IP X4 mínimo." },
+                { "numero": "6.1.21.6", "texto": "El acoplamiento de canalizaciones o ingreso de conductores a tableros, se deberá realizar de forma de mantener el grado IP de la envolvente y el conjunto. Cuando los tableros estén instalados al exterior y no estén bajo techo, todas sus canalizaciones y conductores ingresen por la parte inferior, conservando su índice de protección IP." },
+                { "numero": "6.1.21.7", "texto": "En condiciones de ambiente salino y/o con posibilidad de inundación, se deberán agregar las protecciones correspondientes, en conformidad a lo dispuesto en el artículo 2 del DS N°08/2019, del Ministerio de Energía." }
+              ]
+            },
+            { "numero": "6.1.22", "texto": "La altura mínima de montaje de los dispositivos de comando o accionamiento colocados en un tablero será de 0,45 m y la altura máxima será de 2,0 m, ambas distancias medidas respecto del nivel de piso terminado hasta la base inferior de cada dispositivo.", "excepcion": "Centros de control de motores, armarios, tableros de alumbrado público montados en postes de distribución y tableros para recarga de vehículos eléctricos ubicados en bienes nacionales de uso público" },
+            { "numero": "6.1.23", "texto": "Todos los elementos internos que soportan equipos eléctricos deberán estar en condiciones de resistir los esfuerzos electrodinámicos producidos por las corrientes de falla del sistema." },
+            { "numero": "6.1.24", "texto": "Las dimensiones de cajas, gabinetes y armarios deberán tener un espacio suficiente para el alojamiento de terminales y curvaturas de los cables." }
+          ]
+        },
+        {
+          "numero": "6.2",
+          "titulo": "Material eléctrico",
+          "texto": "Requisitos de conductores, barras y conexiones internas del tablero.",
+          "subpuntos": [
+            { "numero": "6.2.1", "texto": "Los conductores de alimentación que lleguen a un tablero deberán hacerlo a los dispositivos de comando o protección, o en su defecto, a barras de distribución." },
+            { "numero": "6.2.2", "texto": "El cableado interno del tablero se deberá dimensionar de acuerdo con las tablas de capacidad de transporte de corriente, indicadas en el Pliego Técnico Normativo RIC N°04, utilizando como equivalente el método de instalación A1 indicado en la letra e) de las notas incluidas al final de la tabla N°4.4 de dicho pliego. Cada conductor deberá quedar protegido a la sobrecarga y al cortocircuito.", "refs_cruzadas": ["RIC N°04 tabla 4.4"] },
+            { "numero": "6.2.3", "texto": "Toda barra de distribución desnuda deberá estar protegida mediante una barrera o material que impida el contacto directo con la superficie de las barras, en ningún caso se considerará la cubierta cubre equipo como un único elemento de protección. El elemento que cubra las barras desnudas debe tener el símbolo de riesgo eléctrico indicado en el anexo 2.2 y deberán contar con una identificación según su uso (normal, emergencia, especial de uso fotovoltaico, etc.)", "anexos_relacionados": ["2.2"] },
+            { "numero": "6.2.4", "texto": "No se aceptará el cableado de un tablero con conexiones hechas de dispositivo a dispositivo, con la salvedad de:",
+              "subpuntos": [
+                { "numero": "6.2.4.1", "texto": "La conexión entre una protección termomagnética y un protector diferencial; si de la protección termomagnética dependiera más de una protección diferencial, se deberán utilizar barras de distribución o conexiones prefabricadas." },
+                { "numero": "6.2.4.2", "texto": "La conexión desde un protector diferencial a más de una protección termomagnética, se deberá realizar a través de una barra de distribución o conexiones prefabricadas." },
+                { "numero": "6.2.4.3", "texto": "Las conexiones prefabricadas (peines) siempre deberán utilizar el 100% de sus accesorios de fábrica." }
+              ]
+            },
+            { "numero": "6.2.5", "texto": "En la instalación de peines, se debe considerar lo siguiente:",
+              "subpuntos": [
+                { "numero": "6.2.5.1", "texto": "Que el peine y todos sus accesorios deberán quedar protegidos contra la sobrecarga y el cortocircuito mediante protección adecuada." },
+                { "numero": "6.2.5.2", "texto": "Que la mantención y/o cambio de una o más protecciones implica la desenergización de todos los circuitos asociados al peine." }
+              ]
+            },
+            { "numero": "6.2.6", "texto": "Toda protección diferencial deberá estar protegida a la sobrecarga y al cortocircuito mediante una protección termomagnética. Para esto la corriente nominal de la protección diferencial deberá ser igual o mayor a la corriente nominal de la protección termomagnética instalada aguas arriba o se aceptará también, que la suma de las corrientes nominales de las protecciones termomagnéticas aguas abajo que dependan del diferencial, no sean mayor a la capacidad nominal de este." },
+            { "numero": "6.2.7", "texto": "Las barras de distribución se deberán montar rígidamente soportadas en las cajas, gabinetes o armarios; estos soportes deberán ser aislantes." },
+            { "numero": "6.2.8", "texto": "Para los tableros de más de 500 A, la cantidad y dimensiones de los soportes de barras se fijarán de acuerdo con el cálculo de esfuerzos dinámicos que se originen en la más alta corriente de cortocircuito estimada para el tablero y teniendo en consideración la presencia de armónicas de corriente o tensión que puedan originar resonancias mecánicas de las barras. Este cálculo deberá ser incorporado en la memoria explicativa, según lo establecido en el punto 6.2 del Pliego Técnico Normativo RIC N°18.", "refs_cruzadas": ["RIC N°18 punto 6.2"] },
+            { "numero": "6.2.9", "texto": "El montaje de las barras deberá realizarse en las siguientes secuencias de izquierda a derecha; de arriba hacia abajo; de adelante hacia atrás (azul, negro, rojo, R-S-T). Para barras de distribución hasta 160 A se aceptará como marca el color del cable." },
+            {
+              "numero": "6.2.10",
+              "texto": "La capacidad de transporte de corriente de las barras de distribución de un tablero se fijará de acuerdo con la tabla N°2.3.",
+              "tabla": {
+                "nombre": "Tabla N°2.3: Capacidad de corriente para barras de cobre de sección rectangular (corriente permanente en Amperes)",
+                "columnas": ["Dimensiones de las barras [mm²]", "Pintadas - I", "Pintadas - II", "Pintadas - III", "Pintadas - II+II (50mm)", "Desnudas - I", "Desnudas - II", "Desnudas - III", "Desnudas - II+II (50mm)"],
+                "filas": [
+                  ["12x2", 125, 225, null, null, 110, 200, null, null],
+                  ["15x2", 155, 270, null, null, 140, 240, null, null],
+                  ["15x3", 185, 330, null, null, 170, 300, null, null],
+                  ["20x2", 205, 350, null, null, 185, 315, null, null],
+                  ["20x3", 245, 425, null, null, 220, 380, null, null],
+                  ["20x5", 325, 560, null, null, 295, 500, null, null],
+                  ["25x3", 300, 520, null, null, 270, 460, null, null],
+                  ["25x5", 395, 670, null, null, 350, 600, null, null],
+                  ["30x3", 355, 610, null, null, 315, 540, null, null],
+                  ["30x5", 450, 780, null, null, 400, 700, null, null],
+                  ["30x10", 676, 1200, null, null, 573, 1060, null, null],
+                  ["40x3", 460, 790, null, null, 425, 710, null, null],
+                  ["40x5", 600, 1000, null, null, 520, 900, null, null],
+                  ["40x10", 850, 1500, 2060, 2800, 760, 1350, 1850, 2500],
+                  ["50x5", 720, 1220, 1750, 2300, 630, 1100, 1650, 2100],
+                  ["50x10", 1030, 1800, 2450, 3330, 920, 1600, 2250, 3000],
+                  ["60x5", 850, 1430, 1950, 2650, 760, 1250, 1760, 2400],
+                  ["60x10", 1200, 2100, 2800, 3700, 1060, 1900, 2600, 3500],
+                  ["80x5", 1070, 1900, 2500, 3200, 870, 1700, 2300, 3000],
+                  ["80x10", 1560, 2500, 3300, 4500, 1380, 2300, 3100, 4200],
+                  ["100x5", 1350, 2300, 3000, 3800, 1200, 2050, 2850, 3500],
+                  ["100x10", 1880, 3100, 4000, 5400, 1700, 2800, 3650, 5000],
+                  ["120x10", 2250, 3500, 4500, 6100, 2000, 3100, 4100, 5100],
+                  ["160x10", 2800, 4400, 5800, 7800, 2500, 3900, 5300, 7300],
+                  ["200x10", 3350, 5300, 6900, 9400, 3000, 4750, 6350, 8800]
+                ],
+                "nota": "(*) La separación entre barras de distintas fases deberá cumplir con las condiciones de la tabla 2.3 y la separación entre barras que forman un par correspondiente a una fase será a lo menos igual al espesor de las barras que forman el par. (**) Medida mínima para la luz entre pares de barras. Se recomienda utilizar preferentemente barras planas de bordes redondeados."
+              }
+            },
+            { "numero": "6.2.11", "texto": "Desde un dispositivo de protección, no se podrán conectar conductores que sobrepasen la sección máxima definida por el fabricante." },
+            { "numero": "6.2.12", "texto": "Todo el cableado interno de los tableros, que corresponda a la alimentación de los consumos externos, se deberá hacer llegar a regletas de conexiones de modo tal que los conductores provenientes de estos consumos se conecten a estas regletas y no directamente a los terminales de los dispositivos de protección o comando.", "excepcion": "Tableros menores a 8 circuitos" },
+            { "numero": "6.2.13", "texto": "Todos los tableros cuya capacidad sea igual o superior a 100 A deberán llevar instrumentos de medida que indiquen la tensión y corriente sobre cada fase." },
+            { "numero": "6.2.14", "texto": "Todos los tableros deberán llevar un indicador visual o luces piloto que indique presencia de energía, conectado directamente de la entrada del alimentador o sub-alimentador sobre cada fase. Esta exigencia también rige para tableros que contengan alimentación de emergencia, las que deberán diferenciar la fuente que provee la energía.", "excepcion": "Tableros domiciliarios hasta 3 circuitos" },
+            { "numero": "6.2.15", "texto": "Los dispositivos de control, indicador visual o luces piloto, instrumentos de medida u otros similares montados en un tablero y que necesiten de energía eléctrica para su funcionamiento, deberán ser alimentados desde circuitos independientes cuya protección podrá ser como máximo de 10 A y de la capacidad de ruptura adecuada." }
+          ]
+        },
+        {
+          "numero": "6.3",
+          "titulo": "Orden de conexionado",
+          "texto": "Reglas sobre el orden en que deben llegar los conductores a los dispositivos de maniobra y protección.",
+          "subpuntos": [
+            { "numero": "6.3.1", "texto": "Los conductores del lado de la alimentación llegarán siempre al dispositivo de maniobra y de allí al dispositivo de protección, en caso de que éstos constituyan elementos separados." },
+            { "numero": "6.3.2", "texto": "En tableros, para los seccionadores o interruptores termomagnéticos montados verticalmente, los conductores de alimentación deberán llegar siempre a los contactos fijos del disyuntor de modo que, al operar el disyuntor por falla, por accionamiento manual o remoto, los contactos inferiores queden desenergizados. Si por alguna razón, técnicamente justificada, no fuese posible cumplir esta disposición, se deberá advertir a los usuarios y operarios de esta condición mediante un letrero impreso en forma indeleble, sobre una placa de acrílico de fondo rojo y letras blancas, colocado bajo cada seccionador o interruptor termomagnético que presenta esta conexión." },
+            { "numero": "6.3.3", "texto": "En tableros que se construyan con seccionadores o interruptores termomagnéticos montados horizontalmente, la conexión de éstos se hará directamente contra las barras, las que se dispondrán en posición vertical. Los seccionadores o interruptores termomagnéticos se instalarán de modo que su palanquilla de accionamiento se mueva acercándose a las barras, al energizar al alimentador o circuito dependiente." },
+            { "numero": "6.3.4", "texto": "En los tableros cuyas protecciones sean fusibles tipo D los conductores del lado de la alimentación llegarán siempre al contacto central de la base." },
+            { "numero": "6.3.5", "texto": "En tableros en que se usen fusibles como limitadores de corriente de cortocircuito, en serie con disyuntores, los conductores de la alimentación llegarán primero a los fusibles." },
+            { "numero": "6.3.6", "texto": "Todos los tableros cuya capacidad sea igual o inferior a 100 A y que usen fusibles, éstos deberán contar con portafusibles de forma que ambos tengan una clasificación de tensión igual o superior que la tensión máxima del sistema." }
+          ]
+        },
+        {
+          "numero": "6.4",
+          "titulo": "Conexión a tierra",
+          "texto": "Requisitos de puesta a tierra de los tableros.",
+          "subpuntos": [
+            { "numero": "6.4.1", "texto": "Todo tablero deberá contar con la conexión a un sistema de puesta a tierra adecuado, que cumpla con lo exigido en el Pliego Técnico Normativo RIC N°06.", "refs_cruzadas": ["RIC N°06"] },
+            { "numero": "6.4.2", "texto": "Si la caja, gabinete o armario que contiene a un tablero es metálico, deberá protegerse contra tensiones peligrosas." },
+            { "numero": "6.4.3", "texto": "Las conexiones a tierra de un tablero deberán asegurar una continuidad eléctrica entre éste y el conductor de protección, cumpliendo con lo dispuesto en el Pliego Técnico Normativo RIC N°06.", "refs_cruzadas": ["RIC N°06"] }
+          ]
+        },
+        {
+          "numero": "6.5",
+          "titulo": "Disposiciones aplicables a tableros generales",
+          "texto": "Requisitos específicos para tableros generales y tableros generales auxiliares.",
+          "subpuntos": [
+            { "numero": "6.5.1", "texto": "Se deberá colocar un tablero general en toda instalación en que exista más de un tablero de distribución." },
+            { "numero": "6.5.2", "texto": "También se deberá colocar un tablero general en aquellas instalaciones en que, existiendo un único tablero de distribución, este último esté separado más de 30 m del equipo de medida del empalme." },
+            { "numero": "6.5.3", "texto": "Todo tablero general del cual dependa más de un alimentador deberá llevar un interruptor o disyuntor general que corte todos los conductores activos, incluyendo el neutro (corte omnipolar), que permita operar sobre toda la instalación en forma simultánea." },
+            { "numero": "6.5.4", "texto": "Los tableros generales auxiliares se colocarán en aquellas instalaciones en que se necesite derivar subalimentadores desde un alimentador, para energizar distintos tableros de distribución en forma individual o en grupo." },
+            { "numero": "6.5.5", "texto": "En un tablero general no podrán colocarse dispositivos de operación o protección para alimentadores de distintas tensiones." }
+          ]
+        },
+        {
+          "numero": "6.6",
+          "titulo": "Disposiciones aplicables a tableros de distribución",
+          "texto": "Requisitos específicos para tableros de distribución, incluyendo medidas de seguridad contra incendio en instalaciones de alta ocupación.",
+          "subpuntos": [
+            { "numero": "6.6.1", "texto": "En un tablero de distribución no se permitirá instalar más de 25 circuitos, por cada protección general según la clasificación del punto 4.25.1 del presente pliego técnico.", "refs_cruzadas": ["4.25.1"], "nota_pie": "Se modificó referencia numérica de 4.24.1 por 4.25.1 en la versión del PDF publicada el 12.01.2021." },
+            { "numero": "6.6.2", "texto": "Los tableros de distribución en una instalación deberán llevar un interruptor o disyuntor general que corte todos los conductores activos, incluyendo el neutro (corte omnipolar), que permita operar sobre toda la instalación en forma simultánea.", "excepcion": "Tableros domiciliarios que contengan hasta 3 circuitos" },
+            { "numero": "6.6.3", "texto": "En un tablero de distribución en que se alimentan circuitos de distintos servicios, tales como fuerza, alumbrado, climatización u otros, las protecciones se deberán agrupar ordenadamente ocupando distintas secciones del tablero. Se colocarán protecciones generales de corte omnipolar correspondientes a cada servicio, independientemente de lo estipulado en el punto 6.6.2.", "excepcion": "Servicios de menos de 4 circuitos" },
+            { "numero": "6.6.4", "texto": "Todos los tableros de distribución ubicados en aeropuertos, grandes hoteles de más de 300 habitaciones, locales de espectáculos con capacidad para más de 1.000 espectadores, centros comerciales de más de 2.000 m² de superficie, edificios de oficinas de gran altura según NFPA 101 y en instalaciones en ambientes explosivos, deberán implementar una de las siguientes medidas de seguridad contra incendio:",
+              "refs_cruzadas": ["3.8"],
+              "subpuntos": [
+                { "numero": "6.6.4.1", "texto": "Todos los tableros de distribución deberán contar con un interruptor o disyuntor general que corte todos los conductores activos, incluyendo el neutro (corte omnipolar) y una protección diferencial general con una sensibilidad de 300 mA. Este diferencial no reemplaza la exigencia de utilizar la protección diferencial exigida para cada uno de los circuitos." },
+                { "numero": "6.6.4.2", "texto": "Todos los circuitos de los tableros de distribución deberán quedar protegidos por un dispositivo de detección de falla de arco eléctrico, en conformidad de la norma IEC 62606.", "refs_cruzadas": ["3.6"] }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "6.7",
+          "titulo": "Disposiciones aplicables a tableros móviles, de transferencia y de control",
+          "texto": "Requisitos específicos para tableros móviles, tableros de transferencia (TT) y tableros de control.",
+          "subpuntos": [
+            { "numero": "6.7.1", "texto": "Todo tablero móvil deberá contar con la señalética de operación y un pulsador exterior con enclavamiento, dispuesto de manera visible y señalada en la tapa del tablero, para una desconexión de emergencia." },
+            { "numero": "6.7.2", "texto": "Estos tableros deberán ser alimentados por cordones flexibles, de 5 o 3 conductores dependiendo si es trifásico o monofásico, respectivamente, tipo H07RN-F o equivalente, que terminen dentro del tablero afianzados mecánicamente. Este alimentador deberá estar conectado a la tierra de protección de la fuente y en su otro extremo a todas las partes metálicas del tablero." },
+            { "numero": "6.7.3", "texto": "Los tableros móviles deberán ser de IP 56 e IK 07 como mínimo y deberán cumplir con el anexo N°4.1 del Pliego Técnico Normativo RIC N°04.", "refs_cruzadas": ["RIC N°04 anexo 4.1"] },
+            { "numero": "6.7.4", "texto": "Se podrán usar tableros de transferencia manual o automáticas según el requerimiento de la instalación. Los dispositivos de maniobra que se instalen en un tablero de transferencia deberán contar con operación automática y manual, fabricados en conformidad con lo definido en las normas IEC 61439-1 y IEC 61439-2 según corresponda.", "refs_cruzadas": ["3.1", "3.2"] },
+            { "numero": "6.7.5", "texto": "En edificios de más de 5 pisos de altura que cuente con sistema de emergencia de respaldo con transferencia automática y/o de un sistema de autogeneración, se deberá implementar un sistema de desconexión mediante una botonera ubicada en el acceso principal del recinto o edificio, la cual deberá desconectar todas las fuentes de alimentación de suministro de energía de la instalación y además deberá cumplir con lo indicado en el punto 6.3 del Pliego Técnico Normativo RIC N°08.", "refs_cruzadas": ["RIC N°08 punto 6.3"] }
+          ]
+        },
+        {
+          "numero": "6.8",
+          "titulo": "Centros de distribución de cargas",
+          "texto": "Requisitos para centros de distribución de cargas.",
+          "subpuntos": [
+            { "numero": "6.8.1", "texto": "Los centros de distribución de cargas deberán cumplir con lo definido en las normas IEC 61439-1, IEC 61439-2 y IEC 61439-5, según el tipo de aplicación.", "refs_cruzadas": ["3.1", "3.2", "3.3"] }
+          ]
+        },
+        {
+          "numero": "6.9",
+          "titulo": "Centros de Control de Motores",
+          "texto": "Requisitos para centros de control de motores (CCM).",
+          "subpuntos": [
+            { "numero": "6.9.1", "texto": "Los centros de control de motores (CCM) son equipos para uso interior que deben ser fabricados en conformidad a las normas IEC 61439-1 y 61439-2 y para la resistencia a las fallas de arco con la norma IEC TR 61641.", "refs_cruzadas": ["3.1", "3.2", "3.4"] },
+            { "numero": "6.9.2", "texto": "Los dispositivos instalados en las gavetas de los centros de control de motores deberán contar con un sistema mecánico de operación exterior." },
+            { "numero": "6.9.3", "texto": "Los CCM podrán contar con un sistema de barras horizontales y verticales." },
+            { "numero": "6.9.4", "texto": "Cada partida de motor estará dispuesta en una gaveta metálica independiente." },
+            { "numero": "6.9.5", "texto": "Las gavetas podrán ser fijas, enchufables o extraíbles." }
+          ]
+        },
+        {
+          "numero": "6.10",
+          "titulo": "Verificaciones de diseño y de rutina",
+          "texto": "Requisitos de verificación y pruebas de rutina para tableros eléctricos según su capacidad.",
+          "subpuntos": [
+            { "numero": "6.10.1", "texto": "Las verificaciones de un tablero eléctrico son las pruebas realizadas por el fabricante y están destinadas a verificar el cumplimiento del diseño de un tablero en conformidad con los estándares establecidos en este reglamento." },
+            { "numero": "6.10.2", "texto": "Las verificaciones de diseño y pruebas de rutina para tablero, conjuntos de tableros o tableros prefabricados, de más de 100 A e inferiores a 1500 A, deberán realizarse en conformidad al anexo 2.3 de este pliego técnico.", "anexos_relacionados": ["2.3"] },
+            { "numero": "6.10.3", "texto": "Las verificaciones de diseño y pruebas de rutina para tablero, conjuntos de tableros o tableros prefabricados, de 1500 A o más, deberán realizarse en conformidad a lo definido en las normas IEC 61439-1, IEC 61439-2 y IEC 61439-5, según corresponda.", "refs_cruzadas": ["3.1", "3.2", "3.3"] }
+          ]
+        }
+      ]
+    }
+  ],
+  "anexos": [
+    {
+      "numero": "2.1",
+      "titulo": "Zona alcanzable por una persona (espacios de trabajo)",
+      "tipo": "figura",
+      "tiene_figura": true,
+      "descripcion_figura": "Dos diagramas de una persona de pie mostrando la zona alcanzable: 2,50 m hacia arriba en diagonal y 1,0 m lateralmente/hacia abajo. El segundo diagrama muestra la misma zona junto a un muro con trama de material conductor puesto a tierra.",
+      "dimensiones": { "alcance_superior_m": 2.50, "alcance_lateral_m": 1.0, "alcance_inferior_m": 1.0 },
+      "imagen": "ric-02/anexo-2-1.png",
+      "referenciado_por": ["5.4.1"]
+    },
+    {
+      "numero": "2.2",
+      "titulo": "Símbolo de riesgo eléctrico",
+      "tipo": "figura_tabla",
+      "tiene_figura": true,
+      "descripcion_figura": "Pictograma de seguridad: rótulo superior rojo 'PELIGRO', triángulo amarillo con rayo negro y texto 'RIESGO ELÉCTRICO' debajo, según dimensiones normadas adoptadas de IEC 60417.",
+      "imagen": "ric-02/anexo-2-2.png",
+      "tablas": [
+        {
+          "nombre": "Tabla N°6.1: Dimensiones del símbolo de riesgo eléctrico en mm",
+          "columnas": ["h", "a", "b", "c", "d", "e"],
+          "filas": [
+            [30, 1.2, 7.5, 15.3, 6, 4.8],
+            [40, 1.6, 10, 20, 8, 6.4],
+            [50, 2, 12.5, 25.5, 10, 8],
+            [64, 2.5, 16, 33, 13, 10],
+            [80, 3, 20, 41, 16, 12.8],
+            [100, 4, 25, 51, 20, 16],
+            [125, 5, 31, 64, 25, 20],
+            [160, 6, 40, 82, 32, 26],
+            [200, 8, 50, 102, 40, 32]
+          ],
+          "nota": "Se podrán aceptar medidas con tolerancias de ±10% de los valores señalados. Dimensiones adoptadas de la IEC 60417."
+        }
+      ],
+      "referenciado_por": ["6.2.3"]
+    },
+    {
+      "numero": "2.3",
+      "titulo": "Verificaciones de diseño y pruebas de rutina para tablero",
+      "tipo": "tabla",
+      "tablas": [
+        {
+          "nombre": "TABLEROS > Pruebas, Verificaciones y Documentación",
+          "columnas": ["Categoría", "N°", "Ítem", "Descripción"],
+          "filas": [
+            ["1.0 REQUISITOS GENERALES", "1.1", "Conformidad según los planos", "*cantidad y tipo de elementos"],
+            ["1.0 REQUISITOS GENERALES", "1.2", "Verificación de equipos", "*rango (corriente, cc, aislación sensibilidad)"],
+            ["1.0 REQUISITOS GENERALES", "1.3", "Conformidad de equipos especificados", "*comprobar que cumple con EETT (marca formato)"],
+            ["1.0 REQUISITOS GENERALES", "1.4", "Funcionamiento eléctrico (potencia)", "*energizar y verificar continuidad hasta el último punto"],
+            ["1.0 REQUISITOS GENERALES", "1.5", "Funcionamiento eléctrico (comando)", "*energizar y probar funcionamiento de control"],
+            ["1.0 REQUISITOS GENERALES", "1.6", "Verificación de aparatos de medida", "*energizar y verificar tensión de llegada"],
+            ["1.0 REQUISITOS GENERALES", "1.7", "Certificado de fabricante de envolvente", "*Diseño de acuerdo a requerimientos de especificación técnica IP, IK, grado de aislación y compartimentación"],
+            ["1.0 REQUISITOS GENERALES", "1.8", "Código de colores", "Código de colores en conformidad al pliego N°4"],
+            ["1.0 REQUISITOS GENERALES", "1.9", "Bornes para conductores externos y/o barras de llegada o salida", "Inspección visual"],
+            ["1.0 REQUISITOS GENERALES", "1.10", "Presencia de placa de datos (Rotulado)", "Inspección visual"],
+            ["1.0 REQUISITOS GENERALES", "1.11", "Plano unilineal del tablero", "*en el tablero"],
+            ["1.0 REQUISITOS GENERALES", "1.12", "Presencia de documentación (Mínimo: Planos construcción, esquema eléctrico y control, listado de circuitos, listado de materiales, certificado de calidad)", "*entregar según convenido con mandante"],
+            ["1.0 REQUISITOS GENERALES", "1.13", "Recomendaciones de izaje y/o transporte", "*cuando amerite, según peso, tamaño, transporte y disposición final"],
+            ["2.0 REQUISITOS PARA CONTROLAR CALENTAMIENTO", "2.1", "Verificación de torques de apriete", "NOTA: Se requiere normalizar tabla de torque en el reglamento"],
+            ["2.0 REQUISITOS PARA CONTROLAR CALENTAMIENTO", "2.2", "Verificación del calibre del cableado conforme a diseño", "*límite de corriente por calibre"],
+            ["2.0 REQUISITOS PARA CONTROLAR CALENTAMIENTO", "2.3", "Sistema de ventilación según especificaciones y uso de tablero", "*verificación de condiciones de diseño del conjunto (caudal, materialidad)"],
+            ["2.0 REQUISITOS PARA CONTROLAR CALENTAMIENTO", "2.4", "Verificación de juegos de barra", "dimensión, materialidad y tratamiento superficial"],
+            ["3.0 PRUEBAS DIELÉCTRICAS", "3.1", "Test dieléctrico de tensión (fábrica)", "*una vez realizado el montaje, se debe verificar nuevamente"],
+            ["3.0 PRUEBAS DIELÉCTRICAS", "3.2", "Verificación de distancias dieléctricas", "*entre: partes conductivas, fases, fase-tierra"],
+            ["4.0 VERIFICACIÓN DE AISLAMIENTO", "4.1", "Verificación de la conexión efectiva de masas", "*todas las partes metálicas están unidas por un conductor a la tierra"],
+            ["4.0 VERIFICACIÓN DE AISLAMIENTO", "4.2", "Verificación con testar de continuidad", "*verificación punto a punto"],
+            ["4.0 VERIFICACIÓN DE AISLAMIENTO", "4.3", "Resistencia de aislación no inferior 500V. Valor mínimo medido", "*según pliego 19"],
+            ["5.0 DESEMPEÑO MECÁNICO", "5.1", "Verificación de la conservación del grado de protección IP", "*verificar sellos de equipos incorporados"],
+            ["5.0 DESEMPEÑO MECÁNICO", "5.2", "Verificación del funcionamiento mecánico", ""],
+            ["6.0 EFICACIA DE POTENCIA", "6.1", "Test de dispositivos diferenciales", ""]
+          ],
+          "nota": "Checklist de verificaciones aplicable a tableros y conjuntos de tableros de más de 100 A e inferiores a 1500 A, según punto 6.10.2."
+        }
+      ],
+      "referenciado_por": ["6.10.2"]
+    }
+  ],
+  "referencias_a_otros_pliegos": [
+    { "pliego": "RIC N°04", "puntos": ["tabla 4.4", "anexo 4.1"], "citado_en": ["6.2.2", "6.7.3"] },
+    { "pliego": "RIC N°06", "puntos": ["general"], "citado_en": ["6.4.1", "6.4.3"] },
+    { "pliego": "RIC N°08", "puntos": ["general", "punto 6.3"], "citado_en": ["5.4.10", "6.7.5"] },
+    { "pliego": "RIC N°12", "puntos": ["general"], "citado_en": ["5.2.2"] },
+    { "pliego": "RIC N°18", "puntos": ["punto 6.2"], "citado_en": ["6.2.8"] }
+  ],
+  "extensiones_no_previstas_en_v1": {
+    "tabla_inline_en_punto": "A diferencia de RIC N°01, este pliego tiene tablas (N°2.1, N°2.2, N°2.3) incrustadas directamente dentro del texto de un punto del cuerpo, no en un anexo al final. Se resolvió agregando un campo opcional 'tabla' directamente al objeto del punto, con la misma forma que las tablas de anexos (columnas/filas/nota). No se movieron a la sección 'anexos' porque normativamente son parte del punto, no un apéndice aparte.",
+    "nota_pie": "El punto 6.6.1 tiene una nota al pie de página (aclaración de una corrección de referencia numérica publicada por la SEC). Se agregó como campo opcional 'nota_pie' en el punto correspondiente.",
+    "terminologia_anidada": "La terminología de este pliego tiene definiciones con sub-definiciones anidadas (4.1 Accesible -> 4.1.1/4.1.2/4.1.3; 4.25 Tablero eléctrico -> 4.25.1 -> 4.25.1.1...4.25.1.10 y 4.25.2 -> 4.25.2.1...4.25.2.6). Se agregó un campo opcional 'subterminos' (misma forma que 'subpuntos') a las entradas de terminologia."
+  }
+}

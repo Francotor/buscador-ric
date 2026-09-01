@@ -1,0 +1,508 @@
+{
+  "pliego_id": "RIC-09",
+  "numero": "09",
+  "materia": "Sistemas de autogeneración",
+  "metadata": {
+    "fuente_legal": "Decreto con Fuerza de Ley N°4/20.018, de 2006, del Ministerio de Economía, Fomento y Reconstrucción, Ley General de Servicios Eléctricos",
+    "fuente_reglamentaria": "Decreto N°8, de 2019, del Ministerio de Energía, Reglamento de Seguridad de las Instalaciones de Consumo de Energía Eléctrica",
+    "dictado_por": "Resolución Exenta N° 33.877, de fecha 30/12/2020, de la Superintendencia de Electricidad y Combustibles",
+    "vigencia_desde": "2021-07-12",
+    "estado": "vigente",
+    "paginas_documento_fuente": 22,
+    "archivo_fuente": "RIC-N09-Sistemas-de-autogeneracion.pdf"
+  },
+  "referencias_normativas": [
+    { "id": "3.1", "norma": "IEC 60255-1", "anio": 2009, "titulo": "Measuring relays and protection equipment – Part 1: Common requirements." }
+  ],
+  "notas_referencias": "Para la aplicación de este pliego técnico se podrá utilizar, en reemplazo de las normas IEC, las normas equivalentes UNE, IEEE o UL.",
+  "terminologia": [
+    { "id": "4.1", "termino": "Anti-isla", "definicion": "Sistema de protecciones que consiste en el uso de relés o controles, para evitar el abastecimiento de consumos del sistema de distribución en forma aislada del resto del sistema interconectado." },
+    { "id": "4.2", "termino": "CA", "definicion": "Corriente Alterna" },
+    { "id": "4.3", "termino": "CC", "definicion": "Corriente Continua" },
+    { "id": "4.4", "termino": "Equipo de monitoreo de generación", "definicion": "Destinado de manera exclusiva al sistema de generación." },
+    { "id": "4.5", "termino": "Equipo de monitoreo de inyección", "definicion": "Destinado de manera exclusiva al sistema de limitación de inyecciones." },
+    { "id": "4.6", "termino": "Interruptor de acoplamiento", "definicion": "Dispositivo de protección con capacidad de apertura bajo corrientes de carga y de cortocircuito, cuya función es desconectar el o los equipos de generación del sistema de distribución. Posee dos dispositivos eléctricos de desconexión conectados en serie (con redundancia)." },
+    { "id": "4.7", "termino": "Inversor", "definicion": "Convertidor de tensión y corriente continua en tensión y corriente alterna." },
+    { "id": "4.8", "termino": "Isla", "definicion": "Condición provocada cuando se ha producido un corte de energía en la red eléctrica suministrada por la empresa distribuidora y esta área de la red que ha quedado aislada, permanece eléctricamente separada del resto de la red eléctrica, quedando energizada solamente por el o los equipamientos de generación." },
+    { "id": "4.9", "termino": "Isla interna", "definicion": "Condición provocada cuando se ha producido un corte de energía en la red eléctrica suministrada por la empresa distribuidora y la instalación interior de consumo del usuario queda aislada del resto del sistema de distribución, quedando ella energizada por el o los equipamientos de autogeneración." },
+    { "id": "4.10", "termino": "Norma técnica de conexión y operación de equipamiento de generación (NT NETBILLING)", "definicion": "Norma técnica que establece los procedimientos, metodologías y demás exigencias para la conexión y operación de equipamientos de generación" },
+    { "id": "4.11", "termino": "NTD", "definicion": "Norma técnica de calidad de servicio para sistemas de distribución." },
+    { "id": "4.12", "termino": "Operación en paralelo", "definicion": "Condición en que, operan el sistema de generación de algún productor independiente y el sistema de distribución eléctrica, de forma que exista la posibilidad de transferir energía eléctrica a la instalación de consumo por medio de la red de distribución eléctrica y el sistema de autogeneración de manera simultánea o bien independiente." },
+    { "id": "4.13", "termino": "Potencia nominal del generador", "definicion": "Suma de las potencias máximas de las unidades generadoras." },
+    { "id": "4.14", "termino": "Protección de potencia inversa", "definicion": "Es el elemento de protección que funciona sobre un valor deseado de potencia en una dirección dada o sobre la inversión de potencia." },
+    { "id": "4.15", "termino": "Protección de red e instalación (RI)", "definicion": "Protección que actúa sobre el interruptor de acoplamiento cuando al menos un valor de operación del sistema de distribución se encuentra fuera del rango de ajuste de esta protección. Esta protección puede estar integrada en el inversor o ser externa al inversor." },
+    { "id": "4.16", "termino": "Red de baja tensión", "definicion": "Red cuya tensión nominal es igual o inferior a 1000 V." },
+    { "id": "4.17", "termino": "Sistemas de autogeneración", "definicion": "Sistema de generación de energía eléctrica destinado a suministrar el consumo local del recinto donde el equipamiento se encuentra ubicado bajo la tuición y responsabilidad de su dueño o usuario, con independencia o con posibilidad de funcionamiento en paralelo con la red de distribución." },
+    { "id": "4.18", "termino": "Sistema de control de inyección cero", "definicion": "Es un sistema de control dinámico de potencia, conformado por dispositivos eléctricos y/o electrónicos que impiden la inyección de potencia a la red pública a través de la modulación de la generación para corregir la diferencia entre la potencia generada y la potencia consumida en la instalación." },
+    { "id": "4.19", "termino": "Sistemas de transferencia abierta", "definicion": "Estado de operación en el cual el traspaso de consumos desde la red de distribución pública al sistema de generación se realiza sin interconexión eléctrica entre ambos sistemas." },
+    { "id": "4.20", "termino": "Sistemas de transferencia cerrada", "definicion": "Estado de operación en el cual el sistema de generación y la red de distribución pública permanecen interconectados en sincronismo, en forma momentánea o permanente." }
+  ],
+  "secciones": [
+    {
+      "numero": "1",
+      "titulo": "Objetivos",
+      "puntos": [
+        { "numero": "1", "texto": "El objetivo del presente pliego técnico es establecer los requisitos de seguridad que deben cumplir los sistemas de autogeneración en las instalaciones de consumo de energía eléctrica del país." }
+      ]
+    },
+    {
+      "numero": "2",
+      "titulo": "Alcance y campo de aplicación",
+      "puntos": [
+        { "numero": "2", "texto": "Las disposiciones de este pliego técnico son aplicables al diseño, ejecución, inspección y mantenimiento y conexión de todas las instalaciones de consumo de energía eléctrica, en adelante e indistintamente, instalaciones, que dispongan de sistemas de autogeneración que entregan la energía generada a la instalación de consumo de forma simultánea a la suministrada por la empresa distribuidora y que no inyectan esta energía a la red eléctrica de distribución.\nNo son aplicables las disposiciones de este pliego a las instalaciones a que se refiere el inciso sexto del artículo 149° y el artículo 149° bis de la Ley General de Servicios Eléctricos." }
+      ]
+    },
+    {
+      "numero": "5",
+      "titulo": "Disposiciones generales",
+      "puntos": [
+        { "numero": "5.1", "texto": "Todo sistema de autogeneración deberá ejecutarse de acuerdo con un proyecto técnicamente concebido, el cual deberá asegurar que la instalación no presenta riesgos para los operadores o usuarios y cosas, sea eficiente, proporcione un buen servicio, permita un fácil y adecuado mantenimiento y tenga la flexibilidad necesaria como para permitir modificaciones o ampliaciones con facilidad." },
+        { "numero": "5.2", "texto": "La potencia máxima de los sistemas de autogeneración no podrá ser superior a la capacidad del empalme eléctrico de la instalación de consumo." },
+        { "numero": "5.3", "texto": "La instalación de los equipos y componentes que forman parte del sistema de autogeneración debe facilitar el mantenimiento seguro y efectuarse de acuerdo con las recomendaciones del fabricante del equipo." },
+        { "numero": "5.4", "texto": "El funcionamiento de las instalaciones de un sistema de autogeneración no deberá provocar averías en la red, disminuciones de las condiciones de seguridad y de calidad, ni alteraciones superiores a las admitidas por la normativa vigente." },
+        { "numero": "5.5", "texto": "En caso que la línea de distribución quede sin energía o la acometida del empalme del cliente quede desconectada de la red de distribución, ya sea por trabajos de mantenimiento requeridos por la empresa distribuidora o por haber actuado alguna protección de la línea o del empalme del cliente, las instalaciones eléctricas de un sistema de autogeneración no deberán mantener tensión en la línea de distribución, ni dar origen a condiciones peligrosas de trabajo para el personal de mantenimiento y explotación de la red de distribución.", "advertencia": "Las instalaciones eléctricas de un sistema de autogeneración no deberán mantener tensión en la línea de distribución cuando ésta quede sin energía, bajo ninguna circunstancia." },
+        { "numero": "5.6", "texto": "Todo sistema de autogeneración con capacidad de funcionamiento en paralelo con la red de distribución, previo a su ejecución deberá solicitar el informe de condiciones previas o factibilidad técnica de suministro ante la empresa distribuidora, definida en el artículo 5-3 de la NTD, acompañando todos los antecedentes técnicos y las características principales del sistema de autogeneración que le permitan dar respuesta a dicha solicitud, en conformidad con lo definido en el artículo 15 del DS N°8/2019 del Ministerio de Energía.\nLos estudios para la factibilidad técnica o informe de condiciones previas del sistema de autogeneración deberán cumplir con lo definido en el artículo 5-3 punto 1.9 de la NTD." },
+        { "numero": "5.7", "texto": "Todo sistema de autogeneración, previo a su puesta en servicio, deberá ser declarado mediante una comunicación de energización ante la Superintendencia, adjuntando la factibilidad técnica o informe de condiciones previas establecido en la NTD, los resultados de los estudios en caso de que se requieran, y los datos técnicos del sistema de autogeneración." },
+        { "numero": "5.8", "texto": "La Superintendencia establecerá el procedimiento de comunicación de energización de las instalaciones de autogeneración a través de una instrucción técnica de carácter general." },
+        { "numero": "5.9", "texto": "Toda instalación eléctrica de un sistema de autogeneración que se conecte a la red debe ser proyectada y ejecutada bajo la supervisión directa de un instalador eléctrico autorizado por la Superintendencia, clase A o B, según corresponda en función de las competencias establecidas por su licencia." },
+        { "numero": "5.10", "texto": "Una vez inscrita la comunicación de energización de la instalación ante la Superintendencia, el interesado deberá notificar la entrada en operación a la empresa distribuidora, adjuntado todos los antecedentes técnicos del proyecto. Las empresas distribuidoras deberán mantener un registro con todos los sistemas de autogeneración conectados a sus redes de distribución." },
+        { "numero": "5.11", "texto": "Durante todo el período de operación del sistema de autogeneración, sus propietarios u operadores deberán conservar los diferentes estudios y documentos técnicos utilizados en el diseño y construcción de las instalaciones y sus modificaciones, como asimismo los registros de las auditorías, certificaciones e inspecciones de que hubiera sido objeto, todo lo cual deberá estar a disposición de la Superintendencia en caso de que esta lo solicite." },
+        { "numero": "5.12", "texto": "Todo sistema de autogeneración deberá cumplir con el sistema de protecciones de interconexión definidos en la sección 6 de este pliego, el cual podrá ser auditado en cualquier etapa del proyecto o en su operación por la empresa distribuidora, con el objetivo de salvaguardar la seguridad de la red de distribución.", "refs_cruzadas": ["sección 6"] },
+        { "numero": "5.13", "texto": "Los sistemas de autogeneración aislados de la red de distribución deberán ser diseñados y declarados de acuerdo con la instrucción técnica de carácter general que imparta la Superintendencia y no les serán aplicables las disposiciones técnicas de este pliego." },
+        { "numero": "5.14", "texto": "Los equipos de generación que cuenten con sistemas de transferencia cerrada deberán cumplir con las disposiciones de este pliego técnico, en cambio a los equipos de generación con transferencia abierta no les serán aplicables las disposiciones técnicas de este pliego." },
+        { "numero": "5.15", "texto": "Los sistemas de almacenamiento asociados a los sistemas de autogeneración deberán ser diseñados de acuerdo con la instrucción técnica de carácter general que imparta la Superintendencia para tales efectos." },
+        { "numero": "5.16", "texto": "De acuerdo con lo establecido en la Ley Nº 18.410, cualquier duda en cuanto a la interpretación de las disposiciones de este pliego técnico será resuelta por la Superintendencia." },
+        { "numero": "5.17", "texto": "En materias de diseño, construcción, operación, mantenimiento, reparación, modificación, inspección y término de operación, la Superintendencia podrá permitir el uso de tecnologías diferentes a las establecidas en el presente pliego técnico, siempre que se mantenga el nivel de seguridad que el texto normativo contempla. Estas tecnologías deberán estar técnicamente respaldadas en normas, códigos o especificaciones nacionales o extranjeras, así como en prácticas recomendadas de ingeniería internacionalmente reconocidas, o bien ser parte de instalaciones de prueba para nueva tecnología. Para ello el instalador deberá presentar el proyecto y un ejemplar completo de la versión vigente de la norma, código o especificación extranjera utilizada debidamente traducida, cuando corresponda, así como cualquier otro antecedente que solicite la Superintendencia." },
+        {
+          "numero": "5.18",
+          "texto": "En los casos en que la empresa distribuidora detecte a un usuario que posea un sistema de autogeneración irregular, que no cumpla con la normativa vigente, la distribuidora deberá proceder de la siguiente forma:",
+          "subpuntos": [
+            { "numero": "5.18.1", "texto": "Notificará al usuario en forma inmediata, con copia a la Superintendencia, indicándole que debe dejar de operar dicho sistema y le informará que debe proceder con la normalización de sus instalaciones a través de un instalador autorizado por la Superintendencia en un plazo no superior a 60 días hábiles." },
+            { "numero": "5.18.2", "texto": "En el caso que el usuario cuente con un medidor electromecánico o un medidor unidireccional, se deberá cambiar el medidor en forma inmediata a un medidor bidireccional cumpliendo con las exigencias de la sección 8 de este pliego, para salvaguardar la correcta medición de los consumos ya que el equipo de medida al funcionar en sentido contrario pierde su exactitud en la medición y también tiene el objetivo de auditar que no existan inyecciones a la red de distribución que pongan en peligro la operación de la red.", "refs_cruzadas": ["sección 8"] },
+            { "numero": "5.18.3", "texto": "En el caso que la empresa distribuidora detecte que el sistema de autogeneración irregular inyecta energía cuando la red o empalme del cliente queda sin suministro, la empresa deberá cortar en forma inmediata el suministro de energía de esta instalación y notificar a la Superintendencia, aportando los antecedentes que acrediten el hecho." },
+            { "numero": "5.18.4", "texto": "En el caso de que transcurrido el plazo indicado en el punto 5.18.1 el usuario no hubiese normalizado su instalación o no hubiese acordado con la empresa distribuidora un nuevo plazo para normalizar, la empresa deberá denunciar esto a la Superintendencia, para lo cual deberá aportar todos los antecedentes, tales como el registro de consumo e inyecciones de energía, imágenes del sistema instalado y copia de la notificación enviada al usuario y todos los antecedentes que permitan acreditar la denuncia ante la Superintendencia, enviando una copia de la denuncia al usuario.", "refs_cruzadas": ["5.18.1"] },
+            { "numero": "5.18.5", "texto": "En los casos en que la empresa distribuidora detecte que el medidor bidireccional registra inyecciones después de la notificación de no operar su sistema de autogeneración, la empresa deberá denunciar esto a la Superintendencia en forma inmediata adjuntado todos los antecedentes del caso. La empresa también deberá notificar al usuario adjuntado la denuncia presentada ante la Superintendencia, y en la carta también deberá volver a indicarle que no puede operar su sistema, y que en el caso de hacerlo nuevamente procederá con el corte de su suministro." },
+            { "numero": "5.18.6", "texto": "En los casos en que el usuario no acate las instrucciones de no operar el sistema de autogeneración irregular indicado en los puntos 5.18.3 y 5.18.5 y la empresa distribuidora detecte por tercera vez inyecciones a la red de distribución, deberá denunciar por escrito este hecho a la Superintendencia con copia al usuario, informando la fecha en que procederá con el corte de suministro. Una vez que se haya enviado la carta a la Superintendencia con copia al usuario, se deberá proceder con el corte o la suspensión del suministro, hasta que dicha instalación sea regularizada.", "refs_cruzadas": ["5.18.3", "5.18.5"] },
+            { "numero": "5.18.7", "texto": "Los sistemas de autogeneración irregulares podrán acreditar su normalización ante la empresa distribuidora presentando un nuevo certificado de inscripción de la comunicación de energización de la instalación emitido por la Superintendencia. La empresa distribuidora deberá reponer el suministro dentro de las 24 horas siguientes a los clientes que presenten este certificado ante ella." }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "6",
+      "titulo": "Exigencias para la conexión a la red",
+      "puntos": [
+        { "numero": "6.1", "texto": "En las instalaciones de sistemas de autogeneración, los equipos de protección medirán la tensión y la corriente de cada fase y desconectarán el sistema de autogeneración ante fluctuaciones en la corriente o la tensión de cualquier fase, en cumplimiento de la normativa nacional vigente. En el caso de que las instalaciones del cliente tengan múltiples sistemas de autogeneración, los equipos de protección deberán desconectar todos los sistemas de autogeneración ante fluctuaciones en la tensión o la corriente de cualquier fase. Para una comprensión simplificada acerca de los requisitos para los diferentes sistemas de autogeneración ver el anexo 9.1.", "anexos_relacionados": ["9.1"] },
+        {
+          "numero": "6.2",
+          "texto": "Los sistemas de autogeneración que funcionen en paralelo con la red deberán contar con las siguientes funciones de protección:",
+          "subpuntos": [
+            { "numero": "6.2.1", "texto": "Protección por sobre corriente de fases." },
+            { "numero": "6.2.2", "texto": "Protección por falla a tierra." },
+            {
+              "numero": "6.2.3",
+              "texto": "Protección de red e instalación (RI), que deberá contar con las siguientes funciones:",
+              "subpuntos": [
+                { "numero": "6.2.3.1", "texto": "Funciones de protección por sobre y baja tensión (Nema 59/ Nema 27)." },
+                { "numero": "6.2.3.2", "texto": "Funciones de protección por sobre y baja frecuencia (Nema 81O/ Nema 81U)." },
+                { "numero": "6.2.3.3", "texto": "Función de protección anti-Isla." }
+              ]
+            },
+            { "numero": "6.2.4", "texto": "Protección de potencia inversa: Corresponde al relé (Nema 32) con ajuste de pick up por potencia activa." },
+            { "numero": "6.2.5", "texto": "Sistema de control de inyección cero." }
+          ]
+        },
+        {
+          "numero": "6.3",
+          "titulo": "Protección por sobre corriente de fases",
+          "subpuntos": [
+            { "numero": "6.3.1", "texto": "La protección por sobre corriente de fases podrá estar contenida en un interruptor termomagnético de corte omnipolar, de una capacidad adecuada para la potencia del sistema de autogeneración. El interruptor magnetotérmico será bipolar, para el caso de las instalaciones monofásicas o tetrapolar para el caso de las instalaciones trifásicas, con una corriente de cortocircuito superior a la indicada por la empresa distribuidora en el punto de conexión." }
+          ]
+        },
+        {
+          "numero": "6.4",
+          "titulo": "Protección por falla a tierra",
+          "subpuntos": [
+            { "numero": "6.4.1", "texto": "La protección por falla a tierra podrá estar contenida en un interruptor diferencial o en un bloque diferencial como parte del interruptor termomagnético indicado en el punto anterior. El diferencial deberá ser del tipo A o B y su corriente diferencial no será superior a 30 mA para unidades de generación para potencia instalada inferiores a 10 kW, mientras que para unidades de generación igual o superior a 10 kW su corriente diferencial no será superior a 300 mA." },
+            {
+              "numero": "6.4.2",
+              "texto": "La protección por falla a tierra indicada en el punto 6.2.2, podrá ser del tipo electrónico asociado a toroide y contactor o interruptor desconectador, debiendo cumplir con lo siguiente:",
+              "refs_cruzadas": ["6.2.2"],
+              "subpuntos": [
+                { "numero": "6.4.2.1", "texto": "El contactor, en caso de falla deberá cortar todos los conductores activos en forma automática, deberá emplear la categoría de utilización AC-1 y será protegido ante sobrecargas y cortocircuitos." },
+                { "numero": "6.4.2.2", "texto": "La sección del transformador toroidal deberá ser dimensionada para circundar el cableado de alimentación y neutro juntos. Su medición de corriente y su relación de transformación deben ser iguales o mayores a la corriente nominal del punto de la instalación que se está midiendo." },
+                { "numero": "6.4.2.3", "texto": "Debe regularse su tiempo de operación como mínimo en 20 ms y su corriente nominal debe ser igual o mayor a la corriente nominal de la protección termomagnética aguas arriba." },
+                { "numero": "6.4.2.4", "texto": "Debe ser de tipo A o B y su corriente diferencial no será superior a 30 mA para unidades de generación para potencia instalada inferiores a 10 kW, mientras que para unidades de generación igual o superior a 10 kW su corriente diferencial no será superior a 300 mA." }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "6.5",
+          "titulo": "Protección de red e instalación (RI)",
+          "subpuntos": [
+            { "numero": "6.5.1", "texto": "La protección RI actúa sobre el interruptor de acoplamiento para la desconexión del equipo de generación de la red, cuando se presentan valores inadmisibles de las tensiones o la frecuencia. Esta protección no será exigible para grupos electrógenos." },
+            {
+              "numero": "6.5.2",
+              "texto": "La instalación de la protección RI indicada en el punto 6.2.3 precedente será de manera centralizada y/o complementaria como se indica a continuación:",
+              "refs_cruzadas": ["6.2.3"],
+              "subpuntos": [
+                { "numero": "6.5.2.1", "texto": "La protección RI centralizada deberá medir o censar sobre el alimentador principal de la instalación de consumo, estará ubicada en un gabinete especial llamado tablero de punto de conexión, el cual podrá albergar al interruptor de acoplamiento, a la protección de potencia inversa y al sistema de control de inyección cero, según corresponda, de tal forma que pueda ser sellado por la empresa distribuidora." },
+                { "numero": "6.5.2.2", "texto": "La protección RI centralizada debe ser ubicada junto a la caja de empalme de la instalación de consumo, y en caso de que esto no sea posible, se podrá ubicar en el tablero de punto de conexión junto al tablero general de la instalación. Esta protección actuará sobre el interruptor de acoplamiento." },
+                { "numero": "6.5.2.3", "texto": "La protección RI centralizada será obligatoria para todas las instalaciones de generación cuya capacidad instalada supere los 100 kW de potencia. Ver Anexo 9.2", "anexos_relacionados": ["9.2"] },
+                { "numero": "6.5.2.4", "texto": "La protección RI complementaria estará ubicada en el lugar más próximo al equipo de generación o en el tablero en que se conecta el equipo de generación a la instalación de consumo. Esta protección podrá estar integrada al inversor o al equipo de autogeneración o ser externa a él. Esta protección actuará sobre el interruptor de acoplamiento. Ver anexo 9.2", "anexos_relacionados": ["9.2"] },
+                { "numero": "6.5.2.5", "texto": "La protección RI complementaria será obligatoria para todas las instalaciones de generación cuya capacidad instalada sea igual o inferior a 100 kW. Ver anexos 9.3 y 9.4", "anexos_relacionados": ["9.3", "9.4"] },
+                { "numero": "6.5.2.6", "texto": "Independiente de la exigencia de la RI centralizada, en los casos que el equipo de autogeneración cuente con una RI complementaria, ésta siempre deberá estar activada." }
+              ]
+            },
+            { "numero": "6.5.3", "texto": "La protección RI se configurará de acuerdo con los parámetros definidos en la norma técnica de conexión y operación de equipamiento de generación (NTCO-EG) o en las disposiciones que la reemplacen." },
+            { "numero": "6.5.4", "texto": "La protección RI centralizada debe incorporar un botón de prueba que permita verificar el correcto funcionamiento del circuito entre la protección RI y el interruptor de acoplamiento. Para este fin, al presionar el botón de prueba debe ser posible visualizar la activación del interruptor de acoplamiento." },
+            { "numero": "6.5.5", "texto": "En la protección RI centralizada debe ser posible leer la información independientemente de las condiciones de operación del equipamiento de generación, y sin necesidad de medios auxiliares. En la protección RI integrada se permite que la información sea obtenida a través de una interfaz de comunicación." },
+            {
+              "numero": "6.5.6",
+              "titulo": "Protección anti-Isla",
+              "subpuntos": [
+                { "numero": "6.5.6.1", "texto": "El sistema de generación deberá contar con una protección anti-isla, necesaria para evitar que éste energice un circuito que se encuentre aislado del sistema interconectado. De surgir una situación de isla eléctrica, el sistema de generación deberá desconectarse del sistema de distribución en un tiempo máximo de dos segundos. Esta protección deberá ser del tipo ROCOF, Vector Shift, u otro de características a lo menos equivalentes o superior." }
+              ]
+            },
+            {
+              "numero": "6.5.7",
+              "titulo": "Interruptor de acoplamiento",
+              "subpuntos": [
+                { "numero": "6.5.7.1", "texto": "Para la conexión de un equipo de generación a la red de distribución se deberá emplear un interruptor de acoplamiento. El cual será comandado por la protección de red e instalación (Protección RI centralizada o complementaria) y se disparará automáticamente cuando opere al menos una función de protección." },
+                { "numero": "6.5.7.2", "texto": "Al igual que la protección RI, la protección de potencia inversa también podrá operar sobre este interruptor de acoplamiento, siempre que las condiciones técnicas de los equipos lo permitan y siempre que el interruptor de acoplamiento se ubique según lo definido en el punto 6.5.2, de no cumplirse con esta condición la protección de potencia inversa no podrá operar sobre este interruptor.", "refs_cruzadas": ["6.5.2"] },
+                { "numero": "6.5.7.3", "texto": "El interruptor de acoplamiento conecta el equipo de generación con el resto de las instalaciones del cliente o usuario final." },
+                {
+                  "numero": "6.5.7.4",
+                  "texto": "La instalación del interruptor de acoplamiento indicado en el punto 6.5.7.1 podrá ubicarse en:",
+                  "refs_cruzadas": ["6.5.7.1"],
+                  "subpuntos": [
+                    { "numero": "6.5.7.4.1", "texto": "El tablero de punto de conexión donde se ubica la protección RI centralizada o en el tablero más próximo al equipo de generación o en el lugar definido en el punto 6.5.2.", "refs_cruzadas": ["6.5.2"] },
+                    { "numero": "6.5.7.4.2", "texto": "El tablero más próximo al equipo de generación, pudiendo estar integrado al inversor o al equipo de autogeneración y deberá ser comandado por la protección RI complementaria y/o la protección RI centralizada." }
+                  ]
+                },
+                { "numero": "6.5.7.5", "texto": "El tiempo máximo de desconexión desde ocurrida una falla no debe superar los 200 ms. El tiempo de desconexión del interruptor debe indicarse en los documentos del fabricante." },
+                { "numero": "6.5.7.6", "texto": "El interruptor de acoplamiento debe ejecutarse como dos elementos de interrupción galvánicas en serie (ej: relés, interruptor protector de motor, interruptor de corriente mecánico) y debe cumplir el criterio N-1. La capacidad de apertura de ambos interruptores que forman el interruptor de acoplamiento deberá ser dimensionada en concordancia con la máxima contribución de corriente de corto circuito proveniente del sistema de distribución o del equipamiento de generación. En este último caso, se deberá garantizar la desconexión de todos los polos" },
+                { "numero": "6.5.7.7", "texto": "En el caso en que el interruptor de acoplamiento se ubique en un lugar distinto a la protección RI, ésta deberá actuar sobre el interruptor de acoplamiento mediante un sistema de disparo transferido. Para este caso la protección de flujo inverso no podrá operar sobre este interruptor y deberá operar sobre su propio interruptor cumpliendo con el punto 6.6.2. Ver anexo 9.2.", "refs_cruzadas": ["6.6.2"], "anexos_relacionados": ["9.2"] },
+                {
+                  "numero": "6.5.7.8",
+                  "texto": "El sistema de disparo transferido deberá cumplir con las siguientes características mínimas:",
+                  "subpuntos": [
+                    { "numero": "6.5.7.8.1", "texto": "En caso de falla del enlace para la transferencia del disparo, el interruptor de acoplamiento deberá desacoplar al equipamiento de generación inmediatamente." },
+                    { "numero": "6.5.7.8.2", "texto": "Se deberá tomar resguardo contra interferencias que puedan afectar al sistema de disparo transferido." },
+                    { "numero": "6.5.7.8.3", "texto": "En caso de presencia de grupos de emergencia, se deberá tomar los resguardos necesarios para evitar el paralelismo no intencional entre éstos y el o los equipamientos de generación." },
+                    { "numero": "6.5.7.8.4", "texto": "Se deberá habilitar también las protecciones RI e interruptores de acoplamiento en los equipamientos de generación." },
+                    { "numero": "6.5.7.8.5", "texto": "La pérdida de la tensión auxiliar de la protección RI centralizada o del control de la protección RI integrada debe llevar a la apertura inmediata del interruptor de acoplamiento." }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "6.6",
+          "titulo": "Protección de potencia inversa",
+          "subpuntos": [
+            { "numero": "6.6.1", "texto": "La función de protección de potencia inversa (Nema 32) deberá actuar sobre un contactor de poder o sobre el interruptor de acoplamiento, o sobre el reconectador, el cual será el encargado de interrumpir la inyección de energía hacia la red en caso de que el nivel de generación sea superior al consumo. El contactor o interruptor debe ser capaz de interrumpir el suministro completo de dicha instalación o solo la generación, lo que dependerá del punto de conexión del sistema de autogeneración. Sobre este interruptor también podrá operar la protección RI centralizada, siempre que sea factible técnicamente por los equipos que se utilicen en la instalación." },
+            { "numero": "6.6.2", "texto": "La protección de potencia inversa y el contactor de poder o el interruptor de acoplamiento o reconectador indicado en el punto 6.6.1 anterior, deberá instalarse en el punto de conexión del cliente y formar parte del empalme de la instalación de consumo, pudiendo instalarse en la caja del empalme o en el tablero de punto de conexión adosado a la caja de empalme, el cual deberá ser sellado por la empresa distribuidora.", "refs_cruzadas": ["6.6.1"] },
+            {
+              "numero": "6.6.3",
+              "texto": "La protección de potencia inversa deberá operar cuando se superen los valores definidos en el punto 6.6.7, por lo cual su operación tendrá las siguientes acciones:",
+              "refs_cruzadas": ["6.6.7"],
+              "subpuntos": [
+                { "numero": "6.6.3.1", "texto": "La operación de la protección de potencia inversa cortará sólo el suministro del sistema de autogeneración cuando éste se conecta directamente al contactor de poder o al interruptor de acoplamiento o al reconectador indicado en el punto 6.6.1 y la unión del equipo de generación se realiza en la caja de empalme o en el tablero de punto de conexión indicado en el punto 6.5.2. Ver anexos 9.2 Opción A y B, 9.4 Opción A.", "refs_cruzadas": ["6.6.1", "6.5.2"], "anexos_relacionados": ["9.2", "9.4"] },
+                { "numero": "6.6.3.2", "texto": "La operación de la protección de potencia inversa cortará el suministro de toda la instalación de consumo cuando el punto de conexión del sistema de autogeneración se efectúa en el interior de la instalación de consumo. Ver anexos 9.2 Opción C y D, 9.4 Opción B.", "anexos_relacionados": ["9.2", "9.4"] }
+              ]
+            },
+            { "numero": "6.6.4", "texto": "La protección de potencia inversa exigido en el punto 6.2.4 de este pliego técnico deberá ser del tipo de regulación de potencia activa.", "refs_cruzadas": ["6.2.4"] },
+            { "numero": "6.6.5", "texto": "Los relés de potencia inversa deberán cumplir con la norma IEC 60255-1 \"Measuring relays and protection equipment\" o equivalentes UE, IEEE." },
+            { "numero": "6.6.6", "texto": "Para proyectos de autoconsumo donde la potencia instalada de generación sea superior a 100 kW, el relé de potencia inversa será del tipo microprocesado." },
+            {
+              "numero": "6.6.7",
+              "texto": "La regulación para la función del relé de potencia inversa (Nema 32) exigido en el punto 6.2.4 de este pliego técnico será la siguiente:",
+              "refs_cruzadas": ["6.2.4"],
+              "tabla": {
+                "nombre": "Regulación del relé de potencia inversa (Nema 32)",
+                "columnas": ["Potencia instalada de generación", "Tiempo de operación relé 32", "Ajuste de Operación (Pickup)"],
+                "filas": [
+                  ["≤300kW", "10s", "2% de la potencia nominal de la unidad o del conjunto de unidades generadoras de un sistema de autogeneración"],
+                  [">300kW y ≤1500kW", "5s", "2% de la potencia nominal de la unidad o del conjunto de unidades generadoras de un sistema de autogeneración"],
+                  [">1500kW", "2s", "2% de la potencia nominal de la unidad o del conjunto de unidades generadoras de un sistema de autogeneración"]
+                ]
+              }
+            },
+            {
+              "numero": "6.6.8",
+              "texto": "Se eximirán de la protección inversa requerida en el punto 6.2.4, aquellos sistemas de autogeneración que cuenten con un sistema de inyección cero de potencia a la red y que cumplan con una de las siguientes condiciones:",
+              "refs_cruzadas": ["6.2.4"],
+              "subpuntos": [
+                { "numero": "6.6.8.1", "texto": "Que el o los equipos de generación tengan una potencia máxima menor o igual a 300 kW y que su potencia de generación no supere el 10% de la capacidad del empalme de la instalación de consumo. Ver Anexo 9.3.", "anexos_relacionados": ["9.3"] },
+                { "numero": "6.6.8.2", "texto": "Que en instalaciones domiciliarias con empalmes en baja tensión de hasta 10 kW, el o los equipos de generación tengan una potencia de generación que no supere el 30% de la capacidad del empalme de la instalación de consumo. Ver Anexo 9.3.", "anexos_relacionados": ["9.3"] }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "6.7",
+          "titulo": "Sistema de control de inyección cero",
+          "subpuntos": [
+            { "numero": "6.7.1", "texto": "Todos los sistemas de autogeneración conectados en paralelo con la red de distribución que utilicen convertidores estáticos deberán contar con un sistema de control de inyección cero, el que deberá controlar y evitar la inyección de energía generada hacia las redes de distribución y prevenir la operación de la protección de potencia inversa indicada en el punto 6.2.4.", "refs_cruzadas": ["6.2.4"] },
+            { "numero": "6.7.2", "texto": "Todos los sistemas de control de inyección cero que formen parte de un sistema de autogeneración deberán estar autorizados por la Superintendencia para tales efectos. Si el sistema de autogeneración con control de inyección cero está constituido por más de un inversor o convertidor estático, la comunicación entre ellos debe realizarse de forma alámbrica, con RS485, ethernet o equivalente dispuesto por el fabricante. El sistema de comunicación elegido e implementado debe utilizar un cableado de largo efectivo menor a lo que el protocolo y fabricante recomiendan para garantizar buen desempeño. Ver anexo N°9.5", "anexos_relacionados": ["9.5"] },
+            { "numero": "6.7.3", "texto": "El máximo tiempo de actuación del sistema de control de inyección cero, en reducir y evitar una inyección de potencia a la red será de 5 segundos y sus ajustes de operación no deben exceder el 2% de la potencia nominal del autogenerador. Para instalaciones con potencia instalada de generación superiores a 1500 kW, este tiempo operación no deberá exceder de 2 segundos." },
+            { "numero": "6.7.4", "texto": "La comunicación entre los inversores, equipos de generación, equipos de monitoreo de inyección u otros dispositivos utilizados en el sistema de control de inyección cero debe operar en señales en una ventana de 1 segundo." },
+            { "numero": "6.7.5", "texto": "En caso de que cualquiera de los componentes sistema de control de inyección cero, falle, pierda su comunicación, señal o su fuente de alimentación, el sistema deberá reducir la potencia a un valor igual a cero en una ventana de 5 segundos." },
+            { "numero": "6.7.6", "texto": "El sistema de control de inyección cero deberá actuar sobre los inversores o equipos de autogeneración." },
+            { "numero": "6.7.7", "texto": "Para los casos indicados en el punto 6.6.8 donde el equipo de generación no cuente con la protección de potencia inversa, el sistema de control de inyección cero deberá estar ubicado en el tablero de punto de conexión, el cual deberá ser sellado por la empresa de distribución, ubicado al costado del empalme o lo más cercano posible a él. Ver anexo N°9.3.", "refs_cruzadas": ["6.6.8"], "anexos_relacionados": ["9.3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "7",
+      "titulo": "Exigencias de diseño del equipo de generación",
+      "puntos": [
+        { "numero": "7.1", "texto": "Todas aquellas materias relativas al diseño, construcción, mantenimiento, reparación, modificación e inspección, fabricación, ensayos e instalación de equipos, materiales y accesorios de unidades de generación, se establecerán en conformidad a las instrucciones técnicas de carácter general que emita la Superintendencia para tales efectos.\nEn ausencia de éstas podrán aplicarse las instrucciones técnicas normativas definidas bajo las disposiciones establecidas en el artículo 149 bis y siguientes de la Ley General de Servicios Eléctricos (DFL Nª4/2006) o las normas extranjeras, internacionalmente reconocidas, emitidas por las organizaciones que a continuación se indican: International Electrotechnical Commission (IEC), International Organization for Standardization (ISO), Normas DIN/VDE y American Society of Testing Materials/American National Standards Institute (ASTM/ANSI), Institute of Electrical and Electronics Engineers (IEEE), National Fire Protection Association (NFPA). En todo caso, la aplicación de estas normas deberá ser aprobada por la Superintendencia, a requerimiento expreso del solicitante." },
+        { "numero": "7.2", "texto": "Los equipos que formen parte de un sistema de autogeneración deberán cumplir con lo definido en el protocolo de análisis y/o ensayos de productos eléctricos respectivo, establecido por la Superintendencia. En ausencia de estos los equipos que formen parte de un sistema de autogeneración deberán contar con una autorización previa de la Superintendencia para ser utilizados en instalaciones de consumo. La Superintendencia será la encargada de emitir el procedimiento de autorización." },
+        { "numero": "7.3", "texto": "Los sistemas de autogeneración que utilicen sistemas de almacenamiento se deben marcar con la tensión máxima de operación, incluyendo cualquier tensión de ecualización y la polaridad del conductor del circuito puesto a tierra." },
+        { "numero": "7.4", "texto": "Se debe considerar la contribución de las corrientes de falla, de todas las fuentes de energía conectadas, para el cálculo de la capacidad de interrupción y de corriente de cortocircuito del equipo de generación, así como de las protecciones indicadas en los puntos 6.6.y 6.7 del presente pliego.", "refs_cruzadas": ["6.6", "6.7"] }
+      ]
+    },
+    {
+      "numero": "8",
+      "titulo": "Medidores",
+      "puntos": [
+        { "numero": "8.1", "texto": "Las instalaciones que cuenten con sistema de autogeneración con capacidad de funcionamiento en paralelo con la red de distribución deberán cumplir con el artículo 5-19 de la NTD y contar con una unidad de medida que cumpla con el título 4-1 del anexo técnico de los sistemas de medición, monitoreo y control (SMMC), el cual deberá ser implementado por la empresa distribuidora en conformidad el artículo 6-11 de la NTD. Estos sistemas deberán ser capaces de generar alertas cuando se produzcan inyecciones de energía a la red no autorizadas. La empresa distribuidora será la responsable de monitorear esta alerta y en caso de detectar clientes que inyecten energía a la red, se deberá notificar al usuario, como se indica en el punto 5.18 de este pliego. En caso de que esto no se normalice, la empresa distribuidora deberá denunciar este hecho a la Superintendencia.", "refs_cruzadas": ["5.18"] },
+        { "numero": "8.2", "texto": "Todo sistema de autogeneración con una potencia instalada superior a 30 kW deberá contar con un equipo de monitoreo de generación, que sea capaz de registrar exclusivamente la generación, el cual deberá quedar montado en el tablero de distribución del equipamiento de autogeneración y claramente rotulado." }
+      ]
+    },
+    {
+      "numero": "9",
+      "titulo": "Operación del equipo de generación",
+      "puntos": [
+        { "numero": "9.1", "texto": "Un sistema de autogeneración está destinado a funcionar en paralelo con la red pública; por ello debe contar en su implementación con todo el equipamiento y protecciones necesarias para un adecuado funcionamiento, desde el punto de vista técnico como de seguridad." },
+        { "numero": "9.2", "texto": "La entrada de un generador u otra fuente de autogeneración de energía eléctrica que opere en paralelo con un sistema de suministro de energía eléctrica deberá ser compatible con la tensión eléctrica, la forma de la onda y la frecuencia del sistema al cual se va a conectar." },
+        { "numero": "9.3", "texto": "En caso de pérdida de energía en la red de distribución, todas las fuentes de generación de energía eléctrica se deben desconectar automáticamente de la red pública y no se deben volver a conectar, hasta que se restablezca el suministro de energía de la red de distribución, bajo condiciones de normalidad operacional." },
+        { "numero": "9.4", "texto": "Los sistemas de autogeneración que funcionen en modo isla interna deberán contar con un sistema de transferencia abierta, que permita operar el sistema una vez que se desconecte de la red de distribución." },
+        { "numero": "9.5", "texto": "Esta nueva operación de sistemas de autogeneración en modo isla interna, se realizará mediante el sistema de transferencia abierta, que asegure que en ningún momento existirá conexión con la red de distribución mientras se encuentre operando en este modo." },
+        { "numero": "9.6", "texto": "La conexión o reconexión de los equipos de generación a la red de distribución sólo puede ocurrir si el equipo de generación establece que la tensión y la frecuencia de la red están dentro del rango de tolerancia, en el artículo 5-16 de la NTCO-EG.\nLos propietarios de sistemas de autogeneración, cuya potencia instalada sea superior a 300 kW, deben designar a un responsable técnico, el que deberá contar con conocimiento técnico sobre la conexión, operación y mantenimiento de la instalación de autogeneración." }
+      ]
+    },
+    {
+      "numero": "10",
+      "titulo": "Conexión para equipos de generación sincrónicos y asincrónicos",
+      "puntos": [
+        {
+          "numero": "10.1",
+          "texto": "Un sistema de autogeneración que no se basa en tecnologías con convertidores estáticos, para el control de sus parámetros de funcionamiento y de sincronización con la red, deberá contar a lo menos con los siguientes equipos:",
+          "subpuntos": [
+            { "numero": "10.1.1", "texto": "Voltímetros que midan simultáneamente las tensiones de la red y de la fuente." },
+            { "numero": "10.1.2", "texto": "Frecuencímetros que midan simultáneamente las frecuencias de la red y de la fuente." },
+            { "numero": "10.1.3", "texto": "Sincronoscopio." }
+          ]
+        },
+        { "numero": "10.2", "texto": "Para la protección y el control de la puesta en paralelo, o separación de la fuente y la red, el sistema de autogeneración deberá contar con un relé de sincronismo (25) que permita la puesta en paralelo automática cuando se alcancen las condiciones de paralelismo." },
+        { "numero": "10.3", "texto": "Se deberá contar con un esquema de control y explicación para la partida del autogenerador, el cual sólo aplicará para equipos de generación asincrónicos. Este esquema de control deberá estar impreso de forma legible e indeleble cercano al tablero eléctrico del autogenerador." },
+        { "numero": "10.4", "texto": "El equipamiento de generación debe incluir un equipo de sincronización que permita acoplar un generador a una red energizada. Los interruptores de potencia pueden ser cerrados únicamente si las tensiones en ambos lados del interruptor abierto están en sincronismo, lo que se corroborará midiendo la tensión, la frecuencia y el desfase del generador y la red." },
+        {
+          "numero": "10.5",
+          "texto": "En el caso de la conexión de generadores sincrónicos y asincrónicos que no son conectados en ausencia de tensión, se debe disponer de un equipo de sincronización. Los valores de ajuste para efectos de sincronización deben respetar las siguientes tolerancias máximas:",
+          "subpuntos": [
+            { "numero": "10.5.1", "texto": "Δφ = 10° Desfase entre tensiones." },
+            { "numero": "10.5.2", "texto": "Δf = 500 mHz Diferencia entre ambas frecuencias." },
+            { "numero": "10.5.3", "texto": "ΔV = 10% Vn Porcentaje de diferencia de las tensiones." }
+          ]
+        },
+        { "numero": "10.6", "texto": "En el caso de generadores asincrónicos que parten como motor, y que son conectados a una velocidad entre 95% y 105% de la velocidad sincrónica, el factor de corriente de conmutación máximo (kimáx) debe ser igual o inferior a 4." },
+        { "numero": "10.7", "texto": "El valor de kimáx corresponde a la relación entre la corriente de arranque o partida con la corriente nominal del generador." },
+        { "numero": "10.8", "texto": "Para módulos de autogeneración con alternadores de alta frecuencia, que se rectifica y a través de un inversor entrega corriente alterna, solo pueden ser conectados a la red con un factor de corriente de conmutación máximo (kimax) menor a 1,2." },
+        { "numero": "10.9", "texto": "Para cualquier sistema de autogeneración, la corriente de partida no deberá generar tensiones transitorias en su propia barra ni en otras del sistema de distribución inferior a 0,9 pu." }
+      ]
+    },
+    {
+      "numero": "11",
+      "titulo": "Rotulación y señalización",
+      "puntos": [
+        {
+          "numero": "11.1",
+          "texto": "Todas las rotulaciones, señalizaciones, procedimientos y advertencias requeridas en este pliego deberán cumplir con lo siguiente:",
+          "subpuntos": [
+            { "numero": "11.1.1", "texto": "Ser indelebles." },
+            { "numero": "11.1.2", "texto": "Ser legibles." },
+            { "numero": "11.1.3", "texto": "Estar diseñadas y fijas de manera que sean legibles durante la vida útil del equipo o tablero al que están adheridas o relacionadas." },
+            { "numero": "11.1.4", "texto": "Ser simples y comprensibles." }
+          ]
+        },
+        {
+          "numero": "11.2",
+          "texto": "La caja de empalme deberá contar con una placa de advertencia ubicada al frente o a un costado, de manera que sea visible y con el siguiente texto:",
+          "texto_placa": "PRECAUCIÓN\nESTA PROPIEDAD CUENTA CON UN SISTEMA DE AUTOGENERACIÓN"
+        },
+        { "numero": "11.3", "texto": "El tamaño de la placa indicada en el punto 11.2 anterior deberá tener como mínimo de 70 mm por 40 mm. La inscripción deberá ser indeleble y la letra deberá tener un tamaño de 5 mm cómo mínimo.", "refs_cruzadas": ["11.2"] },
+        { "numero": "11.4", "texto": "Todos los equipamientos, protecciones, interruptores, terminales y alimentadores del equipo de autogeneración a la llegada de la barra del punto de conexión deben estar rotulados." },
+        { "numero": "11.5", "texto": "Se deberá identificar claramente el o los conductores provenientes del equipamiento de autogeneración que ingresen a la barra de distribución de un tablero diferente al tablero de autogeneración, tanto en su aislación o cubierta protectora como en el tablero. Se deberá identificar además la barra de distribución donde se conecte la generación, diferenciándola del resto de barras de distribución que contenga el tablero eléctrico." },
+        {
+          "numero": "11.6",
+          "texto": "Se deberá instalar una placa de identificación legible e indeleble por parte del instalador al momento de montaje de la unidad de autogeneración, ubicada en el tablero eléctrico que contiene sus protecciones eléctricas o en los medios de desconexión, en un sitio accesible, en el cual se especifique la fuente energética y que indique:",
+          "subpuntos": [
+            { "numero": "11.6.1", "texto": "Nombre del tablero eléctrico." },
+            { "numero": "11.6.2", "texto": "Potencia máxima (CA)." },
+            { "numero": "11.6.3", "texto": "Corriente máxima (CA)." },
+            { "numero": "11.6.4", "texto": "La corriente de operación (CC)." },
+            { "numero": "11.6.5", "texto": "La tensión de operación (CC)." },
+            { "numero": "11.6.6", "texto": "La tensión máxima del sistema (CC)." },
+            { "numero": "11.6.7", "texto": "Corriente de cortocircuito (CC)." }
+          ]
+        },
+        { "numero": "11.7", "texto": "Todas las cajas de paso, unión o derivación empleadas entre el equipo de autogeneración y su tablero eléctrico deberán contar con una señalética de peligro." },
+        { "numero": "11.8", "texto": "Los propietarios de los sistemas de autogeneración deberán contar con procedimientos abreviados de apagado de emergencia, operación en modo isla (sólo si tiene este modo de operación) y funcionamiento normal, el cual deberá estar ubicado a un costado del tablero de autogeneración. El tamaño de la letra del procedimiento será como mínimo de 6 mm." }
+      ]
+    }
+  ],
+  "anexos": [
+    {
+      "numero": "9.1",
+      "titulo": "Resumen de exigencia de protecciones para sistemas de autogeneración",
+      "tipo": "tabla",
+      "tabla": {
+        "nombre": "Resumen de exigencia de protecciones para sistemas de autogeneración",
+        "columnas": ["Sistemas de autogeneración", "Potencia de autogeneración en relación a la capacidad del empalme", "Protección por sobre corriente de fases", "Protección por falla a tierra", "Protección RI complementaria (a)", "Protección RI centralizada (b)", "Protección de potencia inversa (c)", "Sistema de control de inyección cero", "Registrador de energía del sistema autogeneración (d)"],
+        "filas": [
+          ["Potencia instalada > a 1 W y ≤ a 10 kW", "≤ 30% Cap. empalme BT de hasta 10kW", "X", "X", "X", null, null, "X", null],
+          ["Potencia instalada > a 1 W y ≤ a 10 kW", "> 30% Cap. empalme BT de hasta 10kW", "X", "X", "X", null, "X", "X", null],
+          ["Potencia instalada > a 10 kW y ≤ a 100 kW", "≤ 10% Cap. empalme BT o MT", "X", "X", "X", null, null, "X", "X"],
+          ["Potencia instalada > a 10 kW y ≤ a 100 kW", "> 10% Cap. empalme BT o MT", "X", "X", "X", null, "X", "X", "X"],
+          ["Potencia instalada >100 kW", "≤ 100% Cap. empalme BT o MT", "X", "X", null, "X", "X", "X", "X"]
+        ],
+        "notas": [
+          "(a) La RI complementaria debe operar sobre el interruptor de acoplamiento, en caso de que se cuente con inversores, la RI integrada debe operar sobre el inversor desconectando el sistema de autogeneración asociado al inversor.",
+          "(b) Si la capacidad instalada del sistema de autogeneración es ≤ 100 kW, no se requiere de la protección RI centralizada, siempre y cuando se cuente con la protección RI complementaria o con la RI integrada en el inversor. Asimismo, en el caso de equipos de autogeneración sin inversores la protección RI deberá ser del tipo centralizada.",
+          "(c) La protección de potencia inversa no será exigida para aquellas instalaciones que cumplan con: i) equipos de autogeneración cuya capacidad instalada (CI) sea ≤ a 10 kW, que a su vez dicha CI no supere el 30% de la capacidad del empalme, y tenga sistema de control de inyección. ii) equipos de autogeneración cuya capacidad instalada (CI) sea ≤ a 100 kW, que a su vez dicha CI no supere el 10% de la capacidad del empalme, y tenga sistema de control de inyección.",
+          "(d) Este equipo destinado de forma exclusiva a la medición del sistema de será exigido en todo sistema de autogeneración con una potencia instalada superior a 30 kW."
+        ]
+      },
+      "referenciado_por": ["6.1"]
+    },
+    {
+      "numero": "9.2",
+      "titulo": "Esquema de protecciones para sistemas de autogeneración >100kW",
+      "tipo": "opciones_multiples",
+      "opciones": [
+        {
+          "letra": "A",
+          "titulo": "Protección RI centralizada junto a protección de potencia inversa y sistema de control de inyección con operación sobre interruptor de acoplamiento centralizado que desconectará el suministro del sistema de autogeneración",
+          "imagen": "ric-09/anexo-9-2-opcionA.png",
+          "descripcion_figura": "Diagrama de bloques: desde el EMPALME (con medidor M) baja al TABLERO GENERAL y al Tablero de Punto de Conexión, que contiene en paralelo la RI EXTERNA (Centralizada), la Protección Potencia Inversa y el SISTEMA INY. CERO, todos comandando un único INTERRUPTOR ACOPLAMIENTO común. Este interruptor conecta hacia el TD Autogeneración (con MG, registrador de energía) y de ahí a los generadores (GEN. ERNC) que llevan integrados RI e Interruptor de Acoplamiento propios. El tablero general también alimenta TDAyF Existente en paralelo.",
+          "texto_introductorio": "La operación de la protección de potencia inversa para este esquema tipo, debe cortar sólo el suministro del sistema de autogeneración, como lo establece el numeral 6.6.3.1, pudiendo operar sobre el mismo interruptor de acoplamiento de la protección RI Centralizada, siempre que las condiciones técnicas de los equipos lo permitan y todos los equipos indicados en este esquema estén en el mismo gabinete (Tablero de Punto de Conexión).\nComo la potencia instalada del sistema de autogeneración es superior a 100 kW, deberá contar con la protección RI Centralizada (de forma independiente a las protecciones RI complementarias en caso de que se tengan), la cual comandará al interruptor de acoplamiento en caso de presentarse una operación en modo isla o cuando se presentan valores inadmisibles de las tensiones o la frecuencia.",
+          "notas": [
+            "El sistema de control de inyección cero se ejemplifica en el Anexo N° 9.5 de este pliego técnico.",
+            "Sistema de autogeneración con potencia instalada superior a 30 kW debe contar con un registrador de la energía que mida en forma exclusiva la generación del sistema."
+          ]
+        },
+        {
+          "letra": "B",
+          "titulo": "Protección de potencia inversa junto a sistema de control de inyección y protección RI centralizada con operación sobre interruptor de acoplamiento a través de disparo transferido que desconectará sólo el suministro del sistema de autogeneración",
+          "imagen": "ric-09/anexo-9-2-opcionB.png",
+          "descripcion_figura": "Diagrama de bloques similar al de la Opción A, pero aquí la Protección Potencia Inversa comanda su propio Interruptor Acoplamiento (dentro del Tablero de Punto de Conexión) mientras que la RI EXTERNA (Centralizada) y el SISTEMA INY. CERO comandan, mediante disparo transferido (línea punteada), un Int. Acoplamiento externo situado junto al generador (GEN. ERNC), aguas abajo del TD Autogeneración.",
+          "texto_introductorio": "La operación de la protección de potencia inversa para este esquema tipo, debe cortar sólo el suministro del sistema de autogeneración, como lo establece el numeral 6.6.3.1, debiendo operar sobre su propio interruptor de acoplamiento, contactor de poder o reconectador (según corresponda al tipo de instalación).\nComo la potencia instalada del sistema de autogeneración es superior a 100 kW, deberá contar con la protección RI Centralizada (de forma independiente a las protecciones RI complementarias), la cual comandará al interruptor de acoplamiento centralizado que en este ejemplo es a través del disparo transferido.",
+          "notas": [
+            "Interruptor de acoplamiento debe provocar la desconexión del sistema de autogeneración en caso de que tenga una pérdida de la señal de control.",
+            "Sistema de autogeneración con potencia instalada superior a 30 kW debe contar con un registrador de la energía que mida en forma exclusiva la generación del sistema."
+          ]
+        },
+        {
+          "letra": "C",
+          "titulo": "Protección RI centralizada junto a protección de potencia inversa y sistema de control de inyección con operación sobre interruptor de acoplamiento centralizado que desconectará el suministro de la instalación de consumo",
+          "imagen": "ric-09/anexo-9-2-opcionC.png",
+          "descripcion_figura": "Diagrama de bloques igual en estructura a la Opción A (RI EXTERNA, Protección Potencia Inversa y SISTEMA INY. CERO comandando un único INTERRUPTOR ACOPLAMIENTO), pero aquí el interruptor de acoplamiento se ubica entre el EMPALME y el TABLERO GENERAL, de modo que su apertura desconecta toda la instalación de consumo (TDAyF Existente incluido), no solo el sistema de autogeneración.",
+          "texto_introductorio": "La operación de la protección de potencia inversa para este esquema tipo, debe cortar el suministro de toda la instalación de consumo, como lo establece el numeral 6.6.3.2, pudiendo operar sobre el mismo interruptor de acoplamiento de la protección RI Centralizada, siempre que las condiciones técnicas de los equipos lo permitan y todos los equipos indicados en este esquema estén en el mismo gabinete (Tablero de Punto de Conexión).\nComo la potencia instalada del sistema de autogeneración es superior a 100 kW, deberá contar con la protección RI Centralizada (de forma independiente a las protecciones RI complementarias en caso de que se tengan), la cual comandará al interruptor de acoplamiento en caso de presentarse una operación en modo isla o cuando se presentan valores inadmisibles de las tensiones o la frecuencia.",
+          "notas": [
+            "El sistema de control de inyección cero se ejemplifica en el Anexo N° 9.5 de este pliego técnico.",
+            "Sistema de autogeneración con potencia instalada superior a 30 kW debe contar con un registrador de la energía que mida en forma exclusiva la generación del sistema."
+          ]
+        },
+        {
+          "letra": "D",
+          "titulo": "Sistema de control de inyección junto a protección RI centralizada y protección de potencia inversa con operación sobre interruptor de acoplamiento que desconectará el suministro de la instalación de consumo",
+          "imagen": "ric-09/anexo-9-2-opcionD.png",
+          "descripcion_figura": "Diagrama de bloques donde la Protección Potencia Inversa comanda su propio Interruptor Acoplamiento, ubicado entre el EMPALME y el TABLERO GENERAL (por lo que su disparo corta toda la instalación de consumo), mientras que la RI EXTERNA (Centralizada) y el SISTEMA INY. CERO comandan, mediante disparo transferido, un Int. Acoplamiento externo situado junto al generador (GEN. ERNC).",
+          "texto_introductorio": "La operación de la protección de potencia inversa para este esquema tipo, debe cortar el suministro de toda la instalación de consumo, como lo establece el numeral 6.6.3.2, debiendo operar sobre su propio interruptor de acoplamiento, contactor de poder o reconectador (según corresponda al tipo de instalación).\nComo la potencia instalada del sistema de autogeneración es superior a 100 kW, deberá contar con la protección RI Centralizada (de forma independiente a las protecciones RI complementarias), la cual comandará al interruptor de acoplamiento que en este ejemplo es a través del disparo transferido.",
+          "notas": [
+            "Interruptor de acoplamiento debe provocar la desconexión del sistema de autogeneración en caso de que tenga una pérdida de la señal de control.",
+            "Sistema de autogeneración con potencia instalada superior a 30 kW debe contar con un registrador de la energía que mida en forma exclusiva la generación del sistema."
+          ]
+        }
+      ],
+      "referenciado_por": ["6.1", "6.5.2.3", "6.5.2.4", "6.5.7.7", "6.6.3.1", "6.6.3.2"]
+    },
+    {
+      "numero": "9.3",
+      "titulo": "Esquema de protecciones para sistemas de autogeneración ≤ 100 kW y que cumplan con lo indicado en el punto 6.6.8 (sistema de control de inyección junto a protección RI complementaria)",
+      "tipo": "figura",
+      "lista": [
+        "a) Aplica para potencia instalada de autogeneración menor o igual a 100 kW y que su potencia de generación no supere el 10% de la capacidad del empalme de la instalación de consumo.",
+        "b) Aplica para instalaciones domiciliarias con empalmes en baja tensión de hasta 10 kW y que el o los equipos de autogeneración tengan una potencia de generación que no supere el 30% de la capacidad del empalme de la instalación de consumo."
+      ],
+      "imagen": "ric-09/anexo-9-3.png",
+      "descripcion_figura": "Diagrama de bloques: desde el EMPALME baja al TABLERO GENERAL y al Tablero de Punto de Conexión que contiene solo el SISTEMA INY. CERO (sellado por la empresa distribuidora). El TABLERO GENERAL alimenta el TD Autogeneración, que conecta a un inversor con RI e Interruptor de Acoplamiento integrados, el cual recibe la generación de un string fotovoltaico (paneles en serie) con su conductor de tierra de protección de 4 mm².",
+      "notas_adicionales": [
+        "El esquema tipo que se señala en este Anexo, muestra un sistema de generación a través de Energías Renovables con inversor con protección RI integrada, pero también podría contar con una protección RI complementaria externa al equipo de autogeneración.",
+        "Como este esquema tipo NO requiere contar con la protección de potencia inversa, por no cumplir con lo indicado en 6.6.8, debiendo contar con su sistema de control de inyección cero en un gabinete (Tablero de Punto de Conexión) que será sellado por la Empresa Distribuidora.",
+        "La protección RI operará sobre el interruptor de acoplamiento en caso de presentarse una operación en modo isla o cuando se presentan valores inadmisibles de las tensiones o la frecuencia.",
+        "El sistema de control de inyección cero se ejemplifica en el Anexo N° 9.5 de este pliego técnico."
+      ],
+      "referenciado_por": ["6.5.2.5", "6.6.8.1", "6.6.8.2", "6.7.7"]
+    },
+    {
+      "numero": "9.4",
+      "titulo": "Esquema de protecciones para sistemas de autogeneración ≤ 100 kW cuya potencia instalada supera 10% de la capacidad del empalme o no cumplen con los criterios del punto 6.6.8",
+      "tipo": "opciones_multiples",
+      "opciones": [
+        {
+          "letra": "A",
+          "titulo": "Protección RI complementaria junto a sistema de control de inyección y protección de potencia inversa con operación sobre interruptor de acoplamiento que desconectará sólo el suministro del sistema de autogeneración",
+          "imagen": "ric-09/anexo-9-4-opcionA.png",
+          "descripcion_figura": "Diagrama de bloques: EMPALME, TABLERO GENERAL, Tablero de Punto de Conexión con Protección Potencia Inversa y SISTEMA INY. CERO comandando un Interruptor Acoplamiento común, que conecta hacia el TD Autogeneración y de ahí a un inversor con RI e Interruptor de Acoplamiento integrados alimentado por un string fotovoltaico.",
+          "texto_introductorio": "Como este esquema tipo SI requiere contar con la protección de potencia inversa, por no cumplir con lo indicado en 6.6.8, debiendo contar además con su sistema de control de inyección cero en un gabinete (Tablero de Punto de Conexión) que será sellado por la Empresa Distribuidora.\nEl esquema tipo que se señala en este Anexo, muestra un sistema de generación a través de Energías Renovables con inversor con protección RI integrada, pero también podría contar con una protección RI complementaria externa al equipo de autogeneración.\nLa protección RI complementaria operará sobre el interruptor de acoplamiento en caso de presentarse una operación en modo isla o cuando se presentan valores inadmisibles de las tensiones o la frecuencia.",
+          "notas": [
+            "La operación de la protección de potencia inversa para este esquema tipo, debe cortar sólo el suministro del sistema de autogeneración, como lo establece el numeral 6.6.3.1.",
+            "El sistema de control de inyección cero se ejemplifica en el Anexo N° 9.5 de este pliego técnico.",
+            "Sistema de autogeneración con potencia instalada superior a 30 kW debe contar con un registrador de la energía que mida en forma exclusiva la generación del sistema."
+          ]
+        },
+        {
+          "letra": "B",
+          "titulo": "Protección RI complementaria junto a sistema de control de inyección y protección de potencia inversa con operación sobre interruptor de acoplamiento que desconectará el suministro de la instalación de consumo",
+          "imagen": "ric-09/anexo-9-4-opcionB.png",
+          "descripcion_figura": "Diagrama de bloques igual al de la Opción A, pero con el Interruptor Acoplamiento y la Protección Potencia Inversa ubicados entre el EMPALME y el TABLERO GENERAL, de modo que su disparo corta toda la instalación de consumo, no solo el sistema de autogeneración.",
+          "texto_introductorio": "Como este esquema tipo SI requiere contar con la protección de potencia inversa, por no cumplir con lo indicado en 6.6.8, debiendo contar además con su sistema de control de inyección cero en un gabinete (Tablero de Punto de Conexión) que será sellado por la Empresa Distribuidora.\nEl esquema tipo que se señala en este Anexo, muestra un sistema de generación a través de Energías Renovables con inversor con protección RI integrada, pero también podría contar con una protección RI complementaria externa al equipo de autogeneración.\nLa protección RI complementaria operará sobre el interruptor de acoplamiento en caso de presentarse una operación en modo isla o cuando se presentan valores inadmisibles de las tensiones o la frecuencia.",
+          "notas": [
+            "La operación de la protección de potencia inversa para este esquema tipo, debe cortar el suministro de toda la instalación de consumo, como lo establece el numeral 6.6.3.2.",
+            "El sistema de control de inyección cero se ejemplifica en el Anexo N° 9.5 de este pliego técnico.",
+            "Sistema de autogeneración con potencia instalada superior a 30 kW debe contar con un registrador de la energía que mida en forma exclusiva la generación del sistema."
+          ]
+        }
+      ],
+      "referenciado_por": ["6.5.2.5", "6.6.3.1", "6.6.3.2"]
+    },
+    {
+      "numero": "9.5",
+      "titulo": "Esquema tipo para unidades de autogeneración con equipo control de inyección cero",
+      "tipo": "figura",
+      "imagen": "ric-09/anexo-9-5.png",
+      "descripcion_figura": "Diagrama de una red domiciliaria/privada con n generadores fotovoltaicos (Generador PV 1 a PV n), cada uno formado por String PV, Convertidor inversor y Dispositivo de conexión, comunicados entre sí (Comm. inversores) y hacia un EQUIPO DE MONITOREO DE INYECCIÓN central. Este equipo se conecta a las Cargas de la red domiciliaria, a un MEDIDOR BIDIRECCIONAL hacia la Red eléctrica, y a un Router con salida a Internet (Comm. EM) para la comunicación remota.",
+      "notas_adicionales": [
+        "El esquema tipo que se señala en este anexo, muestra un sistema de generación fotovoltaica controlada por un dispositivo central autónomo. Este esquema requiere de un equipo externo al sistema de generación (para el ejemplo, se utiliza el equipo de monitoreo de inyección que tiene la capacidad de medir el consumo neto de energía hacia la red), quien comunica al (los) inversor (es) al momento de limitar las inyecciones configuradas.",
+        "El máximo tiempo de actuación del sistema de limitación de inyección en reducir la potencia aparente exportada actual a un valor igual o menor a la capacidad exportable máxima será de 5 segundos.",
+        "El sistema de limitación de inyección debe ser fail-safe o falla-segura, de forma que, si cualquier componente o sistema de señales que comprometa la limitación de energía falla o pierde su fuente de alimentación, el esquema debe reducir la potencia activa inyectada a la red a un valor que sea menor o igual a la máxima potencia exportable en una ventana de 5 segundos.",
+        "El sistema de control de inyección cero deberá estar ubicado en el tablero de punto de conexión, el cual deberá ser sellado por la empresa de distribución, ubicado al costado del empalme o lo más cercano posible a él."
+      ],
+      "referenciado_por": ["6.7.2", "6.7.7"]
+    }
+  ],
+  "referencias_a_otros_pliegos": [],
+  "extensiones_no_previstas_en_v1": {
+    "campo_texto_placa": "El punto 11.2 exige colocar una placa de advertencia con un texto exacto y obligatorio (\"PRECAUCIÓN / ESTA PROPIEDAD CUENTA CON UN SISTEMA DE AUTOGENERACIÓN\"), tal como aparece recuadrado en el PDF. Se agregó el campo `texto_placa` (string, con salto de línea `\\n` donde el recuadro original tiene línea aparte) para distinguir este texto literal obligatorio de la prosa normativa del punto — no es una definición, ni una tabla, ni una fórmula, sino un rótulo que debe reproducirse tal cual.",
+    "anexo_tipo_opciones_multiples": "Los Anexos 9.2 y 9.4 no son un solo diagrama con varias figuras numeradas, sino un mismo anexo que presenta varias 'Opciones' completas (A, B, C, D en 9.2; A, B en 9.4), cada una con su propio título largo, su propio diagrama de bloques y sus propios párrafos explicativos y notas al pie — son variantes de un mismo esquema de protecciones, no figuras complementarias de una sola explicación. Se introdujo `\"tipo\": \"opciones_multiples\"` con un array `opciones` (cada una `{letra, titulo, imagen, descripcion_figura, texto_introductorio, notas}`), distinto del array `figuras` ya usado para figuras numeradas dentro de un mismo anexo (ese patrón no encajaba porque aquí cada 'opción' es casi un anexo completo en sí misma, con su propio título normativo).",
+    "diagramas_de_bloques_sin_datos_tabulares": "A diferencia de los anexos con diagramas físicos/constructivos de otros pliegos (cortes de instalación, disposición de electrodos, etc.), los Anexos 9.2, 9.3, 9.4 y 9.5 de este pliego son diagramas de bloques de ingeniería eléctrica (esquemas unilineales con cajas rotuladas como TABLERO GENERAL, RI EXTERNA, INTERRUPTOR ACOPLAMIENTO, GEN. ERNC, etc., unidos por líneas de mando). Se documentó cada uno con una `descripcion_figura` detallada que nombra los bloques y sus conexiones tal como aparecen en el PDF, sin inventar valores ni simplificar la topología — no se creó un campo nuevo porque el campo `descripcion_figura` ya existente resultó suficiente para este tipo de contenido."
+  }
+}

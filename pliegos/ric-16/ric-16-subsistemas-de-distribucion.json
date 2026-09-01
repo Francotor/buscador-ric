@@ -1,0 +1,60 @@
+{
+  "pliego_id": "RIC-16",
+  "numero": "16",
+  "materia": "Subsistemas de distribución",
+  "metadata": {
+    "fuente_legal": "Decreto con Fuerza de Ley N° 4/20.018, de 2006, del Ministerio de Economía, Fomento y Reconstrucción, Ley General de Servicios Eléctricos",
+    "fuente_reglamentaria": "Decreto N°8, de 2019, del Ministerio de Energía, Reglamento de Seguridad de las Instalaciones de Consumo de Energía Eléctrica",
+    "dictado_por": "Resolución Exenta N° 33.877, de fecha 30/12/2020, de la Superintendencia de Electricidad y Combustibles",
+    "vigencia_desde": "2021-07-12",
+    "estado": "vigente",
+    "paginas_documento_fuente": 2,
+    "archivo_fuente": "RIC-N16-Subsistemas-de-Distribucion.pdf"
+  },
+  "referencias_normativas": [],
+  "notas_referencias": "Este pliego no incluye una sección de Referencias Normativas (normas UNE/IEC/NFPA) — su sección 3 es directamente 'Terminología'. Es el único pliego procesado hasta ahora sin ninguna norma técnica citada.",
+  "terminologia": [
+    { "id": "3.1", "termino": "Subsistema de distribución", "definicion": "Se denominará a una red eléctrica de distribución interna de propiedad de privados construida dentro de los límites de una propiedad, edificio, centro comercial, parcelación, condominio o similares, y cuya finalidad será proveer de energía eléctrica a todos sus integrantes, en forma independiente de la empresa distribuidora de electricidad de la zona." },
+    { "id": "3.2", "termino": "Empalme", "definicion": "conjunto de elementos y equipos eléctricos que conectan la Unidad de medida de la instalación del Usuario o Cliente a la red de distribución." },
+    { "id": "3.3", "termino": "Empresa distribuidora o distribuidora", "definicion": "Empresa(s) distribuidora(s) concesionaria(s) del servicio público de distribución o todo aquel que preste el servicio de distribución, ya sea en calidad de propietario, arrendatario, usufructuario o que opere, a cualquier título, instalaciones de distribución de energía eléctrica." },
+    { "id": "3.4", "termino": "Superintendencia", "definicion": "Superintendencia de Electricidad y Combustibles." }
+  ],
+  "secciones": [
+    {
+      "numero": "1",
+      "titulo": "Objetivos",
+      "puntos": [
+        { "numero": "1.1", "texto": "El objetivo del presente pliego técnico es establecer los requisitos de seguridad y de operación de los subsistemas de distribución de energía eléctrica del país." }
+      ]
+    },
+    {
+      "numero": "2",
+      "titulo": "Alcance y campo de aplicación",
+      "puntos": [
+        { "numero": "2.1", "texto": "Este pliego técnico aplica a todas las instalaciones de consumo de energía eléctrica ejecutadas bajo la modalidad de subsistema de distribución." }
+      ]
+    },
+    {
+      "numero": "4",
+      "titulo": "Exigencias generales",
+      "puntos": [
+        { "numero": "4.1", "texto": "Cualquier comunidad constituida por los habitantes o usuarios de edificios de altura, centros comerciales, malls, parcelaciones, condominios, o similares, compuesta por diferentes instalaciones independientes, que reciba suministro de una empresa distribuidora de electricidad podrá optar a la alternativa de obtener energía eléctrica desde un subsistema de distribución." },
+        { "numero": "4.2", "texto": "Las instalaciones constitutivas de un subsistema de distribución podrán ejecutarse solamente cuando los interesados cuenten con la factibilidad de suministro eléctrico otorgada por la empresa distribuidora de la zona." },
+        { "numero": "4.3", "texto": "El subsistema de distribución será considerado como un único servicio, siendo referidas las obligaciones, derechos y deberes de la empresa de distribución de electricidad sólo con respecto al punto de empalme." },
+        { "numero": "4.4", "texto": "Los subsistemas de distribución regularán su accionar mediante un contrato privado establecido entre sus integrantes, acordado y fijado de acuerdo con la legislación vigente." },
+        { "numero": "4.5", "texto": "Las instalaciones de un subsistema de distribución deben ser, proyectadas, ejecutadas y declaradas por instaladores eléctricos autorizados de la clase que corresponda al tipo de instalación, cumpliendo las disposiciones contenidas en los pliegos técnicos de este reglamento y en la normativa eléctrica general, según corresponda." },
+        { "numero": "4.6", "texto": "Para su puesta en servicio, las instalaciones del subsistema de distribución y de las unidades que componen la comunidad deberán encontrase totalmente terminadas y estar declaradas e inscrita en la Superintendencia de acuerdo con el procedimiento definido para tales efectos." },
+        { "numero": "4.7", "texto": "Los subsistemas de distribución deberán proyectarse y construirse de modo tal que cualquiera de sus usuarios, individualmente, tenga la opción de conectarse directamente a las líneas de distribución propias de la empresa distribuidora concesionaria de la zona. Para estos efectos deberán dejarse las servidumbres y espacios comunes correspondientes, en los cuales la empresa distribuidora pueda extender sus redes e instalar los empalmes." },
+        { "numero": "4.8", "texto": "Los subsistemas de distribución deberán proyectarse y construirse de modo de garantizar que en el caso de falla de alguna de las unidades de la comunidad no se afecte al resto de los usuarios y que, en caso de una falla general dentro del subsistema, la comunidad disponga de los medios materiales y humanos para solucionarla dentro de plazos prudentes debidamente aceptados por los integrantes de la comunidad." },
+        { "numero": "4.9", "texto": "El hecho de ser usuario de un subsistema de distribución no exime a los propietarios de las instalaciones eléctricas de las unidades que componen la comunidad, del cumplimiento de las exigencias de los pliegos de este reglamento aplicables a las instalaciones de consumo de electricidad." },
+        { "numero": "4.10", "texto": "Quienes hayan constituido subsistemas de distribución, serán responsables de la seguridad, operación y mantenimiento de las instalaciones que permiten la puesta en servicio de las instalaciones eléctricas de las unidades comprendidas en la comunidad, en conformidad a lo dispuesto en el artículo 11 de DS N°08/2019 del Ministerio de Energía.", "refs_cruzadas": ["DS N°08/2019 del Ministerio de Energía artículo 11"] },
+        { "numero": "4.11", "texto": "Las empresas distribuidoras concesionarias de electricidad de la zona no podrán oponerse a la conexión de un subsistema de distribución que cumpla con todas las exigencias que impone este pliego técnico." }
+      ]
+    }
+  ],
+  "anexos": [],
+  "referencias_a_otros_pliegos": [],
+  "extensiones_no_previstas_en_v1": {
+    "pliego_sin_seccion_de_referencias_normativas": "RIC N°16 es el primer pliego procesado sin una sección 3 de 'Referencias Normativas' — su sección 3 es directamente 'Terminología' (no cita ninguna norma UNE/IEC/NFPA). Se dejó `referencias_normativas: []` con una `notas_referencias` explicando la ausencia, mismo patrón usado para pliegos con estructura no estándar."
+  }
+}

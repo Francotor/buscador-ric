@@ -1,0 +1,572 @@
+{
+  "pliego_id": "RIC-05",
+  "numero": "05",
+  "materia": "Medidas de protección contra tensiones peligrosas y descargas eléctricas",
+  "metadata": {
+    "fuente_legal": "Decreto con Fuerza de Ley N°4/20.018, de 2006, del Ministerio de Economía, Fomento y Construcción, Ley General de Servicios Eléctricos",
+    "fuente_reglamentaria": "Decreto N°8, de 2019, del Ministerio de Energía, Reglamento de Seguridad de las Instalaciones de Consumo de Energía Eléctrica",
+    "dictado_por": "Resolución Exenta N° 33.877, de fecha 30/12/2020, de la Superintendencia de Electricidad y Combustibles",
+    "vigencia_desde": "2021-07-12",
+    "estado": "vigente",
+    "paginas_documento_fuente": 19,
+    "archivo_fuente": "RIC-N05-Medidas-de-Proteccion-Contra-Tensiones-Peligrosas.pdf"
+  },
+  "referencias_normativas": [
+    { "id": "3.1", "norma": "UNE-IEC/TS 60479-1", "anio": 2007, "titulo": "Efectos de la corriente sobre el hombre y los animales domésticos. Parte 1: Aspectos generales." },
+    { "id": "3.2", "norma": "UNE-HD 60364-4-41", "anio": 2010, "titulo": "Instalaciones eléctricas de baja tensión. Parte 4-41: Protección para garantizar la seguridad. Protección contra los choques eléctricos." }
+  ],
+  "notas_referencias": "Para la aplicación de este pliego técnico se podrán utilizar, en reemplazo de las normas UNE, las normas IEC equivalentes.",
+  "terminologia": [
+    {
+      "id": "4.1", "termino": "Accesible", "definicion": null,
+      "subterminos": [
+        { "id": "4.1.1", "termino": "Aplicado a canalizaciones", "definicion": "Son aquellas canalizaciones que pueden ser inspeccionadas, sometidas a mantenimiento o modificadas, sin afectar la estructura de la construcción o sus terminaciones." },
+        { "id": "4.1.2", "termino": "Aplicado a equipos", "definicion": "Son aquellos equipos que no están protegidos mediante puertas cerradas con llave, barreras fijas u otros medios similares." }
+      ]
+    },
+    { "id": "4.2", "termino": "Aislación", "definicion": "Conjunto de elementos utilizados en la ejecución de una instalación o construcción de un aparato o equipo y cuya finalidad es evitar el contacto con o entre partes activas." },
+    { "id": "4.3", "termino": "Aislamiento", "definicion": "Magnitud numérica que caracteriza la aislación de un material, equipo o instalación." },
+    { "id": "4.4", "termino": "Artefacto", "definicion": "Elemento fijo o portátil, parte de una instalación, que consume energía eléctrica." },
+    { "id": "4.5", "termino": "Circuito", "definicion": "Conjunto de artefactos y aparatos alimentados por una línea común de distribución, la cual es protegida por un único dispositivo de protección." },
+    { "id": "4.6", "termino": "Falla", "definicion": "Unión entre dos puntos a potencial diferente o ausencia temporal o permanente de la energía al interior o exterior de una instalación, que provoca una condición anormal de funcionamiento de ella, de alguno de sus circuitos o de parte de éstos." },
+    { "id": "4.7", "termino": "Falla a masa", "definicion": "Es la unión accidental que se produce entre un conductor activo y la cubierta o bastidor metálico de un aparato, artefacto o equipo eléctrico." },
+    { "id": "4.8", "termino": "Masa", "definicion": "Parte conductora de un equipo eléctrico, normalmente aislada respecto de los conductores activos, que en ciertos circuitos puede ser utilizada como conductor de retorno y que en condiciones de falla puede quedar energizada y presentar un potencial respecto del suelo." },
+    { "id": "4.9", "termino": "Protector diferencial", "definicion": "Dispositivo de protección destinado a desenergizar una instalación, circuito o artefacto cuando existe una falla a masa; opera cuando la suma fasorial de las corrientes a través de los conductores de alimentación es superior a un valor preestablecido." },
+    { "id": "4.10", "termino": "Sensibilidad", "definicion": "Valor de corriente diferencial que hace operar a un protector diferencial. Se entenderá por corriente diferencial a la suma fasorial de los valores instantáneos de las corrientes que circulan a través de todos los conductores del circuito principal del protector." },
+    { "id": "4.11", "termino": "Tensión de paso", "definicion": "Diferencia de potencial que experimenta una persona con una separación de un metro entre sus pies, sin tocar ningún objeto conectado a tierra." },
+    { "id": "4.12", "termino": "Tensión de contacto o transferida", "definicion": "Diferencia de potencial entre el aumento de potencial de tierra y el potencial de superficie en el punto en que una persona está de pie, mientras que al mismo tiempo tiene una mano o parte de su cuerpo en contacto con una estructura conectada a tierra." }
+  ],
+  "secciones": [
+    {
+      "numero": "1",
+      "titulo": "Objetivo",
+      "puntos": [
+        { "numero": "1", "texto": "El objetivo del presente pliego técnico es establecer las medidas de protección contra tensiones peligrosas y descargas eléctricas que se deben considerar en la ejecución y en el uso de las instalaciones de consumo de energía eléctrica del país." }
+      ]
+    },
+    {
+      "numero": "2",
+      "titulo": "Alcance y campo de aplicación",
+      "puntos": [
+        { "numero": "2", "texto": "Este pliego técnico aplica a todas las instalaciones de consumo de energía eléctrica." }
+      ]
+    },
+    {
+      "numero": "5",
+      "titulo": "Exigencias generales",
+      "puntos": [
+        { "numero": "5.1", "texto": "Toda instalación de consumo de electricidad a la que se le aplique este pliego, excepto donde se indique expresamente lo contrario, tiene que disponer de un sistema de puesta a tierra de acuerdo a lo establecido en el Pliego Técnico Normativo RIC N°06, para evitar que las personas en contacto con la misma, tanto en el interior como en el exterior, queden sometidas a tensiones de paso, de contacto o transferidas, que superen los umbrales que soporta el ser humano.", "refs_cruzadas": ["RIC N°06"] },
+        {
+          "numero": "5.2",
+          "texto": "Al operar un sistema o circuito eléctrico el operador o usuario corre el riesgo de quedar sometido a tensiones peligrosas por contacto directo o por contacto indirecto.",
+          "subpuntos": [
+            { "numero": "5.2.1", "texto": "Se entenderá que queda sometido a una tensión por contacto directo, cuando toca con alguna parte de su cuerpo una parte del circuito o sistema eléctrico, que en condiciones normales está energizada." },
+            { "numero": "5.2.2", "texto": "Se entenderá que queda sometido a una tensión por contacto indirecto, cuando alguna parte de su cuerpo toca una parte metálica de un equipo eléctrico, la que en condiciones normales está desenergizada, pero que en condiciones de falla se energiza." }
+          ]
+        },
+        { "numero": "5.3", "texto": "La instalación eléctrica debe estar dispuesta de forma que se minimice cualquier riesgo de peligro de contacto directo o indirecto para las personas y los animales domésticos, y de la ignición de materias inflamables debido a las temperaturas elevadas o a los arcos eléctricos. Además, en servicio normal, las personas y los animales no deben incurrir en ningún riesgo de quemaduras." },
+        { "numero": "5.4", "texto": "Las personas, los animales domésticos y las cosas deben estar protegidos contra los daños debido a las temperaturas excesivas o a los esfuerzos electromecánicos causados por las sobrecorrientes que pudieran producirse en los conductores activos. La protección puede estar garantizada por la limitación de la sobrecorriente a un valor inocuo y/o a una duración de tiempo seguro." },
+        { "numero": "5.5", "texto": "Se protegerá al operador o usuario de una instalación o equipo eléctrico contra los contactos directos, utilizando alguna de las medidas indicadas en la sección 7 del presente pliego o mediante la combinación de ellas.", "refs_cruzadas": ["7"] },
+        { "numero": "5.6", "texto": "Se protegerá al operador o usuario de una instalación o equipo eléctrico contra los contactos indirectos, limitando al mínimo el tiempo de la falla, haciendo que el valor de la tensión con respecto a tierra que se alcance en la parte fallada sea igual o inferior a los valores de seguridad definidos en el punto 5.8 de este pliego, o bien, haciendo que la corriente que pueda circular a través del cuerpo del operador, en caso de falla, no exceda de un cierto valor de seguridad predeterminado. El cumplimiento de estas condiciones se logrará aplicando alguna de las medidas contenidas en la sección 8 del presente pliego.", "refs_cruzadas": ["5.8", "8"] },
+        { "numero": "5.7", "texto": "El valor de resistencia del cuerpo humano se considera igual a 2.000 Ohm, pero para los efectos de aplicación de este pliego, la resistencia del cuerpo humano será según los valores definidos en la norma UNE-IEC/TS 60479-1.\nEl valor de la resistencia del cuerpo humano debe considerarse sólo como un valor referencial, utilizable exclusivamente en el ámbito de este pliego y restringido a alguno de sus aspectos específicos." },
+        {
+          "numero": "5.8",
+          "texto": "Para los efectos de aplicación de este pliego, se considerarán como máximos valores de tensión de seguridad a los cuales puede quedar sometido el cuerpo humano sin ningún riesgo, 50 V en corriente alterna y 120 V en corriente continua en lugares secos y 24 V en corriente alterna y 60 V en corriente continua en lugares húmedos o mojados en general y en salas de operaciones quirúrgicas en particular.",
+          "tabla": {
+            "nombre": "Tensiones máximas de seguridad para el cuerpo humano",
+            "columnas": ["Tipo de lugar", "Tensión máxima CA", "Tensión máxima CC"],
+            "filas": [
+              ["Lugares secos", "50 V", "120 V"],
+              ["Lugares húmedos o mojados en general, y salas de operaciones quirúrgicas", "24 V", "60 V"]
+            ]
+          }
+        },
+        { "numero": "5.9", "texto": "Se considerará piso aislante a aquel que tenga una resistencia superior a 50.000 Ohm, en instalaciones que operen a una tensión de servicio de 380/220 V y a una frecuencia de 50 Hz.\nPara establecer la calidad de aislante de un piso se efectuará una medida de resistencia de aislamiento utilizando alguno de los métodos de medida indicados en el anexo 19.1 del Pliego Técnico Normativo RIC N°19.", "refs_cruzadas": ["RIC N°19 anexo 19.1"] }
+      ]
+    },
+    {
+      "numero": "6",
+      "titulo": "Esquemas de conexión a tierra",
+      "puntos": [
+        { "numero": "6.1", "texto": "Para la determinación de las características de las medidas de protección contra contacto directo o por contacto indirecto, así como de las especificaciones de los equipos encargados de tales funciones, será necesario analizar el esquema de distribución empleado." },
+        { "numero": "6.2", "texto": "Los esquemas de distribución se establecen en función de las conexiones a tierra de la red de distribución o de la alimentación, por un lado, y de las masas de la instalación receptora, por el otro." },
+        {
+          "numero": "6.3",
+          "texto": "La denominación se realiza con un código de letras con el siguiente significado:",
+          "subpuntos": [
+            {
+              "numero": "6.3.a", "letra_original": "a)",
+              "texto": "Primera letra: Se refiere a la situación de la alimentación con respecto a tierra.",
+              "tabla": { "columnas": ["Letra", "Significado"], "filas": [["T", "Conexión directa de un punto de la alimentación a tierra."], ["I", "Aislamiento de todas las partes activas de la alimentación con respecto a tierra o conexión de un punto a tierra a través de una impedancia."]] }
+            },
+            {
+              "numero": "6.3.b", "letra_original": "b)",
+              "texto": "Segunda letra: Se refiere a la situación de las masas de la instalación receptora con respecto a tierra.",
+              "tabla": { "columnas": ["Letra", "Significado"], "filas": [["T", "Masas conectadas directamente a tierra, independientemente de la eventual puesta a tierra de la alimentación."], ["N", "Masas conectadas directamente al punto de la alimentación puesto a tierra (en corriente alterna, este punto es normalmente el punto neutro)."]] }
+            },
+            {
+              "numero": "6.3.c", "letra_original": "c)",
+              "texto": "Otras letras (eventuales): Se refieren a la situación relativa del conductor neutro y del conductor de protección.",
+              "tabla": { "columnas": ["Letra", "Significado"], "filas": [["S", "Las funciones de neutro y de protección, aseguradas por conductores separados."], ["C", "Las funciones de neutro y de protección, combinadas en un solo conductor (conductor CPN)."]] }
+            }
+          ]
+        },
+        {
+          "numero": "6.4",
+          "titulo": "Esquema TN – Neutralización.",
+          "subpuntos": [
+            { "numero": "6.4.1", "texto": "Los esquemas TN tienen un punto de la alimentación, generalmente el neutro o compensador, conectado directamente a tierra y las masas de la instalación de consumo conectadas a dicho punto mediante conductores de protección. Se distinguen tres tipos de esquemas TN según la disposición relativa del conductor neutro y del conductor de protección." },
+            { "numero": "6.4.2", "texto": "En los esquemas TN cualquier corriente de falla franca fase-masa es una corriente de cortocircuito. El bucle de defecto está constituido exclusivamente por elementos conductores metálicos." },
+            {
+              "numero": "6.4.3",
+              "texto": "Esquema de distribución TN-S o neutralización: El conductor neutro y el de protección son distintos en todo el esquema. En el ámbito de aplicación de este esquema, la bajada del conductor que une la instalación con el electrodo de puesta a tierra deberá realizarse con conductores independientes para la tierra de protección y la tierra de servicio (neutro), la unión de ellos deberá realizarse en el electrodo y en el tablero principal de la instalación, en el caso de usar protección diferencial, este siempre deberá ir ubicado aguas abajo de esta unión. Ver figura 5.1",
+              "figura": { "numero": "5.1", "titulo": "Esquema TN-S", "descripcion_figura": "Diagrama unifilar: la Alimentación (transformador con neutro puesto a tierra mediante un electrodo) llega a la Instalación receptora con 5 conductores separados: 3 fases (F), el neutro (N) y el conductor de protección (CP); el CP se conecta directamente a las masas de los equipos de la instalación.", "imagen": "ric-05/figura-5-1-5-2.png" }
+            },
+            {
+              "numero": "6.4.4",
+              "texto": "Esquema TN-C. Las funciones de neutro y protección están combinadas en un solo conductor en todo el esquema. Este esquema solo se podrá utilizar en casos justificados técnicamente donde sea imposible aplicar el sistema TN-S. Ver figura 5.2",
+              "figura": { "numero": "5.2", "titulo": "Esquema TN-C", "descripcion_figura": "Diagrama unifilar: la Alimentación (transformador con neutro puesto a tierra) llega a la Instalación receptora con 3 fases (F) y un único conductor combinado CPN (neutro+protección); desde el CPN se deriva el conductor de protección (CP) hacia las masas de los equipos.", "imagen": "ric-05/figura-5-1-5-2.png" }
+            },
+            {
+              "numero": "6.4.5",
+              "texto": "Esquema TN-C-S. Las funciones de neutro y protección están combinadas en un solo conductor en una parte del esquema. Este esquema solo se podrá utilizar en casos justificados técnicamente donde sea imposible aplicar el sistema TN-S. Ver figura 5.3",
+              "figura": { "numero": "5.3", "titulo": "Esquema TN-C-S", "descripcion_figura": "Diagrama unifilar: la Alimentación llega con 3 fases (F) y un conductor combinado CPN hasta un punto de la Instalación receptora, donde el CPN se separa en conductor de Neutro (N) y conductor de Protección (CP) independientes; ambos, N y CP, se conectan a las masas de los equipos aguas abajo de la separación.", "imagen": "ric-05/figura-5-3-5-4.png" }
+            }
+          ]
+        },
+        {
+          "numero": "6.5",
+          "titulo": "Esquema TT",
+          "subpuntos": [
+            {
+              "numero": "6.5.1",
+              "texto": "El esquema TT tiene un punto de alimentación, generalmente el neutro o compensador, conectado directamente a tierra. Las masas de la instalación de consumo están conectadas a una conexión de puesta a tierra separada de la conexión de puesta a tierra de la alimentación. Ver figura 5.4",
+              "figura": { "numero": "5.4", "titulo": "Esquema TT", "descripcion_figura": "Diagrama unifilar: la Alimentación (transformador con neutro puesto a tierra en un electrodo propio) llega a la Instalación receptora con 3 fases (F) y el neutro (N); las masas de los equipos se conectan a un electrodo de puesta a tierra propio de la instalación (CP), separado e independiente del electrodo de la alimentación.", "imagen": "ric-05/figura-5-3-5-4.png" }
+            },
+            { "numero": "6.5.2", "texto": "En este esquema las corrientes de falla fase-masa o fase-tierra pueden tener valores inferiores a los de cortocircuito, pero pueden ser suficientes para provocar la aparición de tensiones peligrosas." },
+            { "numero": "6.5.3", "texto": "En general, el circuito de falla incluye resistencia de paso a tierra en alguna parte, lo que no excluye la posibilidad de conexiones eléctricas accidentales o no, entre la zona de la conexión de puesta a tierra de las masas de la instalación y la de alimentación." },
+            { "numero": "6.5.4", "texto": "Aunque ambas tomas de tierra no sean independientes, el esquema sigue siendo un esquema TT si no se cumplen todas las condiciones del esquema TN. Dicho de otra forma, no se tienen en cuenta las posibles conexiones entre ambas zonas de conexión de puesta a tierra para la determinación de las condiciones de protección." }
+          ]
+        },
+        {
+          "numero": "6.6",
+          "titulo": "Esquema IT",
+          "subpuntos": [
+            {
+              "numero": "6.6.1",
+              "texto": "En el esquema IT, la instalación debe estar aislada de tierra o conectada a tierra a través de una impedancia de valor suficientemente alto. Esta conexión se efectúa bien sea en el punto neutro de la instalación, si está montada en estrella, o en un punto neutro artificial. Cuando no exista ningún punto de neutro, un conductor de fase puede conectarse a tierra a través de una impedancia. Ver figura 5.5",
+              "figura": { "numero": "5.5", "titulo": "Esquema IT", "descripcion_figura": "Diagrama unifilar: la Alimentación no tiene conexión directa a tierra, salvo por una impedancia interpuesta entre el punto neutro y tierra; llega a la Instalación receptora con 3 fases (F); las masas de los equipos se conectan a un electrodo de puesta a tierra propio (CP).", "imagen": "ric-05/figura-5-5.png" }
+            },
+            { "numero": "6.6.2", "texto": "En este esquema la corriente resultante de una primera falla fase-masa o fase-tierra, tiene un valor lo suficientemente reducido como para no provocar la aparición de tensiones de contacto peligrosas." },
+            { "numero": "6.6.3", "texto": "La limitación del valor de la corriente resultante de una primera falla fase-masa o fase-tierra se obtiene bien por la ausencia de conexión a tierra en la alimentación, o bien por la inserción de una impedancia suficiente entre un punto de la alimentación (generalmente el neutro) y tierra. A este efecto puede resultar necesario limitar la extensión de la instalación para disminuir el efecto capacitivo de los cables con respecto a tierra." }
+          ]
+        },
+        {
+          "numero": "6.7",
+          "titulo": "Aplicación de los tres tipos de esquemas.",
+          "subpuntos": [
+            {
+              "numero": "6.7.1",
+              "texto": "La elección de uno de los tres tipos de esquemas debe hacerse en función de las características técnicas de cada instalación. Sin embargo, hay que tener en cuenta los siguientes principios.",
+              "subpuntos": [
+                { "numero": "6.7.1.1", "texto": "Las redes de distribución de energía eléctrica de baja tensión tienen un punto puesto directamente a tierra en conformidad con lo definido en el DS N°109/2017 del Ministerio de Energía que aprueba reglamento de seguridad de las instalaciones eléctricas destinadas a la producción, transporte, prestación de servicios complementarios, sistemas de almacenamiento y distribución de energía eléctrica, o disposiciones que la reemplacen. Este punto es el punto neutro de la red. El esquema de las redes de distribución para instalaciones de consumo alimentadas directamente de una red de distribución pública de baja tensión es el esquema TT." },
+                { "numero": "6.7.1.2", "texto": "En instalaciones de consumo, se deberá elegir cualquiera de los siguientes esquemas TN-S, TT e IT. Solamente en casos justificados técnicamente podrá utilizarse los esquemas TN-C o TN-C-S." },
+                { "numero": "6.7.1.3", "texto": "No obstante, lo dispuesto en el punto 6.7.1.1 precedente, puede establecerse un esquema IT en parte o partes de una instalación alimentada directamente de una red de distribución pública mediante el uso de transformadores adecuados, en cuyo secundario y en la parte de la instalación afectada se establezcan las disposiciones que para tal esquema se citan en el punto 6.6 de este pliego.", "refs_cruzadas": ["6.7.1.1", "6.6"] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "7",
+      "titulo": "Medidas de protección contra contactos directos",
+      "puntos": [
+        { "numero": "7.1", "texto": "Esta metodología consiste en tomar las medidas citadas en los puntos 7.2 y 7.3 de este pliego, destinadas a proteger a las personas contra los peligros que pueden derivarse de un contacto con las partes activas de los materiales eléctricos que integran la instalación.", "refs_cruzadas": ["7.2", "7.3"] },
+        {
+          "numero": "7.2",
+          "texto": "Se considerará suficiente protección contra los contactos directos con partes energizadas que funcionen a más 24 V en lugares húmedos y más de 50 V en lugares secos, la adopción de una o más de las siguientes medidas:",
+          "subpuntos": [
+            { "numero": "7.2.a", "letra_original": "a)", "texto": "Colocando las partes energizadas fuera de la zona alcanzable por una persona." },
+            { "numero": "7.2.b", "letra_original": "b)", "texto": "Colocando las partes activas en bóvedas, salas o recintos similares, accesibles únicamente a personal calificado." },
+            { "numero": "7.2.c", "letra_original": "c)", "texto": "Separando las partes energizadas mediante rejas, tabiques o disposiciones similares, de modo que ninguna persona pueda entrar en contacto accidental con ellas y que sólo personal calificado tenga acceso a la zona así delimitada." },
+            { "numero": "7.2.d", "letra_original": "d)", "texto": "Recubriendo las partes energizadas con aislantes apropiados, capaces de conservar sus propiedades a través del tiempo y que limiten las corrientes de fuga a valores no superiores a 1 mA." }
+          ]
+        },
+        {
+          "numero": "7.3",
+          "texto": "Los medios a utilizar como medidas de protección contra contactos directos son habitualmente:",
+          "subpuntos": [
+            { "numero": "7.3.a", "letra_original": "a)", "texto": "Protección por aislamiento de las partes activas." },
+            { "numero": "7.3.b", "letra_original": "b)", "texto": "Protección por medio de barreras o envolventes." },
+            { "numero": "7.3.c", "letra_original": "c)", "texto": "Protección por medio de obstáculos." },
+            { "numero": "7.3.d", "letra_original": "d)", "texto": "Protección por puesta fuera de alcance por alejamiento." },
+            { "numero": "7.3.e", "letra_original": "e)", "texto": "Protección complementaria por dispositivos de corriente diferencial residual (Protecciones Diferenciales)." }
+          ]
+        },
+        {
+          "numero": "7.4",
+          "titulo": "Protección por aislamiento de las partes activas.",
+          "subpuntos": [
+            { "numero": "7.4.1", "texto": "Las partes activas deberán estar recubiertas de un aislamiento que no pueda ser eliminado más que destruyéndolo." },
+            { "numero": "7.4.2", "texto": "Las pinturas, barnices, lacas y productos similares no se considera que constituyan un aislamiento suficiente en el marco de la protección contra los contactos directos." }
+          ]
+        },
+        {
+          "numero": "7.5",
+          "titulo": "Protección por medio de barreras o envolventes.",
+          "subpuntos": [
+            { "numero": "7.5.1", "texto": "Las partes activas deben estar situadas en el interior de las envolventes o detrás de barreras que posean, como mínimo, un grado de protección IP2X. Si se necesitan aberturas mayores para la reparación de piezas o para el buen funcionamiento de los equipos, se adoptarán medidas adicionales para impedir que las personas o animales domésticos toquen las partes activas. Además, se deberá señalizar, mediante una advertencia de peligro." },
+            { "numero": "7.5.2", "texto": "Las superficies superiores de las barreras o envolventes horizontales que son fácilmente accesibles deben responder como mínimo al grado de protección IP4X o IPXXD." },
+            { "numero": "7.5.3", "texto": "Las barreras o envolventes deben fijarse de manera segura y ser de una robustez y durabilidad suficientes para mantener los grados de protección exigidos, con una separación suficiente de las partes activas en las condiciones normales de servicio, teniendo en cuenta las influencias externas." },
+            {
+              "numero": "7.5.4",
+              "texto": "Cuando sea necesario suprimir las barreras, abrir las envolventes o quitar partes de éstas, esto solo debe ser posible:",
+              "subpuntos": [
+                { "numero": "7.5.4.a", "letra_original": "a)", "texto": "Con la ayuda de una llave o de una herramienta." },
+                { "numero": "7.5.4.b", "letra_original": "b)", "texto": "Después de quitar la tensión de las partes activas protegidas por estas barreras o estas envolventes, no pudiendo ser restablecida la tensión hasta después de volver a colocar las barreras o las envolventes." },
+                { "numero": "7.5.4.c", "letra_original": "c)", "texto": "Si hay interpuesta una segunda barrera que posee como mínimo el grado de protección IP2X o IPXXB, que no pueda ser quitada más que con la ayuda de una llave o de una herramienta y que impida todo contacto con las partes activas." }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "7.6",
+          "titulo": "Protección por medio de obstáculos.",
+          "subpuntos": [
+            { "numero": "7.6.1", "texto": "Esta medida no garantiza una protección completa y su aplicación se limita, a los recintos de servicio eléctrico solo accesibles al personal autorizado." },
+            { "numero": "7.6.2", "texto": "Los obstáculos están destinados a impedir los contactos fortuitos con las partes activas, pero no los contactos voluntarios por una tentativa deliberada de salvar el obstáculo." },
+            {
+              "numero": "7.6.3",
+              "texto": "Los obstáculos deben impedir:",
+              "subpuntos": [
+                { "numero": "7.6.3.a", "letra_original": "a)", "texto": "Un acercamiento físico no intencionado a las partes activas." },
+                { "numero": "7.6.3.b", "letra_original": "b)", "texto": "Los contactos no intencionados con las partes activas en el caso de intervenciones en equipos bajo tensión durante el servicio." }
+              ]
+            },
+            { "numero": "7.6.4", "texto": "Los obstáculos pueden ser desmontables sin la ayuda de una herramienta o de una llave; no obstante, deben estar fijados de manera que se impida todo desmontaje involuntario." }
+          ]
+        },
+        {
+          "numero": "7.7",
+          "titulo": "Protección por puesta fuera de alcance por alejamiento.",
+          "subpuntos": [
+            { "numero": "7.7.1", "texto": "Esta medida no garantiza una protección completa y es aplicable a los recintos de servicio eléctrico sólo accesibles al personal autorizado." },
+            { "numero": "7.7.2", "texto": "La puesta fuera de alcance por alejamiento está destinada solamente a impedir los contactos fortuitos con las partes activas." },
+            { "numero": "7.7.3", "texto": "Las partes accesibles simultáneamente, que se encuentran a tensiones diferentes no deben encontrarse dentro del volumen de accesibilidad." },
+            { "numero": "7.7.4", "texto": "El volumen de accesibilidad de las personas se define como el situado alrededor de los emplazamientos en los que pueden permanecer o circular personas, y cuyos límites no pueden ser alcanzados por una mano sin medios auxiliares, este volumen está limitado conforme a lo indicado en el anexo 5.1 de este pliego, entendiendo que la altura que limita el volumen es 2,5 m.", "anexos_relacionados": ["5.1"] },
+            { "numero": "7.7.5", "texto": "Cuando el espacio en el que permanecen y circulan normalmente personas está limitado por un obstáculo (por ejemplo, listón de protección, barandillas, panel enrejado) que presenta un grado de protección inferior al IP2X o IPXXB, el volumen de accesibilidad comienza a partir de este obstáculo." },
+            { "numero": "7.7.6", "texto": "En los emplazamientos en que se manipulen normalmente objetos conductores de gran longitud o voluminosos, las distancias prescritas anteriormente deben aumentarse teniendo en cuenta las dimensiones de estos objetos." },
+            { "numero": "7.7.7", "texto": "En una puesta fuera de alcance por alejamiento deberán instalarse luces de emergencia autoenergizadas. Junto a la iluminación de emergencia serán exigibles paneles luminosos de señalización de advertencia de seguridad, y deberán cumplir con lo establecido en el Pliego Técnico Normativo RIC N°08.", "refs_cruzadas": ["RIC N°08"] }
+          ]
+        },
+        {
+          "numero": "7.8",
+          "titulo": "Protección complementaria por protectores diferenciales.",
+          "subpuntos": [
+            { "numero": "7.8.1", "texto": "La utilización de los protectores diferenciales no constituye por sí mismo una medida de protección completa y requiere el empleo adicional de al menos una de las medidas de protección señaladas en las secciones 7.4 a 7.7 de este pliego.", "refs_cruzadas": ["7.4", "7.7"] },
+            { "numero": "7.8.2", "texto": "El empleo de protectores diferenciales, cuyo valor de corriente diferencial asignada de funcionamiento (sensibilidad) sea inferior o igual a 30 mA, se reconoce como medida de protección complementaria en caso de fallo de otra medida de protección contra los contactos directos o en caso de imprudencia de los usuarios." },
+            { "numero": "7.8.3", "texto": "Cuando se prevea que las corrientes diferenciales puedan ser no senoidales (como por ejemplo en salas de radiología intervencionista, salas de computación y cargas no lineales), los protectores diferenciales utilizados serán de clase A que aseguran la desconexión para corrientes alternas senoidales, así como para corrientes continuas pulsantes. Asimismo, los protectores diferenciales serán de clase B en caso de que las cargas puedan no tener paso por cero, a fin y efecto de asegurar la desconexión en presencia de corrientes de falla en corriente continua (CC) o corriente alterna (CA)." }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "8",
+      "titulo": "Medidas de protección contra contactos indirectos",
+      "puntos": [
+        { "numero": "8.1", "texto": "La primera medida contra los contactos indirectos es evitar que estos se produzcan, lo cual se logrará manteniendo el aislamiento en los diversos puntos de la instalación en sus valores adecuados." },
+        {
+          "numero": "8.2",
+          "texto": "Se considera que una instalación tiene un adecuado valor de resistencia de aislamiento sí, ejecutadas las mediciones en la forma que se describe a continuación, se obtienen valores no inferiores a los prescritos:",
+          "subpuntos": [
+            { "numero": "8.2.1", "texto": "La resistencia de aislamiento de una instalación de baja tensión se medirá aplicando el ensayo definido en la sección 7.3 del Pliego Técnico Normativo RIC N°19.", "refs_cruzadas": ["RIC N°19 sección 7.3"] },
+            { "numero": "8.2.2", "texto": "El valor mínimo de resistencia de aislamiento será según lo indicado en la tabla N°19.1 del Pliego Técnico Normativo RIC N°19, si la extensión de la instalación no excede de 100 m. Las instalaciones de extensión superior a 100 m, se separarán en tramos no superiores a dicho valor, cada uno de los cuales deberá cumplir con el valor de resistencia de aislamiento prescrito.", "refs_cruzadas": ["RIC N°19 tabla N°19.1"] }
+          ]
+        },
+        { "numero": "8.3", "texto": "Asumiendo que aún en una instalación en condiciones óptimas, ante una situación de falla, una parte metálica del equipo puede quedar energizada, y además de la verificación y cumplimiento de lo prescrito en el punto 8.2 de este pliego, se deberán tomar medidas complementarias para protección contra tensiones de contacto peligrosas. Estas medidas se clasificarán en dos grupos: los sistemas de protección clase A (véase punto 8.4) y los sistemas de protección clase B (véase punto 8.5).", "refs_cruzadas": ["8.2", "8.4", "8.5"] },
+        {
+          "numero": "8.4",
+          "texto": "En los sistemas de protección clase A, se trata de tomar medidas destinadas a suprimir el riesgo haciendo que los contactos no sean peligrosos, o bien impidiendo los contactos simultáneos entre las masas y los elementos conductores entre los cuales puedan aparecer tensiones peligrosas. Dentro de esta clase se encuentran los siguientes sistemas de protección:",
+          "subpuntos": [
+            { "numero": "8.4.a", "letra_original": "a)", "texto": "Empleo de transformadores de aislación (ver punto 8.6.1).", "refs_cruzadas": ["8.6.1"] },
+            { "numero": "8.4.b", "letra_original": "b)", "texto": "Empleo de tensiones extra bajas (ver punto 8.6.2).", "refs_cruzadas": ["8.6.2"] },
+            { "numero": "8.4.c", "letra_original": "c)", "texto": "Empleo de aislación de protección o doble aislación (ver punto 8.6.3).", "refs_cruzadas": ["8.6.3"] },
+            { "numero": "8.4.d", "letra_original": "d)", "texto": "Conexiones equipotenciales (ver punto 8.6.4).", "refs_cruzadas": ["8.6.4"] },
+            { "numero": "8.4.e", "letra_original": "e)", "texto": "Protección en los locales o emplazamientos no conductores (ver punto 8.6.5).", "refs_cruzadas": ["8.6.5"] }
+          ]
+        },
+        { "numero": "8.5", "texto": "En los sistemas de protección clase B, se exige la puesta a tierra o puesta a neutro de las carcasas metálicas, asociando ésta a un dispositivo de corte automático de la alimentación que produzca la desconexión de la parte de la instalación fallada." },
+        {
+          "numero": "8.6",
+          "titulo": "Sistemas de protección clase A.",
+          "texto": "La aplicación de estas medidas, por sus características, serán posibles en casos muy restringidos y sólo para ciertos equipos o partes de la instalación.",
+          "subpuntos": [
+            {
+              "numero": "8.6.1",
+              "texto": "Empleo de transformadores de aislación: Este sistema consiste en alimentar el o los circuitos que se desea proteger a través de un transformador de aislación, generalmente de razón 1/1, cuyo secundario esté aislado de tierra, o mediante una fuente que asegure un grado de seguridad equivalente al transformador de aislación anterior, por ejemplo, un grupo motor generador que posea una separación equivalente. Se deberán cumplir las condiciones siguientes:",
+              "subpuntos": [
+                { "numero": "8.6.1.1", "texto": "En el caso de que el circuito separado no alimente más que un solo aparato, las masas del circuito no deben ser conectadas a un conductor de protección." },
+                {
+                  "numero": "8.6.1.2",
+                  "texto": "En el caso de un circuito separado que alimente muchos aparatos, se satisfarán las siguientes prescripciones:",
+                  "subpuntos": [
+                    { "numero": "8.6.1.2.a", "letra_original": "a)", "texto": "Las masas del circuito separado deben conectarse entre sí mediante conductores de equipotencialidad aislados, no conectados a tierra. Tales conductores, no deben conectarse ni a conductores de protección, ni a masas de otros circuitos ni a elementos conductores." },
+                    { "numero": "8.6.1.2.b", "letra_original": "b)", "texto": "Todas las bases de tomas de corriente deben estar provistas de un contacto de tierra que debe estar conectado al conductor de equipotencialidad descrito en el punto 8.6.4 de este pliego.", "refs_cruzadas": ["8.6.4"] },
+                    { "numero": "8.6.1.2.c", "letra_original": "c)", "texto": "Todos los cables flexibles de equipos que no sean de clase II, deben tener un conductor de protección utilizado como conductor de equipotencialidad." },
+                    { "numero": "8.6.1.2.d", "letra_original": "d)", "texto": "En el caso de dos fallas francas que afecten a dos masas y alimentados por dos conductores de polaridad diferente, debe existir un dispositivo de protección que garantice el corte en un tiempo como máximo igual al indicado en la tabla 5.1 incluida en el punto 8.7.6 de este pliego, para esquemas TN.", "refs_cruzadas": ["tabla 5.1", "8.7.6"] }
+                  ]
+                }
+              ],
+              "nota_final": "Este tipo de protección se utiliza en instalaciones que se efectúen en o sobre calderas, andamiajes metálicos, cascos navales, fuentes de agua y, en general, donde las condiciones de trabajo sean extremadamente peligrosas por tratarse de locales o ubicaciones muy conductoras. El empleo de este sistema de protección hará innecesaria la adopción de medidas adicionales."
+            },
+            {
+              "numero": "8.6.2",
+              "texto": "Empleo de tensiones extra bajas: En este sistema se empleará como tensión de servicio un valor de 50 V en corriente alterna (CA) y 120 V en corriente continua (CC). Su aplicación requiere del cumplimiento de las siguientes condiciones:",
+              "subpuntos": [
+                { "numero": "8.6.2.a", "letra_original": "a)", "texto": "La tensión extra baja será proporcionada por transformadores, generadores, baterías o conversores electrónicos con aislación galvánica, cuyas características sean las adecuadas para este tipo de trabajo." },
+                { "numero": "8.6.2.b", "letra_original": "b)", "texto": "El circuito no será puesto a tierra ni se conectará con circuitos de tensión más elevada, ya sea directamente o mediante conductores de protección." },
+                {
+                  "numero": "8.6.2.c", "letra_original": "c)",
+                  "texto": "Las masas o carcasas de los equipos no podrán estar conectadas premeditadamente con:",
+                  "subpuntos": [
+                    { "numero": "8.6.2.c.i", "letra_original": "i.", "texto": "Tierra" },
+                    { "numero": "8.6.2.c.ii", "letra_original": "ii.", "texto": "Con conductores de protección, con masas o carcasas de otros circuitos de corriente." },
+                    { "numero": "8.6.2.c.iii", "letra_original": "iii.", "texto": "Con otras partes conductoras ajenas al circuito." }
+                  ]
+                },
+                { "numero": "8.6.2.d", "letra_original": "d)", "texto": "No se podrá efectuar una transformación de media o alta tensión a tensión extra baja." },
+                { "numero": "8.6.2.e", "letra_original": "e)", "texto": "Si la tensión nominal sobrepasa el valor efectivo de 24 V CA o de 60 V CC, se tiene que proveer al sistema de alguna de las medidas de protección contra contactos directos, de las indicadas en el punto 7.3 de este pliego.", "refs_cruzadas": ["7.3"] }
+              ],
+              "nota_final": "El empleo de este sistema de protección es recomendable en instalaciones ejecutadas en recintos o lugares muy conductores y hará innecesaria la adopción de otras medidas adicionales de protección.\n\nComo ejemplo de lugares muy conductores pueden citarse piscinas en que se utilicen circuitos de iluminación subacuática, circuitos de alimentación a tinas domésticas de hidromasaje, saunas, etc."
+            },
+            {
+              "numero": "8.6.3",
+              "texto": "Empleo de aislación de protección clase II o doble aislación: Este sistema consiste en recubrir todas las partes accesibles de las carcasas metálicas con un material aislante apropiado. Se asegura esta protección por:",
+              "subpuntos": [
+                { "numero": "8.6.3.1", "texto": "Utilización de equipos con un aislamiento doble o reforzado (clase II)." },
+                { "numero": "8.6.3.2", "texto": "Conjuntos de equipos eléctricos construidos en fábrica y que posean aislamiento equivalente (doble o reforzado)." },
+                { "numero": "8.6.3.3", "texto": "Aislamientos suplementarios montados en la construcción de la instalación eléctrica y que aíslen equipos eléctricos que posean únicamente un aislamiento principal." },
+                { "numero": "8.6.3.4", "texto": "Aislamientos reforzados montados en la construcción de la instalación eléctrica y que aíslen las partes activas descubiertas, cuando por construcción no sea posible la utilización de un doble aislamiento." }
+              ],
+              "nota_final": "El empleo de materiales no conductores en la construcción de las carcasas de electrodomésticos y maquinas herramientas portátiles ha hecho que este sistema de protección haya alcanzado una gran difusión y efectividad."
+            },
+            { "numero": "8.6.4", "texto": "Conexiones equipotenciales: Este sistema consiste en unir todas las partes metálicas de la canalización y las masas de los equipos eléctricos entre sí y con los elementos conductores ajenos a la instalación que sean accesibles simultáneamente, para evitar que puedan aparecer tensiones peligrosas entre ellos.\n\nEsta medida puede, además, comprender la puesta a tierra de la unión equipotencial para evitar que aparezcan tensiones peligrosas entre la unión y el piso.\n\nEn las condiciones indicadas, deben insertarse partes aislantes en los elementos conductores unidos a la conexión equipotencial, por ejemplo, coplas o uniones aislantes en sistemas de cañerías, a fin de evitar la transferencia de tensiones a puntos alejados de la conexión.\n\nLas puertas y ventanas metálicas o los marcos metálicos que estén colocados en muros no conductores y fuera del contacto de otras estructuras metálicas no necesitan conectarse a la conexión equipotencial.\n\nEl empleo de este sistema de protección es recomendable en lugares mojados, debiendo asociarse a uno de los sistemas de protección clase B." },
+            {
+              "numero": "8.6.5",
+              "texto": "Protección en los locales o emplazamientos no conductores: Esta medida de protección está destinada a impedir en caso de falla del aislamiento principal de las partes activas, el contacto simultáneo con partes que pueden ser puestas a tensiones diferentes. Se admite la utilización de materiales de la clase 0 a condición de que se respete el conjunto de las siguientes medidas:",
+              "subpuntos": [
+                { "numero": "8.6.5.1", "texto": "Las masas deben estar dispuestas de manera que, en condiciones normales, las personas no hagan contacto simultáneo: bien con dos masas, bien con una masa y cualquier elemento conductor, si estos elementos pueden encontrarse a tensiones diferentes en caso de una falla del aislamiento principal de las partes activas." },
+                { "numero": "8.6.5.2", "texto": "En estos locales (o emplazamientos), no debe estar previsto ningún conductor de protección." },
+                {
+                  "numero": "8.6.5.3",
+                  "texto": "Las prescripciones del punto anterior se consideran satisfechas si el emplazamiento posee paredes aislantes y si se cumplen una o varias de las siguientes condiciones:",
+                  "subpuntos": [
+                    {
+                      "numero": "8.6.5.3.a", "letra_original": "a)",
+                      "texto": "Alejamiento respectivo de las masas y de los elementos conductores, así como de las masas entre sí. Este alejamiento se considera suficiente si la distancia entre dos elementos es de 2 m como mínimo, pudiendo ser reducida esta distancia a 1,25 m por fuera del volumen de accesibilidad. Ver figura 1.",
+                      "figura": { "numero": "1", "titulo": "Alejamiento de masas y elementos conductores", "descripcion_figura": "Dos esquemas (a1 y a2), cada uno con una persona de pie sobre suelo aislante y una pared no aislante pero aislada. Se acotan: 2,5 m de alcance vertical de la persona (altura del volumen de accesibilidad), más de 1,25 m de separación entre el elemento conductor y las masas fuera del volumen de accesibilidad, y más de 2 m de separación horizontal entre las masas situadas a ambos lados de la persona.", "imagen": "ric-05/figura-1-2.png" }
+                    },
+                    {
+                      "numero": "8.6.5.3.b", "letra_original": "b)",
+                      "texto": "Interposición de obstáculos eficaces entre las masas o entre las masas y los elementos conductores. Estos obstáculos son considerados como suficientemente eficaces si dejan la distancia a franquear en los valores indicados en el literal a). No deben conectarse ni a tierra ni a las masas y, en la medida de lo posible, deben ser de material aislante. Ver figura 2.",
+                      "refs_cruzadas": ["8.6.5.3.a"],
+                      "figura": { "numero": "2", "titulo": "Obstáculos y aislamiento entre masas y elementos conductores", "descripcion_figura": "Dos esquemas (b y c) sobre suelo aislante. En (b), dos personas de pie, cada una a menos de 2 m de un obstáculo central (partición aislante o aislada) que las separa de una masa. En (c), un elemento conductor separado de una masa mediante una parte aislante, a una altura de 2,5 m sobre el suelo.", "imagen": "ric-05/figura-1-2.png" }
+                    },
+                    { "numero": "8.6.5.3.c", "letra_original": "c)", "texto": "Aislamiento o disposición aislada de los elementos conductores. El aislamiento debe tener una rigidez mecánica suficiente y poder soportar una tensión de ensayo de un mínimo de 2.000 V. La corriente de fuga no debe ser superior a 1 mA en las condiciones normales de empleo." }
+                  ]
+                },
+                {
+                  "numero": "8.6.5.4",
+                  "texto": "Las paredes y suelos aislantes deben presentar una resistencia no inferior a:",
+                  "tabla": {
+                    "columnas": ["Condición", "Resistencia mínima"],
+                    "filas": [["Tensión nominal de la instalación no superior a 500 V", "50 kΩ"], ["Tensión nominal de la instalación superior a 500 V", "100 kΩ"]]
+                  },
+                  "notas_adicionales": ["Si la resistencia no es superior o igual, en todo punto, al valor prescrito, estas paredes y suelos se considerarán como elementos conductores desde el punto de vista de la protección contra las descargas eléctricas."]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "8.7",
+          "titulo": "Sistemas de protección clase B.",
+          "texto": "Corresponden a la protección por corte automático de la alimentación y sus características son las que se indican a continuación:",
+          "subpuntos": [
+            { "numero": "8.7.1", "texto": "El corte automático de la alimentación después de la aparición de una falla está destinado a impedir que una tensión de contacto de valor suficiente se mantenga durante un tiempo tal que puede dar como resultado un riesgo." },
+            { "numero": "8.7.2", "texto": "El corte automático de la alimentación está prescrito cuando pueda producirse un efecto peligroso en las personas o animales domésticos en caso de falla, debido al valor y duración de la tensión de contacto." },
+            { "numero": "8.7.3", "texto": "Este sistema consiste en la conexión a una tierra de protección de todas las carcasas metálicas de los equipos y la protección de los circuitos mediante un dispositivo de corte automático sensible a las corrientes de falla, el cual desconectará la instalación o el equipo fallado." },
+            { "numero": "8.7.4", "texto": "La tensión límite convencional es igual a 50 V, valor eficaz en corriente alterna, en condiciones normales. En ciertas condiciones pueden especificarse valores menos elevados, como, por ejemplo, 24 V para las instalaciones de alumbrado público contempladas en la sección 19 del Pliego Técnico Normativo RIC N°11.", "refs_cruzadas": ["RIC N°11 sección 19"] },
+            { "numero": "8.7.5", "texto": "Se describen a continuación aquellos aspectos más significativos que deben reunir estos sistemas de protección en función de los distintos esquemas de conexión de la instalación, definidos en la sección 6 de este pliego.", "refs_cruzadas": ["6"] },
+            {
+              "numero": "8.7.6",
+              "titulo": "Esquemas TN o neutralización: Características y prescripciones de los dispositivos de protección.",
+              "subpuntos": [
+                { "numero": "8.7.6.1", "texto": "Una puesta a tierra múltiple, en puntos repartidos con regularidad, puede ser necesaria para asegurarse de que el potencial del conductor de protección se mantiene, en caso de falla, lo más próximo posible al de tierra. Por la misma razón, se recomienda conectar el conductor de protección a tierra en el punto de entrada de cada edificio o establecimiento." },
+                {
+                  "numero": "8.7.6.2",
+                  "texto": "Las características de los dispositivos de protección y las secciones de los conductores se eligen de manera que, si se produce en un lugar cualquiera una falla, de impedancia despreciable, entre un conductor de fase y el conductor de protección o una masa, el corte automático se efectúe en un tiempo igual, como máximo, al valor especificado, y se cumpla la condición siguiente:",
+                  "formula": "Zs × Ia ≤ UL",
+                  "variables": {
+                    "Zs": "es la impedancia del bucle de defecto, incluyendo la de la fuente, la del conductor activo hasta el punto de defecto y la del conductor de protección, desde el punto de defecto hasta la fuente.",
+                    "Ia": "es la corriente que asegura el funcionamiento del dispositivo de corte automático en un tiempo como máximo igual al definido en la tabla 5.1 para tensión nominal igual a U0. En caso de utilización de un dispositivo de corriente diferencial-residual (protector diferencial), Ia es la sensibilidad asignada.",
+                    "UL": "es la tensión de contacto límite de seguridad indicada el punto 5.8 de este pliego (50, 24 V u otras, según los casos)."
+                  },
+                  "tabla": {
+                    "nombre": "Tabla 5.1: Tiempos de interrupción máximos según tensión nominal U0 (esquema TN)",
+                    "columnas": ["U0 [V]", "Tiempo de interrupción CA [s]", "Tiempo de interrupción CC [s]"],
+                    "filas": [[220, 0.4, 5], [380, 0.2, 0.4], ["> 380", 0.1, 0.1]]
+                  }
+                },
+                {
+                  "numero": "8.7.6.3",
+                  "texto": "En el esquema TN se deben utilizar los siguientes dispositivos de protección:",
+                  "subpuntos": [
+                    { "numero": "8.7.6.3.a", "letra_original": "a)", "texto": "Dispositivos de protección de máxima corriente, tales como fusibles, interruptores automáticos." },
+                    { "numero": "8.7.6.3.b", "letra_original": "b)", "texto": "Protectores diferenciales de sensibilidad no superior a 30 mA." }
+                  ]
+                },
+                { "numero": "8.7.6.4", "texto": "Cuando el conductor neutro y el conductor de protección sean comunes (esquemas TN-C), no podrá utilizarse protectores diferenciales. Este esquema no se puede utilizar en instalaciones que requieran de la obligatoriedad de la utilización de protecciones diferenciales." },
+                { "numero": "8.7.6.5", "texto": "Cuando se utilice un protector diferencial en esquemas TN-C-S, no debe utilizarse un conductor de tierra de protección aguas abajo. La conexión del conductor de la tierra de servicio al conductor de la tierra de protección y el electrodo de puesta a tierra debe efectuarse aguas arriba del protector diferencial." },
+                { "numero": "8.7.6.6", "texto": "Aun cuando el ámbito de aplicación de este esquema permite la existencia de una única puesta a tierra, la bajada a la puesta a tierra del conductor de conexión de tierra de servicio y del conductor de tierra de protección deben ser independientes." },
+                { "numero": "8.7.6.7", "texto": "En el caso de instalaciones alimentadas desde un empalme en media tensión (MT) y desde donde se origine una red particular en baja tensión (BT), esta red de distribución deberá cumplir lo establecido en el punto 6.7 del Pliego Técnico Normativo RIC N°06.", "refs_cruzadas": ["RIC N°06 punto 6.7"] },
+                { "numero": "8.7.6.8", "texto": "En el caso de instalaciones alimentadas desde una subestación propia, el valor de la resistencia de la puesta a tierra única de la instalación será el menor valor resultante entre 20 Ohm y el valor determinado por el cálculo de las condiciones de operación del sistema de MT." },
+                {
+                  "numero": "8.7.6.9",
+                  "texto": "Con miras a la selectividad pueden instalarse protectores diferenciales temporizados (por ejemplo, del tipo \"S\") en serie con protectores diferenciales de tipo general.",
+                  "figura": { "numero": "3", "titulo": "Esquema TN-C", "descripcion_figura": "Diagrama unifilar de un esquema TN-C: transformador con el punto neutro puesto a tierra, alimentando la instalación mediante un conductor combinado CPN; un dispositivo diferencial (Id) y la carga de la instalación, representada como una resistencia con un interruptor.", "imagen": "ric-05/figura-3.png" }
+                }
+              ],
+              "figura": { "numero": "4", "titulo": "Esquema TN-S", "descripcion_figura": "Diagrama unifilar de un esquema TN-S, ilustrado como cierre de la sección 8.7.6: transformador con el neutro puesto a tierra, alimentando la instalación con conductor de Neutro (N) y conductor de Protección (CP) separados; un dispositivo diferencial (Id) y la carga de la instalación, representada como una resistencia con un interruptor.", "imagen": "ric-05/figura-4.png" }
+            },
+            {
+              "numero": "8.7.7",
+              "titulo": "Esquemas TT. Características y prescripciones de los dispositivos de protección.",
+              "subpuntos": [
+                { "numero": "8.7.7.1", "texto": "Todas las masas de los equipos eléctricos protegidos por un mismo dispositivo de protección deben ser interconectadas y unidas por un conductor de protección a una misma toma de tierra. Si varios dispositivos de protección van montados en serie, esta prescripción se aplica por separado a las masas protegidas por cada dispositivo." },
+                { "numero": "8.7.7.2", "texto": "El punto neutro de cada generador o transformador, o si no existe, un conductor de fase de cada generador o transformador debe ponerse a tierra." },
+                {
+                  "numero": "8.7.7.3",
+                  "texto": "Se cumplirá la siguiente condición:",
+                  "formula": "RA × Ia ≤ UL",
+                  "variables": {
+                    "RA": "es la suma de las resistencias de la toma de tierra y de los conductores de protección de masas.",
+                    "Ia": "es la corriente que asegura el funcionamiento automático del dispositivo de protección. Cuando el dispositivo de protección es un protector diferencial es la sensibilidad asignada.",
+                    "UL": "es la tensión de contacto límite de seguridad indicada el punto 5.8 de este pliego (50, 24 V u otras, según los casos)."
+                  }
+                },
+                {
+                  "numero": "8.7.7.4",
+                  "texto": "En el esquema TT, se deben utilizar los siguientes dispositivos de protección:",
+                  "subpuntos": [
+                    { "numero": "8.7.7.4.a", "letra_original": "a)", "texto": "Protectores diferenciales de sensibilidad no superior a 30 mA." },
+                    { "numero": "8.7.7.4.b", "letra_original": "b)", "texto": "Dispositivos de protección de máxima corriente, tales como fusibles, interruptores automáticos. Estos dispositivos solamente son aplicables cuando la resistencia RA tiene un valor muy bajo." }
+                  ]
+                },
+                {
+                  "numero": "8.7.7.5",
+                  "texto": "El dispositivo de protección contra las sobreintensidades, debe ser:",
+                  "subpuntos": [
+                    { "numero": "8.7.7.5.a", "letra_original": "a)", "texto": "Bien un dispositivo que posea una característica de funcionamiento de tiempo inverso e Ia debe ser la corriente que asegure el funcionamiento automático en 5 s como máximo;" },
+                    { "numero": "8.7.7.5.b", "letra_original": "b)", "texto": "O bien un dispositivo que posea una característica de funcionamiento instantánea e Ia debe ser la corriente que asegura el funcionamiento instantáneo." }
+                  ]
+                },
+                { "numero": "8.7.7.6", "texto": "La utilización de dispositivos de protección de tensión de defecto no está excluida para aplicaciones especiales cuando no puedan utilizarse los dispositivos de protección antes señalados." },
+                {
+                  "numero": "8.7.7.7",
+                  "texto": "Con miras a la selectividad pueden instalarse protectores diferenciales temporizados (por ejemplo, del tipo \"S\") en serie con protectores diferenciales de tipo general, con un tiempo de funcionamiento como máximo igual a 1 s.",
+                  "figura": { "numero": "5", "titulo": "Esquema TT", "descripcion_figura": "Diagrama unifilar de un esquema TT: transformador con tres fases (L1, L2, L3) y neutro (N), con el neutro conectado a un electrodo de puesta a tierra propio (Rn); en la instalación receptora, una carga (M) con protección diferencial (Id) conectada a un electrodo de puesta a tierra independiente (RA).", "imagen": "ric-05/figura-5-6.png" }
+                }
+              ]
+            },
+            {
+              "numero": "8.7.8",
+              "titulo": "Esquemas IT. Características y prescripciones de los dispositivos de protección.",
+              "subpuntos": [
+                { "numero": "8.7.8.1", "texto": "En el esquema IT, la instalación debe estar aislada de tierra o conectada a tierra a través de una impedancia de valor suficientemente alto. Esta conexión se efectúa bien sea en el punto neutro de la instalación, si está montada en estrella, o en un punto neutro artificial. Cuando no exista ningún punto de neutro, un conductor de fase puede conectarse a tierra a través de una impedancia." },
+                { "numero": "8.7.8.2", "texto": "En caso de que exista un sólo defecto a masa o a tierra, la corriente de falla es de poca intensidad y no es imperativo el corte. Sin embargo, se deben tomar medidas para evitar cualquier peligro en caso de aparición de dos fallas simultáneas." },
+                { "numero": "8.7.8.3", "texto": "Ningún conductor activo debe conectarse directamente a tierra en la instalación." },
+                { "numero": "8.7.8.4", "texto": "Las masas deben conectarse a tierra, bien sea individualmente o por grupos." },
+                {
+                  "numero": "8.7.8.5",
+                  "texto": "Debe ser satisfecha la condición siguiente:",
+                  "formula": "RA × Id ≤ UL",
+                  "variables": {
+                    "RA": "es la suma de las resistencias de toma de tierra y de los conductores de protección de las masas.",
+                    "Id": "es la corriente de defecto en caso de un primer defecto franco de baja impedancia entre un conductor de fase y una masa. Este valor tiene en cuenta las corrientes de fuga y la impedancia global de puesta a tierra de la instalación eléctrica.",
+                    "UL": "es la tensión de contacto límite de seguridad indicada el punto 5.8 de este pliego (50, 24 V u otras, según los casos)."
+                  },
+                  "figura": { "numero": "6", "titulo": "Esquema IT aislado de tierra", "descripcion_figura": "Diagrama unifilar de un esquema IT sin conexión a tierra en la alimentación: tres fases (L1, L2, L3), una carga (M) con protección diferencial, capacitancias parásitas de cada fase a tierra (C1, C2, C3), y la masa de la carga conectada a un electrodo de puesta a tierra propio (RA).", "imagen": "ric-05/figura-5-6.png" }
+                },
+                {
+                  "numero": "8.7.8.6",
+                  "texto": "En el esquema IT, se deben utilizar los siguientes dispositivos de protección:",
+                  "subpuntos": [
+                    { "numero": "8.7.8.6.a", "letra_original": "a)", "texto": "Controladores o monitores permanentes de aislamiento" },
+                    { "numero": "8.7.8.6.b", "letra_original": "b)", "texto": "Protectores diferenciales de sensibilidad no superior a 30 mA." },
+                    { "numero": "8.7.8.6.c", "letra_original": "c)", "texto": "Dispositivos de protección de máxima corriente, tales como fusibles, interruptores automáticos." }
+                  ],
+                  "figura": { "numero": "7", "titulo": "Esquema IT unido a tierra por impedancia Z y con las puestas a tierra de la alimentación y de las masas separadas", "descripcion_figura": "Diagrama unifilar de un esquema IT con una impedancia Z interpuesta entre el punto neutro de la alimentación y un electrodo de puesta a tierra propio (Rb); tres fases (L1, L2, L3), una carga (M) con protección diferencial (Id), capacitancias parásitas de cada fase a tierra (C1, C2, C3), y la masa de la carga conectada a un electrodo de puesta a tierra independiente (RA).", "imagen": "ric-05/figura-7.png" }
+                },
+                { "numero": "8.7.8.7", "texto": "El controlador o monitor permanente de primer defecto para indicar la aparición de un primer defecto de una parte activa a masa o a tierra, debe activar una señal acústica o visual." },
+                {
+                  "numero": "8.7.8.8",
+                  "texto": "Después de la aparición de un primer defecto, las condiciones de interrupción de la alimentación en un segundo defecto deben ser las siguientes:",
+                  "subpuntos": [
+                    { "numero": "8.7.8.8.1", "texto": "Cuando se pongan a tierra masas por grupos o individualmente, las condiciones de protección son las del esquema TT, salvo que el neutro no debe ponerse a tierra." },
+                    {
+                      "numero": "8.7.8.8.2",
+                      "texto": "Cuando las masas estén interconectadas mediante un conductor de protección, colectivamente a tierra, se aplican las condiciones del esquema TN, con protección mediante un dispositivo contra sobreintensidades de forma que se cumplan las condiciones siguientes:",
+                      "subpuntos": [
+                        { "numero": "8.7.8.8.2.a", "letra_original": "a)", "texto": "Si el neutro no está distribuido:", "formula": "2 × Zs × Ia ≤ U" },
+                        { "numero": "8.7.8.8.2.b", "letra_original": "b)", "texto": "Si el neutro está distribuido:", "formula": "2 × Zs' × Ia ≤ U0" }
+                      ],
+                      "variables": {
+                        "Zs": "es la impedancia del bucle de defecto constituido por el conductor de fase y el conductor de protección.",
+                        "Ia": "es la corriente que garantiza el funcionamiento del dispositivo de protección de la instalación en un tiempo t, según la tabla 5.2, o tiempos superiores, con 5 segundos como máximo, para aquellos casos especiales contemplados en la norma IEC o UNE-HD 60364-4-41.",
+                        "U": "es la tensión entre fases, valor eficaz en corriente alterna.",
+                        "U0": "es la tensión entre fase y neutro, valor eficaz en corriente alterna."
+                      },
+                      "tabla": {
+                        "nombre": "Tabla 5.2: Tiempo de interrupción según tensión nominal y distribución del neutro (esquema IT, segundo defecto)",
+                        "columnas": ["Tensión nominal de la instalación U0/U", "Tiempo de interrupción - Neutro no distribuido [s]", "Tiempo de interrupción - Neutro distribuido [s]"],
+                        "filas": [["230/400", 0.4, 0.8], ["400/690", 0.2, 0.4], ["580/1000", 0.1, 0.2]]
+                      },
+                      "notas_adicionales": ["En la norma IEC o UNE-HD 60364-4-41 se indican las condiciones especiales que deben cumplirse, para permitir tiempos de interrupción mayores o condiciones especiales de instalación."],
+                      "figura": { "numero": "8", "titulo": "Corriente de segundo defecto en el esquema IT con masas conectadas a la misma toma de tierra y neutro no distribuido", "descripcion_figura": "Diagrama unifilar de un esquema IT con neutro no puesto a tierra (punto O), tres fases (L1, L2, L3) y un conductor combinado CPN conectado a tierra; dos cargas independientes A y B, cada una con un interruptor y resistencias, conectadas al CPN; una línea punteada indica el recorrido de la 'Corriente de doble fallo' circulando entre las masas de A y B a través del CPN.", "imagen": "ric-05/figura-8.png" }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "anexos": [
+    {
+      "numero": "5.1",
+      "titulo": "Volumen de accesibilidad",
+      "tipo": "figura",
+      "descripcion_figura": "Dos vistas en corte del volumen de accesibilidad alrededor de una superficie S susceptible de ocupación por personas. Vista superior: sección con techo curvo, altura 2,50 m desde el piso hasta el límite superior del volumen, distancia de 1,25 m desde los bordes del volumen hasta zonas fuera de alcance, un escalón intermedio a 0,75 m, y una leyenda de línea rayada indicando el 'Límite de volumen de accesibilidad'. Vista inferior: planta mostrando el volumen de accesibilidad como un rectángulo redondeado que rodea la superficie S con un margen de 1,25 m en todo el perímetro.",
+      "notas": ["S = Superficie susceptible de ocupación por personas."],
+      "imagen": "ric-05/anexo-5-1.png",
+      "referenciado_por": ["7.7.4"]
+    }
+  ],
+  "referencias_a_otros_pliegos": [
+    { "pliego": "RIC N°06", "puntos": ["general", "punto 6.7"], "citado_en": ["5.1", "8.7.6.7"] },
+    { "pliego": "RIC N°08", "puntos": ["general"], "citado_en": ["7.7.7"] },
+    { "pliego": "RIC N°11", "puntos": ["sección 19"], "citado_en": ["8.7.4"] },
+    { "pliego": "RIC N°19", "puntos": ["anexo 19.1", "sección 7.3", "tabla N°19.1"], "citado_en": ["5.9", "8.2.1", "8.2.2"] }
+  ],
+  "extensiones_no_previstas_en_v1": {
+    "campo_figura_en_punto": "A diferencia de los pliegos anteriores, RIC-05 tiene numerosas figuras (esquemas TN-S, TN-C, TN-C-S, TT, IT, etc.) intercaladas DENTRO del cuerpo del texto (no en un anexo aparte al final). Se agregó un campo 'figura' al punto que la referencia (ej. 6.4.3 'Ver figura 5.1'), con la forma {numero, titulo, descripcion_figura, imagen}, siguiendo la misma convención de imagen que los anexos pero sin ser un anexo propiamente tal (no tiene número de anexo 'X.Y' formal, sino número de figura 'Figura N.N' o 'Figura N' propio del pliego).",
+    "subpuntos_con_letra_conteniendo_tablas_de_codigo": "El punto 6.3 tiene sub-ítems con letra (a, b, c) que a su vez contienen pares código-significado (T=, I=, N=, S=, C=) — se representó cada par como una mini tabla {columnas:['Letra','Significado'], filas:[...]} dentro del subpunto correspondiente, en vez de aplanarlos a texto corrido, siguiendo la regla general de nunca aplanar datos tabulares.",
+    "campo_nota_final": "Varios puntos con lista de sub-ítems con letra (8.6.1, 8.6.2, 8.6.3) tienen, después de la lista, uno o dos párrafos sueltos de cierre que no son parte de ningún sub-ítem ni tienen numeración propia (ej. después de 8.6.1.2, el párrafo 'Este tipo de protección se utiliza en instalaciones que se efectúen en o sobre calderas...'). Se agregó un campo 'nota_final' (string) al punto padre para no perder ese texto ni inventarle un número que no tiene en el original — es la contraparte, después de los subpuntos, del campo 'notas_adicionales' ya usado en RIC-03 y RIC-04 para texto suelto después de una tabla.",
+    "sub_items_con_numeral_romano": "El punto 8.6.2.c tiene sub-ítems marcados con numerales romanos en minúscula (i., ii., iii.) en vez de letras latinas. Se aplicó el mismo patrón que los sub-ítems con letra (numero sintético con sufijo '.i'/'.ii'/'.iii' y campo 'letra_original' conservando 'i.', 'ii.', 'iii.' tal como aparecen en el PDF).",
+    "imagenes_de_figura_compartidas_entre_dos_puntos": "Varias páginas del PDF contienen dos figuras juntas en la misma página (ej. Figura 5.1 y 5.2 en la página 4; Figura 1 y 2 en la página 12; Figura 5 y 6 en la página 16). En vez de recortar cada diagrama individualmente dentro de la página (con el riesgo de cortar mal por no tener coordenadas exactas), se extrajo una imagen por página y ambos campos 'figura' (de los dos puntos que citan cada una) apuntan al mismo archivo de imagen — el mismo criterio ya usado en el Anexo 3.1 de RIC-03 con 'imagen_pagina', adaptado aquí a figuras dentro del cuerpo del texto en vez de a un anexo."
+  }
+}

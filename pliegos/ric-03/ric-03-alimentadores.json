@@ -1,0 +1,216 @@
+{
+  "pliego_id": "RIC-03",
+  "numero": "03",
+  "materia": "Alimentadores y demanda de una instalación",
+  "metadata": {
+    "fuente_legal": "Decreto con Fuerza de Ley N°4/20.018, de 2006, del Ministerio de Economía, Fomento y Reconstrucción, Ley General de Servicios Eléctricos",
+    "fuente_reglamentaria": "Decreto N°8, de 2019, del Ministerio de Energía, Reglamento de Seguridad de las Instalaciones de Consumo de Energía Eléctrica",
+    "dictado_por": "Resolución Exenta N° 33.877, de fecha 30/12/2020, de la Superintendencia de Electricidad y Combustibles",
+    "vigencia_desde": "2021-07-12",
+    "estado": "vigente",
+    "paginas_documento_fuente": 9,
+    "archivo_fuente": "RIC-N03-Alimentadores-y-demanda-de-una-instalacion-V1_1-1.pdf",
+    "notas_version": "Se agregó texto eliminado en la versión del PDF publicado el 12.01.2021 (ver nota_pie del punto 5.1.3)."
+  },
+  "notas_seccion": {
+    "terminologia": "Las definiciones y terminologías establecidas en la sección 3 (Terminología) de este pliego no son aplicables a otras normas."
+  },
+  "terminologia": [
+    { "id": "3.1", "termino": "Alimentadores", "definicion": "Son aquellos conductores eléctricos que van entre el equipo de medida y el primer tablero de la instalación, o los conductores controlados desde el tablero general y que alimentan tableros generales auxiliares o tableros de distribución." },
+    { "id": "3.2", "termino": "Canalización", "definicion": "Conjunto formado por conductores eléctricos, elementos que los soportan y accesorios que aseguran su fijación y protección mecánica." },
+    {
+      "id": "3.3", "termino": "Carga",
+      "definicion": "Es todo artefacto, equipo o instalación cuyo mecanismo u operación requiere del consumo de energía eléctrica para su funcionamiento. Dependiendo de su comportamiento las cargas pueden ser:",
+      "subterminos": [
+        { "id": "3.3.1", "termino": "Carga lineal", "definicion": "Es una carga cuyas características no alteran las formas de onda de la tensión y de la corriente durante su período de funcionamiento." },
+        { "id": "3.3.2", "termino": "Carga no lineal", "definicion": "Es una carga cuyas características alteran los parámetros de la alimentación modificando la forma de onda de la tensión y/o de la corriente durante su período de funcionamiento." }
+      ]
+    },
+    { "id": "3.4", "termino": "Circuito", "definicion": "Conjunto de artefactos y aparatos alimentados por una línea común de distribución, la cual es protegida por un único dispositivo de protección." },
+    { "id": "3.5", "termino": "Conductor", "definicion": "Elemento de cobre, dentro del alcance de este pliego, cuya función específica es el transporte de corriente. De sección transversal frecuentemente cilíndrica o rectangular. De acuerdo con su forma constructiva podrá ser designado como alambre, si se trata de una sección circular sólida única, cable si la sección resultante está formada por varios alambres o barra si se trata de una sección rectangular." },
+    { "id": "3.6", "termino": "Demanda", "definicion": "La demanda de una instalación, sistema eléctrico o parte de él, es la carga de consumo en el punto considerado, promediada sobre un intervalo de tiempo dado. Se expresa en unidades de potencia." },
+    { "id": "3.7", "termino": "Demanda máxima", "definicion": "Es la mayor demanda de la instalación, sistema eléctrico o parte de él que ocurre en un período de tiempo dado. Se expresa en unidades de potencia." },
+    { "id": "3.8", "termino": "Ducto de barra", "definicion": "Sistema de barras desnudas prefabricadas para el transporte de energía dentro de una carcasa protectora, incluyendo dispositivos y accesorios, las cuales son montadas sobre soportes aislantes, que en conjunto forman un sistema completo de canalización." },
+    { "id": "3.9", "termino": "Empalme", "definicion": "Conjunto de elementos y equipos eléctricos que conectan la Unidad de medida de la instalación del Usuario o Cliente a la red de distribución." },
+    { "id": "3.10", "termino": "Factor de demanda, (Fd.)", "definicion": "Es la razón, entre la demanda máxima de la instalación o sistema y la carga total conectada, definida sobre un período de tiempo dado. Se entenderá por carga total conectada a la suma aritmética de las potencias nominales de los artefactos o componentes de la instalación. Se puede también aplicar esta definición a partes de la instalación o sistema." },
+    { "id": "3.11", "termino": "Factor de simultaneidad, (Fs.)", "definicion": "Cociente entre la demanda máxima de un conjunto de instalaciones o cargas y la suma de las demandas máximas de las instalaciones o cargas individuales." },
+    { "id": "3.12", "termino": "Shaft", "definicion": "Conducto técnico (espacio que es parte de una construcción) generalmente destinado a contener las instalaciones de un edificio para el tendido de canalizaciones eléctricas." },
+    { "id": "3.13", "termino": "Subalimentadores", "definicion": "Son aquellos conductores eléctricos que se derivan directamente desde un alimentador o desde un tablero de paso, o bien, los controlados desde un tablero general auxiliar." },
+    { "id": "3.14", "termino": "Tensión Nominal", "definicion": "Es la tensión entre la fase y el neutro, en el caso de sistemas monofásicos, y entre fases tratándose de otros sistemas, mediante la cual se denomina o identifica una red, una subestación o instalación de Usuarios." }
+  ],
+  "secciones": [
+    {
+      "numero": "1",
+      "titulo": "Objetivos",
+      "puntos": [
+        { "numero": "1", "texto": "El objetivo del presente pliego técnico es establecer los requisitos de seguridad que deben cumplir los alimentadores y subalimentadores en las instalaciones de consumo de energía eléctrica del país." }
+      ]
+    },
+    {
+      "numero": "2",
+      "titulo": "Alcance y campo de aplicación",
+      "puntos": [
+        { "numero": "2", "texto": "Este pliego técnico aplica a todas las instalaciones de consumo de energía eléctrica, en adelante e indistintamente, instalaciones." }
+      ]
+    },
+    {
+      "numero": "4",
+      "titulo": "Conceptos generales",
+      "puntos": [
+        { "numero": "4.1", "texto": "Los conductores que formen parte de un circuito, no le serán aplicables las disposiciones de este pliego técnico." },
+        { "numero": "4.2", "texto": "Los alimentadores de una instalación de consumo no deben atravesar propiedades distintas a las que sirven. En el caso de edificios, para llegar desde el punto de empalme hasta la propiedad respectiva deberán utilizarse los espacios de uso común. Si por razones de arquitectura o de construcción no es posible utilizar los pasillos o pozos de servicio para llevar canalizaciones de alimentadores, se considerará espacios de uso común tanto a los muros exteriores del edificio como aquellos muros que dan a pasillos o escaleras. Si se utilizan muros exteriores se deberá emplear sistemas de canalización, que aseguren una resistencia a factores medioambientales adversos y una hermeticidad adecuada." }
+      ]
+    },
+    {
+      "numero": "5",
+      "titulo": "Especificaciones",
+      "puntos": [
+        {
+          "numero": "5.1",
+          "titulo": "Canalizaciones",
+          "texto": "Requisitos de canalización de alimentadores y subalimentadores.",
+          "subpuntos": [
+            { "numero": "5.1.1", "texto": "Los alimentadores se canalizarán, utilizando alguno de los sistemas de canalización indicados en el Pliego Técnico Normativo - RIC N°04.", "refs_cruzadas": ["RIC N°04"] },
+            { "numero": "5.1.2", "texto": "La sección de los conductores de los alimentadores y subalimentadores será, por lo menos, la suficiente para servir las cargas determinadas de acuerdo con la sección 6 de este pliego. En todo caso la sección mínima permisible será de 4 mm² para alimentadores y de 2,5 mm² para subalimentadores.", "refs_cruzadas": ["seccion 6"] },
+            { "numero": "5.1.3", "texto": "La sección de los alimentadores, subalimentadores y conductores será tal que la caída de tensión provocada por la corriente máxima que circula por ellos determinada de acuerdo con el punto 6.1, no exceda del 3% de la tensión nominal de la alimentación y la caída de tensión total en el punto de la instalación más desfavorable no exceda del 5% de dicha tensión.", "refs_cruzadas": ["6.1"], "nota_pie": "Se agregó texto eliminado en la versión del PDF publicado el 12.01.2021." },
+            { "numero": "5.1.4", "texto": "Los alimentadores destinados a energizar departamentos, oficinas y locales comerciales en edificios de altura se canalizarán a través de shaft verticales de alimentadores." },
+            { "numero": "5.1.5", "texto": "El shaft vertical de alimentadores deberá ser de uso exclusivo para llevar canalizaciones eléctricas de potencia y ofrecer una resistencia al fuego mínima de RF120, la pasada de estas canalizaciones entre pisos y sus derivaciones, debe evitar que se propaguen las llamas de un piso a otro mediante algún elemento cortafuego de una resistencia al fuego mínima de RF120. Será obligatorio que el conducto o shaft vertical de alimentadores tenga las mismas dimensiones en todo su trayecto y sea accesible en todos los pisos incluyendo los subterráneos de estacionamientos." },
+            { "numero": "5.1.6", "texto": "Los shaft verticales permanecerán cerrados mediante puertas con cerraduras. La canalización y los conductores de estos alimentadores serán del tipo retardante a la llama, no propagadores de incendio, de baja toxicidad, y deberán estar libre de materiales halógenos y emitir humos de muy baja opacidad, según lo establecido en el Pliego Técnico Normativo RIC N°04.", "refs_cruzadas": ["RIC N°04"] },
+            { "numero": "5.1.7", "texto": "La canalización de los alimentadores indicados en el punto 5.1.4 será preferentemente a través de ductos cerrados individuales o ducto de barras. En el caso de usar escalerillas portaconductores, bandejas portaconductores tipo pesado o canastillos, se deberá cumplir con las siguientes condiciones:",
+              "refs_cruzadas": ["5.1.4"],
+              "subpuntos": [
+                { "numero": "5.1.7.1", "texto": "Los conductores serán del tipo o denominación armonizada RZ1 o RZ1-K y de un solo tramo; no se permitirán uniones en estos alimentadores entre dispositivos de comando y/o protección." },
+                { "numero": "5.1.7.2", "texto": "Las escalerillas, bandejas o canastillos porta conductores deberán contar con su respectiva tapa, se eximirán de esta condición cuando solo se utilicen multiconductores y estas canalizaciones no estén accesibles al alcance de personal no calificado." },
+                { "numero": "5.1.7.3", "texto": "Se tenderán estos cables ordenadamente manteniendo su posición relativa dentro de las escalerillas, bandejas o canastillos, a lo largo de todo su recorrido cumpliendo con lo indicado en el anexo 3.1. Para mantener este ordenamiento, los cables serán peinados y amarrados a los travesaños de la escalerilla en tramos no superiores a 2,0 m.", "anexos_relacionados": ["3.1"] },
+                { "numero": "5.1.7.4", "texto": "Las escalerillas, bandejas o canastillos portaconductores, llevarán la cantidad de conductores o cables multiconductores, de modo que no ocupen más del 40% de la sección transversal de la bandeja, escalerilla o canastillo." },
+                { "numero": "5.1.7.5", "texto": "Los alimentadores se marcarán piso a piso mediante identificadores permanentes e indelebles de modo de permitir su fácil identificación de cada alimentador para facilitar trabajos de mantenimiento o reemplazo." }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "5.2",
+          "titulo": "Protecciones",
+          "texto": "Requisitos de protección de alimentadores y subalimentadores.",
+          "subpuntos": [
+            { "numero": "5.2.1", "texto": "Los alimentadores y subalimentadores deberán quedar protegidos ante fallas, como cortocircuito o sobrecarga, a través de las protecciones adecuadas para cada situación." },
+            { "numero": "5.2.2", "texto": "Los alimentadores o subalimentadores se protegerán a la sobrecarga de acuerdo con la potencia utilizada, estando limitada la protección de la cual depende, a la máxima capacidad de transporte de corriente de los conductores, de acuerdo con el método de instalación utilizado en la tabla Nº4.4 del Pliego Técnico Normativo – RIC Nº04.", "refs_cruzadas": ["RIC N°04 tabla 4.4"] },
+            { "numero": "5.2.3", "texto": "El conductor de puesta a tierra de protección, perteneciente a alimentadores o subalimentadores monofásicos y trifásicos, no deberá tener protecciones asociadas." },
+            { "numero": "5.2.4", "texto": "Desde tableros generales ubicados dentro del recinto de empalmes o un recinto contiguo, según se disponga en el proyecto general de la construcción, se protegerán y comandarán los alimentadores propios de cada dependencia del edificio. En la construcción, ubicación y montaje de estos tableros se respetarán las exigencias contenidas en el Pliego Técnico Normativo – RIC Nº02.", "refs_cruzadas": ["RIC N°02"] },
+            { "numero": "5.2.5", "texto": "Cada alimentador o subalimentador deberá tener un dispositivo individual de protección. El dispositivo del alimentador principal deberá ser de corte omnipolar.", "excepcion": "Dispositivos mayores a 630 A quedan exceptuados de la exigencia de corte omnipolar" },
+            { "numero": "5.2.6", "texto": "Las derivaciones tomadas desde un alimentador deberán protegerse contra las sobrecargas y los cortocircuitos. No se permite hacer derivaciones en el tramo desde el equipo de medida y el primer tablero de la instalación.", "excepcion": "Derivaciones de no más de 5 m de largo, conectadas directamente desde la barra de distribución del alimentador, canalizadas en ductos cerrados y protegidas por la protección del alimentador" }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "6",
+      "titulo": "Dimensionamiento",
+      "puntos": [
+        { "numero": "6.1", "texto": "La demanda nominal de un alimentador, según la cual se dimensionará, no será menor que la suma de las potencias nominales (W o kW) de todos los circuitos que sirve el alimentador, correspondientes a las cargas del tipo alumbrado, fuerza y climatización; aplicándole los factores a cada una de ellas, indicados en los pliegos técnicos normativos correspondientes, y las disposiciones señaladas en el presente pliego técnico." },
+        { "numero": "6.2", "texto": "Para alimentadores de fuerza y climatización que sirven cargas permanentes o una combinación de cargas permanentes y cargas intermitentes, el alimentador y sus protecciones se dimensionarán de acuerdo con lo dispuesto en el Pliego Técnico Normativo – RIC Nº07, y para alimentadores de Infraestructura de recarga de vehículos eléctricos el alimentador y sus protecciones se dimensionarán de acuerdo con lo dispuesto en el Pliego Técnico Normativo – RIC Nº15.", "refs_cruzadas": ["RIC N°07", "RIC N°15"] },
+        {
+          "numero": "6.3",
+          "texto": "Para alimentadores que sirven consumos de alumbrado exclusivamente, a la potencia instalada para este tipo de cargas, se le aplicarán los factores de demanda indicados en la tabla Nº3.1.",
+          "tabla": {
+            "nombre": "Tabla N°3.1: Factores de demanda para cálculo de alimentadores de alumbrado",
+            "columnas": ["Tipo de consumidor", "Tramo", "Potencia [kW]", "Factor de demanda"],
+            "filas": [
+              ["Casa habitación", "Primeros", 3, 1],
+              ["Casa habitación", "Desde", "3 a 120", 0.35],
+              ["Casa habitación", "Sobre", 120, 0.25],
+              ["Hospitales", "Primeros", 50, 0.4],
+              ["Hospitales", "Sobre", 50, 0.2],
+              ["Hoteles y moteles", "Primeros", 20, 0.5],
+              ["Hoteles y moteles", "Desde", "20,1 a 100", 0.4],
+              ["Hoteles y moteles", "Sobre", 100, 0.3],
+              ["Bodegas", "Primeros", 12.5, 1],
+              ["Bodegas", "Sobre", 12.5, 0.5],
+              ["Servicios comunes", "Toda la potencia", "-", 1],
+              ["Locales comerciales y oficinas", "Primeros", 50, 1],
+              ["Locales comerciales y oficinas", "Sobre", 50, 0.8],
+              ["Todo otro tipo", "Toda la potencia", "-", 1]
+            ]
+          },
+          "notas_adicionales": [
+            "Estos factores de demanda no se aplicarán sobre subalimentadores, ni sobre los conductores de los circuitos finales, en los que puede estar presente la totalidad de la carga en forma permanente o esporádica por períodos superiores a 15 minutos.",
+            "Los factores de demanda para alimentadores de ascensores son los definidos en el punto 8.6 del Pliego Técnico Normativo – RIC Nº11.",
+            "Se aceptarán factores de demanda distintos a los valores indicados en esta tabla, siempre que éstos se justifiquen mediante un estudio fundamentado en antecedentes demostrables."
+          ],
+          "refs_cruzadas": ["RIC N°11 punto 8.6"]
+        },
+        {
+          "numero": "6.4",
+          "texto": "En el caso de existir conductor neutro de un alimentador o subalimentador se dimensionará según el siguiente criterio:",
+          "subpuntos": [
+            { "numero": "6.4.1", "texto": "El neutro de alimentadores o subalimentadores monofásicos tendrá la misma sección del conductor de fase." },
+            { "numero": "6.4.2", "texto": "El neutro de alimentadores o subalimentadores trifásicos que sirvan cargas lineales exclusivamente, tales como iluminación incandescente, calefacción y fuerza, se dimensionará de modo tal que su sección sea a lo menos igual a la sección de las fases." },
+            { "numero": "6.4.3", "texto": "El neutro de alimentadores o subalimentadores trifásicos y de circuitos trifásicos que sirvan cargas no lineales, tales como iluminación mediante lámparas de descarga, iluminación led, circuitos de sistemas informáticos de procesamiento de datos, controladores de velocidad de motores alternos mediante variadores de frecuencia, partidores suaves o equipos similares, en los cuales se generen corrientes armónicas que estarán presentes en el conductor neutro, se dimensionará de la siguiente forma:",
+              "subpuntos": [
+                { "numero": "6.4.3.a", "letra_original": "a.", "texto": "Para instalaciones que cuenten con filtros armónicos en forma concentrada, el neutro de los alimentadores o subalimentadores trifásicos y de circuitos trifásicos se dimensionará de modo tal que soporte la corriente armónica nominal de la carga no lineal a la cual suministra. No obstante, la sección mínima será a lo menos un 50% mayor que la sección de los conductores de fase." },
+                { "numero": "6.4.3.b", "letra_original": "b.", "texto": "Para instalaciones que cuenten con filtros armónicos de forma distribuida o en cada carga, el neutro de los alimentadores o subalimentadores trifásicos y de circuitos trifásicos se dimensionará de modo tal que soporte la corriente armónica nominal de la carga no lineal a la cual suministra. No obstante, la sección mínima será a lo menos igual a la sección de los conductores de fase." }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "6.5",
+          "texto": "Para alimentadores que sirven consumos de alumbrado de conjuntos de viviendas que se encuentren suministradas mediante un único empalme, como el caso de un condominio, parcelación o similares, se aplicarán los factores de simultaneidad indicados en la tabla Nº3.2.",
+          "tabla": {
+            "nombre": "Tabla N°3.2: Factores de simultaneidad para cálculo de alimentadores de alumbrado de conjuntos de viviendas",
+            "columnas": ["N° Viviendas (n)", "Factor de simultaneidad (Fs)"],
+            "filas": [
+              [1, 1], [2, 1], [3, 1], [4, 0.95], [5, 0.92], [6, 0.90], [7, 0.89], [8, 0.88],
+              [9, 0.87], [10, 0.85], [11, 0.84], [12, 0.83], [13, 0.82], [14, 0.81], [15, 0.79],
+              [16, 0.78], [17, 0.77], [18, 0.76], [19, 0.75], [20, 0.74], [21, 0.73],
+              ["n>21", "(15,3+(n-21)*0,5)/n"]
+            ],
+            "nota": "Para más de 21 viviendas se aplica la fórmula (15,3+(n-21)*0,5)/n, donde n es el número de viviendas."
+          }
+        }
+      ]
+    }
+  ],
+  "anexos": [
+    {
+      "numero": "3.1",
+      "titulo": "Configuraciones de cables dispuestos en paralelo",
+      "tipo": "figura_multiple",
+      "texto_introductorio": "Las configuraciones indicadas en el Pliego Técnico Normativo RIC N°04, punto 5.28.6, deben ser las descritas en este anexo. Las distancias en las figuras deben mantenerse. Nota: cuando sea posible, las diferencias de impedancias entre las fases también están limitadas en las configuraciones especiales.",
+      "refs_cruzadas": ["RIC N°04 punto 5.28.6"],
+      "grupos": [
+        { "id": "a", "texto": "Para esquemas de conexión de 4 cables de 3 núcleos: L1L2L3, L1L2L3, L1L2L3, L1L2L3; los cables pueden tocarse." },
+        { "id": "b", "texto": "Para 6 cables de un solo núcleo: en el plano liso (fig. H.52.1), uno sobre otro (fig. H.52.2), en trébol/haces de tres (fig. H.52.3)." },
+        { "id": "c", "texto": "Para 9 cables de un solo núcleo: en el plano liso (fig. H.52.4), uno sobre otro (fig. H.52.5), en trébol/haces de tres (fig. H.52.6)." },
+        { "id": "d", "texto": "Para 12 cables de un solo núcleo: en el plano liso (fig. H.52.7), uno sobre otro (fig. H.52.8), en trébol/haces de tres (fig. H.52.9)." }
+      ],
+      "figuras": [
+        { "id": "H.52.1", "descripcion": "Configuración especial para 6 cables en paralelo de núcleo simple, en el plano liso: N1 L1 L2 L3 L3 L2 L1 N2 en una sola fila.", "imagen_pagina": 1 },
+        { "id": "H.52.2", "descripcion": "Configuración especial para 6 cables en paralelo de núcleo simple, uno sobre otro: fila superior N1 L1 L2 L3, fila inferior N2 L3 L2 L1.", "imagen_pagina": 1 },
+        { "id": "H.52.3", "descripcion": "Configuración especial para 6 cables en paralelo de núcleo simple, en trébol: N1 L1 L2 L2 L1 N2 en fila con L3 y L3 sobresaliendo arriba entre los pares centrales.", "imagen_pagina": 1 },
+        { "id": "H.52.4", "descripcion": "Configuración especial para 9 cables en paralelo de núcleo simple, en el plano liso: tres grupos L1L2L3N1 / L3L2L1N2 / L1L2L3N3 separados por distancias ≥2De (De = diámetro exterior del cable).", "imagen_pagina": 2 },
+        { "id": "H.52.5", "descripcion": "Configuración especial para 9 cables en paralelo de núcleo simple, uno sobre otro: tres filas L1L2L3N1 / L3L2L1N2 / L1L2L3N3, separadas verticalmente ≥300 mm entre filas.", "imagen_pagina": 2 },
+        { "id": "H.52.6", "descripcion": "Configuración especial para 9 cables en paralelo de núcleo simple, en trébol: tres grupos de trébol L1L2N1(L3) / L1L2N2(L3) / L1L2N3(L3) separados ≥2De.", "imagen_pagina": 2 },
+        { "id": "H.52.7", "descripcion": "Configuración especial para 12 cables en paralelo de núcleo simple, en el plano liso: fila única N1 L1 L2 L3 L3 L1 L2 N2 N3 L1 L2 L3 L3 L1 L2 N4.", "imagen_pagina": 3 },
+        { "id": "H.52.8", "descripcion": "Configuración especial para 12 cables en paralelo de núcleo simple, uno sobre otro: dos filas de 8 cables cada una, separadas ≥300 mm.", "imagen_pagina": 3 },
+        { "id": "H.52.9", "descripcion": "Configuración especial para 12 cables en paralelo de núcleo simple, en trébol: fila única con tréboles L3 sobresaliendo en 4 puntos entre los grupos N1...N4.", "imagen_pagina": 3 }
+      ],
+      "nota_desbalance": "Cuando los requerimientos de carga o las condiciones de instalación demanden una cantidad distinta de conductores por fase a la recomendada en este anexo, para reducir el desbalance en las cargas de los cables en paralelo instalados por fase: 1) hacer grupos de cables, cada grupo con un solo conductor por fase y neutro; 2) garantizar que las separaciones entre los cables de cada grupo sean menores que las distancias entre cada grupo; 3) traponer el orden de las fases dentro de cada grupo en forma consecutiva.",
+      "imagen": ["ric-03/anexo-3-1-pag1.png", "ric-03/anexo-3-1-pag2.png", "ric-03/anexo-3-1-pag3.png"],
+      "referenciado_por": ["5.1.7.3"]
+    }
+  ],
+  "referencias_a_otros_pliegos": [
+    { "pliego": "RIC N°02", "puntos": ["general"], "citado_en": ["5.2.4"] },
+    { "pliego": "RIC N°04", "puntos": ["general", "tabla 4.4", "punto 5.28.6"], "citado_en": ["5.1.1", "5.1.6", "5.2.2", "anexo 3.1"] },
+    { "pliego": "RIC N°07", "puntos": ["general"], "citado_en": ["6.2"] },
+    { "pliego": "RIC N°11", "puntos": ["punto 8.6"], "citado_en": ["6.3"] },
+    { "pliego": "RIC N°15", "puntos": ["general"], "citado_en": ["6.2"] }
+  ],
+  "extensiones_no_previstas_en_v1": {
+    "seccion_terminologia_no_siempre_es_4": "En RIC-01 y RIC-02 la Terminología es la sección 4; en este pliego es la sección 3. No asumir un número de sección fijo por nombre — siempre leer el número real de cada pliego.",
+    "sub_items_con_letra": "El punto 6.4.3 tiene sub-ítems marcados 'a.' y 'b.' en el original, no numerados como 6.4.3.1/6.4.3.2. Se representaron igual como 'subpuntos' (mismo campo que los numerados) con numero sintético '6.4.3.a' / '6.4.3.b' y un campo adicional 'letra_original' que conserva cómo aparece en el PDF.",
+    "notas_despues_de_tabla_en_el_mismo_punto": "El punto 6.3 tiene, después de la tabla 3.1, tres párrafos sueltos de contexto (aplicabilidad, remisión a otro pliego, y posibilidad de valores distintos con estudio). No son un punto nuevo ni parte de la tabla: se agregó un campo 'notas_adicionales' (array de strings) al punto que ya tiene 'tabla', para no perder esos párrafos ni inventarles un número que no tienen en el original.",
+    "anexo_con_multiples_figuras_agrupadas_por_pagina": "El Anexo 3.1 tiene 9 figuras (H.52.1 a H.52.9) repartidas en 3 páginas del PDF, 3 figuras por página. Por eficiencia se extrajo una imagen por página (no una por figura individual) y cada entrada de 'figuras' referencia su página vía 'imagen_pagina' (1, 2 o 3). Si en el futuro se necesita la imagen de una figura aislada, hay que recortarla de la página correspondiente."
+  }
+}

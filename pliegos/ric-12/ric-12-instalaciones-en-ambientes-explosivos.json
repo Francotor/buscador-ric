@@ -1,0 +1,780 @@
+{
+  "pliego_id": "RIC-12",
+  "numero": "12",
+  "materia": "Instalaciones en ambientes explosivos",
+  "metadata": {
+    "fuente_legal": "Decreto con Fuerza de Ley N°4/20.018, de 2006, del Ministerio de Economía, Fomento y Reconstrucción, Ley General de Servicios Eléctricos",
+    "fuente_reglamentaria": "Decreto N°8, de 2019, del Ministerio de Energía, Reglamento de Seguridad de las Instalaciones de Consumo de Energía Eléctrica",
+    "dictado_por": "Resolución Exenta N° 33.877, de fecha 30/12/2020, de la Superintendencia de Electricidad y Combustibles",
+    "vigencia_desde": "2021-07-12",
+    "estado": "vigente",
+    "paginas_documento_fuente": 27,
+    "archivo_fuente": "RIC-N12-Instalaciones-en-Ambientes-Explosivos.pdf"
+  },
+  "referencias_normativas": [
+    { "id": "3.1", "norma": "UNE-EN 60079-0", "anio": "2013 A11:2014 2016", "titulo": "Atmósferas explosivas. Parte 0: Equipo. Requisitos generales." },
+    { "id": "3.2", "norma": "UNE-EN 60079-1", "anio": "2015 AC:2018", "titulo": "Atmósferas explosivas. Parte 1: Protección del equipo por envolventes antideflagrantes \"d\"." },
+    { "id": "3.3", "norma": "UNE-EN 60079-2", "anio": "2015", "titulo": "Atmósferas explosivas. Parte 2: Equipos de protección por envolventes presurizadas \"p\"." },
+    { "id": "3.4", "norma": "UNE-EN 60079-5", "anio": "2016", "titulo": "Atmósferas explosivas. Parte 5: Protección de equipos por relleno pulverulento \"q\"" },
+    { "id": "3.5", "norma": "UNE-EN 60079-6", "anio": "2016", "titulo": "Atmósferas explosivas. Parte 6: Protección del equipo por inmersión líquida \"o\"." },
+    { "id": "3.6", "norma": "UNE-EN 60079-7", "anio": "2016 A1:2019", "titulo": "Atmósferas explosivas. Parte 7: Protección del equipo por seguridad aumentada \"e\"." },
+    { "id": "3.7", "norma": "UNE-EN 60079-10-1", "anio": "2016", "titulo": "Atmósferas explosivas. Parte 10-1: Clasificación de emplazamientos. Atmósferas explosivas gaseosas." },
+    { "id": "3.8", "norma": "UNE-EN 60079-10-2", "anio": "2016", "titulo": "Atmósferas explosivas. Parte 10-2: Clasificación de emplazamientos. Atmósferas explosivas de polvo." },
+    { "id": "3.9", "norma": "UNE-EN 60079-11", "anio": "2013", "titulo": "Atmósferas explosivas. Parte 11: Protección del equipo por seguridad intrínseca \"i\"." },
+    { "id": "3.10", "norma": "UNE-EN 60079-13", "anio": "2011 2018", "titulo": "Atmósferas explosivas. Parte 13: Protección del equipo por salas presurizadas" },
+    { "id": "3.11", "norma": "UNE-EN 60079-14", "anio": "2016", "titulo": "Atmósferas explosivas. Parte 14: Diseño, elección y realización de las instalaciones eléctricas." },
+    { "id": "3.12", "norma": "UNE-EN 60079-15", "anio": "2013", "titulo": "Atmósferas explosivas. Parte 15: Protección del equipo por modo de protección \"n\"." },
+    { "id": "3.13", "norma": "IEC TR 60079-16", "anio": "1990", "titulo": "Explosive atmospheres. Part 16: Artificial ventilation for the protection of analyzer (s) houses" },
+    { "id": "3.14", "norma": "UNE-EN 60079-17", "anio": "2014", "titulo": "Atmósferas explosivas. Parte 17: Inspección y mantenimiento de instalaciones eléctricas." },
+    { "id": "3.15", "norma": "UNE-EN 60079-18", "anio": "2016 A1:2018 AC:2018", "titulo": "Atmósferas explosivas. Parte 18: Protección del equipo por encapsulado \"m\"." },
+    { "id": "3.16", "norma": "UNE-EN 60079-19", "anio": "2011 A1:2016", "titulo": "Atmósferas explosivas. Parte 19: Reparación, revisión y reconstrucción de material." },
+    { "id": "3.17", "norma": "UNE-EN 60079-20-1", "anio": "2014", "titulo": "Atmósferas explosivas. Parte 20-1: Características de los materiales para la clasificación de gases y vapores. Métodos y datos de ensayo." },
+    { "id": "3.18", "norma": "UNE-EN 60079-25", "anio": "2017", "titulo": "Atmósferas explosivas. Parte 25: Sistemas eléctricos de seguridad intrínseca." },
+    { "id": "3.19", "norma": "UNE-EN 60079-26", "anio": "2015", "titulo": "Atmósferas explosivas. Parte 26: Material con nivel de protección de material (EPL) Ga." },
+    { "id": "3.20", "norma": "UNE-EN 60079-27", "anio": "2010", "titulo": "Atmósferas explosivas. Parte 27: Concepto de bus de campo de seguridad intrínseca (FISCO)." },
+    { "id": "3.21", "norma": "UNE-EN 60079-28", "anio": "2016", "titulo": "Atmósferas explosivas. Parte 28: Protección de material y sistemas de transmisión que utilizan radiación óptica." },
+    { "id": "3.22", "norma": "UNE-EN 60079-29-1", "anio": "2017", "titulo": "Atmósferas explosivas. Parte 29-1: Detectores de gas. Requisitos de funcionamiento para los detectores de gases inflamables." },
+    { "id": "3.23", "norma": "UNE-EN 60079-29-2", "anio": "2016", "titulo": "Atmósferas explosivas. Parte 29-2: Detectores de gas. Selección, instalación, uso y mantenimiento de los detectores de gases inflamables y de oxígeno." },
+    { "id": "3.24", "norma": "UNE-EN 60079-29-3", "anio": "2015", "titulo": "Atmósferas explosivas. Parte 29-3: Detectores de gas. Guía sobre seguridad funcional de sistemas fijos de detección de gas." },
+    { "id": "3.25", "norma": "UNE-EN 60079-29-4", "anio": "2011 CORR 1:2011", "titulo": "Atmósferas explosivas. Parte 29-4: Detectores de gas. Requisitos de funcionamiento de los detectores de camino abierto para gases inflamables." },
+    { "id": "3.26", "norma": "UNE-EN 60079-30-1", "anio": "2017", "titulo": "Atmósferas explosivas. Parte 30-1: Calefactores para traceado por resistencia eléctrica. Requisitos generales y ensayos." },
+    { "id": "3.27", "norma": "UNE-EN 60079-30-2", "anio": "2017", "titulo": "Atmósferas explosivas. Parte 30-2: Calefactores para traceado por resistencia eléctrica. Guía de aplicación para el diseño, instalación y mantenimiento." },
+    { "id": "3.28", "norma": "UNE-EN 60079-31", "anio": "2016", "titulo": "Atmósferas explosivas. Parte 31: Protección del material contra la inflamación de polvo por envolvente \"t\"." },
+    { "id": "3.29", "norma": "IEC TS 60079-32-1", "anio": "2013 AMD1:2017", "titulo": "Explosive atmospheres. Part 32-1: Electrostatic hazards, guidance" },
+    { "id": "3.30", "norma": "UNE-CLS/TR 60079-32-1", "anio": "2018 2019", "titulo": "Atmósferas explosivas. Parte 32-1: Peligros electrostáticos. Guía" },
+    { "id": "3.31", "norma": "UNE-EN 60079-32-2", "anio": "2016", "titulo": "Atmósferas explosivas. Parte 32-2: Riesgos electrostáticos. Ensayos." },
+    { "id": "3.32", "norma": "IEC 60079-33", "anio": "2012", "titulo": "Explosive atmospheres. Part 33: Equipment protection by special protection 's'" },
+    { "id": "3.33", "norma": "UNE-CLC/TR 60079-33", "anio": "2015", "titulo": "Atmósferas explosivas. Parte 33: Protección del equipo por protección especial \"s\"." },
+    { "id": "3.34", "norma": "UNE-CLC IEC/TS 60079-39", "anio": "2019", "titulo": "Atmósferas explosivas. Parte 39: Sistemas de seguridad intrínseca con limitación de duración de la chispa controlada electrónicamente." },
+    { "id": "3.35", "norma": "IEC TS 60079-39", "anio": "2015", "titulo": "Explosive atmospheres - Part 39: Intrinsically safe systems with electronically controlled spark duration limitation" },
+    { "id": "3.36", "norma": "IEC TS 60079-40", "anio": "2015", "titulo": "Explosive atmospheres. Part 40: Requirements for process sealing between flammable process fluids and electrical systems" },
+    { "id": "3.37", "norma": "IEC TS 60079-42", "anio": "2019", "titulo": "Explosive atmospheres - Part 42: Electrical safety devices for the control of potential ignition sources for Ex-Equipment" },
+    { "id": "3.38", "norma": "IEC TS 60079-43", "anio": "2017", "titulo": "Explosive atmospheres - Part 43: Equipment in adverse service conditions" },
+    { "id": "3.39", "norma": "IEC TS 60079-46", "anio": "2017", "titulo": "Explosive atmospheres. Part 46: Equipment assemblies" },
+    { "id": "3.40", "norma": "IEC 60332-1-1", "anio": "2004 AMD1: 2015", "titulo": "Tests on electric and optical fibre cables under fire conditions - Part 1-1: Test for vertical flame propagation for a single insulatedwire or cable – Apparatus." },
+    { "id": "3.41", "norma": "IEC 60332-3-10", "anio": "2018", "titulo": "Tests on electric and optical fibre cables under fire conditions - Part 3-10: Test for vertical flame spread of vertically-mounted bunched wires or cables – Apparatus." },
+    { "id": "3.42", "norma": "IEC 60702-1", "anio": "2002 AMD1: 2015", "titulo": "Mineral insulated cables and their terminations with a rated voltage not exceeding 750 V - Part 1: Cables." },
+    { "id": "3.43", "norma": "IEC 61386-1", "anio": "2008 AMD1:2017", "titulo": "Conduit systems for cable management - Part 1: General requirements." },
+    { "id": "3.44", "norma": "UNE 21123-1", "anio": "2017", "titulo": "Cables eléctricos de utilización industrial de tensión asignada 0,6/1 kV. Parte 1: Cables con aislamiento y cubierta de policloruro de vinilo." },
+    { "id": "3.45", "norma": "UNE 21123-2", "anio": "2017", "titulo": "Cables eléctricos de utilización industrial de tensión asignada 0,6/1 kV. Parte 2: Cables con aislamiento de polietileno reticulado y cubierta de policloruro de vinilo." },
+    { "id": "3.46", "norma": "UNE 21123-3", "anio": "2017", "titulo": "Cables eléctricos de utilización industrial de tensión asignada 0,6/1 kV. Parte 3: Cables con aislamiento de etileno-propileno y cubierta de policloruro de vinilo." },
+    { "id": "3.47", "norma": "UNE 21123-4", "anio": "2017", "titulo": "Cables eléctricos de utilización industrial de tensión asignada 0,6/1 kV. Parte 4: Cables con aislamiento de polietileno reticulado y cubierta de poliolefina" },
+    { "id": "3.48", "norma": "UNE 21123-5", "anio": "2017", "titulo": "Cables eléctricos de utilización industrial de tensión asignada 0,6/1 kV. Parte 5: Cables con aislamiento de etileno propileno y cubierta de poliolefin" },
+    { "id": "3.49", "norma": "UNE 21150", "anio": "2020", "titulo": "Cables flexibles con aislamiento de elastómero reticulado y cubierta reforzada de elastómero reticulado, de tensión asignada 0,6/1 kV" },
+    { "id": "3.50", "norma": "UNE 36582", "anio": "1986", "titulo": "Perfiles tubulares de acero, de pared gruesa, galvanizados, para blindaje de conducciones eléctricas. (Tubo \"conduit\")." },
+    { "id": "3.51", "norma": "UNE EN 50525-2-21", "anio": "2012 2019", "titulo": "Cables eléctricos de baja tensión. Cables de tensión asignada inferior o igual a 450/750 V (Uo/U). Parte 2-21: Cables de utilización general. Cables flexibles con aislamiento de elastómero reticulado" },
+    { "id": "3.52", "norma": "ISO/IEC 80079-20-1", "anio": "2017", "titulo": "Explosive atmospheres. Part 20-1: Material characteristics for gas and vapour classification - Test methods and data" },
+    { "id": "3.53", "norma": "UNE-EN ISO/IEC 80079-20-2", "anio": "2016 AC:2017", "titulo": "Atmósferas explosivas. Parte 20-2: Características del material. Métodos de ensayo de polvos inflamables." },
+    { "id": "3.54", "norma": "IEC 62606", "anio": "2013 AMD1: 2017", "titulo": "General requirements for arc fault detection devices" },
+    { "id": "3.55", "norma": "NFPA 70", "anio": "2020", "titulo": "National Electrical Code (NEC)" }
+  ],
+  "notas_referencias": "Nota 1: Para la aplicación de este pliego técnico se podrá utilizar, en reemplazo de las normas UNE, las normas IEC o NFPA equivalentes.",
+  "terminologia": [
+    { "id": "4.1", "termino": "Aparatos a prueba de explosión", "definicion": "Equipo encerrado en una carcasa, capaz de resistir una explosión de un gas o vapor especifico que pueda ocurrir en su interior; e impedir la ignición del gas o vapor específico que rodea la envoltura por causa de chispas, fogonazos o explosión del gas o vapor en el interior de la cubierta, y que opera a temperatura exterior tal que la atmósfera inflamable que lo rodea no se encienda por su causa." },
+    { "id": "4.2", "termino": "Aparato a prueba de ignición de polvos", "definicion": "Equipo encerrado de manera tal que no permite la penetración de polvo y al ser instalado y protegido, no permitirá que la generación de arcos, chispas o calor que pueda producirse o liberarse de cualquier otra manera en su interior, provoque la ignición de las acumulaciones externas o en suspensión de un polvo específico, sobre o en las cercanías de la envolvente." },
+    { "id": "4.3", "termino": "Clasificación de lugares peligrosos", "definicion": "Consiste en la delimitación de las instalaciones que se consideren como areas clasificadas, dependiendo de la posible presencia de atmósferas inflamables. El resultado de la clasificación de áreas es un plano, o una serie de éstos, indicando, tanto en planta como en elevación, la extensión de las áreas clasificadas y las propiedades de los materiales peligrosos presentes." },
+    { "id": "4.4", "termino": "Envolvente antideflagrante \"d\"", "definicion": "Modo de protección en el que las partes que pueden inflamar una atmósfera explosiva están situadas dentro de una envolvente que puede soportar los efectos de la presión derivada de una explosión interna de la mezcla y que impide la transmisión de la explosión a la atmósfera explosiva circundante. Las reglas de este modo de protección se definen en la norma UNE-EN 60079-1." },
+    { "id": "4.5", "termino": "Inmersión en aceite \"o\"", "definicion": "Modo de protección en el que el equipo eléctrico o partes de éste, se sumergen en un líquido de protección de modo que la atmósfera explosiva que pueda encontrarse sobre la superficie del líquido o en el entorno de la envolvente, no resulta inflamado. Las reglas de este modo de protección se definen en la norma UNE-EN 60079-6." },
+    { "id": "4.6", "termino": "Modo de protección", "definicion": "Conjunto de medidas específicas aplicadas a un equipo eléctrico para impedir la inflamación de una atmósfera explosiva que lo circunde." },
+    { "id": "4.7", "termino": "Seguridad intrínseca \"i\"", "definicion": "Modo de protección que aplicado a un circuito o a los circuitos de un equipo hace que cualquier chispa o cualquier efecto térmico producido en condiciones normalizadas, lo que incluye funcionamiento normal y funcionamiento en condiciones de fallo especificadas, no sea capaz de provocar la inflamación de una determinada atmósfera explosiva. Las reglas de este modo de protección se definen en la norma UNE-EN 60079-11." },
+    { "id": "4.8", "termino": "Sistema de seguridad aumentada \"e\"", "definicion": "Modo de protección que se aplica a material eléctrico o componentes Ex en el que son de aplicación medidas adicionales que dan seguridad aumentada frente a la posibilidad de temperaturas excesivas y a que se produzcan arcos y chispas. Las reglas de este modo de protección se definen en la norma UNE-EN 60079-7." },
+    { "id": "4.9", "termino": "Sistema de seguridad intrínseca", "definicion": "Conjunto de materiales y equipos eléctricos interconectados entre sí, descritos en un documento, en el que los circuitos o partes de circuitos destinados a ser empleados en atmósferas con riesgo de explosión, son de seguridad intrínseca. Las reglas a que deben someterse estos sistemas se encuentran en la norma UNE-EN 60079-25. Además de estos modos de protección existen otros específicos para utilizar en atmósferas de gas (zonas 0, 1 y 2) y en atmósferas de polvo (zonas 20, 21 y 22), que se citan más adelante." }
+  ],
+  "secciones": [
+    {
+      "numero": "1",
+      "titulo": "Objetivos",
+      "puntos": [
+        { "numero": "1.1", "texto": "El objetivo del presente pliego técnico es establecer los requisitos de seguridad y de operación, y especificar las reglas esenciales para el diseño, ejecución, explotación, mantenimiento y reparación que deben cumplir las instalaciones de consumo de electricidad del país emplazadas en ambientes explosivos en los que existe riesgo de explosión o de incendio debido a la presencia de sustancias inflamables, con la finalidad de evitar que dichas instalaciones y sus equipos sean la causa de la inflamación de estas sustancias." }
+      ]
+    },
+    {
+      "numero": "2",
+      "titulo": "Alcance y campo de aplicación",
+      "puntos": [
+        { "numero": "2.1", "texto": "El presente pliego técnico, aplica a las instalaciones de consumo emplazadas en sectores o recintos en los que existe riesgo de explosión o de incendio debido a la presencia de gases o vapores inflamables, líquidos inflamables, polvos combustibles, fibras o partículas inflamables en suspensión." },
+        { "numero": "2.2", "texto": "Dentro del concepto de atmósferas potencialmente explosivas se consideran aquellos lugares en los que se fabriquen, procesen, manipulen, traten, utilicen o almacenen sustancias sólidas, líquidas o gaseosas, susceptibles de inflamarse, deflagrar, o explosionar, siendo sostenida la reacción por el aporte de oxígeno procedente del aire ambiente en que se encuentren." },
+        { "numero": "2.3", "texto": "Para la aplicación de este pliego, los términos aparato y equipo serán considerados como sinónimos." },
+        { "numero": "2.4", "texto": "El presente pliego no aplicará a las minas subterráneas cuya atmósfera explosiva es debida a la presencia de grisú; sin embargo, sí aplicará a aquellos lugares de las minas donde existan gases distintos del grisú así como a sus instalaciones eléctricas en superficie." }
+      ]
+    },
+    {
+      "numero": "5",
+      "titulo": "Categoría de aparatos a instalar de acuerdo con la clasificación del área (zonas)",
+      "puntos": [
+        {
+          "numero": "5.1",
+          "texto": "En la Zona 0 o Zona 20: Aparatos diseñados para que puedan funcionar dentro de los parámetros operativos determinados por el fabricante y asegurar un nivel de protección muy alto.",
+          "subpuntos": [
+            {
+              "numero": "5.1.1",
+              "texto": "Los modos de protección típicos que proporcionan esta categoría son:",
+              "subpuntos": [
+                { "numero": "5.1.1.1", "texto": "Aparatos y sistemas de seguridad intrínseca con nivel de protección 'ia' para gases y polvos." },
+                { "numero": "5.1.1.2", "texto": "Encapsulado 'ma' (gases y polvos)." },
+                { "numero": "5.1.1.3", "texto": "Protección por envolvente 'ta' (polvo)." },
+                { "numero": "5.1.1.4", "texto": "Equipos con doble modo de protección conformes con la norma UNE-EN 60079-26.", "refs_cruzadas": ["UNE-EN 60079-26"] },
+                { "numero": "5.1.1.5", "texto": "Equipos con Protección Especial 'sa'." }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "5.2",
+          "texto": "En la Zona 1 o Zona 21: Aparatos diseñados para poder funcionar en las condiciones prácticas fijadas por el fabricante y asegurar un alto nivel de protección.",
+          "subpuntos": [
+            {
+              "numero": "5.2.1",
+              "texto": "Los modos de protección típicos que proporcionan esta categoría son:",
+              "subpuntos": [
+                { "numero": "5.2.1.1", "texto": "Todos los que se pueden utilizar en la Zona 0 o Zona 20" },
+                { "numero": "5.2.1.2", "texto": "Envolvente antideflagrante 'd'." },
+                { "numero": "5.2.1.3", "texto": "Sobrepresión interna 'pb', 'pv' (gases) o 'pD' (polvos)." },
+                { "numero": "5.2.1.4", "texto": "Relleno pulverulento 'q'(gases)." },
+                { "numero": "5.2.1.5", "texto": "Inmersión en aceite 'o' (gases)." },
+                { "numero": "5.2.1.6", "texto": "Seguridad aumentada 'e' (gases)." },
+                { "numero": "5.2.1.7", "texto": "Encapsulado 'm' o 'mb' (gases y polvos)." },
+                { "numero": "5.2.1.8", "texto": "Aparatos y sistemas de seguridad intrínseca con nivel de protección 'ib' (gases y polvos)." },
+                { "numero": "5.2.1.9", "texto": "Protección por envolvente 'tb'." },
+                { "numero": "5.2.1.10", "texto": "Equipos con Protección Especial 'sb'." }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "5.3",
+          "texto": "En la Zona 2 o Zona 22: Aparatos diseñados para poder funcionar en las condiciones prácticas fijadas por el fabricante y asegurar un nivel normal de protección.",
+          "subpuntos": [
+            {
+              "numero": "5.3.1",
+              "texto": "Los modos de protección típicos que proporcionan esta categoría son:",
+              "subpuntos": [
+                { "numero": "5.3.1.1", "texto": "Todos los que se pueden utilizar en la Zona 1 o Zona 21." },
+                { "numero": "5.3.1.2", "texto": "Modo de protección simplificado 'nA', 'nL' o 'nC' (gases)." },
+                { "numero": "5.3.1.3", "texto": "Aparatos y sistemas de seguridad intrínseca con nivel de protección \"ic\" (gases y polvos)." },
+                { "numero": "5.3.1.4", "texto": "Sobrepresión interna 'pc' (gases) o 'pD' (polvos)." },
+                { "numero": "5.3.1.5", "texto": "Protección por envolvente 'tc'." },
+                { "numero": "5.3.1.6", "texto": "Equipos con Protección Especial 'sc'." }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "6",
+      "titulo": "Fundamentos para alcanzar la seguridad",
+      "puntos": [
+        { "numero": "6.1", "texto": "El procedimiento para alcanzar un nivel de seguridad aceptable se fundamenta en el empleo de equipamiento construido y seleccionado de acuerdo con ciertas reglas, así como en la adopción de medidas de seguridad especiales de instalación, inspección, mantenimiento y reparación, en relación con la acotación del riesgo de presencia de atmósfera explosiva mediante una clasificación de los emplazamientos en los que se pueden producir atmósferas explosivas." },
+        { "numero": "6.2", "texto": "Según la clasificación en que se incluye el emplazamiento, es necesario recurrir a un tipo determinado de medidas constructivas de los equipos, de instalación, supervisión o intervención, como se detalla en el presente pliego y normas que en él se citan." },
+        { "numero": "6.3", "texto": "Adicionalmente, es preciso llevar a cabo la explotación, conservación y mantenimiento de la instalación y sus componentes, dentro de unos límites estrictos, para que las condiciones de seguridad no se vean comprometidas durante su vida útil." },
+        { "numero": "6.4", "texto": "Todos los servicios que componen la cadena de la instalación en locales peligrosos (clasificación de áreas, diseño, selección de los aparatos, montaje e instalación, operación, mantenimiento, reparación, inspección deberán ser realizados por un instalador autorizado por la Superintendencia, que posea los conocimientos específicos de este tipo de instalaciones." },
+        { "numero": "6.5", "texto": "De acuerdo con lo establecido en la Ley N° 18.410, cualquier duda en cuanto a la interpretación de las disposiciones de este pliego técnico será resuelta por la Superintendencia." },
+        { "numero": "6.6", "texto": "En materias de diseño, construcción, operación, mantenimiento, reparación, modificación, inspección y término de operación, la Superintendencia podrá permitir el uso de tecnologías diferentes a las establecidas en el presente pliego técnico, siempre que se mantenga el nivel de seguridad que el texto normativo contempla. Estas tecnologías deberán estar técnicamente respaldadas en normas, códigos o especificaciones nacionales o extranjeras, así como en prácticas recomendadas de ingeniería internacionalmente reconocidas, o bien ser parte de instalaciones de prueba para nueva tecnología. Para ello el instalador deberá presentar el proyecto y un ejemplar completo de la versión vigente de la norma, código o especificación extranjera utilizada debidamente traducida, cuando corresponda, así como cualquier otro antecedente que solicite la Superintendencia." }
+      ]
+    },
+    {
+      "numero": "7",
+      "titulo": "Clasificación de lugares peligrosos",
+      "puntos": [
+        { "numero": "7.1", "texto": "Los lugares peligrosos se agrupan en dos Grupos según la naturaleza de la sustancia inflamable, denominadas como Grupo II si el riesgo es debido a gases, vapores o nieblas y como Grupo III si el riesgo es debido a polvo." },
+        { "numero": "7.2", "texto": "La clasificación de lugares se realizará considerando la instalación en funcionamiento normal, es decir, no se consideran los escapes que se originen en situaciones catastróficas como la rotura de una tubería o recipiente." },
+        {
+          "numero": "7.3",
+          "texto": "El objetivo de la clasificación por zonas es doble:",
+          "subpuntos": [
+            { "numero": "7.3.1", "texto": "Precisar las categorías del equipo utilizado y su instalación en las zonas indicadas, a condición de que éstas estén adaptadas a los gases, vapores o niebla y/o polvo;" },
+            { "numero": "7.3.2", "texto": "Señalar las limitaciones de acceso, de la ejecución de trabajos y selección de materiales con fuente de ignición no cubiertos por esta instrucción." }
+          ]
+        },
+        {
+          "numero": "7.4",
+          "texto": "La clasificación de un entorno requiere, como mínimo, la realización de:",
+          "subpuntos": [
+            { "numero": "7.4.1", "texto": "Lista de sustancias y sus características relacionadas con la explosión." },
+            { "numero": "7.4.2", "texto": "Lista de fuentes de escape indicando sus parámetros." },
+            { "numero": "7.4.3", "texto": "Plano de áreas peligrosas con vistas y cortes en cantidad suficiente como para no dejar dudas en ningún local." }
+          ]
+        },
+        {
+          "numero": "7.5",
+          "titulo": "Tipos de sustancias",
+          "subpuntos": [
+            {
+              "numero": "7.5.1",
+              "texto": "Las sustancias se agrupan de la siguiente forma:",
+              "subpuntos": [
+                {
+                  "numero": "7.5.1.1",
+                  "texto": "Grupo II: Comprende lugares en los que hay o puede haber gases, vapores o nieblas en cantidad suficiente para producir atmósferas explosivas o inflamables; se incluyen en esta categoría los lugares en los que hay o puede haber líquidos inflamables.\nLos datos relevantes de las sustancias del Grupo II se enumeran en la norma UNE-EN 60079-10-1, y entre estos datos se deben conocer:",
+                  "refs_cruzadas": ["UNE-EN 60079-10-1"],
+                  "lista": [
+                    "a) Estado físico de la sustancia.",
+                    "b) Si el sistema de contención es abierto o cerrado.",
+                    "c) Punto de inflamación y de ebullición.",
+                    "d) Densidad relativa del gas o vapor.",
+                    "e) Temperatura de ignición.",
+                    "f) Límites de explosión, inferior y superior.",
+                    "g) Presión de vapor.",
+                    "h) Subgrupo (IIA, IIB o IIC).",
+                    "i) Ventilación: tipo, grado y disponibilidad."
+                  ],
+                  "nota_final": "Los datos de las sustancias más comunes pueden encontrarse en las normas UNE-EN 60079-20-1, ISO/IEC 80079-20-1 para gases y vapores e UNE ISO/IEC 80079-20-2 para polvos combustibles, aunque es válida cualquier otra fuente de información y, si corresponde, determinación por ensayo."
+                },
+                {
+                  "numero": "7.5.1.2",
+                  "texto": "Grupo III: Comprende lugares en los que hay o puede haber polvo inflamable. Este Grupo incluye polvos y fibras inflamables, en general sustancias sólidas que pueden ponerse en suspensión y que se depositan por su propio peso. Bajo esta definición cabe considerar tamaños de partículas inferiores a 500 micrones.\nEs necesario recopilar los datos de las sustancias del entorno particular, tales como:",
+                  "lista": [
+                    "a) Granulometría.",
+                    "b) Humedad.",
+                    "c) Temperatura de inflamación (en capa y en nube).",
+                    "d) Conductividad eléctrica.",
+                    "e) Concentración mínima explosiva.",
+                    "f) Energía mínima de inflamación.",
+                    "g) Presión máxima de explosión y velocidad máxima de aumento de presión (Kmax)."
+                  ],
+                  "nota_final": "Se debe realizar la determinación experimental de las características explosivas. Se establecen tres subgrupos para las sustancias del Grupo III:\n- IIIA fibras.\n- IIIB polvos no conductores.\n- IIIC polvos conductores."
+                }
+              ]
+            },
+            {
+              "numero": "7.5.2",
+              "titulo": "Zonas Grupo II",
+              "subpuntos": [
+                { "numero": "7.5.2.1", "texto": "Zona 0: Lugar en el que la atmósfera explosiva constituida por una mezcla de aire de sustancias inflamables en forma de gas, vapor o niebla está presente de modo permanente, o por un espacio de tiempo prolongado, o frecuentemente." },
+                { "numero": "7.5.2.2", "texto": "Zona 1: Lugar en el que, en condiciones normales de funcionamiento, con la formación ocasional de atmósfera explosiva constituida por una mezcla con aire de sustancias inflamables en forma de gas, vapor o niebla." },
+                { "numero": "7.5.2.3", "texto": "Zona 2: Lugar en el que, en condiciones normales de funcionamiento, con la formación de atmósfera explosiva constituida por una mezcla con aire de sustancias inflamables en forma de gas, vapor o niebla o, en la que, en caso de formarse, dicha atmósfera explosiva sólo subsiste por espacios de tiempo muy breves." },
+                { "numero": "7.5.2.4", "texto": "Las reglas para definir las zonas del Grupo II corresponderán a las definidas en la norma UNE-EN 60079-10-1.", "refs_cruzadas": ["UNE-EN 60079-10-1"] },
+                { "numero": "7.5.2.5", "texto": "En cualquier caso, es necesario tomar precauciones cuando las zonas solapadas conciernan a sustancias inflamables que tienen diferente subgrupo y/o clase de temperatura. Por lo que se deberán aplicar las características más restrictivas para la zona solapada." }
+              ]
+            },
+            {
+              "numero": "7.5.3",
+              "titulo": "Zonas Grupo III",
+              "subpuntos": [
+                { "numero": "7.5.3.1", "texto": "Zona 20: Lugar en el que la atmósfera explosiva en forma de nube de polvo inflamable en el aire está presente de forma permanente, o por un espacio de tiempo prolongado, o frecuentemente.\nLas capas en sí mismas no constituyen una zona 20. En general estas condiciones se dan en el interior de conducciones, recipientes, etc. Los lugares en los que hay capas de polvo, pero no hay nubes de forma continua o durante largos períodos de tiempo, no entran en este concepto." },
+                { "numero": "7.5.3.2", "texto": "Zona 21: Lugares en los que cabe contar con la formación ocasional, en condiciones normales de funcionamiento, de una atmósfera explosiva, en forma de nube de polvo inflamable en el aire.\nEsta zona puede incluir entre otros, los lugares en la inmediata vecindad de, por ejemplo, lugares de vaciado o llenado de polvo." },
+                { "numero": "7.5.3.3", "texto": "Zona 22: Lugares en el que no cabe contar, en condiciones normales de funcionamiento, con la formación de una atmósfera explosiva peligrosa en forma de nube de polvo inflamable en el aire o en la que, en caso de formarse dicha atmósfera explosiva, sólo subsiste por breve espacio de tiempo.\nEsta zona puede incluir, entre otros, entornos próximos de sistemas conteniendo polvo de los que puede haber fugas y formar depósitos de polvo." },
+                { "numero": "7.5.3.4", "texto": "Las reglas para definir las zonas del Grupo III corresponderán a las definidas en la norma UNE-EN 60079-10-2.", "refs_cruzadas": ["UNE-EN 60079-10-2"] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "8",
+      "titulo": "Disposiciones generales",
+      "puntos": [
+        { "numero": "8.1", "texto": "Las instalaciones de consumo de energía eléctrica en ambientes explosivos deberán cumplir con lo indicado en el presente pliego y también se aceptarán instalaciones que cumplan con las normas IEC o UNE-EN 60079 en todas sus partes, o NFPA 70, siempre que la totalidad de la instalación cumpla con la norma especifica que le aplique y no se generen combinaciones de normas que hagan peligrosa la instalación. La Superintendencia podrá emitir instrucciones técnicas de carácter general definiendo el procedimiento que deben cumplir las instalaciones que sean diseñadas bajo el estándar NFPA." },
+        { "numero": "8.2", "texto": "Lo que aquí no se indique explícitamente corresponderá a los demás pliegos técnicos normativos. En caso de conflicto predominará este pliego técnico." },
+        {
+          "numero": "8.3",
+          "titulo": "Condiciones generales",
+          "subpuntos": [
+            { "numero": "8.3.1", "texto": "En la medida de lo posible, los equipos eléctricos se ubicarán en áreas no peligrosas. Si esto no es posible, la instalación se ejecutará donde exista menor riesgo." },
+            { "numero": "8.3.2", "texto": "Los equipos eléctricos se instalarán de acuerdo con las condiciones de su documentación particular, se pondrá especial cuidado en asegurar que las partes recambiables, tales como lámparas, sean del tipo y características asignadas correctas. Las inspecciones de las instalaciones objeto de estas disposiciones se realizarán según lo establecido en la norma UNE-EN 60079-14 y UNE-EN 60079-17.", "refs_cruzadas": ["UNE-EN 60079-14", "UNE-EN 60079-17"] },
+            { "numero": "8.3.3", "texto": "Todos los circuitos que alimenten equipos eléctricos que se ubiquen en áreas peligrosas, deberán quedar protegidos por un dispositivo de detección de falla de arco eléctrico, en conformidad de la norma IEC 62606.", "refs_cruzadas": ["IEC 62606"] },
+            {
+              "numero": "8.3.4",
+              "texto": "En el caso de circunstancias excepcionales, como por ejemplo, ciertas tareas de reparación que precisan soldadura, trabajos de investigación y desarrollo (operación en plantas piloto, realización de trabajos experimentales etc.) no será necesario que se reúnan todos los requisitos de las secciones 8, 9 y 10 siguientes, en el supuesto que la instalación va a estar en operación solo durante un periodo limitado, bajo la supervisión de personal especialmente formado, y se reúnen las siguientes condiciones:",
+              "refs_cruzadas": ["sección 8", "sección 9", "sección 10"],
+              "lista": [
+                "a) Se han tomado medidas para prevenir la aparición de atmósferas explosivas peligrosas.",
+                "b) Se han tomado medidas para asegurar que el equipo eléctrico se desconecta en caso de formación de una atmósfera peligrosa.",
+                "c) Se han tomado medidas para asegurar que las personas no van a resultar dañadas por incendios o explosiones."
+              ],
+              "nota_final": "Adicionalmente, que estas medidas se han comunicado por escrito al personal que está familiarizado con los requisitos de este pliego y con las normas que tratan de equipos e instalaciones en lugares con riesgo de explosión y tienen acceso a toda la información necesaria para llevar a cabo la actuación.\nPara llevar a cabo estas operaciones será necesaria la previa elaboración de un permiso especial de trabajo autorizado por el responsable de la planta o instalación."
+            }
+          ]
+        },
+        {
+          "numero": "8.4",
+          "titulo": "Documentación",
+          "subpuntos": [
+            {
+              "numero": "8.4.1",
+              "texto": "Para instalaciones nuevas o ampliaciones de las existentes, en el ámbito de aplicación del presente pliego, se incluirá la siguiente información (según corresponda) en el proyecto de la instalación:",
+              "lista": [
+                "a) Clasificación de áreas, su informe complementar con la lista de fuentes de escape y plano representativo.",
+                "b) Adecuación del modo de protección de los equipos a los diferentes emplazamientos y zonas.",
+                "c) Instrucciones de implantación, instalación y conexión de los aparatos y equipos.",
+                "d) Condiciones especiales de instalación y utilización."
+              ]
+            },
+            {
+              "numero": "8.4.2",
+              "texto": "El propietario deberá conservar:",
+              "lista": [
+                "a) Copia del proyecto en su forma definitiva.",
+                "b) Manual de instrucciones de los equipos.",
+                "c) Certificados de Conformidad de los equipos.",
+                "d) Documentos descriptivos del sistema para los de seguridad intrínseca.",
+                "e) Todo documento que pueda ser relevante para las condiciones de seguridad."
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "8.5",
+          "titulo": "Mantenimiento y reparación",
+          "subpuntos": [
+            { "numero": "8.5.1", "texto": "Las instalaciones objeto de este pliego se someterán a un mantenimiento que garantice la conservación de las condiciones de seguridad. Como criterio al respecto, se seguirá lo establecido en la norma UNE-EN 60079-17.", "refs_cruzadas": ["UNE-EN 60079-17"] },
+            { "numero": "8.5.2", "texto": "La reparación de equipos y sistemas de protección deberán ser llevados a cabo de forma que no comprometa la seguridad. Como criterio técnico se seguirá lo establecido en la norma UNE-EN 60079-19.", "refs_cruzadas": ["UNE-EN 60079-19"] }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "9",
+      "titulo": "Emplazamientos de Grupo II",
+      "puntos": [
+        {
+          "numero": "9.1",
+          "titulo": "Generalidades",
+          "subpuntos": [
+            { "numero": "9.1.1", "texto": "Este tipo de instalaciones eléctricas se ejecutarán de acuerdo con lo especificado en la norma UNE-EN 60079–14, salvo que se contradiga con lo indicado en el presente pliego, el cual prevalecerá sobre la norma.", "refs_cruzadas": ["UNE-EN 60079-14"] }
+          ]
+        },
+        {
+          "numero": "9.2",
+          "titulo": "Selección de equipos eléctricos (excluidos cables y conductos)",
+          "subpuntos": [
+            {
+              "numero": "9.2.1",
+              "texto": "Para seleccionar un equipo eléctrico el procedimiento a seguir comprende las siguientes fases:",
+              "subpuntos": [
+                { "numero": "9.2.1.1", "texto": "Caracterizar la sustancia o sustancias implicadas en el proceso." },
+                { "numero": "9.2.1.2", "texto": "Clasificar el emplazamiento en el que se va a instalar el equipo." },
+                { "numero": "9.2.1.3", "texto": "Seleccionar los equipos eléctricos de tal manera que el modo de protección esté de acuerdo con la sección 5 de este pliego y que éstos cumplan con los requisitos que les sea de aplicación, establecidos en la norma UNE-EN 60079-14. Si la temperatura ambiente prevista no está en el rango comprendido entre -20 ºC y +40 ºC el equipo deberá estar marcado para trabajar en el rango de temperatura correspondiente.", "refs_cruzadas": ["sección 5", "UNE-EN 60079-14"] },
+                { "numero": "9.2.1.4", "texto": "Instalar el equipo de acuerdo con las instrucciones del fabricante." }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "9.3",
+          "titulo": "Reglas de instalación de equipos eléctricos.",
+          "subpuntos": [
+            { "numero": "9.3.1", "texto": "La instalación de los equipos eléctricos se realizará de acuerdo con lo especificado en la norma UNE-EN 60079-14.", "refs_cruzadas": ["UNE-EN 60079-14"] },
+            { "numero": "9.3.2", "texto": "Adicionalmente se tendrá en cuenta que la utilización de equipos con modo de protección por inmersión en aceite \"o\" queda restringida a equipos de instalación fija y que no tengan elementos generadores de arco en el seno del líquido de protección. Para la instalación de sistemas de seguridad intrínseca, se tendrá en cuenta también, lo indicado en la norma UNE-EN 60079-25.", "refs_cruzadas": ["UNE-EN 60079-25"] }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "10",
+      "titulo": "Emplazamientos del Grupo III",
+      "puntos": [
+        {
+          "numero": "10.1",
+          "titulo": "Generalidades",
+          "subpuntos": [
+            { "numero": "10.1.1", "texto": "Este tipo de instalaciones se ejecutarán de acuerdo con lo especificado en la norma UNE-EN 60079-14, salvo que se contradiga con lo indicado en el presente pliego, el cual prevalecerá sobre la norma.", "refs_cruzadas": ["UNE-EN 60079-14"] }
+          ]
+        },
+        {
+          "numero": "10.2",
+          "titulo": "Selección de equipos eléctricos (excluidos cables y conductos).",
+          "subpuntos": [
+            {
+              "numero": "10.2.1",
+              "texto": "Para seleccionar un equipo eléctrico el procedimiento a seguir comprende las siguientes fases:",
+              "subpuntos": [
+                { "numero": "10.2.1.1", "texto": "Caracterizar la sustancia o sustancias implicadas en el proceso." },
+                { "numero": "10.2.1.2", "texto": "Clasificar el emplazamiento en el que se va a instalar el equipo." },
+                { "numero": "10.2.1.3", "texto": "Seleccionar los equipos eléctricos de tal manera que el modo de protección del mismo esté de acuerdo con las limitaciones de la sección 5 de este pliego y que estos cumplan con los requisitos que les sea de aplicación, establecidos en la norma UNE-EN 60079-14.", "refs_cruzadas": ["sección 5", "UNE-EN 60079-14"] },
+                { "numero": "10.2.1.4", "texto": "Instalar el equipo de acuerdo con las instrucciones del fabricante." }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "10.3",
+          "titulo": "Reglas de instalación de equipos eléctricos.",
+          "subpuntos": [
+            { "numero": "10.3.1", "texto": "La instalación de los equipos eléctricos destinados a emplazamientos de Grupo III se hará de acuerdo con lo especificado en la norma UNE-EN 60079-14.", "refs_cruzadas": ["UNE-EN 60079-14"] },
+            { "numero": "10.3.2", "texto": "Es necesario tener presente que, si un equipo eléctrico dispone de un modo de protección para gases, no garantiza que su protección sea adecuada contra el riesgo de inflamación de polvo. El equipo deberá tener en su placa de características la marcación correspondiente al uso ante riesgos de presencia de polvo." }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "11",
+      "titulo": "Sistemas de cableado",
+      "puntos": [
+        {
+          "numero": "11.1",
+          "titulo": "Generalidades",
+          "subpuntos": [
+            { "numero": "11.1.1", "texto": "Para instalaciones de seguridad intrínseca, los sistemas de cableado cumplirán los requisitos de las normas UNE-EN 60079-14, UNE-EN 60079-25, UNE-EN 60079-27 e UNE-CLC IEC/TS 60079-39.", "refs_cruzadas": ["UNE-EN 60079-14", "UNE-EN 60079-25", "UNE-EN 60079-27", "UNE-CLC IEC/TS 60079-39"] },
+            { "numero": "11.1.2", "texto": "Los cables para el resto de las instalaciones tendrán una tensión mínima asignada de 450/750 V." },
+            { "numero": "11.1.3", "texto": "Las entradas de los cables y de las tuberías a los aparatos eléctricos se realizarán de acuerdo con el modo de protección previsto y no deberán disminuir ninguna de las características de seguridad de los aparatos. Los orificios de los equipos eléctricos para entradas de cables o tuberías que no se utilicen deberán cerrarse mediante piezas certificadas acordes con el modo de protección de que vayan dotados dichos equipos." },
+            { "numero": "11.1.4", "texto": "Para las canalizaciones para equipos móviles se tendrá en cuenta lo establecido en el Pliego Técnico Normativo RIC N°04.", "refs_cruzadas": ["RIC N°04"] },
+            { "numero": "11.1.5", "texto": "La intensidad admisible en los conductores deberá disminuirse en un 15% respecto al valor correspondiente a una instalación convencional. Además, todos los cables de longitud igual o superior a 5 m estarán protegidos contra sobrecargas y cortocircuitos; para la protección de sobrecargas se tendrá en cuenta la intensidad de carga resultante fijada en el párrafo anterior y para la protección de cortocircuitos se tendrá en cuenta el valor máximo para un defecto en el comienzo del cable y el valor mínimo correspondiente a un defecto bifásico y franco al final del cable." },
+            { "numero": "11.1.6", "texto": "En el punto de transición de una canalización eléctrica de una zona a otra, o de un emplazamiento peligroso a otro no peligroso, se deberá impedir el paso de gases, vapores o líquidos inflamables. Eso puede precisar del sellado de zanjas, tuberías, bandejas, etc., una ventilación adecuada o el relleno de zanjas con arena." }
+          ]
+        },
+        {
+          "numero": "11.2",
+          "titulo": "Requisitos de los cables.",
+          "texto": "Los cables a emplear en los sistemas de cableado en los emplazamientos del Grupo II y III serán:",
+          "subpuntos": [
+            {
+              "numero": "11.2.1",
+              "texto": "En instalaciones fijas:",
+              "subpuntos": [
+                { "numero": "11.2.1.1", "texto": "Cables de tensión asignada mínima 450/750V, aislados con mezclas termoplásticas o termoestables; instalados en tuberías de acuerdo con el punto 11.3 de este pliego, metálicas rígidas o flexibles conforme a la norma IEC 61386-1. Los cables que atraviesan sellos en las salidas de las envolventes antideflagrantes \"d\" deberán ser decapados dentro del sello quedando como conductores individuales para permitir un sellaje correcto", "refs_cruzadas": ["11.3", "IEC 61386-1"] },
+                {
+                  "numero": "11.2.1.2",
+                  "texto": "Cables construidos de modo que dispongan de una protección mecánica; se consideran como tales:",
+                  "subpuntos": [
+                    { "numero": "11.2.1.2.a", "letra_original": "a)", "texto": "Los cables con aislamiento mineral y cubierta metálica, según la norma IEC 60702-1.", "refs_cruzadas": ["IEC 60702-1"] },
+                    { "numero": "11.2.1.2.b", "letra_original": "b)", "texto": "Los cables armados con alambre de acero galvanizado y con cubierta externa no metálica, según la serie UNE 21123-1, 2, 3, 4 y 5.", "refs_cruzadas": ["UNE 21123-1", "UNE 21123-2", "UNE 21123-3", "UNE 21123-4", "UNE 21123-5"] }
+                  ]
+                },
+                { "numero": "11.2.1.3", "texto": "Los cables a utilizar en las instalaciones fijas deben cumplir, respecto a la reacción al fuego, lo indicado en la norma IEC 60332-3-10.", "refs_cruzadas": ["IEC 60332-3-10"] }
+              ]
+            },
+            { "numero": "11.2.2", "texto": "En alimentación de equipos portátiles o móviles. Se utilizarán cables con cubierta de policloropreno según UNE-EN 50525-2-21 o UNE 21150, que sean aptos para servicios móviles, de tensión asignada mínima de 450/750V, flexibles y de sección mínima de 1,5 mm². La utilización de estos cables flexibles se restringirá a lo estrictamente necesario y como máximo a una longitud de 30 m.", "refs_cruzadas": ["UNE-EN 50525-2-21", "UNE 21150"] }
+          ]
+        },
+        {
+          "numero": "11.3",
+          "titulo": "Requisitos de las tuberías.",
+          "subpuntos": [
+            {
+              "numero": "11.3.1",
+              "texto": "Cuando el cableado de las instalaciones fijas se realice mediante tubería o canal protector, éstos serán conformes a las especificaciones dadas en las tablas siguientes:",
+              "tablas": [
+                {
+                  "nombre": "Tabla 12.1. Características mínimas para tuberías",
+                  "columnas": ["Característica", "Código", "Grado"],
+                  "filas": [
+                    ["Resistencia a la compresión", "4", "Fuerte"],
+                    ["Resistencia al impacto", "4", "Fuerte"],
+                    ["Temperatura mínima de instalación y servicio", "2", "-5ºC"],
+                    ["Temperatura máxima de instalación y servicio", "2", "+90ºC"],
+                    ["Resistencia al curvado", "1-2", "Rígido/curvable"],
+                    ["Propiedades eléctricas", "1-2", "Continuidad eléctrica/aislante"],
+                    ["Resistencia a la penetración de objetos sólidos", "4", "Contra objetos D ≥ 1 mm"],
+                    ["Resistencia a la penetración del agua", "2", "Contra gotas de agua cayendo verticalmente cuando el sistema de tuberías está inclinado 15º"],
+                    ["Resistencia a la corrosión de tuberías metálicas y compuestas", "2", "Protección interior y exterior media"],
+                    ["Resistencia a la tracción", "0", "No declarada"],
+                    ["Resistencia a la propagación de la llama", "1", "No propagador"],
+                    ["Resistencia a las cargas suspendidas", "0", "No declarada"]
+                  ]
+                },
+                {
+                  "nombre": "Tabla 12.2. Características mínimas para bandejas",
+                  "columnas": ["Característica", "Grado (lado mayor sección transversal ≤ 16 mm)", "Grado (lado mayor sección transversal > 16 mm)"],
+                  "filas": [
+                    ["Resistencia al impacto", "Fuerte", "Fuerte"],
+                    ["Temperatura mínima de instalación y servicio", "+15ºC", "-5ºC"],
+                    ["Temperatura máxima de instalación y servicio", "+60ºC", "+60ºC"],
+                    ["Propiedades eléctricas", "Aislante", "Continuidad eléctrica/aislante"],
+                    ["Resistencia a la penetración de objetos sólidos", "4", "no inferior a 2"],
+                    ["Resistencia a la penetración de agua", "No declarada", "No declarada"],
+                    ["Resistencia a la propagación de la llama", "No propagador", "No propagador"]
+                  ],
+                  "nota": "La dimensión del lado mayor de la sección transversal de la bandeja determina cuál de las dos columnas de grado aplica."
+                }
+              ]
+            },
+            {
+              "numero": "11.3.2",
+              "texto": "Esto no es aplicable en el caso de canalizaciones en tuberías que se conecten a aparatos eléctricos con modo de protección antideflagrante provistos de sellos cortafuegos, en donde la tubería resistirá una presión interna mínima de 3 MPa durante 1 minuto y será, o bien de acero sin soldadura, galvanizada interior y exteriormente, conforme a la norma UNE 36582, o bien conforme a la norma IEC 61386-1, con el grado de resistencia de la tabla siguiente:",
+              "refs_cruzadas": ["UNE 36582", "IEC 61386-1"],
+              "tabla": {
+                "nombre": "Tabla 12.3. Características mínimas para tuberías que se conectan a aparatos eléctricos con modo de protección antideflagrante provistos de sellos cortafuegos",
+                "columnas": ["Característica", "Código", "Grado"],
+                "filas": [
+                  ["Resistencia a la compresión", "5", "Muy fuerte"],
+                  ["Resistencia al impacto", "5", "Muy fuerte"],
+                  ["Temperatura mínima de instalación y servicio", "3", "-15ºC"],
+                  ["Temperatura máxima de instalación y servicio", "2", "+90ºC"],
+                  ["Resistencia al curvado", "1", "Rígido"],
+                  ["Propiedades eléctricas", "1", "Continuidad eléctrica"],
+                  ["Resistencia a la penetración de objetos sólidos", "5", "Contra el polvo"],
+                  ["Resistencia a la penetración del agua", "2", "Contra gotas de agua cayendo verticalmente cuando el sistema de tuberías está inclinado 15º"],
+                  ["Resistencia a la corrosión de tuberías metálicas y compuestas", "4", "Protección interior y exterior elevada"],
+                  ["Resistencia a la tracción", "2", "Ligera"],
+                  ["Resistencia a la propagación de la llama", "1", "No propagador"],
+                  ["Resistencia a las cargas suspendidas", "2", "Ligero"]
+                ]
+              }
+            },
+            { "numero": "11.3.3", "texto": "Cuando por exigencias de la instalación, se precisen tuberías flexibles (p.ej.: por existir vibraciones en la conexión del cableado en tuberías), estas serán metálicas corrugadas de material resistente a la oxidación y características semejantes a las rígidas." },
+            { "numero": "11.3.4", "texto": "Las tuberías con conductividad eléctrica deben conectarse a la red de tierra, su continuidad eléctrica quedará convenientemente asegurada. En el caso de utilizar tuberías metálicas flexibles, es necesario que la distancia entre dos puestas a tierra consecutivas de las tuberías no exceda de 10 metros." },
+            { "numero": "11.3.5", "texto": "Los sellos cortafuego utilizados en las envolventes antideflagrantes \"d\" deberán ser rellenados adecuadamente de una masa certificada por el propio fabricante del sello e instalados a 50 mm de la pared de la envolvente, o lo más cerca posible de ella. Entre el sello y la pared de la envolvente se debe instalar una unión-doble certificada para poder desinstalar la envolvente para mantenimiento." }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "12",
+      "titulo": "Instalación en islas de combustibles",
+      "puntos": [
+        { "numero": "12.1", "texto": "La instalación eléctrica para lugares de expendio de combustible o islas se realizará de acuerdo con lo indicado en este capítulo y las recomendaciones que pueda hacer el fabricante de los equipos siempre y cuando ésta represente una mejora a la seguridad en comparación con lo indicado en este capítulo." },
+        {
+          "numero": "12.2",
+          "titulo": "Clasificación",
+          "texto": "La clasificación de las zonas se realizará según el procedimiento indicado en el capítulo 7 de este pliego para lugares peligrosos. Esta se definirá teniendo en cuenta lo siguiente:",
+          "refs_cruzadas": ["7"],
+          "subpuntos": [
+            { "numero": "12.2.1", "texto": "Zona. Vendrá determinada por el tipo de sustancias presentes. Las instalaciones para suministro de combustibles a vehículos se consideran Áreas del Grupo II, por ser lugares en los que hay o puede haber gases, vapores o nieblas en cantidad suficiente, para producir atmósferas explosivas o inflamables. La clasificación de zona peligrosa se realizará según la norma UNE-EN 60079-10-1.", "refs_cruzadas": ["UNE-EN 60079-10-1"] },
+            {
+              "numero": "12.2.2",
+              "texto": "Extensión de cada una de las zonas. Las zonas se clasifican en zona 0, zona 1 y zona 2, la definición de cada zona se realizará mediante el análisis de los factores siguientes:",
+              "subpuntos": [
+                {
+                  "numero": "12.2.2.1",
+                  "texto": "El grado de la fuente de escape. En estas instalaciones las fuentes de escape típicas a considerar son:",
+                  "lista": [
+                    "a) El cuerpo de los aparatos surtidores. Prensaestopas de cierre de los brazos giratorios.",
+                    "b) Tanques de almacenamiento.",
+                    "c) Venteos de descarga.",
+                    "d) Locales o edificios de servicio, con almacenaje de lubricantes.",
+                    "e) Los grados se clasifican en continuo, primario y secundario."
+                  ]
+                },
+                { "numero": "12.2.2.2", "texto": "Definición del tipo de zona. En función del grado de escape y la ventilación estas podrán ser zona 0, zona 1 y zona 2." },
+                { "numero": "12.2.2.3", "texto": "Influencia de la ventilación. Es esencial considerar que las instalaciones, al estar situadas al aire libre, tienen un índice de ventilación (renovaciones/horas) elevado de tal forma que el grado de peligrosidad del emplazamiento puede llegar a ser no peligroso.\nPor lo tanto, aun en el caso de una fuente de escape de grado continuo las condiciones de la ventilación pueden crear más de un tipo de zona alrededor de la fuente de escape o una zona de tipo y extensión diferente." },
+                {
+                  "numero": "12.2.2.4",
+                  "texto": "Determinación de la extensión de las zonas. Una vez conocido y determinado lo anteriormente indicado en los puntos 12.2.2.1, 12.2.2.2 y 12.2.2.3 precedentes, (Determinación de las fuentes de escape y su grado, definición del tipo de zona e influencia de la ventilación) la extensión de cada zona peligrosa obedecerá a los siguientes criterios y consideraciones:",
+                  "refs_cruzadas": ["12.2.2.1", "12.2.2.2", "12.2.2.3"],
+                  "subpuntos": [
+                    { "numero": "12.2.2.4.1", "texto": "Aparatos surtidores. Los aparatos surtidores definidos en el protocolo de análisis y/o ensayos de productos eléctricos respectivo, establecido por la Superintendencia. Se han de cubrir los riesgos eléctricos, mecánicos, de compatibilidad electromagnética y de atmósferas explosivas.", "anexos_relacionados": ["12.1"] },
+                    { "numero": "12.2.2.4.2", "texto": "Los cuerpos de los equipos, donde van alojadas las electrobombas, son los equipos, pertenecientes a las instalaciones para suministro a vehículos, que pueden considerarse como deficientemente ventilados debido a la envolvente metálica que los protege." },
+                    { "numero": "12.2.2.4.3", "texto": "El interior de la envolvente de los surtidores se clasificará como zona 1 porque en él una atmósfera de gas explosiva se prevé que pueda estar presente de forma periódica u ocasionalmente, durante el funcionamiento normal y además no tiene una buena ventilación." },
+                    { "numero": "12.2.2.4.4", "texto": "Las envolventes exteriores de los cuerpos de los surtidores y las de todos aquellos elementos pertenecientes a los mismos en los que se pueda originar un escape, se clasifican como zona 2 porque en ellas la atmósfera explosiva no está presente en funcionamiento normal y si lo está será de forma poco frecuente y de corta duración, o aun dándose las condiciones anteriores, el grado de ventilación es óptimo." },
+                    { "numero": "12.2.2.4.5", "texto": "La extensión de cada zona anteriormente indicada puede limitarse mediante la utilización de barreras de vapor que impidan el paso de gases, vapores o líquidos inflamables de un emplazamiento peligroso a otro no peligroso." },
+                    {
+                      "numero": "12.2.2.4.6",
+                      "texto": "Dependiendo del tipo de construcción de los surtidores y de la disposición de los cabezales electrónicos, las barreras se clasifican en dos tipos:",
+                      "subpuntos": [
+                        {
+                          "numero": "12.2.2.4.6.a",
+                          "letra_original": "a)",
+                          "texto": "Barreras de vapor tipo 1 (para surtidores con cabezal electrónico adosado a su cuerpo o a la columna de mangueras).\nLas barreras de vapor tipo 1 cumplirán los requisitos siguientes:",
+                          "anexos_relacionados": ["12.1"],
+                          "lista": [
+                            "I. La barrera de protección será continua; permitirá el paso de cables y tuberías rígidamente instalados.",
+                            "II. El paso de cables se realizará por medio de prensaestopas de tipo aprobado y certificado EExd, tal y como se indica en la norma UNE-EN 60079-1, cláusula 12.1.",
+                            "III. No se percibirá fuga alguna al aplicar a la barrera una presión diferencial de no menos de 1,5 bar, durante no menos de 60 segundos.",
+                            "IV. La barrera de vapor cubrirá toda la zona 1, de tal forma que no haya posibilidad de entrada de vapores inflamables a las zonas adyacentes no clasificadas.",
+                            "V. El grado de protección de la barrera será IP-66."
+                          ]
+                        },
+                        {
+                          "numero": "12.2.2.4.6.b",
+                          "letra_original": "b)",
+                          "texto": "Barreras de vapor tipo 2 (para surtidores con cabezal electrónico separado de su cuerpo o de la columna de mangueras a una distancia no inferior de 15 mm).\nLas barreras de vapor tipo 2 cumplirán los requisitos siguientes:",
+                          "anexos_relacionados": ["12.1"],
+                          "lista": [
+                            "I. La barrera permitirá el paso de tuberías, cables y ejes rígidamente instalados.",
+                            "II. Las barreras de vapor superarán la prueba de respiración restringida y consistirán en dos barreras separadas por una zona de aire libre de no menos de 15 mm.",
+                            "III. El paso de cables en ambas barreras se realizará por medio de prensaestopas IP54 o EExe.",
+                            "IV. El grado de protección de cada barrera será IP54."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "numero": "12.2.2.4.7",
+                      "texto": "Interior de los tanques de almacenamiento, tapas de seguridad de registro o bocas de carga.",
+                      "anexos_relacionados": ["12.1"],
+                      "subpuntos": [
+                        { "numero": "12.2.2.4.7.a", "letra_original": "a)", "texto": "El interior de los tanques de almacenamiento se clasifica como zona 0." },
+                        { "numero": "12.2.2.4.7.b", "letra_original": "b)", "texto": "El interior de las tapas de seguridad se clasifica zona 0, debido a su situación bajo el nivel de suelo y por tener puntos de escapes, bien por la descarga de cisternas, bien por la operación normal de medición de tanques o mantenimiento de la instalación." },
+                        { "numero": "12.2.2.4.7.c", "letra_original": "c)", "texto": "En el interior de las tapas de seguridad de registro zona 0, se procurará no instalar ningún equipo eléctrico." },
+                        {
+                          "numero": "12.2.2.4.7.d",
+                          "letra_original": "d)",
+                          "texto": "Por encima del nivel del suelo, se originan dos zonas peligrosas diferentes, clasificados como sigue (Ver anexo 12.1):",
+                          "anexos_relacionados": ["12.1"],
+                          "subpuntos": [
+                            { "numero": "12.2.2.4.7.d1", "letra_original": "d1)", "texto": "Uno como zona 1 que ocupará un volumen igual al de una esfera de 1 m de radio con centro en el punto superior de dichas arquetas o tapa." },
+                            { "numero": "12.2.2.4.7.d2", "letra_original": "d2)", "texto": "Otro inmediato al anterior, como zona 2 y radio 2 m también con centro en el punto superior de dichas arquetas." },
+                            {
+                              "numero": "12.2.2.4.7.d3",
+                              "letra_original": "d3)",
+                              "texto": "Venteos de descarga de los tanques o tapa de seguridad de almacenamiento. Las zonas peligrosas originadas por los venteos, óptimamente ventilados, se clasifican como sigue:",
+                              "lista": [
+                                "I. Uno como zona 1 que ocupará un volumen igual a una esfera de 1 m de radio con centro en el extremo más alto de la tubería de ventilación.",
+                                "II. Otro, inmediato al anterior, como zona 2 y de radio 2 m también con centro en el extremo más alto de la tubería de ventilación."
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    { "numero": "12.2.2.4.8", "texto": "Locales o edificios de servicio con almacenaje de lubricantes. Dado que en estos locales nunca se va a almacenar 40.000 dm o más de sustancias del grupo E (punto de destello mayor de 60), dichos locales se considerarán como zonas no-peligrosas." },
+                    { "numero": "12.2.2.4.9", "texto": "Tipo de material eléctrico a instalar. A las instalaciones eléctricas en las zonas que resulten clasificadas como zonas con peligro de explosión o de incendio, se les aplicará las prescripciones establecidas en la norma UNE-EN 60079-0.\nLos vapores de las gasolinas que puedan estar presentes en las instalaciones son más pesados que el aire y se clasifican en el grupo II subgrupo A conforme a la norma UNE-EN 60079-0.\nLa temperatura de ignición de las gasolinas es de 280 °C, así pues, la temperatura máxima superficial de los materiales eléctricos no deberá exceder dicho valor. Por lo tanto, la clase de temperatura del material eléctrico será la de T3 que permite una temperatura superficial máxima en los materiales eléctricos de 200 °C.", "refs_cruzadas": ["UNE-EN 60079-0"] },
+                    {
+                      "numero": "12.2.2.4.10",
+                      "texto": "Certificados y marcas. Cuando los equipos eléctricos vayan montados en zonas peligrosas, deberán disponer del marcado:",
+                      "lista": [
+                        "Categoría 1: si se instalan o afectan a la seguridad en zona 0.",
+                        "Categoría 2: si se instalan o afectan a la seguridad en zona 1.",
+                        "Categoría 3: si se instalan o afectan a la seguridad en zona 2."
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "12.3",
+          "titulo": "Conductores",
+          "subpuntos": [
+            { "numero": "12.3.1", "texto": "Los cables utilizados en estas instalaciones serán los especificados en la norma IEC 60332-1-1.", "refs_cruzadas": ["IEC 60332-1-1"] },
+            { "numero": "12.3.2", "texto": "Para aquellos cables que dispongan de protección mecánica, o que dispongan de armadura a base de hilos de acero galvanizado, su sección mínima podrá ser de 2,5 mm², para alimentaciones de fuerza; para alumbrado y control, tendrán una sección mínima de 1,5 mm²." },
+            { "numero": "12.3.3", "texto": "Para el cálculo de la sección de los cables, la intensidad admisible de los conductores deberá disminuirse en un 15 %, además de aplicar factores de corrección dependiendo de las características de la instalación." },
+            { "numero": "12.3.4", "texto": "Todas las acometidas a receptores de longitud superior a 5 m deberán disponer de una protección contra cortocircuitos y contra sobrecargas." },
+            { "numero": "12.3.5", "texto": "Los cables, en general, serán con conductor de protección. En alimentaciones trifásicas, tres fases y conductor de protección, en circuitos monofásicos, fase, neutro y conductor de protección." },
+            { "numero": "12.3.6", "texto": "Para la interconexión entre los elementos del surtidor (emisor de impulsos, solenoides, calculador, etc.), se deberán utilizar cables con cubierta exterior de PVC/policloropreno resistente a los hidrocarburos, de tipo no armado ya que al ser IP 23 como mínimo el grado de protección mecánica del surtidor, en condiciones normales de operación, no es posible ejercer acciones mecánicas que puedan dañar la integridad de los cables." },
+            { "numero": "12.3.7", "texto": "Las labores de mantenimiento y reparaciones se realizarán sin tensión y por un instalador autorizado por la Superintendencia, que posea los conocimientos específicos de este tipo de instalaciones." }
+          ]
+        },
+        {
+          "numero": "12.4",
+          "titulo": "Canalizaciones",
+          "subpuntos": [
+            { "numero": "12.4.1", "texto": "Las canalizaciones estarán de acuerdo con la norma UNE-EN 60079-14, según se trate de instalaciones en zonas no clasificadas o en zonas clasificadas con peligro de explosión.", "refs_cruzadas": ["UNE-EN 60079-14"] },
+            { "numero": "12.4.2", "texto": "Las canalizaciones subterráneas, cuando se utilicen cables armados, se realizarán en zanjas rellenas de arena o en tuberías rígidas de PVC." },
+            { "numero": "12.4.3", "texto": "Las tuberías de acero serán sin soldadura, galvanizada interior y exterior, el roscado de las mismas deberá cumplir las exigencias relativas al tipo de ejecución de seguridad." },
+            { "numero": "12.4.4", "texto": "Las canalizaciones de equipos portátiles o móviles serán con tuberías metálicas flexibles, corrugadas, protegidas exteriormente contra la oxidación. Los racores y accesorios deberán cumplir las condiciones del tipo de construcción correspondientes a su ejecución de seguridad." },
+            { "numero": "12.4.5", "texto": "En el punto de transición de una canalización eléctrica de una zona a otra, o de un emplazamiento peligroso a otro no peligroso, así como en las entradas y salidas de las envolventes metálicas de equipos eléctricos que puedan producir arcos o temperaturas elevadas, cuando se empleen tuberías de acero, se deberá evitar el paso de gases o vapores inflamables, para ello se realizará el sellado de estos pasos mediante la utilización de cortafuegos." }
+          ]
+        },
+        {
+          "numero": "12.5",
+          "titulo": "Red de fuerza",
+          "subpuntos": [
+            { "numero": "12.5.1", "texto": "La selección del material eléctrico será realizada de acuerdo con lo establecido en la norma UNE-EN 60079-14.", "refs_cruzadas": ["UNE-EN 60079-14"] },
+            { "numero": "12.5.2", "texto": "Las entradas de los cables y de las tuberías a los equipos eléctricos, se realizará de acuerdo con el modo de protección previsto." },
+            { "numero": "12.5.3", "texto": "Los orificios del material eléctrico, para entradas de cables no utilizados, deberán cerrarse mediante piezas acordes, al objeto de mantener el modo de protección de la envolvente." },
+            { "numero": "12.5.4", "texto": "La distribución de fuerza se realizará desde un cuadro de distribución, compuesto por un interruptor automático de protección general, un diferencial más una serie de salidas separadas por cada receptor, cada una con protección contra cortocircuitos y sobrecargas." },
+            { "numero": "12.5.5", "texto": "Siempre que sea posible, el cuadro de distribución general se instalará en el edificio de servicio en un emplazamiento no peligroso." }
+          ]
+        },
+        {
+          "numero": "12.6",
+          "titulo": "Red de alumbrado",
+          "subpuntos": [
+            { "numero": "12.6.1", "texto": "La iluminación general de las instalaciones se llevará a cabo con la máxima intensidad y amplitud que sea posible, suplementados por aparatos locales en los puntos que se requiera observación y vigilancia." },
+            { "numero": "12.6.2", "texto": "La iluminación se establecerá de manera que procure la mayor seguridad del personal que trabaje de noche, en las operaciones que deban ser realizadas, e intensificada en los puntos de actuación personal." },
+            { "numero": "12.6.3", "texto": "Se procurará que los aparatos de alumbrado sean instalados fuera de las zonas peligrosas." },
+            { "numero": "12.6.4", "texto": "Los aparatos de alumbrado a instalar en emplazamientos peligrosos tendrán el modo de protección de acuerdo con el tipo de zona; los cuales están definidos en la norma UNE-EN 60079-14. Deberán incluir en su marcado la tensión y frecuencia nominales, la potencia máxima y el tipo de lámpara con que pueden ser utilizados. La instalación de alumbrado se realizará, con circuitos separados para cada servicio, alumbrado de marquesina, báculos de alumbrado, alumbrado de edificio de servicios, tomas de alumbrado, etc., los circuitos serán monofásicos, protegidos con interruptores automáticos bipolares, de 16 A máximo.", "refs_cruzadas": ["UNE-EN 60079-14"] }
+          ]
+        },
+        {
+          "numero": "12.7",
+          "titulo": "Red de tierra",
+          "subpuntos": [
+            { "numero": "12.7.1", "texto": "La instalación al sistema de puesta a tierra deberá cumplir con la norma UNE-EN 60079-14.", "refs_cruzadas": ["UNE-EN 60079-14"] },
+            {
+              "numero": "12.7.2",
+              "texto": "Se instalará un sistema completo de puesta a tierra en toda la instalación, a fin de asegurar una adecuada protección para:",
+              "subpuntos": [
+                { "numero": "12.7.2.1", "texto": "Seguridad del personal contra descargas de los equipos eléctricos." },
+                { "numero": "12.7.2.2", "texto": "Protección de los equipos eléctricos contra averías." },
+                { "numero": "12.7.2.3", "texto": "Protección contra la inflamación de mezclas combustibles por electricidad estática." }
+              ]
+            },
+            { "numero": "12.7.3", "texto": "Para ello todas las partes metálicas de los equipos y aparatos eléctricos se conectarán a tierra a través del conductor de protección. Además, en todos los circuitos de fuerza, se dispondrán dispositivos de corte por corriente diferencial residual, mediante interruptores diferenciales, con sensibilidad máxima de 30 mA." },
+            { "numero": "12.7.4", "texto": "Para asegurar la protección contra electricidad estática, deberá realizarse una unión equipotencial de masas, de acuerdo con lo indicado en la norma UNE-EN 60079-14. Todas las partes de material conductor externo (aéreo) deberán estar conectadas a esta red: estructuras metálicas, aparatos surtidores, así como los conductores de protección de los aparatos eléctricos.", "refs_cruzadas": ["UNE-EN 60079-14"] }
+          ]
+        },
+        {
+          "numero": "12.8",
+          "titulo": "Sistema de protección para descarga de camiones cisterna",
+          "subpuntos": [
+            { "numero": "12.8.1", "texto": "En los almacenamientos de productos del Grupo II, las instalaciones tendrán un sistema de puesta a tierra donde se conectarán las cisternas de los camiones, para descargar la electricidad estática." },
+            {
+              "numero": "12.8.2",
+              "texto": "El sistema estará compuesto como sigue:",
+              "subpuntos": [
+                { "numero": "12.8.2.1", "texto": "Un cable conectado por un extremo a la red de puesta a tierra, el otro extremo provisto de una pinza se conectará a un terminal situado en el vehículo en íntimo contacto con la cisterna." },
+                { "numero": "12.8.2.2", "texto": "El cable de puesta a tierra será extraflexible, con aislamiento, de sección mínima de 16 mm²." },
+                { "numero": "12.8.2.3", "texto": "La conexión eléctrica de la puesta a tierra será a través de un interruptor, con modo de protección adecuado al tipo de zona del emplazamiento donde va instalado. El cierre del interruptor se realizará siempre después de la conexión de la pinza al camión cisterna." },
+                { "numero": "12.8.2.4", "texto": "La tierra para el camión se unirá a la red general de tierras si ésta es de hierro galvanizado o a la red local de zinc si la red general es de cobre." }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "anexos": [
+    {
+      "numero": "12.1",
+      "titulo": "Zonas peligrosas en bombas de expendio de gasolina",
+      "tipo": "figura",
+      "referenciado_por": ["12.2.2.4.1", "12.2.2.4.6.a", "12.2.2.4.6.b", "12.2.2.4.7", "12.2.2.4.7.d"],
+      "figuras": [
+        { "numero": "1", "titulo": "Surtidor con el cabezal electrónico directamente montado sobre su cuerpo (Barrera de vapor Tipo 1)", "imagen": "pagina-21.png", "leyenda": { "Zona 0": "Emplazamiento de Clase I Zona 0", "Zona 1": "Emplazamiento de Clase I Zona 1", "Zona 2": "Emplazamiento de Clase I Zona 2" } },
+        { "numero": "2", "titulo": "Surtidor con cabezal electrónico elevado y adosado a la columna de mangueras (Barrera de vapor Tipo 1)", "imagen": "pagina-22.png" },
+        { "numero": "3", "titulo": "Surtidor con el cabezal electrónico separado de su cuerpo una distancia no inferior a 15 mm (Barrera de vapor Tipo 2)", "imagen": "pagina-23.png" },
+        { "numero": "4", "titulo": "Surtidor con el cabezal electrónico elevado y separado de la columna de mangueras a una distancia no inferior a 15 mm (Barrera de vapor Tipo 2)", "imagen": "pagina-24.png" },
+        { "numero": null, "titulo": "Detalle comparativo del grado de protección IP en la barrera de vapor según el tipo de conexión del cabezal electrónico (IP<23 vs IP≥23)", "imagen": "pagina-25.png" },
+        { "numero": "5", "titulo": "Detalles típicos de la clasificación en arquetas o tapa de seguridad", "imagen": "pagina-26.png" }
+      ]
+    },
+    {
+      "numero": "12.2",
+      "titulo": "Ejemplos de emplazamientos peligrosos",
+      "tipo": "texto",
+      "referenciado_por": [],
+      "texto_introductorio": "Debe considerarse a todos aquellos lugares o recintos donde se manipulen o almacenen sustancias inflamables como zona peligrosa, salvo que por clasificación de los mismos se demuestre lo contrario, bien porque se demuestra que no hay cantidad suficiente, porque no hay fuentes de escape o, bien, porque la extensión de las zonas es despreciable.\nSin que esta lista sea exhaustiva, y salvo que el proyectista pueda justificar que no existe el correspondiente riesgo, serán zonas con riesgo de explosión, las siguientes:",
+      "secciones": [
+        {
+          "titulo": "De Grupo II",
+          "lista": [
+            "Lugares donde se trasvasen líquidos volátiles inflamables de un recipiente a otro.",
+            "Garajes y talleres de reparación de vehículos. Se excluyen los garajes de uso privado para estacionamiento de 5 vehículos o menos",
+            "Interior de cabinas de pintura donde se usen sistemas de pulverización y su entorno cercano cuando se utilicen disolventes.",
+            "Secaderos de material con disolventes inflamables.",
+            "Locales de extracción de grasas y aceites que utilicen disolventes inflamables.",
+            "Locales con depósitos de líquidos inflamables abiertos o que se puedan abrir.",
+            "Zonas de lavanderías y tintorerías en las que se empleen líquidos inflamables.",
+            "Salas de gasógenos.",
+            "Instalaciones donde se produzcan, manipulen, almacenen o consuman gases inflamables.",
+            "Salas de bombas y/o de compresores de líquidos y gases inflamables.",
+            "Interiores de refrigeradores y congeladores en los que se almacenen materias inflamables en recipientes abiertos, fácilmente perforables o con cierres poco consistentes."
+          ]
+        },
+        {
+          "titulo": "De Grupo III",
+          "lista": [
+            "Zonas de trabajo, manipulación y almacenamiento de la industria alimentaria que maneja granos y derivados (ejemplo: harina de trigo, azúcar, chocolate en polvo, etc.)",
+            "Zonas de trabajo y manipulación de industrias químicas y farmacéuticas en las que se produce polvo.",
+            "Emplazamientos de pulverización de carbón y de su utilización subsiguiente.",
+            "Plantas de coquización.",
+            "Plantas de producción y manipulación de azufre.",
+            "Zonas en las que se producen, procesan, manipulan o empaquetan polvos metálicos de materiales ligeros (Al, Mg, etc.).",
+            "Almacenes y muelles de expedición donde los materiales pulverulentos se almacenan o manipulan en sacos y contenedores.",
+            "Zonas de tratamiento de textiles como algodón, etc.",
+            "Plantas de fabricación y procesado de fibras.",
+            "Plantas desmotadoras de algodón.",
+            "Plantas de procesado de lino.",
+            "Talleres de confección.",
+            "Industria de procesado de madera tales como carpinterías, etc."
+          ]
+        }
+      ]
+    }
+  ],
+  "referencias_a_otros_pliegos": [
+    { "pliego": "RIC N°04", "puntos": [], "citado_en": ["11.1.4"] }
+  ],
+  "extensiones_no_previstas_en_v1": {
+    "figura_sin_numero_en_anexo": "El anexo 12.1 incluye, entre la Fig. 4 y la Fig. 5 del documento fuente, un diagrama comparativo (página 25) sin número de figura ni título propio en el PDF (detalle IP<23 vs IP≥23 de las barreras de vapor). Se representó dentro del array `figuras` con `\"numero\": null`, mismo criterio ya usado en pliegos anteriores para figuras sin numeral explícito.",
+    "anexo_de_tipo_texto_con_secciones_agrupadas": "El anexo 12.2 no es un anexo con diagrama sino una lista de ejemplos agrupada en dos categorías (Grupo II, Grupo III) sin numeración propia. Se representó con `\"tipo\": \"texto\"` y un array `secciones` (cada una `{titulo, lista}`), reutilizando el campo `secciones` ya usado en anexos tipo 'mixto' de pliegos anteriores, en vez de inventar un campo nuevo.",
+    "dos_tablas_en_un_mismo_punto_con_nombres_independientes": "El punto 11.3.1 trae dos tablas normativas distintas (Tabla 12.1 de tuberías y Tabla 12.2 de bandejas) bajo el mismo texto introductorio. Se usó el campo `tablas` (array) ya existente en el esquema, cada tabla con su propio `nombre`."
+  }
+}

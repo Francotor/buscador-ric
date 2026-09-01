@@ -1,0 +1,621 @@
+{
+  "pliego_id": "RIC-07",
+  "numero": "07",
+  "materia": "Instalaciones de equipos",
+  "metadata": {
+    "fuente_legal": "Decreto con Fuerza de Ley N°4/20.018, de 2006, del Ministerio de Economía, Fomento y Reconstrucción, Ley General de Servicios Eléctricos",
+    "fuente_reglamentaria": "Decreto N°8, de 2019, del Ministerio de Energía, Reglamento de Seguridad de las Instalaciones de Consumo de Energía Eléctrica",
+    "dictado_por": "Resolución Exenta N° 33.877, de fecha 30/12/2020, de la Superintendencia de Electricidad y Combustibles",
+    "vigencia_desde": "2021-07-12",
+    "estado": "vigente",
+    "paginas_documento_fuente": 18,
+    "archivo_fuente": "RIC-N07-Instalaciones-de-Equipos-V1.1-1.pdf"
+  },
+  "referencias_normativas": [
+    { "id": "3.1", "norma": "IEC 60034-1", "anio": 2017, "titulo": "Rotating electrical machines - Part 1: Rating and performance." },
+    { "id": "3.2", "norma": "IEC 60034-5", "anio": 2006, "titulo": "Rotating electrical machines - Part 5: Degrees of protection provided by the integral design of rotating electrical machines (IP code) – Classification." },
+    { "id": "3.3", "norma": "IEC 60034-8", "anio": 2014, "titulo": "Rotating electrical machines - Part 8: Terminal markings and direction of rotation." },
+    { "id": "3.4", "norma": "IEC 60831-1", "anio": 2014, "titulo": "Shunt power capacitors of the self-healing type for a.c. systems having a rated voltage up to and including 1 000 V – Part 1: General – Performance, testing and rating – Safety requirements – Guide for installation and operation." },
+    { "id": "3.5", "norma": "IEC 61643-11", "anio": 2011, "titulo": "Low-voltage surge protective devices – Part 11: Surge protective devices connected to low-voltage power systems – Requirements and test methods." },
+    { "id": "3.6", "norma": "UNE-EN 50550", "anio": 2012, "titulo": "Dispositivos de protección contra sobretensiones a frecuencia industrial para usos domésticos y análogos (POP)" }
+  ],
+  "notas_referencias": "Para la aplicación de este pliego técnico se podrá utilizar, en reemplazo de las normas IEC, las normas UNE equivalentes.",
+  "terminologia": [
+    {
+      "id": "4.1", "termino": "Accesible", "definicion": null,
+      "subterminos": [
+        { "id": "4.1.1", "termino": "Aplicado a canalizaciones", "definicion": "Son aquellas canalizaciones que pueden ser inspeccionadas, sometidas a mantenimiento o modificadas, sin afectar la estructura de la construcción o sus terminaciones." },
+        { "id": "4.1.2", "termino": "Aplicado a equipos", "definicion": "Son aquellos equipos que no están protegidos mediante puertas cerradas con llave, barreras fijas u otros medios similares." },
+        { "id": "4.1.3", "termino": "Accesible fácilmente", "definicion": "Son aquellas canalizaciones o equipos accesibles que pueden ser alcanzados sin necesidad de trepar, quitar obstáculos, etc., para repararlos, inspeccionarlos u operarlos." }
+      ]
+    },
+    {
+      "id": "4.2", "termino": "Accesorio", "definicion": null,
+      "subterminos": [
+        { "id": "4.2.1", "termino": "Aplicado a materiales", "definicion": "Material complementario utilizado en instalaciones eléctricas, cuyo fin es cumplir funciones de índole más bien mecánicas que eléctricas." },
+        { "id": "4.2.2", "termino": "Aplicado a equipos", "definicion": "Equipo complementario necesario para el funcionamiento del equipo principal." }
+      ]
+    },
+    { "id": "4.3", "termino": "Aislación", "definicion": "Conjunto de elementos utilizados en la ejecución de una instalación o construcción de un aparato o equipo y cuya finalidad es evitar el contacto con o entre partes activas." },
+    { "id": "4.4", "termino": "Aislamiento", "definicion": "Magnitud numérica que caracteriza la aislación de un material, equipo o instalación." },
+    { "id": "4.5", "termino": "Aparato", "definicion": "Elemento de la instalación destinado a controlar el paso de la energía eléctrica." },
+    { "id": "4.6", "termino": "Aprobado", "definicion": "Aceptado por una entidad técnica, autorizada por la Superintendencia de acuerdo con sus facultades, mediante una certificación escrita en donde constan las características de funcionamiento y las normas de acuerdo a las cuales se efectuaron las pruebas de aprobación." },
+    { "id": "4.7", "termino": "Canalización", "definicion": "Conjunto formado por conductores eléctricos, elementos que los soportan y accesorios que aseguran su fijación y protección mecánica." },
+    {
+      "id": "4.8", "termino": "Carga", "definicion": "Es todo artefacto, equipo o instalación cuyo mecanismo u operación requiere del consumo de energía eléctrica para su funcionamiento. Dependiendo de su comportamiento las cargas pueden ser:",
+      "subterminos": [
+        { "id": "4.8.1", "termino": "Carga lineal", "definicion": "Es una carga cuyas características no alteran las formas de onda de la tensión y de la corriente durante su período de funcionamiento." },
+        { "id": "4.8.2", "termino": "Carga no lineal", "definicion": "Es una carga cuyas características alteran los parámetros de la alimentación modificando la forma de onda de la tensión y/o de la corriente durante su período de funcionamiento." }
+      ]
+    },
+    { "id": "4.9", "termino": "Centro", "definicion": "Punto de la instalación en donde está conectado un artefacto; en el caso particular de circuitos destinados a iluminación se designará como centro al conjunto de portalámparas con su correspondiente interruptor de comando o un punto en que existan uno, dos o tres enchufes montados en una caja común." },
+    { "id": "4.10", "termino": "Circuito", "definicion": "Conjunto de artefactos y aparatos alimentados por una línea común de distribución, la cual es protegida por un único dispositivo de protección." },
+    { "id": "4.11", "termino": "Conductor activo", "definicion": "Se aplicará esta calificación a los conductores de fase y neutro de un sistema de corriente alterna o a los conductores positivo, negativo y neutro de un sistema de corriente continua." },
+    { "id": "4.12", "termino": "Conector", "definicion": "Dispositivo destinado a establecer una conexión eléctrica entre dos o más conductores." },
+    { "id": "4.13", "termino": "Empresa Distribuidora o Distribuidora", "definicion": "Empresa(s) distribuidora(s) concesionaria(s) del servicio público de distribución o todo aquel que preste el servicio de distribución, ya sea en calidad de propietario, arrendatario, usufructuario o que opere, a cualquier título, instalaciones de distribución de energía eléctrica." },
+    {
+      "id": "4.14", "termino": "Equipo eléctrico", "definicion": "Término aplicable a aparatos de maniobra, regulación, seguridad o control y a los artefactos y accesorios que forman parte de una instalación eléctrica. Dependiendo de su forma constructiva y características de resistencia a la acción del medio ambiente, se calificarán según los tipos detallados a continuación y de acuerdo con el cumplimiento de la norma específica sobre la materia:",
+      "subterminos": [
+        { "id": "4.14.1", "termino": "Equipo abierto", "definicion": "Equipo que no cuenta con ningún tipo de protección contra el acceso de materiales extraños, contra la entrada de agua o humedad, ni barreras que impidan alcanzar partes energizadas. Su forma constructiva únicamente los hace aptos para ser instalados en recintos techados y en ambientes secos y limpios, accesibles sólo a personal calificado. Lo anterior corresponde a la clasificación IP00 del anexo 4.1 del Pliego Técnico Normativo RIC N°04." },
+        { "id": "4.14.2", "termino": "Equipo a prueba de goteo", "definicion": "Equipo construido de modo que, al quedar sometido a la caída de gotas de agua, con una inclinación no superior a 15º, éstas no penetran en su interior. Lo anterior corresponde a la clasificación IPX2 del anexo 4.1 del Pliego Técnico Normativo RIC N°04." },
+        { "id": "4.14.3", "termino": "Equipo a prueba de lluvia", "definicion": "Equipo construido de modo que, al quedar sometido a la acción de una lluvia, con una inclinación de hasta 60º, ésta no penetra en su interior. Lo anterior corresponde a la clasificación IPX4 del anexo 4.1 del Pliego Técnico Normativo RIC N°04." },
+        { "id": "4.14.4", "termino": "Equipo a prueba de polvo", "definicion": "Equipo construido de modo que, al ser instalado en ambientes con polvos en suspensión, éstos no penetren en su interior. Para la aplicación de esta definición se debe considerar dos condiciones, las correspondientes al grado IP5X y al IP6X del anexo 4.1 del Pliego Técnico Normativo RIC N°04." },
+        { "id": "4.14.5", "termino": "Equipo a prueba de salpicaduras", "definicion": "Equipo construido de modo que, al quedar sometido a la acción de salpicaduras de agua en cualquier dirección, ésta no penetra en su interior. Lo anterior corresponde a la clasificación IPX4 del anexo 4.1 del Pliego Técnico Normativo RIC N°04." },
+        { "id": "4.14.6", "termino": "Equipo impermeable", "definicion": "Equipo construido de modo que pueda trabajar sumergido en agua sin que ésta penetre en su interior. Para la aplicación de esta definición se debe considerar dos condiciones de inmersión, las correspondientes al grado IPX7 y al IPX8 del anexo 4.1 del Pliego Técnico Normativo RIC N°04." }
+      ]
+    },
+    {
+      "id": "4.15", "termino": "Falla", "definicion": "Unión entre dos puntos a potencial diferente o ausencia temporal o permanente de la energía al interior o exterior de una instalación, que provoca una condición anormal de funcionamiento de ella, de alguno de sus circuitos o de parte de éstos. Estas fallas pueden ser de los tipos siguientes:",
+      "subterminos": [
+        { "id": "4.15.1", "termino": "Cortocircuito", "definicion": "Falla en que su valor de impedancia es muy pequeño, lo cual causa una circulación de corriente particularmente alta con respecto a la capacidad normal del circuito, equipo o parte de la instalación que la soporta." },
+        { "id": "4.15.2", "termino": "Falla a masa", "definicion": "Es la unión accidental que se produce entre un conductor activo y la cubierta o bastidor metálico de un aparato, artefacto o equipo eléctrico." },
+        { "id": "4.15.3", "termino": "Falla a tierra", "definicion": "Unión de un conductor activo con tierra o con equipos conectados a tierra." },
+        { "id": "4.15.4", "termino": "Falla fugaz", "definicion": "Es aquella en que el agente que ocasiona la falla no deja evidencia ni rastro. En estos casos generalmente el arco eléctrico originado en la falla hace desaparecer el agente causante de la falla; en otros casos las condiciones ambientes ocasionan la pérdida de evidencia." },
+        { "id": "4.15.5", "termino": "Falla instantánea", "definicion": "Falla que tiene un tiempo de duración comprendido entre 0,5 y 30 ciclos. 1 ciclo corresponde a 1/50 segundos." },
+        { "id": "4.15.6", "termino": "Falla permanente", "definicion": "Falla que tiene una duración suficiente como para que los parámetros del circuito o parte del sistema en falla alcancen sus valores estables." },
+        { "id": "4.15.7", "termino": "Falla transitoria", "definicion": "Falla que tiene tiempo de duración comprendido entre 30 ciclos y 3 segundos." },
+        { "id": "4.15.8", "termino": "Microcorte", "definicion": "Corte de energía con un tiempo de duración comprendido entre 0,1 segundos y 3 minutos." },
+        { "id": "4.15.9", "termino": "Sobrecorriente", "definicion": "Corriente que sobrepasa el valor permisible en un circuito eléctrico; puede ser provocada por cualquiera de las condiciones de falla definidas en los párrafos precedentes o por una sobrecarga." },
+        { "id": "4.15.10", "termino": "Sobretensión", "definicion": "Perturbación donde la tensión nominal de operación de un sistema eléctrico se eleva superando los límites máximos permitidos, y que podría causar daño a las instalaciones, artefactos y equipos conectados a él." }
+      ]
+    },
+    { "id": "4.16", "termino": "Sistema de calentamiento integrado", "definicion": "Sistema completo formado por tuberías, tanques, elementos calentadores, medios de transferencia de calor, aislamiento térmico, barreras contra la humedad, cables no calefactores, reguladores de temperatura, señales de seguridad, cajas de empalmes, canalizaciones y accesorios." },
+    { "id": "4.17", "termino": "Sistema de calentamiento por efecto pelicular", "definicion": "Sistema en el cual se genera calor en la superficie interior de una envoltura de material ferromagnético instalada en la tubería o en el tanque." },
+    { "id": "4.18", "termino": "Sistema de calentamiento por impedancia", "definicion": "Sistema en el cual se genera calor en la pared de una tubería o de un tanque haciendo que pase una corriente por la pared de esa tubería o tanque, conectándola directamente a una fuente de alimentación de corriente alterna desde un transformador de doble devanado." },
+    { "id": "4.19", "termino": "Sistema de calentamiento por inducción", "definicion": "Sistema en el cual se genera calor en la pared de una tubería o de un tanque induciendo una corriente y produciendo efecto de histéresis en la pared de la tubería o tanque, generado por una fuente externa aislada de corriente alterna." },
+    { "id": "4.20", "termino": "Superintendencia", "definicion": "Superintendencia de Electricidad y Combustibles." }
+  ],
+  "secciones": [
+    {
+      "numero": "1",
+      "titulo": "Objetivos",
+      "puntos": [
+        { "numero": "1", "texto": "El objetivo del presente pliego técnico es establecer los requisitos de seguridad que se deben cumplir al instalar equipos eléctricos en las instalaciones de consumo de energía eléctrica del país." }
+      ]
+    },
+    {
+      "numero": "2",
+      "titulo": "Alcance y campo de aplicación",
+      "puntos": [
+        { "numero": "2", "texto": "Este pliego técnico aplica a todos los equipos eléctricos que se instalen en las instalaciones de consumo de energía eléctrica. El ámbito de aplicación comprende a las instalaciones de consumo de baja y media tensión." }
+      ]
+    },
+    {
+      "numero": "5",
+      "titulo": "Instalación de equipos de fuerza",
+      "puntos": [
+        {
+          "numero": "5.1",
+          "titulo": "Conceptos generales",
+          "subpuntos": [
+            { "numero": "5.1.1", "texto": "Se considerará instalación de fuerza a toda aquella instalación en que la energía eléctrica se use preferentemente para obtener energía mecánica y/o para intervenir en algún proceso productivo industrial." },
+            { "numero": "5.1.2", "texto": "Los circuitos de fuerza deberán estar separados de los circuitos de otro tipo de consumos; sin embargo, podrán tener alimentadores o subalimentadores comunes." },
+            { "numero": "5.1.3", "texto": "En las instalaciones de fuerza se empleará como sistema de canalización alguno de los indicados en el Pliego Técnico Normativo RIC N°04, de acuerdo con las características del ambiente y de la instalación.", "refs_cruzadas": ["RIC N°04"] },
+            { "numero": "5.1.4", "texto": "Los tableros o centros de control de motores, desde los cuales se protejan o comanden instalaciones de fuerza se construirán e instalarán de acuerdo con lo establecido en el Pliego Técnico Normativo RIC N°02.", "refs_cruzadas": ["RIC N°02"] },
+            { "numero": "5.1.5", "texto": "Todo tablero de comando o centro de control de equipos, pertenecientes a una instalación de fuerza, deberá instalarse con vistas al equipo o máquina comandada." },
+            {
+              "numero": "5.1.6",
+              "texto": "Se exceptúan de la exigencia del punto 5.1.5 anterior, a aquellas máquinas o equipos que por razones de operación o de terreno deban instalarse en puntos remotos. En estos casos deberá existir un enclavamiento que impida alimentar el equipo cuando se esté trabajando en él. Este enclavamiento se implementará de alguna de las siguientes formas:",
+              "refs_cruzadas": ["5.1.5"],
+              "subpuntos": [
+                { "numero": "5.1.6.a", "letra_original": "a)", "texto": "Enclavamiento instalado para ser operado desde un punto con vistas al equipo." },
+                { "numero": "5.1.6.b", "letra_original": "b)", "texto": "Un interruptor operado manualmente ubicado con vistas al equipo que la desconecte de la alimentación. Adicionalmente deberá tener la posibilidad de instalar un bloqueo mecánico." },
+                { "numero": "5.1.6.c", "letra_original": "c)", "texto": "Interruptor operado en forma manual, instalado en una ubicación remota sin vista al equipo, que lo desconecte de la alimentación de fuerza, cuya operación esté restringida sólo a personal autorizado. Para cumplir este fin se bloqueará la operación del interruptor mediante uno o más candados de seguridad y se seguirá un procedimiento establecido en forma escrita para bloquear o desbloquear este interruptor." }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "5.2",
+          "titulo": "Exigencias para los equipos de fuerza",
+          "subpuntos": [
+            { "numero": "5.2.1", "texto": "Todos los equipos eléctricos y motores que formen parte de una instalación de fuerza deberán ser de un tipo adecuado al ambiente y condiciones de montaje en que se instalan, de acuerdo con lo indicado en el presente pliego técnico." },
+            { "numero": "5.2.2", "texto": "Los motores deben cumplir con las normas de seguridad, para esto deben cumplir con lo definido en el protocolo de análisis y/o ensayos de seguridad de productos eléctricos respectivo. En ausencia de este deberá cumplirse con lo establecido en las normas IEC 60034-1, IEC 60034-5 y IEC 60034-8." },
+            {
+              "numero": "5.2.3",
+              "texto": "Todo motor deberá, traer marcada en forma legible e indeleble y colocada en un lugar fácilmente visible, una placa de características con a lo menos los siguientes datos:",
+              "subpuntos": [
+                { "numero": "5.2.3.a", "letra_original": "a)", "texto": "Nombre del fabricante o su marca registrada." },
+                { "numero": "5.2.3.b", "letra_original": "b)", "texto": "Tensión nominal y corriente de plena carga." },
+                { "numero": "5.2.3.c", "letra_original": "c)", "texto": "Frecuencia y número de fases." },
+                { "numero": "5.2.3.d", "letra_original": "d)", "texto": "Temperatura ambiente nominal y elevación nominal de temperatura." },
+                { "numero": "5.2.3.e", "letra_original": "e)", "texto": "Tiempo en que se alcanza la temperatura de régimen permanente partiendo en frío." },
+                { "numero": "5.2.3.f", "letra_original": "f)", "texto": "Potencia nominal." },
+                { "numero": "5.2.3.g", "letra_original": "g)", "texto": "Factor de potencia a potencia nominal." },
+                { "numero": "5.2.3.h", "letra_original": "h)", "texto": "Número del certificado de aprobación entregado por un organismo competente." }
+              ]
+            },
+            { "numero": "5.2.4", "texto": "Los motores de varias velocidades deberán tener indicadas la potencia nominal y la corriente de plena carga para cada velocidad." },
+            {
+              "numero": "5.2.5",
+              "texto": "Información al usuario: El instalador responsable de la instalación deberá entregar al usuario la información que le sea aplicable de la siguiente lista:",
+              "subpuntos": [
+                { "numero": "5.2.5.a", "letra_original": "a)", "texto": "Corriente de arranque." },
+                { "numero": "5.2.5.b", "letra_original": "b)", "texto": "Número de serie de la máquina o marca de identificación." },
+                { "numero": "5.2.5.c", "letra_original": "c)", "texto": "Año de fabricación." },
+                { "numero": "5.2.5.d", "letra_original": "d)", "texto": "Referencia numérica de las normas aplicadas." },
+                { "numero": "5.2.5.e", "letra_original": "e)", "texto": "Características de funcionamiento específicas." },
+                { "numero": "5.2.5.f", "letra_original": "f)", "texto": "Sobrevelocidad admisible." },
+                { "numero": "5.2.5.g", "letra_original": "g)", "texto": "Temperatura ambiente máxima admisible." },
+                { "numero": "5.2.5.h", "letra_original": "h)", "texto": "Temperatura ambiente mínima admisible." },
+                { "numero": "5.2.5.i", "letra_original": "i)", "texto": "Altura sobre el nivel del mar para la cual está diseñada la máquina." },
+                { "numero": "5.2.5.j", "letra_original": "j)", "texto": "Masa total de la máquina en kg." },
+                { "numero": "5.2.5.k", "letra_original": "k)", "texto": "Torque de operación y torque de arranque." },
+                { "numero": "5.2.5.l", "letra_original": "l)", "texto": "Posición de trabajo (vertical u horizontal)." },
+                { "numero": "5.2.5.m", "letra_original": "m)", "texto": "Clasificación térmica o calentamiento admisible (temperatura exterior máxima nominal)." },
+                { "numero": "5.2.5.n", "letra_original": "n)", "texto": "Clase de régimen nominal de tensión. Si es un intervalo entre tensión A y tensión B, debe marcarse A-B. Si es para doble tensión debe marcarse como A/B." },
+                { "numero": "5.2.5.o", "letra_original": "o)", "texto": "Para las máquinas enfriadas por hidrógeno, presión del hidrógeno a la potencia nominal." },
+                { "numero": "5.2.5.p", "letra_original": "p)", "texto": "Para las máquinas de corriente alterna, la frecuencia nominal o intervalo de frecuencias nominales." },
+                { "numero": "5.2.5.q", "letra_original": "q)", "texto": "Para las máquinas de corriente alterna trifásica con más de tres puntos de conexión, instrucciones de conexión por medio de un esquema." },
+                { "numero": "5.2.5.r", "letra_original": "r)", "texto": "Para las máquinas de corriente continua con excitación independiente o con excitación en derivación y para las máquinas sincrónicas, la tensión de excitación nominal y la corriente de excitación nominal." },
+                { "numero": "5.2.5.s", "letra_original": "s)", "texto": "Para las máquinas de inducción con rotor bobinado, la tensión entre anillos de circuito abierto y corriente nominal del rotor." },
+                { "numero": "5.2.5.t", "letra_original": "t)", "texto": "Para los motores de corriente continua cuyo inducido esté previsto para tener suministro mediante convertidores estáticos de potencia, el código de identificación del convertidor estático de potencia." },
+                { "numero": "5.2.5.u", "letra_original": "u)", "texto": "Para motores que no sobrepasen los 5 kW, el factor de potencia nominal y tensión alterna nominal en los bornes de entrada del convertidor estático de potencia, si ésta es superior a la tensión directa nominal del circuito de inducido del motor." },
+                { "numero": "5.2.5.v", "letra_original": "v)", "texto": "Los niveles de ruido." }
+              ]
+            },
+            { "numero": "5.2.6", "texto": "Los actuadores de partida de motores deberán estar marcados con el nombre del fabricante o su marca registrada, tensión nominal, corriente o potencia nominal, y todo otro dato necesario para indicar el tipo de motor para el cual son adecuados. Un actuador que tenga protecciones incorporadas deberá traer marcadas la corriente nominal de éstas y su rango de regulación." },
+            { "numero": "5.2.7", "texto": "Los terminales de los motores y los actuadores deberán estar adecuadamente marcados, de modo que sea posible identificar las conexiones correctas. Los terminales de motores deberán estar encerrados en una caja de conexiones destinada exclusivamente a este fin. Además, se deberá indicar en forma claramente legible e indeleble el torque de apriete de los bornes." },
+            { "numero": "5.2.8", "texto": "Las conexiones deben ser hechas dentro de la caja de conexiones, de modo que en ningún caso puedan recibir esfuerzos mecánicos, y los ductos o cables de la canalización deberán fijarse a esta caja mediante boquillas o prensas estopa de material resistente a grasas o aceites. La canalización que llegue a la bornera de motor deberá ser de tubería metálica flexible." }
+          ]
+        },
+        {
+          "numero": "5.3",
+          "titulo": "Condiciones de diseño",
+          "subpuntos": [
+            { "numero": "5.3.1", "texto": "Como base para la determinación de la capacidad de transporte de corriente de conductores, capacidad y regulación de las protecciones, dimensionamiento de alimentadores, etc., se tomará la corriente indicada en la placa de características de los motores. Si se trata de motores de varias velocidades, se tomará la mayor de las corrientes indicadas en la placa, excepto en lo que se refiere a la regulación de las protecciones la que se fijará de acuerdo a la condición en que el motor esté trabajando.", "nota_documento": "Se agregó texto eliminado en la versión del PDF publicado el 12.01.2021." },
+            { "numero": "5.3.2", "texto": "Si se trata de motores de torque se utilizará como valor de referencia la corriente de rotor trabado. En el anexo 7.1 de este pliego se muestran características de los motores más usuales.", "anexos_relacionados": ["7.1"] }
+          ]
+        },
+        {
+          "numero": "5.4",
+          "titulo": "Condiciones de instalación de los motores",
+          "subpuntos": [
+            { "numero": "5.4.1", "texto": "Los motores se deben instalar en condiciones que permitan una adecuada ventilación y un fácil mantenimiento de acuerdo con las recomendaciones propias del fabricante. Además, todo motor debe ser instalado con su correspondiente soporte antivibratorio y/o sistema de aislación acústica." },
+            { "numero": "5.4.2", "texto": "Los motores abiertos que tengan colector o anillos rozantes no podrán instalarse en atmósferas explosivas o en lugares en que existan materiales combustibles." },
+            { "numero": "5.4.3", "texto": "En ambientes en que existan polvos o fibras en suspensión y que éstos puedan depositarse sobre los motores en cantidades que impidan su normal ventilación o enfriamiento, deberán utilizarse motores cerrados, que no se sobrecalienten en dichas condiciones, y su instalación deberá realizarse en conformidad a lo dispuesto en el Pliego Técnico Normativo RIC N°12. Para casos extremos se deberá instalar un sistema cerrado de ventilación para él o los motores, o se les instalará en un recinto separado, a prueba de polvo.", "refs_cruzadas": ["RIC N°12"] },
+            { "numero": "5.4.4", "texto": "Se deberán cumplir con las indicaciones de montaje, operación y mantenimiento de la máquina suministradas por el fabricante, incluyendo la posición." },
+            { "numero": "5.4.5", "texto": "Las carcasas de las máquinas eléctricas rotativas deben ser conectadas sólidamente a tierra." },
+            { "numero": "5.4.6", "texto": "Queda totalmente prohibida la utilización de motores abiertos en lugares accesibles a personas o animales.", "advertencia": "Prohibida la utilización de motores abiertos en lugares accesibles a personas o animales." },
+            { "numero": "5.4.7", "texto": "La capacidad de la máquina se debe calcular teniendo en cuenta la corrección por la altura sobre el nivel del mar donde va a operar." },
+            { "numero": "5.4.8", "texto": "El motor o generador debe ser apropiado para el tipo de uso y condiciones ambientales del lugar donde opere." },
+            { "numero": "5.4.9", "texto": "Los sistemas accionados por motores eléctricos que impliquen riesgos mecánicos para las personas en que su control de operación no esté al alcance del operario, deben tener un sistema de parada de emergencia, cercano y a la vista del operario. Igualmente, estas paradas de emergencia deben instalarse en bandas transportadoras cada 20 metros como máximo, parques de juegos mecánicos por cada equipo, y en las demás máquinas que involucren rodillos y elementos cortantes." },
+            { "numero": "5.4.10", "texto": "Los sistemas de acoplamiento deberán contar con una barrera de protección que evite el contacto accidental con el usuario, y su montaje y desmontaje sea por medio de una herramienta." },
+            { "numero": "5.4.11", "texto": "Todo motor trifásico o monofásico, cuya corriente nominal es igual o superior a 3 Amperes, debe tener un protector termomagnético y un guardamotor dedicados (exclusivos para el motor o máquina)." }
+          ]
+        },
+        {
+          "numero": "5.5",
+          "titulo": "Dimensionamiento de conductores",
+          "subpuntos": [
+            { "numero": "5.5.1", "texto": "La sección mínima de los conductores empleados para alimentar motores fijos de potencia nominal mayor a 3 HP será de 2,5 mm2." },
+            { "numero": "5.5.2", "texto": "La sección de los conductores que alimenten a un motor de régimen permanente será tal que permita asegurar una capacidad de transporte, por lo menos, igual a 1,25 veces la corriente de plena carga del motor." },
+            {
+              "numero": "5.5.3",
+              "texto": "La sección de los conductores que alimenten a un motor sea éste de régimen periódico, intermitente o de breve duración, será tal que asegure una capacidad de transporte como mínimo igual a la corriente de plena carga afectada por un factor determinado de acuerdo con la tabla Nº7.1. Estos factores aplican sólo para los accionamientos tradicionales de motores.",
+              "refs_cruzadas": ["tabla Nº7.1"],
+              "tabla": {
+                "nombre": "Tabla Nº7.1: Factores de dimensionamiento de alimentación a motores de régimen no permanente",
+                "columnas": ["Tipo de régimen", "5 minutos", "15 minutos", "30 – 60 minutos", "Más de 60 minutos"],
+                "filas": [
+                  ["Breve duración (operación de válvulas o descenso de rodillos y otros similares)", 1.1, 1.2, 1.5, null],
+                  ["Intermitentes (bombas, ascensores, montacargas, puentes levadizos, máquinas herramientas, tornamesas, etc.)", 0.85, 0.85, 0.9, 1.4],
+                  ["Periódicos (rodillos, laminadores, etc.)", 0.85, 0.9, 0.95, 1.4],
+                  ["Variables", 1.1, 1.2, 1.5, 2]
+                ],
+                "notas": ["Los tiempos de funcionamiento indicados son los períodos en los cuales los motores, por su diseño, alcanzan la temperatura nominal de trabajo y pueden operar; cumplido este período necesitan un intervalo de refrigeración."]
+              }
+            },
+            { "numero": "5.5.4", "texto": "La sección de los conductores conectados al rotor de un motor de rotor bobinado se fijará de acuerdo con los puntos 5.5.2 o 5.5.3 anteriores según corresponda, considerando en este caso la corriente nominal del rotor.", "refs_cruzadas": ["5.5.2", "5.5.3"] },
+            { "numero": "5.5.5", "texto": "La sección de los conductores que alimenten a un grupo de motores de régimen permanente será tal que asegure una capacidad de transporte como mínimo, igual a 1,25 veces la corriente de plena carga del motor de mayor potencia, más la suma de las corrientes de plena carga de todos los motores restantes. Para todos los casos se deberá cumplir con lo dispuesto en el Pliego Técnico Normativo RIC N°04.", "refs_cruzadas": ["RIC N°04"] },
+            {
+              "numero": "5.5.6",
+              "texto": "En grupos de motores en que existan motores de régimen permanente, periódico, intermitente y/o de breve duración, la sección de los conductores que alimentan al grupo deberá permitir una capacidad de transporte para una corriente que se determina como sigue:",
+              "subpuntos": [
+                { "numero": "5.5.6.a", "letra_original": "a)", "texto": "La suma de las corrientes de plena carga de los motores de régimen permanente, más" },
+                { "numero": "5.5.6.b", "letra_original": "b)", "texto": "La suma de las corrientes de plena carga de los motores de régimen no permanente, afectada por el factor que corresponda, determinado de acuerdo con la tabla Nº7.1, más" },
+                { "numero": "5.5.6.c", "letra_original": "c)", "texto": "0,25 veces la corriente de plena carga del motor de mayor potencia afectada por el factor correspondiente de acuerdo con la tabla Nº7.1 si el motor no es de régimen permanente." }
+              ],
+              "nota_final": "Para todos los casos se deberá cumplir con lo dispuesto en el Pliego Técnico Normativo RIC N°04."
+            },
+            { "numero": "5.5.7", "texto": "Si en grupos de motores existen enclavamientos que impidan el funcionamiento simultáneo de dos motores o de dos grupos de motores, la sección de los conductores se determinará tomando en cuenta sólo a aquellos que puedan funcionar simultáneamente." },
+            { "numero": "5.5.8", "texto": "La sección de los conductores que alimenten a una máquina de varios motores y otro tipo de consumo se fijará de modo tal que tengan una capacidad de transporte como mínimo igual a la corriente indicada en la placa de la máquina." },
+            { "numero": "5.5.9", "texto": "La sección de alimentadores y subalimentadores que den energía a instalaciones de fuerza o combinación de instalaciones de fuerza y otros consumos se determinará de acuerdo con lo establecido en el Pliego Técnico Normativo RIC N°03.", "refs_cruzadas": ["RIC N°03"] },
+            { "numero": "5.5.10", "texto": "Todo motor se considerará de régimen permanente, salvo que por las condiciones de proceso u operación sea imposible que trabaje en forma permanente." }
+          ]
+        },
+        {
+          "numero": "5.6",
+          "titulo": "Protecciones y comandos de motores",
+          "subpuntos": [
+            {
+              "numero": "5.6.1",
+              "titulo": "Protecciones de sobrecarga",
+              "subpuntos": [
+                { "numero": "5.6.1.1", "texto": "Los conductores de circuito, los motores y los aparatos de control de motores deben protegerse de sobrecalentamientos debidos a sobrecargas, originadas durante la marcha del motor o provocadas por fallas en la partida. La protección de sobrecarga no protegerá contra cortocircuitos o fallas a tierra." },
+                { "numero": "5.6.1.2", "texto": "Todo motor de régimen permanente cuya potencia sea superior a 1 HP deberá protegerse, contra las sobrecargas, mediante un dispositivo de protección que responda a la corriente del motor. Este protector tendrá una capacidad nominal o estará regulado a no más de 1,25 veces la corriente nominal del motor si se trata de motores con factor de servicio no inferior a 1,15 o, a no más de 1,15 veces la corriente nominal del motor para todo otro caso." },
+                { "numero": "5.6.1.3", "texto": "En caso de que a través del protector no circule toda la corriente de carga del motor, como, por ejemplo, si el protector queda incorporado a la conexión triángulo de los enrollados, el protector deberá regularse o tener una capacidad nominal de acuerdo con la corriente que por él circule, cumpliendo respecto de esta corriente las condiciones establecidas en el punto 5.6.1.2 anterior.", "refs_cruzadas": ["5.6.1.2"] },
+                { "numero": "5.6.1.4", "texto": "Todo motor de régimen permanente de potencia nominal inferior a 1 HP y partida manual que tenga su comando al alcance de la vista se considerará suficientemente protegido por las protecciones de cortocircuito y de falla a tierra del circuito, siempre que éstas cumplan con lo indicado en la sección 5.6.2 del presente pliego.", "refs_cruzadas": ["5.6.2"] },
+                { "numero": "5.6.1.5", "texto": "Los motores de régimen permanente de potencia inferior a 1 HP y partida automática se deberán proteger contra la sobrecarga en la forma indicada en los puntos 5.6.1.2 o 5.6.1.3 del presente pliego.", "refs_cruzadas": ["5.6.1.2", "5.6.1.3"] },
+                { "numero": "5.6.1.6", "texto": "No obstante, lo indicado en el punto 5.6.1.5 anterior, se considerará a este tipo de motores suficientemente protegido contra la sobrecarga y no necesitarán de protector si forman parte de un equipo que normalmente no está sujeto a sobrecargas, o el equipo cuenta con otros dispositivos de seguridad que eviten la sobrecarga. En estos casos, el equipo deberá tener una placa que indique que cuenta con dichos dispositivos de protección.", "refs_cruzadas": ["5.6.1.5"] },
+                { "numero": "5.6.1.7", "texto": "En los motores de varias velocidades, cada conexión de enrollados se considerará en forma independiente para los efectos de dimensionar las protecciones." },
+                { "numero": "5.6.1.8", "texto": "Los motores usados en condiciones de régimen de breve duración, intermitente o periódico se considerarán protegidos contra la sobrecarga por las protecciones de cortocircuito y de falla a tierra, siempre que estas cumplan lo establecido en la sección 5.6.2 del presente pliego. Se considerará como régimen permanente a todo motor, salvo que por las condiciones de uso o de proceso sea imposible que pueda trabajar en forma permanente.", "refs_cruzadas": ["5.6.2"] },
+                { "numero": "5.6.1.9", "texto": "Se deberá instalar un elemento de protección a la sobrecarga en cada conductor activo de la alimentación al motor." },
+                { "numero": "5.6.1.10", "texto": "Los dispositivos de protección a la sobrecarga al operar deberán interrumpir la circulación de corriente en el motor." }
+              ]
+            },
+            {
+              "numero": "5.6.2",
+              "titulo": "Protecciones de cortocircuito, diferenciales y asimetría",
+              "subpuntos": [
+                { "numero": "5.6.2.1", "texto": "Todo motor deberá contar con una protección de cortocircuito. Esta protección se dimensionará de modo tal que sea capaz de soportar sin operar, la corriente de partida del motor." },
+                { "numero": "5.6.2.2", "texto": "La capacidad nominal de las protecciones de cortocircuito de un motor se dimensionará comparando la característica de la corriente de partida y el correspondiente valor durante el período de aceleración del motor o máquina, si es que el motor parte acoplado a su carga, con la curva de respuesta de la protección seleccionada de modo que ésta no opere bajo condiciones normales de partida." },
+                { "numero": "5.6.2.3", "texto": "En los casos en que el fabricante de un equipo indique valores máximos para los dispositivos de protección de éste, o bien sobre los motores del equipo se indiquen dichos valores máximos, éstos no deberán sobrepasarse aun cuando de acuerdo con el párrafo precedente sea permisible un valor superior." },
+                {
+                  "numero": "5.6.2.4",
+                  "texto": "Un grupo de motores de potencia individual no superior a 1 HP podrá tener una protección de cortocircuito única si se cumplen las condiciones siguientes:",
+                  "subpuntos": [
+                    { "numero": "5.6.2.4.a", "letra_original": "a)", "texto": "La protección no podrá tener una capacidad nominal superior a 16 A." },
+                    { "numero": "5.6.2.4.b", "letra_original": "b)", "texto": "La corriente nominal de cada motor no deberá exceder 8 A." },
+                    { "numero": "5.6.2.4.c", "letra_original": "c)", "texto": "Se cumpla el punto 5.6.1.4 de este pliego, si procede.", "refs_cruzadas": ["5.6.1.4"] },
+                    { "numero": "5.6.2.4.d", "letra_original": "d)", "texto": "Las protecciones individuales de sobrecarga deben cumplir la sección 5.6.1 de este pliego.", "refs_cruzadas": ["5.6.1"] }
+                  ]
+                },
+                { "numero": "5.6.2.5", "texto": "Se aceptará que las protecciones de cortocircuito, de falla a tierra y de sobrecarga en marcha estén combinadas en un único dispositivo, en donde la capacidad nominal o la regulación de ésta proporcione protección de sobrecarga en marcha de acuerdo con las condiciones exigidas en la sección 5.6.1 de este pliego.", "refs_cruzadas": ["5.6.1"] },
+                { "numero": "5.6.2.6", "texto": "Las protecciones de circuitos de motores deberán tener dispositivos de protección que actúen sobre todos los conductores activos." },
+                { "numero": "5.6.2.7", "texto": "Para máquinas de varios motores o en que existan consumos combinados se aceptará una única protección de cortocircuito, cuya capacidad nominal no deberá exceder el valor señalado en la placa de la máquina." },
+                { "numero": "5.6.2.8", "texto": "Para motores o cargas trifásicas consideradas críticas se debe incluir una protección de asimetría, sin embargo, será obligatoria para todos los motores de 5 o más HP y dicha protección podrá ser común dentro de un tablero de control de máquina con múltiples motores." },
+                { "numero": "5.6.2.9", "texto": "Todo motor deberá contar con un protector diferencial." },
+                { "numero": "5.6.2.10", "texto": "Los centros de control de motores (CCM) deberán contar con protecciones de sobretensión permanente basadas en la norma UNE-EN 50550 y protecciones de sobretensión transitorias basadas en la norma IEC 61643-11." }
+              ]
+            },
+            {
+              "numero": "5.6.3",
+              "titulo": "Partidores e interruptores",
+              "subpuntos": [
+                { "numero": "5.6.3.1", "texto": "Los motores podrán tener sistemas de partida directa, indirecta y con tensión reducida. Se entenderá por partida directa a aquella en que en el instante de partida se aplica a los bobinados del motor, conectados en su conexión normal de funcionamiento, la tensión de la red en conexión triángulo para motores trifásicos; por partida indirecta para motores trifásicos a aquella donde existe conexión temporal en la partida de estrella a triángulo; con tensión reducida a aquella en que mediante algún dispositivo adicional se aplica a los bobinados una tensión inferior a la de la red o se altera transitoriamente su conexión normal de funcionamiento." },
+                { "numero": "5.6.3.2", "texto": "Las empresas distribuidoras de electricidad fijarán en sus respectivas zonas, la potencia máxima de los motores, alimentados desde empalmes en baja tensión, que podrán tener partida directa, de modo de lograr que la corriente de partida no produzca perturbaciones en el funcionamiento de instalaciones vecinas. Sin embargo, la potencia máxima de los motores determinada por la distribuidora no podrá ser inferior a 3 kW. En el caso que el usuario no esté de acuerdo con la potencia determinada por la empresa distribuidora podrá reclamar ante la Superintendencia en los términos del artículo 3° N°17 de la Ley N°18.410." },
+                { "numero": "5.6.3.3", "texto": "Para instalaciones conectadas a empalmes en media tensión y que cuenten con motores cuya potencia sea superiores a 3kW, el instalador a cargo del proyecto y la empresa distribuidora, de común acuerdo, deberán determinar la máxima potencia del motor que pueda tener partida directa, en función a la capacidad nominal y otras características del transformador que las alimente, considerando que la partida directa del motor no debe provocar perturbaciones en el resto de la instalación, en particular, no debe provocar problemas de parpadeo en los circuitos de alumbrado ni perturbaciones en los circuitos de procesamiento automático de datos. En caso de desacuerdo la Superintendencia decidirá en los términos del artículo 3° N°17 de la Ley N°18.410." },
+                { "numero": "5.6.3.4", "texto": "Se entenderá por partidor a aquel dispositivo de comando que permite hacer partir o detener un motor; la partida podrá ser directa o a tensión reducida. Eventualmente el partidor puede tener incluidas las protecciones de sobrecarga." },
+                { "numero": "5.6.3.5", "texto": "Los partidores podrán hacer partir o detener el motor y deberán tener una capacidad de ruptura suficiente como para abrir la corriente de rotor trabado." },
+                { "numero": "5.6.3.6", "texto": "Los motores fijos de potencias inferiores a 100 W de funcionamiento permanente y de alta impedancia, tales como motores de reloj, no necesitan de un partidor y podrán ser conectados desde el protector termomagnético del circuito o mediante un enchufe." },
+                { "numero": "5.6.3.7", "texto": "Los motores portátiles de 200 W o menos no necesitan un partidor y podrán ser comandados mediante sus enchufes." },
+                { "numero": "5.6.3.8", "texto": "Cada motor deberá tener su partidor individual. Este podrá ser un actuador de \"partida y parada\", un actuador estrella - triángulo, un autotransformador, un reóstato u otro medio electrónico." },
+                { "numero": "5.6.3.9", "texto": "Todo circuito deberá tener un interruptor que permita desconectar el motor y a su partidor." },
+                { "numero": "5.6.3.10", "texto": "El interruptor deberá ubicarse en un punto en que quede con vistas al partidor del motor y deberá ser fácilmente accesible." },
+                { "numero": "5.6.3.11", "texto": "Para motores de partida directa el interruptor puede ser empleado como partidor, siempre que esté ubicado con vistas al motor." },
+                { "numero": "5.6.3.12", "texto": "El interruptor que desconecta al motor del circuito deberá interrumpir todos los conductores activos de la alimentación." },
+                { "numero": "5.6.3.13", "texto": "Cuando la instalación consista en un único motor, la protección del tablero de distribución podrá usarse como interruptor de desconexión, siempre que esté ubicado con vistas al motor, y que interrumpa todos sus conductores activos." },
+                {
+                  "numero": "5.6.3.14",
+                  "texto": "Los motores deben estar protegidos contra la falta de tensión por un dispositivo de corte automático de la alimentación, cuando el arranque espontáneo del motor, como consecuencia del restablecimiento de la tensión, pueda provocar accidentes, o perjudicar el motor. Dicho dispositivo puede formar parte de la protección contra las sobrecargas o del de arranque, y puede proteger a más de un motor si se da una de las condiciones siguientes:",
+                  "subpuntos": [
+                    { "numero": "5.6.3.14.a", "letra_original": "a)", "texto": "Los motores por proteger estén instalados en un mismo local y la suma de potencias absorbidas no es superior a 10 kilowatt." },
+                    { "numero": "5.6.3.14.b", "letra_original": "b)", "texto": "Los motores por proteger estén instalados en un mismo local y cada uno de ellos queda automáticamente en el estado inicial de arranque después de una falta de tensión. Cuando el motor arranque automáticamente en condiciones preestablecidas, no se exigirá el dispositivo de protección contra la falta de tensión, pero debe quedar excluida la posibilidad de un accidente en caso de arranque espontáneo. Si el motor tuviera que llevar dispositivos limitadores de la potencia absorbida en el arranque, es obligatorio, para quedar incluidos en la anterior excepción, que los dispositivos de arranque vuelvan automáticamente a la posición inicial al originarse una falta de tensión y parada del motor." }
+                  ]
+                }
+              ]
+            },
+            {
+              "numero": "5.6.4",
+              "titulo": "Circuitos de control de motores",
+              "subpuntos": [
+                { "numero": "5.6.4.1", "texto": "Se entenderá por circuito de control de motores a aquel circuito que lleva señales eléctricas de mando y monitoreo para el motor o conjunto de motores, pero a través del cual no circula la corriente de alimentación." },
+                { "numero": "5.6.4.2", "texto": "Los conductores y elementos del circuito de control que estén contenidos dentro de la caja del partidor o del equipo, se considerarán protegidos por las protecciones del motor." },
+                { "numero": "5.6.4.3", "texto": "Los conductores y elementos de control pertenecientes a un circuito montado fuera de la caja del equipo o partidor deberán protegerse con protecciones de cortocircuito cuya capacidad se fijará de acuerdo con la capacidad de transporte de corriente de los conductores o la potencia de consumo de dichos elementos." },
+                { "numero": "5.6.4.4", "texto": "No obstante, lo indicado en el punto 5.6.4.3 anterior se podrá prescindir de la protección separada del circuito de control, donde la capacidad nominal o la regulación de las protecciones del motor no excedan en dos veces la capacidad de transporte de corriente de los conductores de control o en donde una apertura del circuito de control pueda crear riesgos superiores como en el caso de una bomba de incendio u otros similares.", "refs_cruzadas": ["5.6.4.3"] },
+                { "numero": "5.6.4.5", "texto": "No será exigencia que los circuitos de control estén conectados a la tierra de servicio. Sin embargo, donde esta conexión sea necesaria, el circuito se dispondrá de tal manera que una conexión accidental a tierra no haga partir el o los motores controlados." },
+                { "numero": "5.6.4.6", "texto": "Los circuitos de control se canalizarán mediante alguno de los métodos prescritos en el Pliego Técnico Normativo RIC N°04, según el ambiente y condiciones de montaje en cada caso.", "refs_cruzadas": ["RIC N°04"] },
+                { "numero": "5.6.4.7", "texto": "Los circuitos de control deben contar con un interruptor que los separe de su fuente de alimentación. En donde se usa, además de la alimentación principal, una fuente independiente para alimentación exclusiva del circuito de control, dicho interruptor deberá abrir ambas fuentes, simultáneamente, o se colocarán juntos dos interruptores para abrir cada alimentación." },
+                { "numero": "5.6.4.8", "texto": "Si se usa un transformador para obtener tensión reducida para los circuitos de control, este transformador deberá ser desconectado de la alimentación por el interruptor indicado en el punto 5.6.4.7 anterior.", "refs_cruzadas": ["5.6.4.7"] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "6",
+      "titulo": "Instalación de condensadores",
+      "puntos": [
+        {
+          "numero": "6.1",
+          "titulo": "Exigencias generales",
+          "subpuntos": [
+            { "numero": "6.1.1", "texto": "Todos los condensadores llevarán una placa de características con el nombre del fabricante, tensión nominal, frecuencia, kVAR o amperes, número de fases y, si lleva líquido inflamable, la cantidad y tipo del líquido; si contienen líquido no inflamable, también debe ser indicado. La placa de características indicará además si el condensador lleva instalado un dispositivo de descarga en el interior de la carcasa." },
+            { "numero": "6.1.2", "texto": "Los condensadores serán accesibles únicamente a personas autorizadas y calificadas. Se ubicarán o protegerán de modo que no queden expuestos a contacto accidental de personas o materiales conductores con las partes energizadas." },
+            { "numero": "6.1.3", "texto": "Las carcasas de los condensadores deberán ser puestas a tierra cuando sean metálicas." },
+            { "numero": "6.1.4", "texto": "Todos los condensadores deberán ser conectados al sistema eléctrico a través de resistencias de inserción." }
+          ]
+        },
+        {
+          "numero": "6.2",
+          "titulo": "Condensadores hasta 1.000 V nominal",
+          "subpuntos": [
+            { "numero": "6.2.1", "texto": "Los condensadores tendrán medios para descargar la energía almacenada." },
+            { "numero": "6.2.2", "texto": "La tensión residual de un condensador será reducida a 75 V nominal o menos dentro de 3 minutos, o a 50 V o menos dentro de 5 minutos, a partir de su desconexión de la fuente de alimentación. Dicha magnitud de tensión no debe representar un riesgo para el contacto directo con una persona. Esta información deberá estar contenida en la señalética de seguridad del tablero que los contenga." },
+            { "numero": "6.2.3", "texto": "El circuito de descarga estará permanentemente conectado a los terminales del condensador o del banco de condensadores, o equipado con un medio automático de conexión de dicho circuito a los terminales del banco de condensadores cuando se desconecten de la fuente de alimentación. No se permitirá utilizar medios manuales para conectar o desconectar el circuito de descarga.", "advertencia": "No se permitirá utilizar medios manuales para conectar o desconectar el circuito de descarga." },
+            { "numero": "6.2.4", "texto": "La capacidad de los conductores del circuito de los condensadores no será menor al 135% de la corriente nominal del condensador. La capacidad de los conductores que conecten un condensador con los terminales de un motor o los conductores de un circuito de motores no será menor a 1/3 de la capacidad de los conductores del circuito del motor y en ningún caso menor al 135% de la corriente nominal del condensador." },
+            { "numero": "6.2.5", "texto": "Para cada banco de condensadores, se instalará en cada conductor activo, un dispositivo de protección de sobrecorriente. La capacidad nominal o el ajuste del dispositivo de sobrecorriente será tan baja como sea posible.\nNo se requerirá un dispositivo de protección de sobrecorriente independiente para un condensador conectado en el lado de la carga del dispositivo de protección por sobrecarga de un motor." },
+            {
+              "numero": "6.2.6",
+              "texto": "En cada conductor activo, de cada banco de condensadores, se instalará un medio de desconexión, que cumplirá con los siguientes requisitos:",
+              "subpuntos": [
+                { "numero": "6.2.6.a", "letra_original": "a)", "texto": "El medio de desconexión abrirá simultáneamente todos los conductores activos." },
+                { "numero": "6.2.6.b", "letra_original": "b)", "texto": "Se permitirá que el medio de desconexión desconecte el condensador de la línea como una maniobra normal." },
+                { "numero": "6.2.6.c", "letra_original": "c)", "texto": "La capacidad nominal del medio de desconexión no será menor al 135% de la corriente nominal del condensador." }
+              ],
+              "nota_final": "No se requerirá un medio de desconexión independiente para el condensador conectado en el lado de la carga del dispositivo de protección por sobrecarga de un motor."
+            }
+          ]
+        },
+        {
+          "numero": "6.3",
+          "titulo": "Condensadores de tensión nominal superior a 1.000 V",
+          "subpuntos": [
+            {
+              "numero": "6.3.1",
+              "texto": "Para operar (conectar y desconectar) los condensadores se utilizarán desconectadores accionados en grupo que cumplan lo siguiente:",
+              "subpuntos": [
+                { "numero": "6.3.1.a", "letra_original": "a)", "texto": "Soportar continuamente por lo menos el 135% de la corriente nominal de la instalación del condensador;" },
+                { "numero": "6.3.1.b", "letra_original": "b)", "texto": "Interrumpir la corriente de carga máxima continua de cada condensador, banco de condensadores o instalación de condensadores que sean desconectados como una unidad;" },
+                { "numero": "6.3.1.c", "letra_original": "c)", "texto": "Soportar la máxima corriente de arranque, incluidas las contribuciones de instalaciones de condensadores adyacentes;" },
+                { "numero": "6.3.1.d", "letra_original": "d)", "texto": "Soportar las corrientes producidas por fallas de los condensadores en el lado del desconectador." }
+              ]
+            },
+            { "numero": "6.3.2", "texto": "Se instalará un medio que permita seccionar de todas las fuentes de tensión cada condensador, banco de condensadores o instalaciones de condensadores que sean puestos fuera de servicio como una unidad. Los medios de aislamiento establecerán una distancia visible en el circuito eléctrico, adecuada a la tensión de funcionamiento." },
+            {
+              "numero": "6.3.3",
+              "titulo": "Protección de Sobrecorriente",
+              "subpuntos": [
+                { "numero": "6.3.3.a", "letra_original": "a)", "texto": "Se instalará un medio para detectar e interrumpir cualquier corriente de falla que pudiera provocar presiones peligrosas dentro de algún condensador." },
+                { "numero": "6.3.3.b", "letra_original": "b)", "texto": "Para este fin se permitirá utilizar dispositivos monopolares o multipolares. En caso del uso de dispositivos monopolares, la protección deberá actuar simultáneamente sobre los conductores activos (fase y la tierra de servicio)." },
+                { "numero": "6.3.3.c", "letra_original": "c)", "texto": "Se permitirá proteger los condensadores individualmente o en grupos." }
+              ]
+            },
+            { "numero": "6.3.4", "texto": "Se instalará un medio para reducir la tensión residual de un condensador en conformidad con lo indicado en el punto 6.2.2 de este pliego.", "refs_cruzadas": ["6.2.2"] },
+            { "numero": "6.3.5", "texto": "El circuito de descarga estará conectado permanentemente a los terminales del condensador o banco de condensadores, o provisto con un medio automático de conexión para conectarse a los terminales del banco de condensadores cuando se desconecten de la fuente de alimentación." },
+            { "numero": "6.3.6", "texto": "Los condensadores que no lleven alguna indicación de temperatura máxima admisible no se podrán utilizar en lugares donde la temperatura ambiente sea 50 °C o mayor." },
+            { "numero": "6.3.7", "texto": "Para la utilización de condensadores por encima de los 2.000 m.s.n.m. se deberán consultar las especificaciones técnicas emitidas por el fabricante para esta situación. En ausencia de éstas se deberán respetar las indicaciones de la norma IEC 60831-1." }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "7",
+      "titulo": "Instalación de equipos de climatización",
+      "puntos": [
+        {
+          "numero": "7.1",
+          "titulo": "Exigencias generales",
+          "subpuntos": [
+            { "numero": "7.1.1", "texto": "Se considerará instalación de climatización a toda aquella instalación en que la energía eléctrica se usa para variar la temperatura ambiental de recintos." },
+            { "numero": "7.1.2", "texto": "Los circuitos de climatización deberán estar separados de los circuitos de otro tipo de consumos, sin embargo, podrán tener alimentadores o subalimentadores comunes." },
+            { "numero": "7.1.3", "texto": "Los equipos de climatización que necesiten de motores para su funcionamiento se conectarán a circuitos de climatización, salvo que las características del equipo hagan necesaria una conexión de estos consumos a circuitos independientes." },
+            { "numero": "7.1.4", "texto": "Las máquinas que necesiten para su funcionamiento de elementos calefactores, pero cuya finalidad corresponda a la clasificación de consumo de fuerza, podrán conectarse a circuitos de fuerza, salvo que las características del equipo hagan necesaria una conexión separada de los elementos calefactores." }
+          ]
+        },
+        {
+          "numero": "7.2",
+          "titulo": "Exigencias para los equipos de climatización",
+          "subpuntos": [
+            { "numero": "7.2.1", "texto": "Todos los equipos eléctricos que forman parte de una instalación de climatización deberán ser adecuados al ambiente y condiciones de montaje en que se instalen, de acuerdo con lo indicado en el presente pliego técnico." },
+            { "numero": "7.2.2", "texto": "Los equipos eléctricos de climatización de ambientes, que estén expuestos a daños físicos, se deberán proteger adecuadamente, de acuerdo con las condiciones particulares a las que estén expuestos." },
+            { "numero": "7.2.3", "texto": "Los equipos eléctricos de climatización de ambientes serán instalados de manera que exista la distancia mínima requerida, entre el equipo y los materiales combustibles adyacentes, tal distancia será la indicada en la ficha técnica del equipo y se complementará con el estudio particular del proyecto eléctrico y/o climatización, teniendo presente además lo establecido en el Pliego Técnico Normativo RIC N°12.", "refs_cruzadas": ["RIC N°12"] },
+            {
+              "numero": "7.2.4",
+              "texto": "Todo equipo eléctrico usado en climatización deberá tener una placa de características en que se indiquen a lo menos los siguientes datos:",
+              "subpuntos": [
+                { "numero": "7.2.4.a", "letra_original": "a)", "texto": "Nombre del fabricante o su marca registrada." },
+                { "numero": "7.2.4.b", "letra_original": "b)", "texto": "Tensión nominal y corriente de plena carga." },
+                { "numero": "7.2.4.c", "letra_original": "c)", "texto": "Potencia nominal." }
+              ]
+            },
+            {
+              "numero": "7.2.5",
+              "texto": "Si el equipo cuenta, para su funcionamiento, con un motor de una potencia superior a 100 W, deberán indicarse separadamente los datos de los calefactores tal como se indicó anteriormente, agregando los siguientes datos del motor:",
+              "subpuntos": [
+                { "numero": "7.2.5.a", "letra_original": "a)", "texto": "Tensión nominal y corriente de plena carga." },
+                { "numero": "7.2.5.b", "letra_original": "b)", "texto": "Frecuencia." },
+                { "numero": "7.2.5.c", "letra_original": "c)", "texto": "Velocidad en r.p.m." },
+                { "numero": "7.2.5.d", "letra_original": "d)", "texto": "Factor de potencia." }
+              ]
+            },
+            { "numero": "7.2.6", "texto": "La placa de características deberá ser fácilmente accesible y visible con el equipo instalado en condiciones normales de uso." },
+            { "numero": "7.2.7", "texto": "Los equipos móviles deberán entregarse con un cordón de una longitud no inferior a 2 m, adecuado al uso que se les dará." },
+            { "numero": "7.2.8", "texto": "Todo equipo de climatización, de potencia superior a 1 kW, deberá contar con un interruptor incorporado a él, que corte todas sus líneas activas, o se conectará al circuito a través de un tablero de comando." }
+          ]
+        },
+        {
+          "numero": "7.3",
+          "titulo": "Circuitos",
+          "subpuntos": [
+            { "numero": "7.3.1", "texto": "Los circuitos de enchufes de climatización para alimentar dos o más climatizadores tendrán capacidades nominales de 16, 20, 25 o 32 A, siempre que los enchufes de estos circuitos queden protegidos ante una sobrecarga por las protecciones correspondientes." },
+            { "numero": "7.3.2", "texto": "La cantidad de enchufes en cada circuito de climatización se fijará tomando en cuenta la capacidad nominal del circuito y la potencia unitaria de cada equipo calefactor que se conecte a él." },
+            { "numero": "7.3.3", "texto": "Los equipos de potencias unitarias superiores a las capacidades de los circuitos señalados en el punto 7.3.1 precedente se deberán alimentar a través de un tablero de comando.", "refs_cruzadas": ["7.3.1"] },
+            { "numero": "7.3.4", "texto": "Los conductores de alimentación de circuitos de climatización se dimensionarán de modo de asegurar una capacidad de transporte de corriente no inferior a 1,25 veces la corriente de carga del circuito. En todo caso, la sección mínima será de 2,5 mm2." },
+            { "numero": "7.3.5", "texto": "Los equipos de climatización que necesiten de conductores de alimentación de temperatura de servicio superior a 60 ºC deberán tenerlo indicado clara y permanentemente. Esta indicación deberá ser visible estando el equipo instalado como en condiciones normales de uso." },
+            { "numero": "7.3.6", "texto": "Las protecciones de los circuitos de climatización deberán dimensionarse de modo de asegurar que los conductores de alimentación del circuito queden protegidos contra sobrecargas y cortocircuitos." },
+            { "numero": "7.3.7", "texto": "En los circuitos de climatización se deberán adoptar algunas de las medidas de protección contra tensiones de contacto peligrosas indicadas en el Pliego Técnico Normativo RIC N°05.", "refs_cruzadas": ["RIC N°05"] }
+          ]
+        },
+        {
+          "numero": "7.4",
+          "titulo": "Protecciones y comandos",
+          "subpuntos": [
+            { "numero": "7.4.1", "texto": "Los dispositivos de desconexión de los equipos de calefacción deberán instalarse con vistas al equipo controlado o en el frontis del mismo equipo." },
+            { "numero": "7.4.2", "texto": "Se podrá usar como dispositivo de desconexión para un equipo de climatización el interruptor o el protector termomagnético del circuito, siempre que estén a la vista del equipo y fácilmente accesible." },
+            {
+              "numero": "7.4.3",
+              "texto": "Los dispositivos de interrupción controlados térmicamente y la combinación de termostatos e interruptores controlados manualmente podrán utilizarse simultáneamente para controles y medio de desconexión, si cumplen con todas las condiciones siguientes:",
+              "subpuntos": [
+                { "numero": "7.4.3.a", "letra_original": "a)", "texto": "Deberán estar provistos de una marca para la posición de \"apagado\"." },
+                { "numero": "7.4.3.b", "letra_original": "b)", "texto": "Se desconectan directamente todos los conductores activos cuando se colocan manualmente en la posición de \"apagado\"." },
+                { "numero": "7.4.3.c", "letra_original": "c)", "texto": "Estar diseñados de tal forma que el circuito no pueda ser energizado automáticamente después de que el dispositivo ha sido colocado manualmente en la posición \"apagado\"." }
+              ]
+            },
+            { "numero": "7.4.4", "texto": "Cada uno de los enchufes destinados a servir equipos de climatización deberán estar en concordancia con su respectiva protección termomagnética, en relación con la corriente nominal de ambos elementos." },
+            { "numero": "7.4.5", "texto": "Todos los circuitos destinados a servir equipos de climatización deberán contar con protección termomagnética y protección diferencial, debidamente coordinadas y protegidas respectivamente." }
+          ]
+        },
+        {
+          "numero": "7.5",
+          "titulo": "Canalizaciones",
+          "subpuntos": [
+            { "numero": "7.5.1", "texto": "Los circuitos de climatización se canalizarán en alguno de los sistemas indicados en la sección 7 del Pliego Técnico Normativo RIC N°04.", "refs_cruzadas": ["RIC N°04 sección 7"] },
+            { "numero": "7.5.2", "texto": "En recintos o ambientes en que la temperatura exceda de 30 ºC, se deberán aplicar los factores de corrección de capacidad de transporte de corriente indicados en el punto 6.2.5 del Pliego Técnico Normativo RIC N°04.", "refs_cruzadas": ["RIC N°04 punto 6.2.5"] }
+          ]
+        },
+        {
+          "numero": "7.6",
+          "titulo": "Equipo de calentamiento eléctrico fijo para tuberías y tanques",
+          "subpuntos": [
+            {
+              "numero": "7.6.1",
+              "titulo": "Instalación",
+              "subpuntos": [
+                {
+                  "numero": "7.6.1.1",
+                  "texto": "Los equipos eléctricos para el calentamiento de tuberías y tanques estarán aprobados como adecuados para su uso si cumplen con:",
+                  "subpuntos": [
+                    { "numero": "7.6.1.1.a", "letra_original": "a)", "texto": "Estar preparados para el entorno físico, químico y térmico." },
+                    { "numero": "7.6.1.1.b", "letra_original": "b)", "texto": "Ser instalados siguiendo los planos e instrucciones del fabricante." }
+                  ]
+                },
+                { "numero": "7.6.1.2", "texto": "El equipo eléctrico de calentamiento será instalado de modo que esté protegido contra los daños físicos." },
+                { "numero": "7.6.1.3", "texto": "Las superficies externas de los equipos de calentamiento de tuberías y tanques que funcionen a temperaturas superiores a 60 °C, estarán físicamente protegidas, separadas o térmicamente aisladas para proteger a las personas del contacto con las mismas en el área." },
+                { "numero": "7.6.1.4", "texto": "La presencia de los equipos eléctricos de calentamiento en tuberías y tanques será advertida instalando avisos de señales de precaución u otras señales adecuadas, a intervalos frecuentes a lo largo de la tubería o tanque." }
+              ]
+            },
+            {
+              "numero": "7.6.2",
+              "titulo": "Elementos de calentamiento por resistencia",
+              "subpuntos": [
+                { "numero": "7.6.2.1", "texto": "Los elementos de calentamiento por resistencia serán sujetados a la superficie que se quiera calentar por medios que no sean los aislantes térmicos." },
+                { "numero": "7.6.2.2", "texto": "Cuando el elemento de calentamiento no esté en contacto directo con la tubería o tanque que se quiera calentar, se instalará un medio adecuado que evite el aumento de temperatura del elemento calentador, a no ser que el diseño del conjunto de calentamiento sea tal que no supere sus límites de temperatura." },
+                { "numero": "7.6.2.3", "texto": "Los elementos calentadores y sus conjuntos no serán instalados donde formen puentes sobre las juntas de dilatación, a menos que se tomen las medidas contra la dilatación y la contracción." },
+                { "numero": "7.6.2.4", "texto": "Cuando se instalen en tuberías flexibles, los elementos calentadores y sus conjuntos tendrán una capacidad de flexión compatible con la de la tubería." },
+                { "numero": "7.6.2.5", "texto": "Los cables de la fuente de alimentación (cables fríos) y los conductores terminales no calefactores de los elementos de resistencia, serán adecuados para las temperaturas a las que estarán expuestos." },
+                { "numero": "7.6.2.6", "texto": "Donde los cables de potencia no calefactores de la acometida emergen de los equipos de calentamiento de tuberías o tanques calentados eléctricamente, estos cables serán protegidos mediante tuberías metálicas rígidas o flexibles u otras canalizaciones identificadas como adecuadas para esa aplicación." },
+                { "numero": "7.6.2.7", "texto": "Se permitirá que los conductores no calefactores que conectan diversas partes del sistema de calentamiento estén cubiertos por un aislante térmico de la misma forma que los calentadores." },
+                { "numero": "7.6.2.8", "texto": "Las conexiones de los conductores no calefactores, cuando tengan que estar bajo un aislante térmico, serán hechas con conectores aislados aprobados como adecuados para ese uso." },
+                { "numero": "7.6.2.9", "texto": "Todas las unidades de calentamiento ensambladas en fábrica llevarán visible, a menos de 75 mm de cada extremo de los conductores no calefactores, un símbolo de identificación permanente, el número de catálogo y sus valores nominales en Volts y Watts o Volts y Amperes." },
+                { "numero": "7.6.2.10", "texto": "Los cables o alambres calefactores tendrán una cubierta conductiva puesta a tierra que rodee el elemento de calentamiento y los cables de conexión, si los hubiera, así como su aislamiento eléctrico." },
+                { "numero": "7.6.2.11", "texto": "Los paneles de calentamiento tendrán una cubierta conductiva puesta a tierra sobre el elemento calefactor y su aislante eléctrico, por el lado opuesto al que va unido a la superficie que se quiere calentar." }
+              ]
+            },
+            {
+              "numero": "7.6.3",
+              "titulo": "Calentamiento por impedancia",
+              "subpuntos": [
+                { "numero": "7.6.3.1", "texto": "Todas las superficies externas accesibles de la tubería y/o del tanque que puedan ser calentadas, estarán físicamente protegidas, separadas o térmicamente aisladas (con la cubierta a prueba de intemperie para instalaciones exteriores), para evitar el contacto con las personas en el área." },
+                { "numero": "7.6.3.2", "texto": "Se utilizará un transformador de doble devanado con una pantalla puesta a tierra entre los devanados primario y secundario, para aislar el sistema de alimentación común, del sistema de calentamiento." },
+                { "numero": "7.6.3.3", "texto": "A menos que cuente con un protector termomagnético con protección de falla a tierra para la protección del personal, el devanado secundario del transformador de aislamiento conectado a los elementos de calentamiento por impedancia no tendrá una tensión de salida nominal superior a los 24 V." },
+                { "numero": "7.6.3.4", "texto": "Se permitirá que esa tensión sea superior a 24 V, pero no superior a 50 V si se instala un protector termomagnético con protección de falla a tierra para la protección de personas." },
+                { "numero": "7.6.3.5", "texto": "Un sistema de calentamiento por impedancia para tuberías y tanques que funcione a más de 24 V, pero a no más de 50 V, será puesto a tierra en los puntos designados." },
+                { "numero": "7.6.3.6", "texto": "Los conductores conectados al secundario del transformador tendrán una capacidad de al menos el 100% de la carga total del calentador." }
+              ]
+            },
+            {
+              "numero": "7.6.4",
+              "titulo": "Calentamiento por inducción",
+              "subpuntos": [
+                { "numero": "7.6.4.1", "texto": "Las bobinas de inducción que operen o puedan operar a tensiones superiores a 24 V, estarán encerradas dentro de cubiertas no metálicas o metálicas con ranuras en sitios aislados o hechos inaccesibles por su ubicación, para proteger al personal que pueda haber en el área." },
+                { "numero": "7.6.4.2", "texto": "Se evitará que las bobinas de inducción produzcan corrientes inducidas en equipos metálicos, apoyos o estructuras cercanas a la bobina, apantallando, separando o aislando los caminos de las corrientes. Los caminos de corrientes parásitas serán conectados equipotencialmente para evitar la formación de arcos." }
+              ]
+            },
+            {
+              "numero": "7.6.5",
+              "titulo": "Control y protección",
+              "subpuntos": [
+                { "numero": "7.6.5.1", "texto": "Los equipos eléctricos fijos de calentamiento para tuberías y tanques dispondrán de medios de desconexión para los conductores activos. Cuando sea fácilmente accesible al usuario del equipo, se permitirá que el interruptor o protector termomagnético del circuito subalimentador sirva como medio de desconexión. Los interruptores utilizados como medio de desconexión serán del tipo indicador de posición y serán equipados con un bloqueo en la posición de desconectado." },
+                { "numero": "7.6.5.2", "texto": "Los dispositivos de desconexión accionados por temperatura que lleven indicada la posición de desconexión y corten la corriente de suministro abrirán todos los conductores activos cuando el dispositivo controlador esté en posición de desconexión (off). No se permitirá que estos dispositivos sirvan como medio de desconexión, excepto si pueden ser bloqueados efectivamente en la posición de desconexión." },
+                {
+                  "numero": "7.6.5.3",
+                  "texto": "Los dispositivos de desconexión mixtos, consistentes en dispositivos accionados por temperatura e interruptores manuales que sirvan al mismo tiempo como controladores y medio de desconexión, cumplirán con todas las condiciones siguientes:",
+                  "subpuntos": [
+                    { "numero": "7.6.5.3.a", "letra_original": "a)", "texto": "Abrir todos los conductores activos cuando sea puesto manualmente en la posición de desconexión (off)." },
+                    { "numero": "7.6.5.3.b", "letra_original": "b)", "texto": "Estar diseñados de modo que, una vez que el interruptor esté puesto manualmente en posición de desconexión, el circuito no podrá ser activado automáticamente." },
+                    { "numero": "7.6.5.3.c", "letra_original": "c)", "texto": "Estar dotados de un dispositivo de bloqueo en posición de desconexión (off)." }
+                  ]
+                },
+                { "numero": "7.6.5.4", "texto": "Todos los circuitos eléctricos de climatización deberán estar protegidos mediante una protección diferencial." }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "anexos": [
+    {
+      "numero": "7.1",
+      "titulo": "Características nominales de motores usuales para 380 V",
+      "tipo": "tabla",
+      "tabla": {
+        "nombre": "Características nominales de motores usuales para 380 V",
+        "columnas": ["Potencia [kW]", "Potencia [CV]", "Rendimiento η (1) [%]", "Rendimiento η (2) [%]", "Rendimiento η (3) [%]", "Corriente Nominal In (1) [A]", "Corriente Nominal In (2) [A]", "Corriente Nominal In (3) [A]", "Corriente Partida Ip (1) [A]", "Corriente Partida Ip (2) [A]", "Corriente Partida Ip (3) [A]"],
+        "filas": [
+          [0.75, 1, 74, 74, 71, 1.83, 1.95, 2.15, 6, 5, 3.6],
+          [1.10, 1.5, 77, 74, 74, 2.55, 2.8, 3, 6.1, 4.9, 3.8],
+          [1.5, 2, 78, 76, 76, 3.4, 3.7, 4, 6.2, 5.3, 4.5],
+          [2.2, 3, 82, 78, 78, 4.8, 5.2, 5.8, 6.8, 5.9, 5.1],
+          [3.0, 4, 83, 79, 80, 6.4, 7, 7.6, 7.2, 6, 5.5],
+          [4.0, 5.5, 85, 83, 83, 8.1, 8.8, 9.5, 7.6, 7, 6.2],
+          [5.5, 7.5, 85, 84, 84, 11.2, 11.7, 13.1, 7.6, 7, 6.4],
+          [7.5, 10, 87, 86, 84, 14.9, 15.6, 18.1, 7.7, 7.9, 6.4],
+          [11, 15, 87, 88, 88, 22.5, 22, 24.3, 7.7, 8, 7.2],
+          [15, 20, 88, 89, 88.5, 30, 29, 31.5, 7.7, 8, 5.7],
+          [18.5, 25, 89, 89.5, 90, 36, 38, 37.5, 8.6, 6.5, 5.7],
+          [22, 30, 90, 90.5, 90, 42.5, 45, 44.5, 8.6, 6.4, 5.7],
+          [30, 40, 91, 91.5, 91.5, 57, 60, 56, 6, 6.4, 5.7],
+          [37, 50, 92, 92, 91.5, 69, 72, 72, 6, 6.4, 5.7],
+          [45, 60, 92.5, 93, 92.5, 83, 87, 87, 6.3, 6.4, 6],
+          [55, 75, 91, 93, 93, 104, 104, 106, 6.3, 6, 6],
+          [75, 100, 91.5, 94, 93.5, 140, 142, 144, 6.3, 6.3, 6],
+          [90, 125, 92, 94, 94, 166, 168, 172, 6.3, 6.3, 6],
+          [110, 150, 92.5, 94.5, 94.5, 200, 205, 210, 6.3, 6.5, 6.2],
+          [132, 180, 93, 95, 94.5, 240, 240, 255, 6.3, 6.5, 6.2]
+        ],
+        "notas": [
+          "(1) Corresponde a motores de 3.000 rpm.",
+          "(2) Corresponde a motores de 1.500 rpm.",
+          "(3) Corresponde a motores de 1.000 rpm."
+        ]
+      },
+      "referenciado_por": ["5.3.2"]
+    }
+  ],
+  "referencias_a_otros_pliegos": [
+    { "pliego": "RIC N°04", "puntos": ["anexo 4.1", "sección 7", "punto 6.2.5"], "citado_en": ["4.14.1", "4.14.2", "4.14.3", "4.14.4", "4.14.5", "4.14.6", "5.1.3", "5.4.3", "5.5.5", "5.5.6", "5.6.4.6", "7.5.1", "7.5.2"] },
+    { "pliego": "RIC N°02", "puntos": [], "citado_en": ["5.1.4"] },
+    { "pliego": "RIC N°03", "puntos": [], "citado_en": ["5.5.9"] },
+    { "pliego": "RIC N°05", "puntos": [], "citado_en": ["7.3.7"] },
+    { "pliego": "RIC N°12", "puntos": [], "citado_en": ["5.4.3", "7.2.3"] }
+  ],
+  "extensiones_no_previstas_en_v1": {
+    "campo_nota_documento_en_punto": "El punto 5.3.1 trae, en el PDF fuente, una nota al pie numerada (\"1\") que no es contenido normativo sino una nota editorial sobre el historial del propio documento: \"Se agregó texto eliminado en la versión del PDF publicado el 12.01.2021.\" No corresponde a `nota_final` (que es para cierres de listas con letra) ni a `notas_adicionales` (que es para notas técnicas tras una tabla). Se agregó el campo `nota_documento` (string) directamente en el punto afectado, para no perder esta trazabilidad editorial sin confundirla con contenido normativo.",
+    "reconstruccion_de_lista_partida_por_salto_de_pagina": "En el punto 5.2.5 (información al usuario sobre motores), la lista lletrada llega hasta 'v)' pero el extractor de texto del PDF entremezcla el marcador 'v)' en medio de la oración de 'u)' debido a un salto de página con diseño en columnas. Se reconstruyó la división correcta entre los ítems u) y v) siguiendo la posición del marcador 'v)' en el texto extraído (u: '...si ésta es superior a la tensión directa nominal del circuito de inducido del motor.'; v: 'Los niveles de ruido.'), sin agregar ni quitar palabras del texto original — solo se resolvió dónde cae el corte entre los dos ítems.",
+    "anexo_tabla_con_encabezados_agrupados_y_notas_numericas": "El Anexo 7.1 (características nominales de motores usuales para 380V) tiene en el PDF encabezados de columna agrupados en dos niveles (ej. 'Rendimiento η en [%]' como grupo, con subcolumnas numeradas (1)/(2)/(3) que remiten a una nota al pie sobre las rpm del motor). Se aplanaron los encabezados a un solo nivel incorporando el número de nota directamente en el nombre de columna (ej. 'Rendimiento η (1) [%]'), y se preservó el significado de (1)/(2)/(3) en el array `notas` de la tabla — mismo criterio ya usado para tablas con encabezados complejos en pliegos anteriores, sin introducir un campo nuevo."
+  }
+}

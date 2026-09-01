@@ -1,0 +1,469 @@
+{
+  "pliego_id": "RIC-01",
+  "numero": "01",
+  "materia": "Empalmes",
+  "metadata": {
+    "fuente_legal": "Decreto con Fuerza de Ley N°4/20.018, de 2006, del Ministerio de Economía, Fomento y Reconstrucción, Ley General de Servicios Eléctricos",
+    "fuente_reglamentaria": "Decreto N°8, de 2019, del Ministerio de Energía, Reglamento de Seguridad de las Instalaciones de Consumo de Energía Eléctrica",
+    "dictado_por": "Resolución Exenta N° 33.877, de fecha 30/12/2020, de la Superintendencia de Electricidad y Combustibles",
+    "vigencia_desde": "2021-07-12",
+    "estado": "vigente",
+    "reemplaza": "NCh Elec 4/2003 (parcial)",
+    "paginas_documento_fuente": 16,
+    "archivo_fuente": "RIC-N01-Empalmes.pdf"
+  },
+  "referencias_normativas": [
+    { "id": "3.1", "norma": "IEC 62271-1", "anio": 2017, "titulo": "High-voltage switchgear and controlgear - Part 1: Common specifications" },
+    { "id": "3.2", "norma": "IEC 62271-100", "anio": 2008, "titulo": "High-voltage switchgear and controlgear - Part 100: Alternating-current circuit-breakers" },
+    { "id": "3.3", "norma": "IEC 62271-102", "anio": 2018, "titulo": "High-voltage switchgear and controlgear - Part 102: Alternating current disconnectors and earthing switches" },
+    { "id": "3.4", "norma": "IEC 62271-105", "anio": 2012, "titulo": "High-voltage switchgear and controlgear - Part 105: Alternating current switch-fuse combinations up to 52 kV" },
+    { "id": "3.5", "norma": "IEC 62271-200", "anio": 2011, "titulo": "High-voltage switchgear and controlgear - Part 200: AC metal-enclosed switchgear up to 52 kV" },
+    { "id": "3.6", "norma": "IEC 60695-11-10", "anio": 2013, "titulo": "Fire hazard testing – Part 11-10: Test flames -50 W horizontal and vertical flame test methods" },
+    { "id": "3.7", "norma": "IEEE Std. C37.20.2", "anio": 2015, "titulo": "IEEE Standard for Metal-Clad Switchgear" },
+    { "id": "3.8", "norma": "IEEE Std. C37.20.7", "anio": 2017, "titulo": "IEEE Guide for Testing Switchgear Rated Up to 52 kV for Internal Arcing Faults" },
+    { "id": "3.9", "norma": "ANSI C37.55", "anio": 2002, "titulo": "Switchgear - Medium-Voltage Metal-Clad Assemblies - Conformance Test Procedures" }
+  ],
+  "notas_referencias": "Para la aplicación de este pliego técnico se podrán utilizar, en reemplazo de las normas IEC, las normas UNE equivalentes.",
+  "terminologia": [
+    { "id": "4.1", "termino": "Alimentadores", "definicion": "Conductores eléctricos que van entre el equipo de medida y el primer tablero de la instalación, o los conductores controlados desde el tablero general y que alimentan tableros generales auxiliares o tableros de distribución." },
+    { "id": "4.2", "termino": "Caja de empalme", "definicion": "Es el contenedor que alberga al equipo de medida y sus accesorios." },
+    { "id": "4.3", "termino": "Canalización", "definicion": "Conjunto formado por conductores eléctricos, elementos que los soportan y accesorios que aseguran su fijación y protección mecánica." },
+    { "id": "4.4", "termino": "Conductor", "definicion": "Elemento de cobre cuya función específica es el transporte de corriente. Puede designarse como alambre (sección circular sólida única), cable (varios alambres) o barra (sección rectangular)." },
+    { "id": "4.5", "termino": "Empalme", "definicion": "Conjunto de elementos y equipos eléctricos que conectan la Unidad de Medida de la instalación del usuario o cliente a la red de distribución." },
+    { "id": "4.6", "termino": "Empresa distribuidora o distribuidora", "definicion": "Empresa(s) distribuidora(s) concesionaria(s) del servicio público de distribución, o todo aquel que preste el servicio, a cualquier título." },
+    { "id": "4.7", "termino": "Instalación de consumo", "definicion": "Instalación eléctrica destinada al uso exclusivo de sus usuarios o propietarios." },
+    { "id": "4.8", "termino": "Potencia instalada de una instalación", "definicion": "Suma de la capacidad nominal expresada en W o kW de todos los consumos permanentes." },
+    { "id": "4.9", "termino": "Shaft", "definicion": "Conducto técnico, espacio que es parte de una construcción, generalmente destinado a contener las instalaciones de un edificio para el tendido de canalizaciones eléctricas." },
+    { "id": "4.10", "termino": "Sistema de distribución o red de distribución", "definicion": "Conjunto de instalaciones destinadas a dar suministro o permitir inyecciones a clientes ubicados en zonas de concesión o fuera de ellas mediante líneas propias o de terceros. Tensión nominal igual o inferior a 23 kV." },
+    { "id": "4.11", "termino": "Superintendencia", "definicion": "Superintendencia de Electricidad y Combustibles." },
+    { "id": "4.12", "termino": "Unidad de medida", "definicion": "Componente del sistema de medición, monitoreo y control a que se refiere el artículo 3-3 del anexo técnico de sistemas de medición, monitoreo y control." }
+  ],
+  "secciones": [
+    {
+      "numero": "5",
+      "titulo": "EXIGENCIAS GENERALES",
+      "puntos": [
+        {
+          "numero": "5.1",
+          "texto": "Toda instalación de consumo se conectará al sistema de distribución o red de distribución a través de un empalme ejecutado de acuerdo a las normas establecidas y, en aquellos casos en que éstas no existan, por las características de la instalación o porque la potencia requerida no está contemplada en la normativa vigente, se aceptará la utilización de los estándares constructivos propios de cada empresa distribuidora, los cuales deben cumplir las disposiciones normativas vigentes, ser de libre acceso para los usuarios y estar disponibles en la página web y en las oficinas comerciales de cada empresa distribuidora. Los estándares definidos por cada empresa para la construcción de empalmes podrán ser objetados por la Superintendencia si se observare algún incumplimiento normativo.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "5.2",
+          "texto": "Solo se otorgará empalme a aquellas instalaciones construidas de acuerdo con la normativa vigente y que cuenten con la comunicación de energización inscrita ante la Superintendencia.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "5.3",
+          "texto": "La capacidad del empalme se determinará en función de la potencia total instalada, en la comunicación de energización efectuada ante la Superintendencia, ajustándola a valores normalizados conforme al anexo 1.3, pudiendo ser igual o inferior a la potencia total instalada, pero nunca superior a ella.",
+          "excepcion": "Lo establecido en el punto 5.2.1 del Pliego Técnico Normativo RIC N°10",
+          "refs_cruzadas": ["RIC N°10 punto 5.2.1"],
+          "anexos_relacionados": ["1.3"]
+        },
+        {
+          "numero": "5.4",
+          "texto": "La empresa distribuidora deberá denegar la energización del empalme si en el momento de su conexión detecta condiciones de riesgo o trasgresiones a la normativa.",
+          "subpuntos": [
+            { "numero": "5.4.1", "texto": "Si se originan fallas en el momento de la energización que hagan operar la protección del empalme." },
+            { "numero": "5.4.2", "texto": "Si la ubicación y/o la construcción del empalme no cumple con la normativa vigente." },
+            { "numero": "5.4.3", "texto": "Si constata que no existe instalación, o que se encuentra inconclusa. En estos casos la empresa distribuidora debe dejar registro y comunicar a la Superintendencia dentro de las siguientes 24 horas, con medios audiovisuales de respaldo." }
+          ],
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "5.5",
+          "texto": "En áreas donde exista servicio o éste se haya extendido, las empresas distribuidoras deberán conectar los empalmes cumpliendo los plazos definidos en la norma técnica de calidad de servicio para sistemas de distribución (NTD).",
+          "refs_cruzadas": ["NTD - norma técnica de calidad de servicio"]
+        },
+        {
+          "numero": "5.6",
+          "texto": "Toda instalación de consumo se conectará a la red de distribución mediante un empalme único. Sin embargo, en una propiedad se podrán instalar tantos empalmes, para igual número de instalaciones eléctricas, siempre que éstas permanezcan separadas entre sí y no compartan canalizaciones ni tableros eléctricos en común, aun cuando estén asociadas a un único Rol de Avalúo Fiscal.",
+          "excepcion": "Lo establecido en el punto 7.2 del Pliego Técnico Normativo RIC N°15",
+          "refs_cruzadas": ["RIC N°15 punto 7.2"]
+        }
+      ]
+    },
+    {
+      "numero": "6",
+      "titulo": "EXIGENCIAS PARA MATERIALES Y EQUIPOS",
+      "puntos": [
+        {
+          "numero": "6.1",
+          "texto": "El uso de materiales retardantes, geles o inhibidores de corrosión debe asegurar que no se comprometa la conductividad del empalme, conector o terminal, ni que la parte del conductor cercana a la unión produzca corrosión o deteriore las condiciones dieléctricas del aislamiento. Los materiales deberán tener identificación del uso al cual están destinados.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "6.2",
+          "texto": "El material del conector o terminal debe garantizar que los cambios de temperatura provocados por el ambiente o por el paso de la corriente no ocasionen puntos calientes, arcos eléctricos o falsas conexiones, y garantizar la compatibilidad de los materiales empleados en la conexión.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "6.3",
+          "texto": "Las cajas de empalme, sus micas y las canalizaciones no metálicas expuestas a rayos solares deberán tener protección UV adecuada al ambiente donde se instalarán.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "6.4",
+          "texto": "Toda envolvente metálica que aloje las cajas de empalme deberá cumplir con las exigencias descritas en el punto 8 del Pliego Técnico Normativo RIC N°05.",
+          "refs_cruzadas": ["RIC N°05 punto 8"]
+        },
+        {
+          "numero": "6.5",
+          "texto": "Todas las cajas de empalme tendrán una resistencia mecánica mínima IK 09 y deberán cumplir con las exigencias descritas en el punto 6.1.20 del Pliego Técnico Normativo RIC N°02.",
+          "refs_cruzadas": ["RIC N°02 punto 6.1.20"]
+        },
+        {
+          "numero": "6.6",
+          "texto": "Las unidades de medida que formen parte de un empalme eléctrico deberán cumplir con los requisitos definidos en el título 6-3 'Sistema de medición, monitoreo y control' de la norma técnica de calidad de servicio para sistemas de distribución.",
+          "refs_cruzadas": ["NTD título 6-3"]
+        },
+        {
+          "numero": "6.7",
+          "texto": "Las celdas de medición deberán cumplir con los requisitos establecidos en las normas IEC 62271 parte 1, 100, 102, 105, 200, IEC 60695-11-10 o, alternativamente, en las normas IEEE Std C37.20.2, IEEE Std C37.20.7, ANSI C37.55, según corresponda.",
+          "refs_cruzadas": ["3.1", "3.2", "3.3", "3.4", "3.5", "3.6", "3.7", "3.8", "3.9"]
+        }
+      ]
+    },
+    {
+      "numero": "7",
+      "titulo": "CONDICIONES DE DISEÑO",
+      "puntos": [
+        {
+          "numero": "7.1",
+          "texto": "La unidad de medida del empalme se ubicará de forma que permita fácil y expedita lectura, control y trabajos de mantenimiento. Las acometidas, aéreas o subterráneas, en ningún caso podrán atravesar propiedades vecinas, salvo cuando exista servidumbre de paso.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.2",
+          "texto": "Para construcciones habitacionales unifamiliares u otros recintos conectados por empalme único, la unidad de medida se ubicará en la fachada principal, con vista frontal desde la vía pública, sin manipulación por terceros, dentro de un semicírculo de radio no superior a 15 m con centro en la puerta de acceso.",
+          "anexos_relacionados": ["1.1"],
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.3",
+          "texto": "Las unidades de medida se montarán en la fachada exterior si ésta queda dentro de la zona delimitada; en caso contrario, se ubicarán próximas a la línea de cierre, en una estructura construida exclusivamente para este propósito.",
+          "anexos_relacionados": ["1.1"],
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.4",
+          "texto": "En zonas rurales y situaciones similares donde no sea posible cumplir estrictamente las disposiciones precedentes, la ubicación del empalme se determinará de común acuerdo entre propietario y empresa distribuidora, priorizando la facilidad de acceso.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.5",
+          "texto": "Las unidades de medida con telemedida podrán instalarse a distancias mayores a las indicadas en el punto 7.2, definidas de común acuerdo entre propietario y empresa distribuidora.",
+          "refs_cruzadas": ["7.2"]
+        },
+        {
+          "numero": "7.6",
+          "texto": "Los empalmes de edificios de departamentos, oficinas, mall o galerías multitiendas podrán ser concentrados, distribuidos o mixtos. Concentrados: todos los empalmes reunidos en un recinto único. Distribuidos: empalmes en recintos por piso o zona. Mixtos: combinación de ambos. Cada tienda de departamentos tendrá un único empalme. Las galerías multitiendas requieren empalme propio por cada instalación.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.7",
+          "texto": "Se aceptará la concentración de empalmes en edificios de altura hasta 6 pisos. Sobre esta altura se deberán construir recintos exclusivos para la concentración de empalmes por cada 6 pisos o fracción.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.8",
+          "texto": "Requisitos de los recintos destinados al montaje de cajas de empalmes concentrados.",
+          "subpuntos": [
+            { "numero": "7.8.1", "texto": "El recinto debe estar en planta baja, entresuelo o primer subterráneo, próximo a la entrada del edificio, de fácil acceso, salvo cuando existan concentraciones distribuidas por plantas." },
+            { "numero": "7.8.2", "texto": "El recinto se destina a este único propósito y no puede compartirse con calderas, medidores de agua/gas, maquinaria de ascensores, almacén o cuarto de basuras, salvo lo indicado en el punto 7.16." },
+            { "numero": "7.8.3", "texto": "Construido con paredes no combustibles, separado de locales con riesgo de incendio o vapores corrosivos, no expuesto a vibraciones ni humedad." },
+            { "numero": "7.8.4", "texto": "Las cajas de empalme individuales se ubicarán entre 0,80 m y 2,10 m de altura desde piso terminado, con distancia mínima de 20 cm de paredes colindantes, ancho mínimo de pared ocupada de 1,50 m y espacio libre mínimo de 1,10 m hasta la pared opuesta. La puerta debe abrir hacia el exterior y tener cerradura.", "anexos_relacionados": ["1.5"] },
+            { "numero": "7.8.5", "texto": "El recinto se dimensiona considerando cajas individuales estándar, no equipos concentrados de medición. Debe dejarse superficie disponible de al menos 15% de la utilizada por los empalmes proyectados, para futuros aumentos.", "excepcion": "Empalmes dimensionados conforme al punto 13.2.1 del RIC N°15", "refs_cruzadas": ["RIC N°15 punto 13.2.1"], "anexos_relacionados": ["1.4", "1.7"] },
+            { "numero": "7.8.6", "texto": "La medición de consumo en ducto de barra podrá instalarse a la misma altura del ducto si la lectura está en un control central a la vista o mediante reporte." },
+            { "numero": "7.8.7", "texto": "Cuando la cota del suelo sea inferior o igual a la de pasillos o locales colindantes, deben disponerse sumideros de desagüe para evitar inundaciones por avería o rotura de tuberías de agua." },
+            { "numero": "7.8.8", "texto": "Dentro del recinto, inmediato a la entrada, debe instalarse un equipo autónomo de alumbrado de emergencia con autonomía no inferior a 2 horas y nivel mínimo de iluminación de 5 lux." },
+            { "numero": "7.8.9", "texto": "El recinto dispondrá de ventilación e iluminación suficiente para comprobar el buen funcionamiento de todos los componentes de la concentración." }
+          ]
+        },
+        {
+          "numero": "7.9",
+          "texto": "Requisitos de los armarios destinados a empalmes distribuidos.",
+          "subpuntos": [
+            { "numero": "7.9.1", "texto": "Las cajas de empalme individuales dentro de armarios distribuidos o mixtos se ubicarán entre 0,80 m y 2,10 m de altura desde piso terminado, con distancia mínima de 20 cm de paredes colindantes.", "anexos_relacionados": ["1.2"] },
+            { "numero": "7.9.2", "texto": "Los armarios se dimensionan considerando cajas individuales, no equipos concentrados. Debe dejarse superficie disponible equivalente al 15% de todos los empalmes proyectados.", "excepcion": "Empalmes dimensionados conforme al punto 13.2.1 del RIC N°15", "refs_cruzadas": ["RIC N°15 punto 13.2.1"], "anexos_relacionados": ["1.4"] },
+            { "numero": "7.9.3", "texto": "La superficie disponible de armarios distribuidos o mixtos podrá proyectarse en el primer recinto o gabinete que recibe la alimentación de la red pública, equivalente al 15% de todas las cajas de empalme de la edificación, dejando el volumen disponible en el shaft vertical de empalmes.", "anexos_relacionados": ["1.7"] },
+            { "numero": "7.9.4", "texto": "Desde la parte más saliente del armario hasta la pared opuesta debe respetarse un pasillo mínimo de 1,5 m.", "anexos_relacionados": ["1.5"] },
+            { "numero": "7.9.5", "texto": "Los armarios tendrán resistencia al fuego mínima RF 30." },
+            { "numero": "7.9.6", "texto": "Las puertas del armario dispondrán de cerradura." },
+            { "numero": "7.9.7", "texto": "El armario se destina a este único propósito, excepto lo indicado en el punto 7.16." }
+          ]
+        },
+        {
+          "numero": "7.10",
+          "texto": "No se permitirá la ubicación de medidores o equipos de medida al exterior de edificios.",
+          "excepcion": "Edificios de viviendas sociales, que deberán disponer de un nicho especialmente destinado para este fin",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.11",
+          "texto": "En edificios destinados a viviendas, locales comerciales u oficinas, los alimentadores que unan el medidor con el primer tablero de la instalación deberán instalarse en lugares o espacios de uso común. Este mismo criterio se aplica a la acometida.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.12",
+          "texto": "Requisitos de canalización y alimentación principal de los conductores provenientes de la red de distribución hacia los empalmes del edificio, para cualquiera de las alternativas de montaje indicadas en el punto 7.6.",
+          "subpuntos": [
+            { "numero": "7.12.1", "texto": "En la canalización de arranques o acometidas desde la red pública se utilizarán ductos cerrados o ducto de barra. Si se usan canalizaciones accesibles (bandejas tipo pesado, escalerillas o canastillo) deben cumplir el punto 5.1.7 del RIC N°03. En ductos cerrados, ductos y conductores deben ser retardantes a la llama, no propagadores de incendio, de baja toxicidad, libres de halógenos y de muy baja opacidad de humos, salvo en el tramo subterráneo donde no es exigible esto último.", "refs_cruzadas": ["RIC N°03 punto 5.1.7"] },
+            { "numero": "7.12.2", "texto": "Los conductores principales de alimentación de empalmes concentrados, distribuidos o mixtos, y su canalización desde la red pública, deben dimensionarse aplicando los factores de simultaneidad del punto 6.5 del RIC N°03. Debe habilitarse una segunda disposición de ductos de iguales dimensiones para futuros aumentos de capacidad, con pasacables. Para edificios con recarga de vehículos eléctricos, aplica adicionalmente el punto 13.2.1 del RIC N°15.", "refs_cruzadas": ["RIC N°03 punto 6.5", "RIC N°15 punto 13.2.1"], "anexos_relacionados": ["1.7"] },
+            { "numero": "7.12.3", "texto": "El alimentador o arranque del punto 7.12.2 debe contar con una protección principal contra sobrecargas y cortocircuitos, ubicada en el primer recinto o gabinete de empalmes.", "refs_cruzadas": ["7.12.2"], "anexos_relacionados": ["1.7"] },
+            { "numero": "7.12.4", "texto": "Para el paso de arranques hacia empalmes distribuidos o mixtos, se dispondrá de un conducto o shaft vertical de uso exclusivo para canalizaciones eléctricas de potencia, accesible en todos los pisos incluyendo estacionamientos subterráneos, con resistencia al fuego mínima RF120. No se permiten conductores que ardan emitiendo gases halógenos o corrosivos. Debe ser continuo, con las mismas dimensiones en todos los pisos, y contar con volumen disponible del 15% para aumentos futuros.", "anexos_relacionados": ["1.7"] },
+            { "numero": "7.12.5", "texto": "La construcción de empalmes y canalización de arranques desde la red pública podrá ser ejecutada por el instalador eléctrico a cargo de las obras del edificio, según proyecto acordado con la empresa distribuidora. Las obras deben ser recepcionadas por la empresa eléctrica, que no podrá imponer condiciones superiores a la normativa vigente; discrepancias las resuelve la Superintendencia." }
+          ]
+        },
+        {
+          "numero": "7.13",
+          "texto": "En empalmes concentrados o mixtos, los alimentadores que unen la unidad de medida con el primer tablero se canalizarán a través de shafts verticales accesibles en todos los pisos, incluyendo estacionamientos subterráneos, cumpliendo los puntos 5.1.4 al 5.1.7 del RIC N°03.",
+          "refs_cruzadas": ["RIC N°03 puntos 5.1.4 a 5.1.7"],
+          "anexos_relacionados": ["1.7"]
+        },
+        {
+          "numero": "7.14",
+          "texto": "En empalmes concentrados para viviendas sociales, los alimentadores deben conectarse en forma directa entre el primer tablero de la vivienda y la unidad de medida, ingresando preferentemente por la parte posterior de la caja de empalme. Está prohibido ubicar cajas de derivación en la zona de empalmes que contengan conductores activos.",
+          "anexos_relacionados": ["1.6"],
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.15",
+          "texto": "Para cualquier tipo de empalme, si se usan ductos para canalizar los alimentadores entre el equipo de medida y el primer tablero, el diámetro del ducto debe permitir ampliar la sección de los conductores inicialmente instalados en un 100%, y en ningún caso ser inferior a 32 mm de diámetro.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.16",
+          "texto": "Los recintos de empalmes eléctricos podrán utilizarse también para empalmes de servicios de comunicaciones, separados de los eléctricos por un panel divisorio de material no combustible que no entorpezca el acceso ni operación. No podrán instalarse empalmes o equipos de medida de agua potable o gas, ni usarse como lugar de estadía de personal, bodega o almacenamiento.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.17",
+          "texto": "Cuando la canalización de comunicaciones o control comparta recintos, canalizaciones o conductos con instalaciones eléctricas, debe proyectarse e instalarse considerando que podrá ser afectada por fallas o interferencias originadas en las instalaciones eléctricas.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.18",
+          "texto": "Está prohibido que los ductos de agua o gas crucen por el interior de los staff o recintos donde se ubican los empalmes eléctricos.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.19",
+          "texto": "Está prohibido realizar derivaciones desde el alimentador o conductores que conectan el empalme con el primer tablero de la instalación.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.20",
+          "texto": "Los empalmes subterráneos deben ser mecánicamente resistentes, con adecuada conductividad eléctrica, aislados y sellados en forma efectiva contra el ingreso de agua. En zonas de alto nivel pluviométrico donde esto sea imposible, se usarán conductores y accesorios aptos para trabajar sumergidos. Continuidad y aislamiento deben probarse antes de la puesta en servicio.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.21",
+          "texto": "Las celdas de los empalmes de media tensión deberán estar separadas a una distancia no inferior a 1,5 m de los demás tableros eléctricos de baja tensión.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.22",
+          "texto": "Los dispositivos de control de instalaciones de alumbrado público no podrán estar ubicados dentro de la caja de empalmes; deben instalarse de forma independiente.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "7.23",
+          "texto": "La altura mínima de montaje de las unidades de medida en instalaciones de alumbrado público y de recarga de vehículos eléctricos ubicadas en bienes nacionales de uso público será de 2,5 m, asegurando que no exista acceso ni manipulación por terceros. De no cumplirse, debe destinarse un espacio con las medidas de seguridad necesarias.",
+          "refs_cruzadas": []
+        }
+      ]
+    },
+    {
+      "numero": "8",
+      "titulo": "PROTECCIÓN O LIMITADORES",
+      "puntos": [
+        {
+          "numero": "8.1",
+          "texto": "Las curvas de operación de los limitadores o protecciones de los empalmes de baja tensión deberán ser de la curva más lenta de operación. Solo se podrán utilizar curvas distintas si están respaldadas por un estudio técnico de coordinación y selectividad de protecciones de la instalación de consumo.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "8.2",
+          "texto": "Las protecciones o limitadores que formen parte del empalme deberán tener un poder de corte igual o superior a 1,2 veces la corriente de cortocircuito prevista en el punto de instalación.",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "8.3",
+          "texto": "Los empalmes de media tensión con potencia igual o superior a 500 kW deberán contar con un interruptor de poder o reconectador con las siguientes funciones: a) Sobrecorriente de Fase (Nema 50/51); b) Sobrecorriente Residual (Nema 50N/51N); c) Sobretensión de Secuencia Cero (Nema 59N).",
+          "refs_cruzadas": []
+        },
+        {
+          "numero": "8.4",
+          "texto": "El ajuste de las protecciones del punto 8.3 se determinará de común acuerdo con la empresa distribuidora, a solicitud del instalador basada en el estudio de protecciones de la instalación. La empresa distribuidora tiene un plazo máximo de 15 días corridos para responder. Si no hay acuerdo, el instalador debe presentar el caso ante la Superintendencia, quien resuelve la discrepancia.",
+          "refs_cruzadas": ["8.3"]
+        }
+      ]
+    }
+  ],
+  "anexos": [
+    {
+      "numero": "1.1",
+      "titulo": "Ubicación de empalmes",
+      "tipo": "figura_texto",
+      "puntos": [
+        { "numero": "1.1", "texto": "Las cajas de empalmes se deben instalar en la fachada exterior de la edificación dentro de una zona comprendida en un semicírculo de 15 m de radio, medidos desde la puerta principal de acceso a la propiedad." },
+        { "numero": "1.2", "texto": "En caso de que la edificación se encuentre fuera del semicírculo de 15 m de radio, las cajas de empalmes se deberán instalar en un poste ubicado cerca del cierre de la propiedad o en un nicho habilitado especialmente para esta finalidad." }
+      ],
+      "tiene_figura": true,
+      "imagen": "anexo-1-1.png",
+      "descripcion_figura": "Diagrama en planta mostrando el semicírculo de 15 m desde el acceso principal hasta el equipo de medida, en dos variantes de disposición de la edificación.",
+      "referenciado_por": ["7.2", "7.3"]
+    },
+    {
+      "numero": "1.2",
+      "titulo": "Ubicación de cajas de empalmes concentrados",
+      "tipo": "figura",
+      "tiene_figura": true,
+      "imagen": "anexo-1-2.png",
+      "descripcion_figura": "Corte lateral mostrando arreglo de cajas de empalme en grilla, con altura mínima 0,8 m y altura máxima 2,10 m desde el suelo terminado.",
+      "dimensiones": { "altura_minima_m": 0.8, "altura_maxima_m": 2.10 },
+      "referenciado_por": ["7.9.1"]
+    },
+    {
+      "numero": "1.3",
+      "titulo": "Tipos de empalme de baja tensión y potencias estandarizadas",
+      "tipo": "tabla",
+      "tablas": [
+        {
+          "nombre": "Empalmes monofásicos",
+          "columnas": ["Tipo de tarifa", "Interruptor termomagnético (A)", "Pot. nominal o Pot. a contratar (kW)", "Pot. máxima de empalme (kVA)", "Tipo de empalme normalizado"],
+          "filas": [
+            ["BT-1", 6, 1, 1.3, "A-6 o S-6"],
+            ["BT-1", 10, 2, 2.2, "A-6 o S-6"],
+            ["BT-1", 16, 3, 3.5, "A-6 o S-6"],
+            ["BT-1", 20, 4, 4.4, "A-6 o S-6"],
+            ["BT-1", 25, 5, 5.5, "A-6 o S-6"],
+            ["BT-1", 30, 6, 6.6, "A-9 o S-9"],
+            ["BT-1", 32, 6.5, 7.0, "A-9 o S-9"],
+            ["BT-1", 35, 7, 7.7, "A-9 o S-9"],
+            ["BT-1", 40, 8, 8.8, "A-9 o S-9"],
+            ["Tarifas residenciales distintas a la BT1", 50, 10, 11, "A-16 o S-16"],
+            ["Tarifas residenciales distintas a la BT1", 63, 13, 13.8, "A-16 o S-16"]
+          ],
+          "nota": "A: Concéntrico (Aéreo) / S: Subterráneo"
+        },
+        {
+          "nombre": "Empalmes trifásicos",
+          "columnas": ["Interruptor termomagnético (A)", "Pot. nominal o Pot. a contratar (kW)", "Pot. máxima de empalme (kVA)", "Tipo de empalme normalizado"],
+          "filas": [
+            [6, 3.6, 3.95, "A-16 / AR-18 / S18 / SR-18 / A-27 o AR-27 / S-27 o SR-27"],
+            [10, 6, 6.58, "A-16 / AR-18 / S18 / SR-18 / A-27 o AR-27 / S-27 o SR-27"],
+            [16, 9.7, 10.53, "A-16 / AR-18 / S18 / SR-18 / A-27 o AR-27 / S-27 o SR-27"],
+            [20, 12, 13.16, "A-16 / AR-18 / S18 / SR-18 / A-27 o AR-27 / S-27 o SR-27"],
+            [25, 15, 16.45, "A-16 / AR-18 / S18 / SR-18 / A-27 o AR-27 / S-27 o SR-27"],
+            [30, 18, 19.75, "A-16 / AR-18 / S18 / SR-18 / A-27 o AR-27 / S-27 o SR-27"],
+            [32, 19, 21.06, "A-16 / AR-18 / S18 / SR-18 / A-27 o AR-27 / S-27 o SR-27"],
+            [35, 21, 23.04, "A-16 / AR-18 / S18 / SR-18 / A-27 o AR-27 / S-27 o SR-27"],
+            [40, 24, 26.33, "A-16 / AR-18 / S18 / SR-18 / A-27 o AR-27 / S-27 o SR-27"],
+            [50, 30, 32.91, "AR-48 o SR-48"],
+            [63, 38, 41.47, "AR-48 o SR-48"],
+            [80, 48, 52.65, "AR-75 o SR-75"],
+            [90, 55, 59.24, "AR-75 o SR-75"],
+            [100, 61, 65.82, "AR-75 o SR-75"],
+            [125, 76, 82.27, "AR-100 o SR-100"],
+            [150, 91, 98.70, "AR-150 o SR-150 / AR-225 o SR-225 / AR-250 o SR-250 / AR-350 o SR-350"],
+            [160, 97, 105.31, "AR-150 o SR-150 / AR-225 o SR-225 / AR-250 o SR-250 / AR-350 o SR-350"],
+            [200, 122, 131.64, "AR-150 o SR-150 / AR-225 o SR-225 / AR-250 o SR-250 / AR-350 o SR-350"],
+            [225, 137, 148.10, "AR-150 o SR-150 / AR-225 o SR-225 / AR-250 o SR-250 / AR-350 o SR-350"],
+            [250, 153, 164.54, "AR-150 o SR-150 / AR-225 o SR-225 / AR-250 o SR-250 / AR-350 o SR-350"],
+            [320, 195, 210.62, "AR-150 o SR-150 / AR-225 o SR-225 / AR-250 o SR-250 / AR-350 o SR-350"],
+            [350, 214, 230.40, "AR-150 o SR-150 / AR-225 o SR-225 / AR-250 o SR-250 / AR-350 o SR-350"],
+            [400, 244, 263.27, "AR-150 o SR-150 / AR-225 o SR-225 / AR-250 o SR-250 / AR-350 o SR-350"],
+            [450, 275, 296.20, "AR-150 o SR-150 / AR-225 o SR-225 / AR-250 o SR-250 / AR-350 o SR-350"],
+            [500, 306, 329.09, "AR-750 o SR-750"],
+            [630, 385, 414.65, "AR-750 o SR-750"],
+            [800, 489, 526.54, "AR-750 o SR-750"],
+            [1000, 612, 658.18, "AR-750 o SR-750"]
+          ],
+          "nota": "A: Aéreo / S: Subterráneo / AR: Aéreo con medidor reactivo / SR: Subterráneo con medidor reactivo"
+        }
+      ],
+      "referenciado_por": ["5.3"]
+    },
+    {
+      "numero": "1.4",
+      "titulo": "Dimensionamiento de recintos o armarios para el montaje de empalmes concentrados, distribuidos o mixtos",
+      "tipo": "formula",
+      "formula": "Sp = 0.15 * (X * Y)",
+      "imagen": "anexo-1-4.png",
+      "variables": {
+        "Sp": "Superficie disponible requerida (m²), equivalente al 15% de la superficie utilizada por las cajas de empalmes",
+        "X": "Ancho del recinto o armario (m)",
+        "Y": "Alto del recinto o armario (m)"
+      },
+      "referenciado_por": ["7.8.5", "7.9.2"]
+    },
+    {
+      "numero": "1.5",
+      "titulo": "Recinto de empalme / Armario de empalmes",
+      "tipo": "figura",
+      "tiene_figura": true,
+      "imagen": "anexo-1-5.png",
+      "descripcion_figura": "Dos diagramas: (1) Recinto de empalme en planta con cotas de ancho mínimo 150 cm, distancias laterales mínimas 20 cm, espacio libre mínimo 110 cm, desagüe condicional, rejilla de ventilación, luz de emergencia 1h/5lux, puerta de 70 cm con paredes no combustibles. (2) Armario de empalmes con pasillo mínimo 150 cm y cerradura obligatoria.",
+      "dimensiones": {
+        "ancho_minimo_pared_cm": 150,
+        "distancia_lateral_minima_cm": 20,
+        "espacio_libre_minimo_cm": 110,
+        "ancho_puerta_cm": 70,
+        "autonomia_emergencia_horas": 1,
+        "iluminancia_emergencia_lux": 5,
+        "pasillo_armario_minimo_cm": 150
+      },
+      "referenciado_por": ["7.8.4", "7.9.4"]
+    },
+    {
+      "numero": "1.6",
+      "titulo": "Alimentadores para empalmes de viviendas sociales",
+      "tipo": "figura_texto",
+      "tiene_figura": true,
+      "imagen": "anexo-1-6.png",
+      "descripcion_figura": "Vista interior de caja de empalme mostrando entrada de acometida y ducto de entrada del alimentador directamente a la caja, preferentemente por la parte posterior.",
+      "advertencia": "Queda prohibida la instalación de cajas de distribución para conectar el equipo de medida con los alimentadores provenientes de la vivienda. Estos alimentadores deben llegar directamente a la caja ya sea por la parte posterior o a través de una canalización que ingrese directamente a la caja de empalmes, reduciendo el riesgo de daño o intervención de los mismos por parte de terceros.",
+      "referenciado_por": ["7.14"]
+    },
+    {
+      "numero": "1.7",
+      "titulo": "Montaje de empalmes en edificios",
+      "tipo": "figura_referencias",
+      "tiene_figura": true,
+      "figuras": [
+        {
+          "nombre": "Fig. 1 Empalmes concentrados",
+          "imagen": "anexo-1-7-fig1.png",
+          "descripcion": "Corte de edificio de 3 pisos + 2 subterráneos con transformador, zona de empalmes en piso -1 y vertical de alimentadores.",
+          "referencias_a_puntos": [
+            { "punto": "7.8.5", "etiqueta": "Superficie Disponible 15%", "descripcion": "Dejar disponible al menos un 15% de la superficie utilizada por los empalmes proyectados" },
+            { "punto": "7.12.2", "etiqueta": "Disposición de ductos", "descripcion": "Previsión de canalización para futuras cargas de iguales características que la canalización principal" },
+            { "punto": "7.12.3", "etiqueta": "Protección principal", "descripcion": "El alimentador o arranque deberá contar con una protección que se ubicará en el primer recinto o gabinete de empalmes" },
+            { "punto": "7.13", "etiqueta": "Vertical accesible", "descripcion": "La vertical debe ser uniforme y accesible en cada piso de la edificación" }
+          ]
+        },
+        {
+          "nombre": "Fig. 2 Empalmes distribuidos o mixtos",
+          "imagen": "anexo-1-7-fig2.png",
+          "descripcion": "Corte de edificio de 3 pisos + 2 subterráneos con transformador, zona de empalmes en piso -1, empalmes individuales (E) distribuidos en cada piso y vertical de alimentadores con +15% de volumen disponible.",
+          "referencias_a_puntos": [
+            { "punto": "7.9.3", "etiqueta": "Volumen Disponible 15%", "descripcion": "Dejar disponible al menos un 15% del volumen utilizado por los empalmes proyectados" },
+            { "punto": "7.12.2", "etiqueta": "Disposición de ductos", "descripcion": "Previsión de canalización para futuras cargas de iguales características que la canalización principal" },
+            { "punto": "7.12.3", "etiqueta": "Protección principal", "descripcion": "El alimentador o arranque deberá contar con una protección que se ubicará en el primer recinto o gabinete de empalmes" },
+            { "punto": "7.12.4", "etiqueta": "Vertical accesible con disponibilidad 15%", "descripcion": "La vertical debe ser uniforme y accesible en cada piso de la edificación, con volumen disponible del 15% de las canalizaciones que se alojen en ella" }
+          ]
+        }
+      ],
+      "referenciado_por": ["7.8.5", "7.9.3", "7.12.2", "7.12.3", "7.12.4", "7.13"]
+    }
+  ],
+  "referencias_a_otros_pliegos": [
+    { "pliego": "RIC N°02", "puntos": ["6.1.20"], "citado_en": ["6.5"] },
+    { "pliego": "RIC N°03", "puntos": ["5.1.4", "5.1.5", "5.1.6", "5.1.7", "6.5"], "citado_en": ["7.12.1", "7.12.2", "7.13"] },
+    { "pliego": "RIC N°05", "puntos": ["8"], "citado_en": ["6.4"] },
+    { "pliego": "RIC N°10", "puntos": ["5.2.1"], "citado_en": ["5.3"] },
+    { "pliego": "RIC N°15", "puntos": ["7.2", "13.2.1"], "citado_en": ["5.6", "7.8.5", "7.9.2", "7.12.2"] }
+  ]
+}

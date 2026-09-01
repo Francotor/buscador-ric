@@ -1,0 +1,122 @@
+{
+  "pliego_id": "RIC-17",
+  "numero": "17",
+  "materia": "Operación y mantenimiento",
+  "metadata": {
+    "fuente_legal": "Decreto con Fuerza de Ley N° 4/20.018, de 2006, del Ministerio de Economía, Fomento y Reconstrucción, Ley General de Servicios Eléctricos",
+    "fuente_reglamentaria": "Decreto N°8, de 2019, del Ministerio de Energía, Reglamento de Seguridad de las Instalaciones de Consumo de Energía Eléctrica",
+    "dictado_por": "Resolución Exenta N° 33.877, de fecha 30/12/2020, de la Superintendencia de Electricidad y Combustibles",
+    "vigencia_desde": "2021-07-12",
+    "estado": "vigente",
+    "paginas_documento_fuente": 5,
+    "archivo_fuente": "RIC-N17-Operacion-y-Mantenimiento.pdf"
+  },
+  "referencias_normativas": [
+    { "id": "3.1", "norma": "ASTM F855-19a", "anio": 2019, "titulo": "Standard Specification for Temporary Protective Grounds to be Use on De-energized Electric Power Lines and Equipment." },
+    { "id": "3.2", "norma": "NFPA 70E", "anio": 2018, "titulo": "Norma para la seguridad eléctrica en lugares de trabajo." }
+  ],
+  "terminologia": [
+    { "id": "4.1", "termino": "Condición de trabajo eléctricamente segura (sin energía o tensión cero)", "definicion": "Un estado en el cual el conductor o la parte del circuito en que se va a trabajar (de manera directa o cerca), no posee energía eléctrica, se ha aplicado un bloqueo/etiquetado (procedimiento de bloqueo de energía), se ha verificado la ausencia de tensión y se ha aplicado una puesta a tierra de protección temporal." },
+    { "id": "4.2", "termino": "Corriente de ruptura", "definicion": "Posible corriente simétrica de falla a tensión nominal, a la cual un aparato o sistema puede estar conectado sin sufrir daño, deterioro o pérdida de vida útil." },
+    { "id": "4.3", "termino": "Desenergizado", "definicion": "Libre de cualquier conexión eléctrica a una fuente de tensión o, según corresponda, se encuentra conectado a potencial cero, libre en todo momento de cargas eléctricas y, por este motivo, sin tensión." },
+    { "id": "4.4", "termino": "Energizado", "definicion": "Equipo, artefacto o parte de la instalación eléctrica que se encuentra conectada eléctricamente o que se encuentra conectado a una fuente de tensión." },
+    { "id": "4.5", "termino": "Equipo", "definicion": "Término general que incluye los materiales, herrajes, dispositivos, artefactos, luminarias, aparatos y similares, utilizados como parte de, o que se encuentra conectado a una instalación eléctrica." },
+    { "id": "4.6", "termino": "Seguridad eléctrica", "definicion": "Es la identificación de los riesgos asociados con el uso de la energía eléctrica y la adopción de medidas, precauciones o resguardos para que estos peligros no causen lesiones o muerte." },
+    { "id": "4.7", "termino": "Superintendencia", "definicion": "Superintendencia de Electricidad y Combustibles." }
+  ],
+  "secciones": [
+    {
+      "numero": "1",
+      "titulo": "Objetivos",
+      "puntos": [
+        { "numero": "1.1", "texto": "Este pliego técnico tiene por objetivo fijar los requisitos mínimos para la intervención y la verificación de las instalaciones de consumo de energía eléctrica del país, sean éstas de baja o de media tensión, con el fin de salvaguardar a las personas que las operan o hacen uso de ellas." },
+        { "numero": "1.2", "texto": "Por intervención se define a todas aquellas actividades que se desarrollan tanto para la operación del sistema eléctrico, como también para el mantenimiento de este, de acuerdo con las exigencias o requisitos de seguridad que rigen en el ámbito de las instalaciones de consumo de electricidad." }
+      ]
+    },
+    {
+      "numero": "2",
+      "titulo": "Alcance y campo de aplicación",
+      "puntos": [
+        { "numero": "2.1", "texto": "Las disposiciones de este pliego contienen los requisitos de seguridad aplicables a los lugares de trabajo, tanto para el personal electricista, como para los usuarios de las instalaciones de consumo de electricidad, en adelante e indistintamente, instalaciones, en las actividades de instalación, montaje, operación, explotación, mantenimiento, verificación, supervisión y desmantelamiento de este tipo de instalaciones." }
+      ]
+    },
+    {
+      "numero": "5",
+      "titulo": "Requisitos según tipo de instalaciones",
+      "puntos": [
+        { "numero": "5.1", "texto": "La seguridad de una persona consiste en evitar que ésta entre en contacto con niveles de tensión peligrosos. Si esto se llegara a producir, la seguridad de una persona dependerá del desempeño del sistema de protecciones con el que cuenta la instalación eléctrica, el cual debe operar, de tal manera de evitar cualquier tipo de lesión sobre la persona, a fin de garantizar su integridad física." },
+        { "numero": "5.2", "texto": "Las instalaciones de consumo de energía eléctrica de carácter general tendrán que cumplir con los requisitos básicos de mantención de acuerdo con lo definido en este pliego. Por su parte, los instaladores eléctricos autorizados por la Superintendencia deberán cumplir con las exigencias de seguridad en la operación y mantención, conforme a lo indicado en el presente pliego. Adicionalmente las instalaciones, que se ubiquen en atmósferas explosivas, en instalaciones para la minería y todas las instalaciones de consumo de media y alta tensión de una potencia instalada igual o mayor a 5 MW deberán cumplir con las exigencias de seguridad en la operación y mantención definidas en la norma NFPA 70E.", "refs_cruzadas": ["NFPA 70E"] },
+        { "numero": "5.3", "texto": "Para el caso de instalaciones de potencia instalada mayores a 300 kW o alimentadas por empalmes en media tensión, de carácter industrial, comercial, educacional, asistencial o de locales de reunión de personas, en el ámbito del mantenimiento y operación de las instalaciones eléctricas, se deberá implementar un programa de seguridad eléctrica, mediante profesionales competentes." },
+        { "numero": "5.4", "texto": "Las empresas de mantenimiento eléctrico deberán contar con al menos un instalador eléctrico autorizado por la Superintendencia, de acuerdo con la clase y categoría de la instalación para la cual brinden servicios." },
+        { "numero": "5.5", "texto": "De acuerdo con el tipo de instalación, dispuesta en cada empresa, el propietario responsable de ésta, deberá implementar y documentar un programa de seguridad eléctrica, de acuerdo con la normativa vigente referente a la prevención de accidentes del trabajo y enfermedades profesionales, en concordancia con el sistema de gestión de riesgos laborales que lleve a cabo dicha empresa, ya sea a través de normas de uso universal (ISO, OHSAS, ANSI) o a través de los programas específicos de prevención de riesgos que implemente la empresa." }
+      ]
+    },
+    {
+      "numero": "6",
+      "titulo": "Programa de seguridad eléctrica",
+      "puntos": [
+        {
+          "numero": "6.1",
+          "texto": "Requisitos generales de un programa de seguridad eléctrica.",
+          "subpuntos": [
+            { "numero": "6.1.1", "titulo": "Mantenimiento de las instalaciones", "texto": "Corresponde a un conjunto de acciones basadas en criterios técnicos y especificaciones entregadas por los fabricantes, además de aspectos tales como condiciones de operación, exigencias climáticas y de medio ambiente, que influyen en la conservación de la vida útil de las instalaciones eléctricas, de los equipos que la componen y por tanto, en su seguridad de uso." },
+            { "numero": "6.1.2", "titulo": "Evaluación y tratamiento de riesgos eléctricos", "texto": "La evaluación de los riesgos debe realizarse mediante alguna técnica de evaluación de riesgos que permita su adecuada identificación, análisis y valoración. El tratamiento de los riesgos eléctricos deberá ser preventivo y orientado a evitar daños a las personas y las instalaciones." },
+            { "numero": "6.1.3", "titulo": "Inspección/Evaluación", "texto": "Verificar los equipos eléctricos, con rutinas y frecuencia programada, documentando la información del sistema eléctrico y los mantenimientos efectuados, incluyendo un control de fallas e investigación de accidentes e incidentes con análisis de causa raíz." },
+            { "numero": "6.1.4", "titulo": "Planificación de procedimientos", "texto": "Se realizarán de acuerdo con el tipo de actividad e instalaciones a intervenir." },
+            { "numero": "6.1.5", "titulo": "Capacitación", "texto": "De seguridad y técnica, de acuerdo con el nivel de calificación con el que cuentan los trabajadores, operadores y usuarios, en actividades de mantención y uso de las instalaciones eléctricas." },
+            { "numero": "6.1.6", "titulo": "Procedimientos de emergencia", "texto": "tanto de seguridad eléctrica, como para emergencias operacionales." },
+            { "numero": "6.1.7", "titulo": "Auditorías de seguridad eléctrica", "texto": "Para controlar la eficacia del programa de seguridad eléctrica, en relación con los aspectos técnico-preventivos." }
+          ]
+        },
+        {
+          "numero": "6.2",
+          "titulo": "Procedimiento de identificación de peligros y evaluación de riesgos",
+          "subpuntos": [
+            {
+              "numero": "6.2.1",
+              "texto": "El programa de seguridad eléctrica deberá incluir un procedimiento de identificación de peligros y evaluación de riesgos, donde se identifiquen los principales procesos de operación y mantención de las instalaciones. Algunas de las actividades relevantes que deben identificarse son:",
+              "subpuntos": [
+                { "numero": "6.2.1.1", "texto": "Trabajo en circuitos de potencia." },
+                { "numero": "6.2.1.2", "texto": "Otros peligros, por ejemplo, trabajo en altura para mantención eléctrica." },
+                { "numero": "6.2.1.3", "texto": "Medios humanos y materiales disponibles." },
+                { "numero": "6.2.1.4", "texto": "Niveles de tensión del sistema." },
+                { "numero": "6.2.1.5", "texto": "Otros aspectos a evaluar." }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "6.3",
+          "titulo": "Procedimientos de trabajo seguro (PTS)",
+          "subpuntos": [
+            { "numero": "6.3.1", "texto": "Las partes energizadas a las cuales el personal electricista puede estar expuesto se deberán poner en una condición de trabajo eléctricamente segura, antes de que el personal trabaje en o cerca de éstas. Todos los conductores del circuito y todas las partes de los circuitos eléctricos se deberán considerar energizados hasta que la fuente o las fuentes de energía se abran o desconecten, en cuyo momento se considerarán desenergizados. Todos los conductores del circuito y las partes de los circuitos eléctricos no se considerarán que están en una condición eléctricamente segura hasta que todas las fuentes de energía se encuentren abiertas, los medios de desconexión estén bajo candado/etiqueta, la ausencia de tensión se haya verificado mediante un dispositivo de prueba de tensión aprobado y cuando se encuentren temporalmente puestos a tierra, de acuerdo con lo dispuesto en el punto 6.4 del presente pliego técnico.", "refs_cruzadas": ["6.4"] },
+            {
+              "numero": "6.3.2",
+              "texto": "Maniobras u operaciones para crear una condición de trabajo eléctrico seguro (llamadas \"Las 5 reglas de oro\" para la seguridad eléctrica):",
+              "subpuntos": [
+                { "numero": "6.3.2.1", "texto": "Abrir los dispositivos de conexión de la fuente de energía: Determine las posibles fuentes de suministro de energía eléctrica al equipo específico. Revise los planos actualizados, diagramas y rótulos de identificación. Siempre que sea posible, verifique visualmente que todos los contactos de los dispositivos de desconexión estén completamente abiertos o que los interruptores automáticos extraíbles se encuentren en la posición de desconexión total." },
+                { "numero": "6.3.2.2", "texto": "Instalar los dispositivos de bloqueo de energía (candado/etiqueta), de acuerdo con procedimientos específicos." },
+                { "numero": "6.3.2.3", "texto": "Utilice un detector de tensión, con el adecuado valor nominal de tensión y una categoría de medición acorde al lugar en que se mide, para probar cada conductor o parte del circuito, con el fin de comprobar que se encuentran desenergizados. Probar cada conductor de fase, o parte del circuito, tanto fase a fase como fase a tierra. Antes y después de cada prueba, verificar que el detector de tensión esté operando satisfactoriamente." },
+                { "numero": "6.3.2.4", "texto": "Poner a tierra los conductores de fase o partes de circuitos antes de hacer contacto. Cuando se advierta que los conductores o partes de circuitos que se encuentran desenergizados eventualmente puedan hacer contacto con otros conductores o partes energizadas, se deberán instalar dispositivos de conexión a tierra de acuerdo con los valores nominales de falla previsto según sea cada caso." },
+                { "numero": "6.3.2.5", "texto": "Delimitar la zona de trabajo sin tensión e identificar claramente el área energizada colindante, si existiera. Adicionalmente se debe tener presente evitar condiciones climáticas adversas, que pueden dar paso a descargas atmosféricas sobre estructuras conductoras que no se encuentren debidamente aterrizadas." }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "6.4",
+          "titulo": "Puesta a tierra de protección temporal.",
+          "subpuntos": [
+            { "numero": "6.4.1", "titulo": "Ubicación", "texto": "Las tierras de protección temporal, se deberán instalar y ubicar de manera tal, que se evite que todo el personal electricista que intervenga en los trabajos esté expuesto a los peligros de diferencias de potencial eléctrico, para ello, se dispondrán de manera conveniente, barreras físicas, protecciones mecánicas o cercos, además de delimitaciones con la señalización correspondiente." },
+            { "numero": "6.4.2", "titulo": "Capacidad", "texto": "Las tierras de protección temporal, deberán ser capaces de conducir la máxima corriente de falla que pueda fluir en el punto de puesta a tierra, durante el tiempo que corresponda para despejar la falla." },
+            { "numero": "6.4.3", "titulo": "Aprobación de equipos", "texto": "La puesta a tierra de protección temporal, deberá cumplir las exigencias de la norma ASTM F855-19a.", "refs_cruzadas": ["ASTM F855-19a"] },
+            { "numero": "6.4.4", "titulo": "Impedancia", "texto": "Las tierras de protección temporal, deberán tener una impedancia suficientemente baja, para provocar la operación inmediata de los dispositivos de protección, en caso de energización accidental de los conductores o parte de los circuitos eléctricos. No se aceptará ningún tipo de alteración a las tierras de protección temporal que puedan afectar sus características técnicas de fábrica." }
+          ]
+        }
+      ]
+    }
+  ],
+  "anexos": [],
+  "referencias_a_otros_pliegos": [],
+  "extensiones_no_previstas_en_v1": {}
+}

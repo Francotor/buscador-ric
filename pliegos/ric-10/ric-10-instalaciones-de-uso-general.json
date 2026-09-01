@@ -1,0 +1,812 @@
+{
+  "pliego_id": "RIC-10",
+  "numero": "10",
+  "materia": "Instalaciones de uso general",
+  "metadata": {
+    "fuente_legal": "Decreto con Fuerza de Ley N°4/20.018, de 2006, del Ministerio de Economía, Fomento y Reconstrucción, Ley General de Servicios Eléctricos",
+    "fuente_reglamentaria": "Decreto N°8, de 2019, del Ministerio de Energía, Reglamento de Seguridad de las Instalaciones de Consumo de Energía Eléctrica",
+    "dictado_por": "Resolución Exenta N° 33.877, de fecha 30/12/2020, de la Superintendencia de Electricidad y Combustibles",
+    "vigencia_desde": "2021-07-12",
+    "estado": "vigente",
+    "paginas_documento_fuente": 31,
+    "archivo_fuente": "RIC-N10-Instalaciones-de-uso-general.pdf"
+  },
+  "referencias_normativas": [
+    { "id": "3.1", "norma": "IEC 60670-23:2006+AMD1:2016 CSV", "anio": 2016, "titulo": "Boxes and enclosures for electrical accessories for household and similar fixed electrical installations - Part 23: Particular requirements for floor boxes and enclosures." },
+    { "id": "3.2", "norma": "UNE-EN 12464-1", "anio": 2012, "titulo": "Iluminación de los lugares de trabajo. Parte 1: Lugares de trabajo en interiores." },
+    { "id": "3.3", "norma": "UNE-EN 12193", "anio": 2020, "titulo": "Iluminación. Iluminación de instalaciones deportivas." },
+    { "id": "3.4", "norma": "UNE-EN ISO 9680", "anio": 2014, "titulo": "Odontología. Lámparas dentales (ISO 9680:2014)" },
+    { "id": "3.5", "norma": "UNE-EN 12665", "anio": 2020, "titulo": "Iluminación. Términos básicos y criterios para la especificación de los requisitos de alumbrado." },
+    { "id": "3.6", "norma": "UNE-EN ISO 9241-302", "anio": 2008, "titulo": "Ergonomía de la interacción hombre-sistema. Parte 302: Terminología para las pantallas de visualización electrónica (ISO 9241-302:2008)" }
+  ],
+  "notas_referencias": "Para la aplicación de este pliego técnico se podrá utilizar, en reemplazo de las normas IEC, las normas UNE equivalentes.",
+  "terminologia": [
+    { "id": "4.1", "termino": "Aparato", "definicion": "Elemento de la instalación destinado a controlar el paso de la energía eléctrica." },
+    { "id": "4.2", "termino": "Artefacto", "definicion": "Elemento fijo o portátil, parte de una instalación, que consume energía eléctrica." },
+    {
+      "id": "4.3", "termino": "Canalización", "definicion": "Conjunto formado por conductores eléctricos, elementos que los soportan y accesorios que aseguran su fijación y protección mecánica.",
+      "subterminos": [
+        { "id": null, "termino": "A la vista", "definicion": "Canalizaciones que son observables a simple vista." },
+        { "id": null, "termino": "Embutida", "definicion": "Canalizaciones colocadas en perforaciones o calados hechos en muros, losas o tabiques de una construcción y que son recubiertas por las terminaciones o enlucidos de éstos." },
+        { "id": null, "termino": "Oculta", "definicion": "Canalizaciones colocadas en lugares que no permiten su visualización directa, pero que son accesibles en toda su extensión. Este término es aplicable también a equipos." },
+        { "id": null, "termino": "Preembutida", "definicion": "Canalización que se incorpora a la estructura de una edificación junto con sus envigados." },
+        { "id": null, "termino": "Subterránea", "definicion": "Canalizaciones que van enterradas en el suelo." }
+      ]
+    },
+    { "id": "4.4", "termino": "Carga", "definicion": "Es todo artefacto, equipo o instalación cuyo mecanismo u operación requiere del consumo de energía eléctrica para su funcionamiento." },
+    { "id": "4.5", "termino": "Centro", "definicion": "Punto de la instalación en donde está conectado un artefacto; en el caso particular de circuitos destinados a iluminación se designará como centro al conjunto de portalámparas con su correspondiente interruptor de comando o un punto en que existan uno, dos o tres enchufes montados en una caja común." },
+    {
+      "id": "4.6", "termino": "Circuito", "definicion": "Conjunto de artefactos y aparatos alimentados por una línea común de distribución, la cual es protegida por un único dispositivo de protección.",
+      "subterminos": [
+        { "id": null, "termino": "Circuito de iluminación", "definicion": "Es el circuito de alumbrado destinado a la alimentación de los portalámparas (todo aparato utilizado para iluminación." },
+        { "id": null, "termino": "Circuito de enchufes", "definicion": "Es el circuito de alumbrado destinado a la alimentación de los enchufes." }
+      ]
+    },
+    { "id": "4.7", "termino": "Equipo eléctrico", "definicion": "Término aplicable a aparatos de maniobra, regulación, protección, seguridad o control y a los artefactos y accesorios que forman parte de una instalación eléctrica. Dependiendo de su forma constructiva y características de resistencia a la acción del medio ambiente se calificarán según los tipos detallados a continuación y de acuerdo al cumplimiento de la norma específica sobre la materia." },
+    {
+      "id": "4.8", "termino": "Conductor", "definicion": "Elemento de cobre, dentro del alcance de este pliego, cuya función específica es el transporte de corriente. De sección transversal frecuentemente cilíndrica o rectangular. De acuerdo a su forma constructiva podrá ser designado como alambre, si se trata de una sección circular sólida única, cable si la sección resultante está formada por varios alambres o barra si se trata de una sección rectangular.",
+      "subterminos": [
+        { "id": null, "termino": "Conductor activo", "definicion": "Se aplicará esta calificación a los conductores de fase y neutro de un sistema de corriente alterna o a los conductores positivo, negativo y neutro de un sistema de corriente continua." }
+      ]
+    },
+    { "id": "4.9", "termino": "Superintendencia", "definicion": "Superintendencia de Electricidad y Combustibles." }
+  ],
+  "secciones": [
+    {
+      "numero": "5",
+      "titulo": "Instalaciones de uso general",
+      "puntos": [
+        {
+          "numero": "5.1",
+          "titulo": "Instalaciones de alumbrado",
+          "subpuntos": [
+            {
+              "numero": "5.1.1",
+              "titulo": "Conceptos generales",
+              "subpuntos": [
+                { "numero": "5.1.1.1", "texto": "Se considerará instalación de alumbrado a toda aquella formada por circuitos de iluminación y circuitos de enchufes." },
+                { "numero": "5.1.1.2", "texto": "Por razones de operación, facilidad de mantenimiento y de seguridad, las instalaciones de alumbrado se dividirán en circuitos, los cuales, en lo posible, deberán servir áreas de radio limitado." },
+                { "numero": "5.1.1.3", "texto": "Cada circuito de alumbrado estará formado por centros de consumo, entendiéndose por tales a los artefactos de iluminación que se instalen en puntos físicos determinados o a los enchufes hembra que permitan la conexión de artefactos susceptibles de conectarse a este tipo de circuitos." },
+                { "numero": "5.1.1.4", "texto": "No se podrá proyectar arranques con potencias futuras. Todo arranque que no cuente con una carga instalada deber ser declarado con una potencia de 0 W." },
+                { "numero": "5.1.1.5", "texto": "En el diseño y en la operación de toda instalación de consumo siempre se deberá procurar que sus cargas queden repartidas equilibradamente entre los conductores de las distintas fases." },
+                { "numero": "5.1.1.6", "texto": "En materias de diseño, construcción, operación, mantenimiento, reparación, modificación, inspección y término de operación, la Superintendencia podrá permitir el uso de tecnologías diferentes a las establecidas en el presente pliego técnico, siempre que se mantenga el nivel de seguridad que el texto normativo contempla. Estas tecnologías deberán estar técnicamente respaldadas en normas, códigos o especificaciones nacionales o extranjeras, así como en prácticas recomendadas de ingeniería internacionalmente reconocidas, o bien ser parte de instalaciones de prueba para nueva tecnología. Para ello el instalador deberá presentar el proyecto y un ejemplar completo de la versión vigente de la norma, código o especificación extranjera utilizada debidamente traducida, cuando corresponda, así como cualquier otro antecedente que solicite la Superintendencia." }
+              ]
+            },
+            {
+              "numero": "5.1.2",
+              "titulo": "Canalizaciones",
+              "subpuntos": [
+                { "numero": "5.1.2.1", "texto": "Para las instalaciones de alumbrado se empleará como sistema de canalización los incluidos en la sección 7 del Pliego Técnico Normativo RIC N°04 de este reglamento, seleccionando el sistema a emplear en conformidad a las características y condiciones de cada instalación en particular.", "refs_cruzadas": ["RIC N°04 sección 7"] },
+                { "numero": "5.1.2.2", "texto": "Las uniones y derivaciones que sea necesario hacer en los conductores de un circuito de alumbrado se ejecutarán siempre dentro de cajas. No se permite hacer la alimentación denominada \"de centro a centro\" sin cajas de derivación." },
+                { "numero": "5.1.2.3", "texto": "No se permitirá hacer uniones o derivaciones dentro de las cajas de aparatos o accesorios salvo donde se empleen cajas de derivación para el montaje de enchufes hembra, siempre que no se utilicen más de 3 puntos de entrada a éstas y su volumen libre lo permita." },
+                { "numero": "5.1.2.4", "texto": "Los interruptores de comando de los centros se instalarán de modo tal que se pueda apreciar a simple vista su efecto. Se exceptuarán las luces de vigilancia, de alumbrado de jardines, de servicios comunes de edificios o similares. Los interruptores deberán instalarse en puntos fácilmente accesibles y su altura de montaje estará comprendida entre 0,80 m y 1,40 m, medida desde su punto más bajo sobre el nivel del piso terminado." },
+                { "numero": "5.1.2.5", "texto": "Los interruptores de comando de centros de encendido esporádico, ubicados en salas o zonas cerradas, tales como cajas de escalas y pasillos en edificios multiviviendas, oficinas, multitiendas, servicios comunes en general, locales de reunión de personas, salas eléctricas, subestaciones, salas de tableros, salas de máquinas y similares, deberán contar con una señal luminosa permanente de modo de permitir ubicarlos en la oscuridad." },
+                { "numero": "5.1.2.6", "texto": "Está prohibido adosar o instalar módulos de interruptores y de enchufes sin su respectiva caja, excepto que se monten en canalizaciones que estén diseñadas para este propósito y no requieran de la utilización de cajas, tales como las molduras, bandejas portaconductores tipo livianas y pilares de servicio.", "advertencia": "Está prohibido adosar o instalar módulos de interruptores y de enchufes sin su respectiva caja, salvo las excepciones indicadas." },
+                { "numero": "5.1.2.7", "texto": "Los enchufes se instalarán en puntos fácilmente accesibles y su altura de montaje será de acuerdo a las necesidades de uso." },
+                { "numero": "5.1.2.8", "texto": "Todos los enchufes hembra serán del tipo de alvéolos protegidos." },
+                { "numero": "5.1.2.9", "texto": "La capacidad de corriente de los módulos de enchufes no deberá ser inferior a la capacidad de la protección del circuito." },
+                { "numero": "5.1.2.10", "texto": "El uso de unidades interruptor enchufe sólo será permitido en kioscos, casetas, porterías de un ambiente, en baños de viviendas de superficie menores a 30 m2 y en lugares de dimensiones similares a estos. En tales casos las condiciones de montaje serán las indicadas para interruptores, y ambos elementos deberán pertenecer a un circuito que cuente con protección diferencial." },
+                { "numero": "5.1.2.11", "texto": "En los centros de alumbrado no se podrá utilizar los conductores eléctricos como medio de soporte de lámparas o luminarias. El soporte mecánico de estos equipos deberá ser totalmente independiente de dichos conductores y se utilizarán en cada caso los tipos de soporte adecuados a cada condición de montaje, siendo obligatorio dejarlos insertos en la construcción en caso necesario para asegurar la fijación." },
+                { "numero": "5.1.2.12", "texto": "Todos los centros de iluminación deberán terminar en una caja de derivación, de modo que esta sirva tanto para la sujeción de la lámpara o luminaria como para ejecutar la respectiva conexión. Se exceptúa del uso de este tipo de cajas cuando las lámparas o luminarias sean del tipo embutidas." },
+                { "numero": "5.1.2.13", "texto": "Todos los centros de iluminación deberán contar con el conductor de puesta a tierra de protección." },
+                { "numero": "5.1.2.14", "texto": "En las cajas de derivación de volumen igual o inferior a 400 cm3 de una instalación de consumo, podrán alojarse como máximo 12 conductores de hasta 8,37 mm2 y no deberán utilizarse más de 5 puntos de entrada a éstas. En el caso que se alojen conductores de secciones superiores, el criterio a utilizar será que deberá dejarse un volumen libre del 25% en el interior de las cajas." }
+              ]
+            },
+            {
+              "numero": "5.1.3",
+              "titulo": "Tableros",
+              "subpuntos": [
+                { "numero": "5.1.3.1", "texto": "Los tableros de una instalación de alumbrado se construirán e instalarán de acuerdo a lo establecido en el Pliego Técnico Normativo RIC N°02 de este reglamento.", "refs_cruzadas": ["RIC N°02"] },
+                { "numero": "5.1.3.2", "texto": "No se permitirá la instalación de tableros en dormitorios, baños, lavaderos, closet no destinados para uso eléctrico y lugares de difícil acceso." },
+                { "numero": "5.1.3.3", "texto": "En el tablero general o tablero principal de distribución de alumbrado se debe instalar un interruptor termomagnético general de corte omnipolar (fase y neutro), en conformidad con lo indicado en el punto 6.6.2 del Pliego Técnico Normativo RIC N°02. El interruptor termomagnético que está instalado junto al medidor de energía de la instalación no será considerado como interruptor termomagnético general.", "refs_cruzadas": ["RIC N°02 punto 6.6.2"] },
+                { "numero": "5.1.3.4", "texto": "Cada circuito debe estar protegido por un interruptor termomagnético, cuya corriente nominal debe ser adecuada para la capacidad de transporte de corriente de los conductores, equipos, accesorios, aparatos y artefactos protegidos que dependen de este. Todo elemento que esté conectado a una protección termomagnética, debe tener al menos la misma capacidad de transporte de corriente que la protección de la cual depende." },
+                { "numero": "5.1.3.5", "texto": "Todo circuito de alumbrado (iluminación y enchufes), deberá estar protegido por un protector diferencial, cuya sensibilidad no sea superior a 30 mA." },
+                { "numero": "5.1.3.6", "texto": "Se deberá asegurar que todo protector diferencial quede protegido a la sobrecarga y al cortocircuito mediante una protección termomagnética. Para esto la corriente nominal de la protección diferencial deberá ser igual o mayor a la corriente nominal de la protección termomagnética instalada aguas arriba o se aceptará también, que la suma de las corrientes nominales de las protecciones termomagnéticas aguas abajo que dependan del diferencial, no sean mayor a la capacidad nominal de este." },
+                { "numero": "5.1.3.7", "texto": "Desde una protección diferencial no se podrán derivar más de 3 circuitos, para lo cual deberá cumplirse con lo indicado en el punto 5.1.3.6 anterior. En el caso que una protección diferencial agrupe más de un circuito, esta protección no podrá operar sobre el 100% de la instalación. Se exceptúan de esta disposición los diferenciales de 300 mA que acompañan a la protección general del tablero, como lo indicada el punto 6.6.4.1 del Pliego Técnico Normativo RIC N°02.", "refs_cruzadas": ["5.1.3.6", "RIC N°02 punto 6.6.4.1"] },
+                { "numero": "5.1.3.8", "texto": "No se deberá utilizar las protecciones eléctricas como elementos de maniobra, para el encendido y apagado de las cargas." }
+              ]
+            },
+            {
+              "numero": "5.1.4",
+              "titulo": "Circuitos",
+              "subpuntos": [
+                { "numero": "5.1.4.1", "texto": "La capacidad de los circuitos de alumbrado (iluminación y enchufes) estará determinada por la potencia requerida por cada circuito, más un 10% de capacidad adicional disponible. El valor nominal de la capacidad del circuito, estará determinado por el valor nominal de corriente de la protección, inmediatamente superior, disponible en el mercado." },
+                { "numero": "5.1.4.2", "texto": "Se deberá asegurar la selectividad y coordinación de protecciones mediante un estudio de coordinación y selectividad el cual determinará las curvas de operación y nivel de ruptura de las protecciones. Se podrá utilizar como referencia la selección de curvas rápidas tipo B para circuitos de iluminación, curvas tipo C para circuitos de enchufes, curvas lentas tipo D o K en las protecciones generales, curvas tipo Z para protecciones de circuitos electrónicos y curvas MA para circuitos guardamotores (arranque de motores y aplicaciones específicas)." },
+                { "numero": "5.1.4.3", "texto": "Se podrán instalar circuitos bifásicos o trifásicos para la iluminación de un mismo recinto, siempre que las protecciones de estos circuitos operen simultáneamente sobre todos los conductores activos." },
+                { "numero": "5.1.4.4", "texto": "La cantidad de centros que es posible instalar en un circuito se determinará igualando la suma de las potencias unitarias de cada centro conectado a él con el 90% del valor nominal de la capacidad del circuito." },
+                { "numero": "5.1.4.5", "texto": "Con el objeto de fijar la cantidad de centros que es posible conectar a un circuito de iluminación se considerará la potencia nominal de cada artefacto de iluminación, incluyendo sus accesorios. En caso de desconocer dicha potencia, se considerará una potencia mínima de 100 W por centro." },
+                { "numero": "5.1.4.6", "texto": "La potencia unitaria de cada enchufe hembra en un circuito de alumbrado se considerará en 250 W. Los enchufes múltiples de hasta tres salidas por unidad se considerarán como minino, equivalente a un centro de 250 W. Si se conoce la potencia de la carga a conectar se debe considerar esta potencia, para efectos de cálculo." }
+              ]
+            },
+            {
+              "numero": "5.1.5",
+              "titulo": "Conductores",
+              "subpuntos": [
+                { "numero": "5.1.5.1", "texto": "Los conductores de los circuitos deberán dimensionarse de modo tal que queden protegidos a la sobrecarga y al cortocircuito por la respectiva protección." },
+                { "numero": "5.1.5.2", "texto": "La sección de los conductores de los circuitos a utilizar se determinará de forma que la caída de tensión no supere los valores definidos en el punto 5.1.3 del Pliego Técnico Normativo RIC N°03.", "refs_cruzadas": ["RIC N°03 punto 5.1.3"] },
+                { "numero": "5.1.5.3", "texto": "En instalaciones de uso general, la sección del conductor neutro de los circuitos será como mínimo igual a la de la fase los circuitos y las de los alimentadores o subalimentadores se dimensionarán de acuerdo con lo definido en el punto 6.4 del Pliego Técnico Normativo RIC N°03.", "refs_cruzadas": ["RIC N°03 punto 6.4"] }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "5.2",
+          "titulo": "Alumbrado de viviendas",
+          "subpuntos": [
+            {
+              "numero": "5.2.1",
+              "texto": "Las instalaciones de consumo de viviendas deberán disponer de un empalme eléctrico cuya capacidad mínima de la protección será de 25 A y la sección de los conductores de su alimentador no podrá ser inferior a 4 mm2. Además, estas instalaciones deberán cumplir con las siguientes condiciones:",
+              "subpuntos": [
+                { "numero": "5.2.1.a", "letra_original": "a)", "texto": "Una protección general de corte omnipolar en conformidad con el punto 5.1.3.3 de este pliego.", "refs_cruzadas": ["5.1.3.3"] },
+                { "numero": "5.2.1.b", "letra_original": "b)", "texto": "Se deberá proyectar como mínimo 2 circuitos para la vivienda de superficie menor a 30 m2 y 3 circuitos para la vivienda de superficie iguales o superior a 30 m2." },
+                { "numero": "5.2.1.c", "letra_original": "c)", "texto": "Todos los circuitos deberán estar protegidos mediante un protector diferencial y una protección de sobrecarga y cortocircuito." },
+                { "numero": "5.2.1.d", "letra_original": "d)", "texto": "Se deberá proyectar como mínimo un circuito exclusivo para enchufes de cocina y/o lavadero con una capacidad mínima de 16 A." },
+                { "numero": "5.2.1.e", "letra_original": "e)", "texto": "En el caso de existir un horno eléctrico y/o cocina eléctrica deberá proyectarse un circuito adicional independiente de los circuitos señalados en la letra d) anterior, La capacidad del circuito dependerá de la potencia del equipo y su capacidad mínima será de 16 A" },
+                { "numero": "5.2.1.f", "letra_original": "f)", "texto": "Él esquema de conexión de tierra utilizado deberá ser TN-S." }
+              ]
+            },
+            {
+              "numero": "5.2.2",
+              "texto": "Para determinar la cantidad de centros a instalar en una vivienda, se considerarán los siguientes factores:",
+              "subpuntos": [
+                { "numero": "5.2.2.a", "letra_original": "a)", "texto": "En todos los recintos de una vivienda como dormitorios, cocina, baño, living, comedor y sala de estar, de superficie no mayor de 10 m2, se instalará, a lo menos, un centro de iluminación, el cual no podrá estar alimentado desde un enchufe. Si la superficie del recinto es mayor a 10 m2, se instalarán dos centros de iluminación como mínimo. Cada centro deberá estar comandado por un interruptor independiente." },
+                { "numero": "5.2.2.b", "letra_original": "b)", "texto": "En dormitorios, living, comedor y sala de estar se instalará, a lo menos, un enchufe doble o triple, por cada 8 m de perímetro, o fracción en cada recinto." },
+                { "numero": "5.2.2.c", "letra_original": "c)", "texto": "En recintos de cocina se instalarán, a lo menos, tres enchufes doble o triple del tipo 10/16 A." },
+                { "numero": "5.2.2.d", "letra_original": "d)", "texto": "En lavaderos se instalará, a lo menos, un enchufe doble o triple del tipo 10/16 A." },
+                { "numero": "5.2.2.e", "letra_original": "e)", "texto": "En el caso de existir horno eléctrico y/o cocina eléctrica se deberá instalar como mínimo un enchufe adicional a los indicados en la letra c) anterior para cada uno de estos equipos, de una capacidad no inferior a 16 A. La potencia mínima de estos enchufes deberá ser la correspondiente a cada equipo, pero no podrá ser inferior a 1.500 W. En el caso que no exista un módulo de enchufe adecuado a la potencia del horno en el mercado, se deberá efectuar una conexión fija sin enchufe." },
+                { "numero": "5.2.2.f", "letra_original": "f)", "texto": "En caso de que los consumos de las cargas proyectadas para cocinas y lavaderos superan 16 A de corriente, se deberán instalar circuitos y enchufes adecuados a la demanda requerida." }
+              ]
+            },
+            { "numero": "5.2.3", "texto": "Las instalaciones en salas de baños, deberán cumplir con lo indicado en la sección 6 del Pliego Técnico Normativo RIC N°11.", "refs_cruzadas": ["RIC N°11 sección 6"] },
+            { "numero": "5.2.4", "texto": "Todos los equipos eléctricos instalados al exterior de edificios o construcciones, tales como tableros, comandos de iluminación, enchufes, luminarias, etc., deberán ser a prueba de lluvia y de entrada de polvo.\nEl medio empleado deberá asegurar un índice de protección mínimo de IP44, para equipos instalados bajo alero fuera del alcance de la lluvia y polución e IP54 para equipos expuestos a la intemperie o a la acción directa de la lluvia y polución. Si es posible prever condiciones de mayor adversidad, se aplicará el índice IP respectivo." },
+            { "numero": "5.2.5", "texto": "En caso de que el aparato (interruptor, enchufes, etc) quede expuesto a los rayos solares, se deberá agregar a las condiciones señaladas en el punto 5.2.4 anterior, que los equipos deberán tener protección UV adecuadas al ambiente donde se instalarán.", "refs_cruzadas": ["5.2.4"] }
+          ]
+        },
+        {
+          "numero": "5.3",
+          "titulo": "Instalaciones de alumbrado en locales comerciales e industriales",
+          "subpuntos": [
+            { "numero": "5.3.1", "texto": "Los locales comerciales e industriales deberán cumplir con lo indicado en la sección 5.1 de este pliego y lo indicado a continuación.", "refs_cruzadas": ["5.1"] },
+            { "numero": "5.3.2", "texto": "Para determinar la potencia eléctrica necesaria a instalar para la iluminación de locales comerciales e industriales, se deberá tener en cuenta el nivel de iluminación requerido, el tipo de fuente luminosa que se empleará y el área del recinto por iluminar." },
+            { "numero": "5.3.3", "texto": "El nivel de iluminación mínimo, según el tipo de local y tarea que en él se desarrolle, se determinará de acuerdo con lo señalado en el anexo Nº 10.1 de este pliego. Los criterios para el diseño de iluminación como la uniformidad serán en conformidad con lo definido en el anexo Nº 10.2 de este pliego.", "anexos_relacionados": ["10.1", "10.2"] },
+            { "numero": "5.3.4", "texto": "La potencia total obtenida de la aplicación de los párrafos precedentes se dividirá en la cantidad de centros necesarios para que, distribuidos convenientemente sobre el área considerada, se obtenga una iluminación razonablemente uniforme." },
+            {
+              "numero": "5.3.5",
+              "texto": "Los parámetros mínimos de cálculo que se tienen que obtener para cada zona son:",
+              "lista": [
+                "Valor de eficiencia energética de la instalación (VEEI).",
+                "Iluminancia media mantenida (Em) en el plano de trabajo.",
+                "Índice de deslumbramiento unificado (UGR) para el observador.",
+                "Índice de rendimiento de colores (Ra)"
+              ]
+            },
+            { "numero": "5.3.6", "texto": "En los locales comerciales se instalará a lo menos un enchufe hembra triple por cada 15 m2 o fracción de local, con un mínimo de (3) tres enchufes." },
+            { "numero": "5.3.7", "texto": "En oficinas de superficie inferior a 40 m2 se instalará a lo menos un enchufe triple por cada 6 m o fracción de perímetro de oficina." },
+            { "numero": "5.3.8", "texto": "En oficinas de superficie superior a los 40 m2, se instalarán 5 enchufes hembra triple por los primeros 40 m2, más 3 enchufes hembra triple por cada 40 m2 adicionales o fracción." },
+            { "numero": "5.3.9", "texto": "En locales comerciales e industriales deberán proyectarse circuitos exclusivos de enchufes y circuitos exclusivos de iluminación." },
+            { "numero": "5.3.10", "texto": "Todos los circuitos, ya sea de iluminación o de enchufes, en locales comerciales y oficinas, deberán estar protegidos mediante protectores diferenciales cuya sensibilidad no supere los 30 mA y protecciones de sobrecarga y cortocircuito." },
+            {
+              "numero": "5.3.11",
+              "texto": "En oficinas, recintos de uso administrativo, salas de exhibición o salas de reuniones, se podrán instalar enchufes de piso, cumpliendo las siguientes condiciones:",
+              "subpuntos": [
+                { "numero": "5.3.11.a", "letra_original": "a)", "texto": "Las cajas metálicas o no metálicas para instalar en piso deben ser a prueba de polvo y humedad." },
+                { "numero": "5.3.11.b", "letra_original": "b)", "texto": "Se utilizarán enchufes montados sobre cajas cerradas con tapas de cierre automático, de modo que los enchufes sólo sean accesibles cuando se necesite conectar algún equipo a ellos." },
+                { "numero": "5.3.11.c", "letra_original": "c)", "texto": "Los aparatos para el montaje deberán cumplir con lo definido en el protocolo de análisis y/o ensayos de productos eléctricos respectivo, definido por la Superintendencia. En ausencia de ellos, se deberá cumplir lo indicado en la norma IEC 60670-23." }
+              ]
+            },
+            { "numero": "5.3.12", "texto": "Las instalaciones en salas de baños deberán cumplir con lo indicado en la sección 6 del Pliego Técnico Normativo RIC N°11.", "refs_cruzadas": ["RIC N°11 sección 6"] },
+            { "numero": "5.3.13", "texto": "Los comandos de circuitos y centros no deberán quedar al alcance del público general." }
+          ]
+        }
+      ]
+    }
+  ],
+  "anexos": [
+    {
+      "numero": "10.1",
+      "titulo": "Iluminación en lugares de trabajo para interiores, tareas y actividades (Véase 5.3 UNE-EN 12464-1)",
+      "tipo": "tabla_agrupada",
+      "columnas_estandar": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"],
+      "grupos": [
+        {
+          "numero": "1",
+          "titulo": "Zona de tráfico y áreas comunes dentro de edificios",
+          "subgrupos": [
+            {
+              "numero": "1.1", "titulo": "Zonas de tráfico",
+              "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+                ["Áreas de circulación y pasillos", 100, 28, 0.40, 40, "Iluminancia al nivel del suelo; Ra y UGR similares a áreas adyacentes; 150 lux si hay vehículos en el recorrido; El alumbrado de salidas y entradas debe proporcionar una zona de transición para evitar cambios repentinos en iluminancia entre interior y exterior de día o de noche; Debería tenerse cuidado para evitar el deslumbramiento de conductores y peatones"],
+                ["Escaleras, escaleras automáticas, cintas transportadoras", 150, 25, 0.40, 40, "Requiere contraste mejorado sobre los escalones"],
+                ["Ascensores, montacargas", 100, 25, 0.40, 40, "El nivel de iluminación en frente del montacargas debería ser al menos Em=200 lux"],
+                ["Rampas/tramos de carga", 150, 25, 0.40, 40, null]
+              ]}
+            },
+            {
+              "numero": "1.2", "titulo": "Salas de descanso, sanitarias y de primeros auxilios",
+              "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+                ["Cantinas, despensas", 200, 22, 0.40, 80, null],
+                ["Salas de descanso", 100, 22, 0.40, 80, null],
+                ["Salas para ejercicio físico", 300, 22, 0.40, 80, null],
+                ["Vestuarios, salas de lavado, cuartos de baño, servicios", 200, 25, 0.40, 80, "En cada baño individual si está completamente cerrado"],
+                ["Enfermería", 500, 19, 0.60, 80, null],
+                ["Salas para atención médica", 500, 16, 0.60, 90, "4 000 K ≤ TCP ≤ 5 000 K"]
+              ]}
+            },
+            {
+              "numero": "1.3", "titulo": "Salas de control",
+              "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+                ["Salas de material, salas de mecanismos", 200, 25, 0.40, 60, null],
+                ["Sala de fax, correos, cuadro de contadores", 500, 19, 0.60, 80, null]
+              ]}
+            },
+            {
+              "numero": "1.4", "titulo": "Salas de almacenamiento, almacenes fríos",
+              "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+                ["Almacenes y cuarto de almacén", 100, 25, 0.40, 60, "200 lux si está ocupado en continuo"],
+                ["Áreas de manipulación de paquetes y de expedición", 300, 25, 0.60, 60, null]
+              ]}
+            },
+            {
+              "numero": "1.5", "titulo": "Áreas de almacenamiento con estanterías",
+              "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+                ["Pasillos: sin guarnecer", 20, null, 0.40, 40, "Iluminancia a nivel del suelo"],
+                ["Pasillos: guarnecidos", 150, 22, 0.40, 60, "Iluminancia a nivel del suelo"],
+                ["Estaciones de control", 150, 22, 0.60, 80, null],
+                ["Cara de la estantería de almacenamiento", 200, null, 0.40, 60, "Iluminancia vertical, puede utilizarse iluminación móvil"]
+              ]}
+            }
+          ]
+        },
+        {
+          "numero": "2",
+          "titulo": "Actividades industriales y artesanales",
+          "subgrupos": [
+            { "numero": "2.1", "titulo": "Agricultura", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Carga y operaciones con artículos, equipo de manipulación y maquinaria", 200, 25, 0.40, 80, null],
+              ["Edificios para ganadería", 50, null, 0.40, 40, null],
+              ["Sala de veterinaria, establos para parir", 200, 25, 0.60, 80, null],
+              ["Preparación de alimentos; vaquería; lavado de utensilios", 200, 25, 0.60, 60, null]
+            ]}},
+            { "numero": "2.2", "titulo": "Panaderías", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Preparación y hornos de cocción", 300, 22, 0.60, 80, null],
+              ["Acabado, horneado, decoración", 500, 22, 0.70, 80, null]
+            ]}},
+            { "numero": "2.3", "titulo": "Cemento, artículos de cemento, hormigones, ladrillos", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Secado", 50, 28, 0.40, 20, "Se deben reconocer los colores de seguridad"],
+              ["Preparación de materiales, trabajo en hornos y mezcladores", 200, 28, 0.40, 40, null],
+              ["Trabajo en máquinas en general", 300, 25, 0.60, 80, null],
+              ["Encofrado", 300, 25, 0.60, 80, null]
+            ]}},
+            { "numero": "2.4", "titulo": "Cerámicas, tejas, vidrios, artículos de vidrio", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Secado", 50, 28, 0.40, 20, "Se deben reconocer los colores de seguridad"],
+              ["Preparación, trabajo en máquinas en general", 300, 25, 0.60, 80, null],
+              ["Esmaltado, laminado, prensado, conformado de piezas sencillas, horneado, soplado de vidrio", 300, 25, 0.60, 80, null],
+              ["Amolado, grabado, pulido de vidrio, conformado de piezas de precisión, fabricación de instrumentos de vidrio", 750, 19, 0.70, 80, null],
+              ["Amolado de vidrio óptico, cristal, molienda a mano y grabado", 750, 16, 0.70, 80, null],
+              ["Trabajo de precisión, por ejemplo amolado decorativo, pintura a mano", 1000, 16, 0.70, 90, "4 000 K ≤ TCP ≤ 6 500 K"],
+              ["Fabricación de piedras preciosas sintéticas", 1500, 16, 0.70, 90, "4 000 K ≤ TCP ≤ 6 500 K"]
+            ]}},
+            { "numero": "2.5", "titulo": "Industria química, de plásticos y de caucho", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Instalaciones de tratamiento manejadas por control remoto", 50, null, 0.40, 20, "Se deben reconocer los colores de seguridad"],
+              ["Instalaciones de tratamiento con intervención manual limitada", 150, 28, 0.40, 40, null],
+              ["Puestos de trabajo constantemente protegidos en instalaciones de tratamiento", 300, 25, 0.60, 80, null],
+              ["Salas de medidas de precisión, laboratorios", 500, 19, 0.60, 80, null],
+              ["Producción farmacéutica", 500, 22, 0.60, 80, null],
+              ["Producción de neumáticos", 500, 22, 0.60, 80, null],
+              ["Inspección de colores", 1000, 16, 0.70, 90, "4 000 K ≤ TCP ≤ 6 500 K"],
+              ["Corte, acabado, inspección", 750, 19, 0.70, 80, null]
+            ]}},
+            { "numero": "2.6", "titulo": "Industria eléctrica", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Fabricación de cables e hilos", 300, 25, 0.60, 80, null],
+              ["Bobinado: Bobinas grandes", 300, 25, 0.60, 80, null],
+              ["Bobinado: Bobinas de tamaño medio", 500, 22, 0.60, 80, null],
+              ["Bobinado: Bobinas pequeñas", 750, 19, 0.70, 80, null],
+              ["Impregnación de bobinas", 300, 25, 0.60, 80, null],
+              ["Galvanización", 300, 25, 0.60, 80, null],
+              ["Trabajo de ensamblaje: Basto, por ejemplo, transformadores grandes", 300, 25, 0.60, 80, null],
+              ["Trabajo de ensamblaje: Medio, por ejemplo, cuadro de contadores", 500, 22, 0.60, 80, null],
+              ["Trabajo de ensamblaje: Fino, por ejemplo, teléfonos, radios, equipos IT (computadores)", 750, 19, 0.70, 80, null],
+              ["Trabajo de ensamblaje: Precisión, por ejemplo, equipo de medida, cuadros de circuitos impresos", 1000, 16, 0.70, 80, null],
+              ["Talleres de electrónica, ensayos, puesta a punto", 1500, 16, 0.70, 80, null]
+            ]}},
+            { "numero": "2.7", "titulo": "Productos alimenticios e industria de alimentos de lujo", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Puestos de trabajo y zonas en: Fábricas de cerveza, malta; Para lavado, llenado de barriles, limpieza, tamizado, descascarado; Cocción en fábricas de conservas y chocolates; Puestos de trabajo y zonas en azucareras; Para secar y fermentar el tabaco en rama, bodega de fermentación", 200, 25, 0.40, 80, null],
+              ["Clasificación y lavado de productos: molienda, mezclado, envasado", 300, 25, 0.60, 80, null],
+              ["Puestos de trabajo y zonas críticas en mataderos, carnicerías, molinos de queserías, o zonas de filtrado en refinerías de azúcar", 500, 25, 0.60, 80, null],
+              ["Corte y clasificación de frutas y vegetales", 300, 25, 0.60, 80, null],
+              ["Fabricación de alimentos de charcutería, trabajo en cocinas, fabricación de puros y cigarrillos", 500, 22, 0.60, 80, null],
+              ["Inspección de vidrios y botellas, control de productos, desbarbadura, clasificación, decoración", 500, 22, 0.60, 80, null],
+              ["Laboratorios", 500, 19, 0.60, 80, null],
+              ["Inspección de colores", 1000, 16, 0.70, 90, "4 000 K ≤ TCP ≤ 6500 K"]
+            ]}},
+            { "numero": "2.8", "titulo": "Fundiciones y colada de metales", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Foso tamaño hombre, sótanos, etc.", 50, null, 0.40, 20, "Se deben reconocer los colores de seguridad"],
+              ["Plataformas", 100, 25, 0.40, 40, null],
+              ["Preparación de arena", 200, 25, 0.40, 80, null],
+              ["Vestuario", 200, 25, 0.40, 80, null],
+              ["Puesto de trabajo en cúpula y mezclador", 200, 25, 0.40, 80, null],
+              ["Nave de colada", 200, 25, 0.40, 80, null],
+              ["Áreas de sacudidas por vibración", 200, 25, 0.40, 80, null],
+              ["Moldeo en máquina", 200, 25, 0.40, 80, null],
+              ["Moldeo a mano y moldeo de núcleos", 300, 25, 0.60, 80, null],
+              ["Moldeo a presión", 300, 25, 0.60, 80, null],
+              ["Construcción de modelos", 500, 22, 0.60, 80, null]
+            ]}},
+            { "numero": "2.9", "titulo": "Peluquerías", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Trabajo de peluquería", 500, 19, 0.60, 90, null]
+            ]}},
+            { "numero": "2.10", "titulo": "Fabricación de joyas", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Trabajo con piedras preciosas", 1500, 16, 0.70, 90, "4000 K ≤ TCP ≤ 6 500 K"],
+              ["Fabricación de joyas", 1000, 16, 0.70, 90, null],
+              ["Relojería (manual)", 1500, 16, 0.70, 80, null],
+              ["Relojería (automática)", 500, 19, 0.60, 80, null]
+            ]}},
+            { "numero": "2.11", "titulo": "Lavandería y limpieza en seco", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Marcado y clasificación de artículos", 300, 25, 0.60, 80, null],
+              ["Lavado y limpieza en seco", 300, 25, 0.60, 80, null],
+              ["Planchado, planchado a vapor", 300, 25, 0.60, 80, null],
+              ["Inspección y reparaciones", 750, 19, 0.70, 80, null]
+            ]}},
+            { "numero": "2.12", "titulo": "Cuero y artículos de cuero", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Trabajo en tinas, barriles y pozos", 200, 25, 0.40, 40, null],
+              ["Descarnado, adelgazado, frotado, limpieza en tambor de pieles", 300, 25, 0.40, 80, null],
+              ["Curtido, fabricación de zapatos: cosido, pulido ahormado, corte, punzonado, perforación", 500, 22, 0.60, 80, null],
+              ["Clasificación", 500, 22, 0.60, 90, "4 000 K ≤ TCP ≤ 6 500 K"],
+              ["Teñido de cuero (máquina)", 500, 22, 0.60, 80, null],
+              ["Control de calidad", 1000, 19, 0.70, 80, null],
+              ["Inspección de colores", 1000, 16, 0.70, 90, "4 000 K ≤ TCP ≤ 6 500 K"],
+              ["Fabricación de zapatos", 500, 22, 0.60, 80, null],
+              ["Fabricación de guantes", 500, 22, 0.60, 80, null]
+            ]}},
+            { "numero": "2.13", "titulo": "Trabajo y tratamiento de metales", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Forja en troquel abierto", 200, 25, 0.60, 80, null],
+              ["Estampación en caliente", 300, 25, 0.60, 80, null],
+              ["Soldadura", 300, 25, 0.60, 80, null],
+              ["Mecanización basta y media: tolerancias ≥ 0,1 mm", 300, 22, 0.60, 80, null],
+              ["Mecanización de precisión; pulido: tolerancias < 0,1 mm", 500, 19, 0.70, 80, null],
+              ["Trazado, inspección", 750, 19, 0.70, 80, null],
+              ["Talleres de estirado de hilos y tubos; conformado en frio", 300, 25, 0.60, 80, null],
+              ["Mecanización de chapas: espesor ≥ 5 mm", 200, 25, 0.60, 80, null],
+              ["Chapistería: espesor < 5 mm", 300, 22, 0.60, 80, null],
+              ["Fabricación de herramientas; fabricación de equipo de corte", 750, 19, 0.70, 80, null],
+              ["Montaje: basto", 200, 25, 0.60, 80, null],
+              ["Montaje: medio", 300, 25, 0.60, 80, null],
+              ["Montaje: fino", 500, 22, 0.60, 80, null],
+              ["Montaje: precisión", 750, 19, 0.70, 80, null],
+              ["Galvanización", 300, 25, 0.60, 80, null],
+              ["Preparación de superficies y pintado", 750, 25, 0.70, 80, null],
+              ["Fabricación de herramientas, patrones, mecánica de precisión, micromecánica", 1000, 19, 0.70, 80, null]
+            ]}},
+            { "numero": "2.14", "titulo": "Papel y artículos de papel", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Molino vertical, molinos de pulpa", 200, 25, 0.40, 80, null],
+              ["Fabricación y tratamiento de papel, máquinas de papel y ondulación, fabricación de cartón", 300, 25, 0.60, 80, null],
+              ["Encuadernado normalizado, por ejemplo, plegado clasificación, encolado, corte, grabado, cosido", 500, 22, 0.60, 80, null]
+            ]}},
+            { "numero": "2.15", "titulo": "Centrales de energía eléctrica", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Planta de suministro de combustible", 50, null, 0.40, 20, "Se deben reconocer los colores de seguridad"],
+              ["Sala de caldera", 100, 28, 0.40, 40, null],
+              ["Salas de maquinas", 200, 25, 0.40, 80, null],
+              ["Salas laterales, por ejemplo, salas de bombas, salas de condensadores, etc.; cuadros de control (dentro de edificios)", 200, 25, 0.40, 60, null],
+              ["Salas de control", 500, 16, 0.70, 80, "1. Los paneles de control están a menudo en vertical. 2. Puede requerirse atenuación. 3. Para trabajo en EPV véase el apartado 4.9 de UNE-EN 12464-1"]
+            ]}},
+            { "numero": "2.16", "titulo": "Imprentas", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Corte, grabado, tipografía, grabado de clichés, trabajo en placas y mármol, máquinas de impresión, fabricación de matrices", 500, 19, 0.60, 80, null],
+              ["Clasificación de papel e impresión a mano", 500, 19, 0.60, 80, null],
+              ["Ajuste de tipos, retoques, litografías", 1000, 19, 0.70, 80, null],
+              ["Inspección de colores en impresión multicolor", 1500, 16, 0.70, 90, "4000 K ≤ TCP ≤ 6500 K"],
+              ["Grabado en acero y cobre", 2000, 16, 0.70, 80, "Para direccionalidad, véase el apartado 4.6.4 de UNE-EN 12464-1"]
+            ]}},
+            { "numero": "2.17", "titulo": "Laminación, instalaciones siderúrgicas", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Instalaciones de producción sin intervención manual", 50, null, 0.40, 20, "Se deben reconocer los colores de seguridad"],
+              ["Instalación de producción con intervención manual ocasional", 150, 28, 0.40, 40, null],
+              ["Instalaciones de producción con intervención manual continua", 200, 25, 0.60, 80, null],
+              ["Almacén de placas de metal", 50, null, 0.40, 20, "Se deben reconocer los colores de seguridad"],
+              ["Hornos", 200, 25, 0.40, 20, "Se deben reconocer los colores de seguridad"],
+              ["Tren de laminación, bobinadora, línea de corte", 300, 25, 0.60, 40, null],
+              ["Plataformas de control; paneles de control", 300, 22, 0.60, 80, null],
+              ["Ensayos, medición e inspección", 500, 22, 0.60, 80, null],
+              ["Fosos de tamaño de hombre, secciones de cintas, sótanos, etc.", 50, null, 0.40, 20, "Se deben reconocer los colores de seguridad"]
+            ]}},
+            { "numero": "2.18", "titulo": "Industria textil", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Puestos de trabajo y zonas en baños, apertura de balas o fardos", 200, 25, 0.60, 60, null],
+              ["Cardado, lavado, planchado, máquina de deshilachar, dibujado, peinado, dimensionado, corte de cardado, pre-hilado, hilado de yute y cáñamo", 300, 22, 0.60, 80, null],
+              ["Hilado, plegado, enrollado, bobinado", 500, 22, 0.60, 80, "Prevenir efecto estroboscópico"],
+              ["Urdimbre, tejido, trenzado, tricotado", 500, 22, 0.60, 80, "Prevenir efecto estroboscópico"],
+              ["Cosido, tejido de punto, costuras", 750, 22, 0.70, 80, null],
+              ["Diseño manual, patrones", 750, 22, 0.70, 90, "4000 K ≤ TCP ≤ 6500 K"],
+              ["Acabado, teñido", 500, 22, 0.60, 80, null],
+              ["Sala de secado", 100, 28, 0.40, 60, null],
+              ["Impresión automática de tejidos", 500, 25, 0.60, 80, null],
+              ["Desmotado, inserción de la trama, recortes", 1000, 19, 0.70, 80, null],
+              ["Inspección de colores, control de tejidos", 1000, 16, 0.70, 90, "4000 K ≤ TCP ≤ 6500 K"],
+              ["Zurcido invisible", 1500, 19, 0.70, 90, "4000 K ≤ TCP ≤ 6500 K"],
+              ["Fabricación de sombreros", 500, 22, 0.60, 80, null]
+            ]}},
+            { "numero": "2.19", "titulo": "Fabricación de vehículos", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Carrocería y montaje", 500, 22, 0.60, 80, null],
+              ["Pintura, cámara, pulverización, cámara de pulido", 750, 22, 0.70, 80, null],
+              ["Pintura: retoque, inspección", 1000, 19, 0.70, 90, "4000 K ≤ TCP ≤ 6500 K"],
+              ["Fabricación de tapicería", 1000, 19, 0.70, 80, null],
+              ["Inspección final", 1000, 19, 0.70, 80, null],
+              ["Servicios generales de vehículos, reparación y ensayos", 300, 22, 0.60, 80, "Considerar iluminación local"]
+            ]}},
+            { "numero": "2.20", "titulo": "Industria maderera y su tratamiento", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Tratamiento automático, por ejemplo, secado, fabricación de tablero", 50, 28, 0.40, 40, null],
+              ["Tratamientos con vapor", 150, 28, 0.40, 40, null],
+              ["Bastidor de aserrado", 300, 25, 0.60, 60, "Prevenir efecto estroboscópico"],
+              ["Trabajo en banco de uniones, encolado, montaje", 300, 25, 0.60, 80, null],
+              ["Pulido, pintura, ensambles finos", 750, 22, 0.70, 80, null],
+              ["Trabajo en máquinas para trabajar madera, por ejemplo, torneado, estriado, enderezado, rebatido, ranurado, corte, aserrado, perforado", 500, 19, 0.60, 80, "Prevenir efecto estroboscópico"],
+              ["Selección de placas de maderas", 750, 22, 0.70, 90, "4000 K ≤ TCP ≤ 6500 K"],
+              ["Marquetería, incrustación en madera", 750, 22, 0.70, 90, "4000 K ≤ TCP ≤ 6500 K"],
+              ["Control de calidad, inspección", 1000, 19, 0.70, 90, "4000 K ≤ TCP ≤ 6500 K"]
+            ]}}
+          ]
+        },
+        {
+          "numero": "3",
+          "titulo": "Oficinas",
+          "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+            ["Archivos, copias, etc.", 300, 19, 0.40, 80, null],
+            ["Escritura, escritura a máquina, lectura, tratamiento de datos", 500, 19, 0.60, 80, "Trabajo en EPV: véase el apartado 4.9 de UNE-EN 12464-1"],
+            ["Dibujo técnico", 750, 16, 0.70, 80, null],
+            ["Puestos de trabajo de CAD", 500, 19, 0.60, 80, "Trabajo en EPV: véase el apartado 4.9 de UNE-EN 12464-1"],
+            ["Salas de conferencias y reuniones", 500, 19, 0.60, 80, "La iluminación debería ser controlable"],
+            ["Mostrador de recepción", 300, 22, 0.60, 80, null],
+            ["Archivos", 200, 25, 0.40, 80, null]
+          ]}
+        },
+        {
+          "numero": "4",
+          "titulo": "Establecimientos minoristas",
+          "subgrupos": [
+            { "numero": "4.1", "titulo": "Establecimientos minoristas", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Área de ventas", 300, 22, 0.40, 80, null],
+              ["Área de cajas", 500, 19, 0.60, 80, null],
+              ["Mesa de envolver", 500, 19, 0.60, 80, null]
+            ]}}
+          ]
+        },
+        {
+          "numero": "5",
+          "titulo": "Lugares de pública concurrencia",
+          "subgrupos": [
+            { "numero": "5.1", "titulo": "Áreas comunes", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Hall de entrada", 100, 22, 0.40, 80, "UGR solo si es aceptable"],
+              ["Guardarropas", 200, 25, 0.40, 80, null],
+              ["Salones", 200, 22, 0.40, 80, null],
+              ["Oficinas de taquillas", 300, 22, 0.60, 80, null]
+            ]}},
+            { "numero": "5.2", "titulo": "Restaurantes y hoteles", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Recepción/caja, conserjería", 300, 22, 0.60, 80, null],
+              ["Cocinas", 500, 22, 0.60, 80, "Debería haber una zona de transición entre cocina y restaurante"],
+              ["Restaurante, comedor, salas de reuniones", null, null, null, 80, "El alumbrado debería ser diseñado para crear la atmosfera apropiada"],
+              ["Restaurante auto-servicio", 200, 22, 0.40, 80, null],
+              ["Buffet", 300, 22, 0.60, 80, null],
+              ["Sala de conferencias", 500, 19, 0.60, 80, "El alumbrado debería ser controlable"],
+              ["Pasillos", 100, 25, 0.40, 80, "Durante la noche son aceptables niveles inferiores"]
+            ]}},
+            { "numero": "5.3", "titulo": "Teatros, salas de conciertos, salas de cines", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Salas de ensayos", 300, 22, 0.60, 80, null],
+              ["Camerinos", 300, 22, 0.60, 90, "La iluminación de espejos para maquillaje debe estar libre de deslumbramientos"],
+              ["Áreas de asientos – mantenimiento, limpieza", 200, 22, 0.50, 80, "Iluminación a nivel del suelo"],
+              ["Área del escenario - jarcias", 300, 25, 0.40, 80, "Iluminación a nivel del suelo"]
+            ]}},
+            { "numero": "5.4", "titulo": "Ferias, pabellones de exposiciones", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Alumbrado general", 300, 22, 0.40, 80, null]
+            ]}},
+            { "numero": "5.5", "titulo": "Museos", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Obras exhibidas insensibles a la luz", null, null, null, null, "La iluminación es determinada por los requisitos de presentación"],
+              ["Obras exhibidas sensibles a la luz", null, null, null, null, "1. La iluminación es determinada por los requisitos de presentación. 2. Es imprescindible la protección contra radiación dañina"]
+            ]}},
+            { "numero": "5.6", "titulo": "Bibliotecas", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Estanterías", 200, 19, 0.40, 80, null],
+              ["Área de lectura", 500, 19, 0.60, 80, null],
+              ["Mostrador", 500, 19, 0.60, 80, null]
+            ]}},
+            { "numero": "5.7", "titulo": "Aparcamientos de vehículos público (interior)", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Rampas de acceso/salida (de día)", 300, 25, 0.40, 40, "1. Iluminancias a nivel de suelo. 2. Se deben reconocer los colores de seguridad"],
+              ["Rampas de acceso/salida (de noche)", 75, 25, 0.40, 40, "1. Iluminancias a nivel de suelo. 2. Se deben reconocer los colores de seguridad"],
+              ["Calles de circulación", 75, 25, 0.40, 40, "1. Iluminancias a nivel de suelo. 2. Se deben reconocer los colores de seguridad"],
+              ["Áreas de aparcamiento", 75, null, 0.40, 40, "1. Iluminancias a nivel de suelo. 2. Se deben reconocer los colores de seguridad. 3. Una elevada iluminancia vertical aumenta el reconocimiento de las caras de las personas y, por ello, la sensación de seguridad"],
+              ["Caja", 300, 19, 0.60, 80, "1. Deben evitarse los reflejos en las ventanas. 2. Debe prevenirse el deslumbramiento desde el exterior"]
+            ]}}
+          ]
+        },
+        {
+          "numero": "6",
+          "titulo": "Establecimientos educativos",
+          "subgrupos": [
+            { "numero": "6.1", "titulo": "Jardines infantiles, guarderías", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Sala de juegos", 300, 22, 0.40, 80, "Deberán evitarse altas luminancias en las direcciones de visión desde abajo mediante la utilización de coberturas difusas"],
+              ["Guardería", 300, 22, 0.40, 80, "Deberán evitarse altas luminancias en las direcciones de visión desde abajo mediante la utilización de coberturas difusas"],
+              ["Sala de manualidades", 300, 19, 0.60, 80, null]
+            ]}},
+            { "numero": "6.2", "titulo": "Edificios educativos", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Aulas, aulas de tutoría", 300, 19, 0.60, 80, "La iluminación debe ser controlable"],
+              ["Aulas para clases nocturnas y educación de adultos", 500, 19, 0.60, 80, "La iluminación debe ser controlable"],
+              ["Auditorium, sala de lectura", 500, 19, 0.60, 80, "La iluminación debe ser controlable para colocar varias A/V necesarias"],
+              ["Pizarras negras, verdes y blancas", 500, 19, 0.70, 80, "Deben evitarse reflexiones especulares. El presentador/profesor debe iluminarse con la iluminancia vertical adecuada"],
+              ["Mesa de demostraciones", 500, 19, 0.70, 80, "En salas de lectura 750 lux"],
+              ["Aulas de arte", 500, 19, 0.60, 80, null],
+              ["Aulas de arte en escuelas de arte", 750, 19, 0.70, 90, "5000 K ≤ TCP ≤ 6500 K"],
+              ["Aulas de dibujo técnico", 750, 16, 0.70, 80, null],
+              ["Aulas de prácticas y laboratorios", 500, 19, 0.60, 80, null],
+              ["Aulas de manualidades", 500, 19, 0.60, 80, null],
+              ["Talleres de enseñanza", 500, 19, 0.60, 80, null],
+              ["Aulas de prácticas de música", 300, 19, 0.60, 80, null],
+              ["Aulas de prácticas de informática", 300, 19, 0.60, 80, "Trabajo en EPV: véase el apartado 4.9 de UNE-EN 12464-1"],
+              ["Laboratorio de lenguas", 300, 19, 0.60, 80, null],
+              ["Aulas de preparación y talleres", 500, 22, 0.60, 80, null],
+              ["Hall o vestíbulo de entrada", 200, 22, 0.40, 80, null],
+              ["Áreas de circulación, pasillos", 100, 25, 0.40, 80, null],
+              ["Escaleras", 150, 25, 0.40, 80, null],
+              ["Aulas comunes de estudio y aulas de reunión", 200, 22, 0.40, 80, null],
+              ["Sala de profesores", 300, 19, 0.60, 80, null],
+              ["Biblioteca: estanterías", 200, 19, 0.60, 80, null],
+              ["Biblioteca: salas de lectura", 500, 19, 0.60, 80, null],
+              ["Almacenes de material de profesores", 100, 25, 0.40, 80, null],
+              ["Salas de deportes, gimnasios, piscinas", 300, 22, 0.60, 80, "Para actividades más específicas, se deben usar los requisitos de la norma UNE-EN 12193"],
+              ["Cantinas escolares", 200, 22, 0.40, 80, null],
+              ["Cocina", 500, 22, 0.60, 80, null]
+            ]}}
+          ]
+        },
+        {
+          "numero": "7",
+          "titulo": "Establecimientos sanitarios",
+          "subgrupos": [
+            { "numero": "7.1", "titulo": "Salas para uso general", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Salas de espera", 200, 22, 0.40, 80, null],
+              ["Pasillos: durante el día", 100, 22, 0.40, 80, "Iluminancias a nivel del suelo"],
+              ["Pasillos: limpieza", 100, 22, 0.40, null, "Iluminancias a nivel del suelo"],
+              ["Pasillos: durante la noche", 50, 22, 0.40, 80, "Iluminancias a nivel del suelo"],
+              ["Pasillos con usos múltiples", 200, 22, 0.60, 80, "Iluminancias a nivel del suelo"],
+              ["Salas de día", 200, 22, 0.60, 80, null],
+              ["Montacargas, ascensores para personas y visitantes", 100, 22, 0.60, 80, "Iluminancias a nivel del suelo"],
+              ["Ascensores de servicio", 200, 22, 0.60, 80, "Iluminancias a nivel del suelo"]
+            ], "notas": ["Deben impedirse luminancias demasiado elevadas en el campo de visión de los pacientes."] }},
+            { "numero": "7.2", "titulo": "Salas de personal", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Oficina de personal", 500, 19, 0.60, 80, null],
+              ["Salas de personal", 300, 19, 0.60, 80, null]
+            ]}},
+            { "numero": "7.3", "titulo": "Salas de guardia, salas de maternidad", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Alumbrado general", 100, 19, 0.40, 80, "Iluminancia a nivel del suelo"],
+              ["Alumbrado de lectura", 300, 19, 0.70, 80, null],
+              ["Exámenes simples", 300, 19, 0.60, 80, null],
+              ["Examen y tratamiento", 1000, 19, 0.70, 90, null],
+              ["Alumbrado nocturno, alumbrado de observación", 5, null, null, 80, null],
+              ["Cuartos de baño y servicio para pacientes", 200, 22, 0.40, 80, null]
+            ], "notas": ["Deben impedirse luminancias demasiado elevadas en el campo de visión de los pacientes."] }},
+            { "numero": "7.4", "titulo": "Salas de examen (general)", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Alumbrado general", 500, 19, 0.60, 90, "4000 K ≤ TCP ≤ 5000 K"],
+              ["Examen y tratamiento", 1000, 19, 0.70, 90, null]
+            ]}},
+            { "numero": "7.5", "titulo": "Salas de examen ocular", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Alumbrado general", 500, 19, 0.60, 90, "4000 K ≤ TCP ≤ 5000 K"],
+              ["Examen ocular externo", 1000, null, null, 90, null],
+              ["Pruebas de lectura y visión cromática con diagramas de visión", 500, 16, 0.70, 90, null]
+            ]}},
+            { "numero": "7.6", "titulo": "Salas de examen auditivo", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Alumbrado general", 300, 19, 0.60, 90, null],
+              ["Examen auditivo", 1000, null, null, 90, null]
+            ]}},
+            { "numero": "7.7", "titulo": "Salas de escáner", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Alumbrado general", 300, 19, 0.60, 80, null],
+              ["Escáneres con mejoradores de imágenes y sistemas de TV", 50, 19, null, 80, "Trabajo en EPV: véase el apartado 4.9 de UNE-EN 12464-1"]
+            ]}},
+            { "numero": "7.8", "titulo": "Salas de parto", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Alumbrado general", 300, 19, 0.60, 80, null],
+              ["Examen y tratamiento", 1000, 19, 0.70, 80, null]
+            ]}},
+            { "numero": "7.9", "titulo": "Salas de tratamiento (general)", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Diálisis", 500, 19, 0.60, 80, "La iluminación debe ser controlable"],
+              ["Dermatología", 500, 19, 0.60, 90, null],
+              ["Salas de endoscopia", 300, 19, 0.60, 80, null],
+              ["Salas de yesos", 500, 19, 0.60, 80, null],
+              ["Baños médicos", 300, 19, 0.60, 80, null],
+              ["Masajes y radioterapia", 300, 19, 0.60, 80, null]
+            ]}},
+            { "numero": "7.10", "titulo": "Áreas de operación", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Salas preoperatorias y de recuperación", 500, 19, 0.60, 90, null],
+              ["Salas de operación", 1000, 19, 0.60, 90, null],
+              ["Quirófano", null, null, null, null, "Ēm: 10.000 a 100.000 lux"]
+            ]}},
+            { "numero": "7.11", "titulo": "Unidad de cuidados intensivos", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Alumbrado general", 100, 19, 0.60, 90, "Iluminancia a nivel del suelo"],
+              ["Exámenes simples", 300, 19, 0.60, 90, "Iluminancia a nivel de cama"],
+              ["Examen y tratamiento", 1000, 19, 0.70, 90, "Iluminancia a nivel de cama"],
+              ["Vigilancia nocturna", 20, 19, null, 90, null]
+            ]}},
+            { "numero": "7.12", "titulo": "Dentistas", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Alumbrado general", 500, 19, 0.60, 90, "La iluminación debe estar libre de deslumbramiento para el paciente"],
+              ["En el paciente", 1000, null, 0.70, 90, null],
+              ["Quirófano", null, null, null, null, "En la norma UNE-EN ISO 9680 se dan requisitos específicos"],
+              ["Comparación del blanco dental", null, null, null, null, "En la norma UNE-EN ISO 9680 se dan requisitos específicos"]
+            ]}},
+            { "numero": "7.13", "titulo": "Laboratorios y farmacias", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Alumbrado general", 500, 19, 0.60, 80, null],
+              ["Inspección de colores", 1000, 19, 0.70, 90, "6000 K ≤ TCP ≤ 6500 K"]
+            ]}},
+            { "numero": "7.14", "titulo": "Salas de descontaminación", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Salas de esterilización", 300, 22, 0.60, 80, null],
+              ["Salas de desinfección", 300, 22, 0.60, 80, null]
+            ]}},
+            { "numero": "7.15", "titulo": "Salas de autopsias y depósitos mortuorios", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Alumbrado general", 500, 19, 0.60, 90, null],
+              ["Mesa de autopsia y mesa de disección", 5000, null, null, 90, "Pueden ser necesarios valores mayores de 5 000 lux"]
+            ]}}
+          ]
+        },
+        {
+          "numero": "8",
+          "titulo": "Áreas de transportes",
+          "subgrupos": [
+            { "numero": "8.1", "titulo": "Aeropuertos", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Salas de llegada y salida, áreas de recogida de equipajes", 200, 22, 0.40, 80, null],
+              ["Áreas de conexión", 150, 22, 0.40, 80, null],
+              ["Mostradores de información, facturación", 500, 19, 0.70, 80, "Trabajo en EPV: véase el apartado 4.9 de UNE-EN 12464-1"],
+              ["Aduanas y mostradores de control de pasaportes", 500, 19, 0.70, 80, "Tiene que proporcionarse reconocimiento facial"],
+              ["Áreas de espera", 200, 22, 0.40, 80, null],
+              ["Salas de consigna", 200, 25, 0.40, 80, null],
+              ["Áreas de control y seguridad", 300, 19, 0.60, 80, "Trabajo en EPV: véase el apartado 4.9 de UNE-EN 12464-1"],
+              ["Torre de control de tráfico aéreo", 500, 16, 0.60, 80, "1. La iluminación debe ser regulable. 2. Trabajo en EPV: véase el apartado 4.9 de UNE-EN 12464-1. 3. Se debe evitar el deslumbramiento de luz diurna. 4. Deben evitarse reflejos en ventanas, especialmente de noche"],
+              ["Hangares de reparación y ensayo", 500, 22, 0.60, 80, null],
+              ["Áreas de ensayo de motores", 500, 22, 0.60, 80, null],
+              ["Áreas de medición en hangares", 500, 22, 0.60, 80, null]
+            ]}},
+            { "numero": "8.2", "titulo": "Instalaciones ferroviarias", "tabla": { "columnas": ["Tipo de interior, tarea y actividad", "Ēm [Lux]", "UGRL", "U0", "Ra", "Observaciones"], "filas": [
+              ["Andenes completamente cubiertos, número pequeño de pasajeros", 100, null, 0.40, 40, "1. Prestar especial atención al borde la plataforma. 2. Evitar el deslumbramiento para conductores de vehículos. 3. Iluminancia a nivel del suelo"],
+              ["Andenes completamente cubiertos, número grande de pasajeros", 200, null, 0.50, 60, "1. Prestar especial atención al borde la plataforma. 2. Evitar el deslumbramiento para conductores de vehículos. Iluminancia a nivel del suelo"],
+              ["Pasos subterráneos de pasajeros, número pequeño de pasajeros", 50, 28, 0.50, 40, "Iluminancia a nivel de suelo"],
+              ["Pasos subterráneos de pasajeros, número grande de pasajeros", 100, 28, 0.50, 40, "Iluminancia a nivel de suelo"],
+              ["Sala de taquillas y vestíbulo", 200, 28, 0.50, 40, null],
+              ["Oficina de billetes, de equipajes y contadores", 300, 19, 0.50, 80, null],
+              ["Salas de espera", 200, 22, 0.40, 80, null],
+              ["Hall de entrada, hall de estación", 200, null, 0.40, 80, null],
+              ["Salas de contadores y máquinas", 200, 28, 0.40, 60, "Los colores de seguridad deben ser reconocibles"],
+              ["Túneles de acceso", 50, null, 0.40, 20, "Iluminancia a nivel de suelo"],
+              ["Naves de mantenimiento y servicio", 300, 22, 0.50, 60, null]
+            ]}}
+          ]
+        }
+      ],
+      "referenciado_por": ["5.3.3"]
+    },
+    {
+      "numero": "10.2",
+      "titulo": "Criterios de diseño de iluminación de los lugares de trabajo",
+      "tipo": "mixto",
+      "secciones": [
+        { "titulo": "1. Introducción", "texto": "Para permitir que las personas realicen tareas visuales de modo eficiente y preciso, debería preverse una iluminación adecuada y apropiada. La iluminación puede ser proporcionada mediante luz natural, alumbrado artificial o una combinación de los mismos.\nEl grado de visibilidad y confort requerido en un amplio ámbito de lugares de trabajo es gobernado por el tipo y duración de la actividad.\nEste anexo específica requisitos para sistemas de iluminación para la mayor parte de los lugares de trabajo en interiores y sus áreas asociadas en términos de cantidad y calidad de iluminación. Además, se dan recomendaciones sobre buena práctica de iluminación." },
+        { "titulo": "2. Objeto y campo de aplicación", "texto": "Este anexo especifica requisitos de iluminación para lugares de trabajo en interiores, que satisfacen las necesidades de confort y prestaciones visuales. Se han considerado todas las tareas visuales corrientes, incluyendo los Equipos con Pantalla de Visualización (EPV o en inglés DSE).\nEste anexo no especifica requisitos de iluminación con respecto a la seguridad y salud de trabajadores en el trabajo, aunque los requisitos de iluminación, como se ha especificado en esta norma, usualmente satisfacen necesidades de seguridad. Los requisitos de iluminación con respecto a la seguridad y salud de los trabajadores en el trabajo pueden estar contenidos en la legislación nacional.\nEste anexo ni proporciona soluciones específicas, ni restringe la libertad de los diseñadores para explorar nuevas técnicas, ni restringe el uso de equipos innovadores.\nEste anexo no es aplicable a la iluminación de lugares de trabajo en exteriores ni en minería en el subsuelo." },
+        {
+          "titulo": "3. Términos y definiciones",
+          "texto": "Para los propósitos de este anexo, se aplican los términos dados en la norma UNE-EN 12665 y los siguientes.",
+          "lista": [
+            "3.1 Tarea visual: Elementos visuales del trabajo que se está haciendo. NOTA: Los elementos visuales principales son el tamaño de la estructura, su luminancia, su contraste contra el fondo y su duración.",
+            "3.2 Área de tarea: Área parcial en el puesto de trabajo en el que la tarea visual es llevada a cabo. Para puestos en los que el tamaño y/o posición del área de tarea es desconocido, el área en el que la tarea puede ocurrir debe ser tomada como el área de tarea.",
+            "3.3 Área circundante inmediata: Banda con un ancho de al menos 0,5 m que rodea al área de tarea dentro del campo de visión.",
+            "3.4 Iluminancia mantenida (Em): Valor por debajo del cual no se permite que caiga la iluminancia media en la superficie especificada. NOTA: Es la iluminancia media en el instante en que debe ser llevado a cabo el mantenimiento.",
+            "3.5 Ángulo de apantallamiento: Ángulo entre el plano horizontal y la primera línea de visión en la que son directamente visibles las partes luminosas de las lámparas en la luminaria.",
+            "3.6 Equipo con pantalla de visualización (EPV): Pantalla de visualización alfanumérica o gráfica, independiente del proceso de visualización empleado.",
+            "3.7 Uniformidad de iluminancia: Relación o cociente entre la iluminancia mínima y la iluminancia media sobre una superficie."
+          ]
+        },
+        {
+          "titulo": "4. Criterios de diseño de iluminación",
+          "texto": "4.1 Ambiente luminoso\nPara la buena práctica de iluminación es esencial que además de la iluminancia requerida, se satisfagan necesidades cualitativas y cuantitativas.\nLos requisitos de iluminación son determinados por la satisfacción de tres necesidades humanas básicas: confort visual (en el que los trabajadores tienen una sensación de bienestar; de un modo indirecto también contribuye a un elevado nivel de productividad); prestaciones visuales (en el que los trabajadores son capaces de realizar sus tareas visuales, incluso en circunstancias difíciles y durante periodos más largos); seguridad.\nLos parámetros fundamentales que determinan el ambiente o entorno luminoso son: distribución de luminancias; iluminancia; deslumbramiento; dirección de la luz; rendimiento de colores y apariencia de color de la luz; flicker; luz natural o diurna.\nLos valores para iluminancia, deslumbramiento molesto y rendimiento de colores aparecen en el anexo 10.1."
+        },
+        {
+          "titulo": "4.2 Distribución de luminancias",
+          "texto": "La distribución de luminancias en el campo de visión controla el nivel de adaptación de los ojos que afecta a la visibilidad de la tarea.\nUna luminancia de adaptación bien equilibrada es necesaria para aumentar: la agudeza visual (visión agudizada); la sensibilidad al contraste (discriminación de diferencias de luminancia relativamente pequeñas); la eficiencia de las funciones oculares (tales como acomodación, convergencia, contracción de la pupila, movimientos de ojo, etc.).\nLa distribución de luminancias en el campo de visión afecta también al confort visual. Debería evitarse lo siguiente por las razones dadas: luminancias demasiado elevadas que pueden dar lugar a deslumbramiento; contrastes de luminancia demasiado altos que causarán fatiga debido a la readaptación constante de los ojos; luminancias demasiado bajas y contrastes de luminancias demasiado bajos que dan como resultado un ambiente de trabajo monótono y no estimulante.\nSon importantes las luminancias de todas las superficies y serán determinadas por la reflectancia y la iluminancia en las superficies.\nLos márgenes de reflectancias útiles para las principales superficies interiores son: Techo: 0,6 a 0,9; Paredes: 0,3 a 0,8; Planos de trabajo: 0,2 a 0,6; Suelo: 0,1 a 0,5."
+        },
+        {
+          "titulo": "4.3 Iluminancia",
+          "texto": "La iluminancia y su distribución en el área de la tarea y el área circundante tienen un gran impacto en cómo una persona percibe y realiza la tarea visual de un modo rápido, seguro y confortable.\nTodos los valores de iluminancia especificados en esta norma son iluminancias mantenidas y proporcionarán medios para satisfacer las necesidades de confort y prestaciones visuales.\n4.3.1 Iluminancias recomendadas en el área de la tarea. Los valores dados en el anexo 10.1, son iluminancias mantenidas en el área de tarea sobre la superficie de referencia que puede ser horizontal, vertical o inclinada. La iluminancia media para cada tarea no debe caer por debajo del valor dado en el anexo 10.1, independientemente de la edad y estado de la instalación. Los valores son válidos para condiciones visuales normales y tienen en cuenta los siguientes factores: aspectos psico-fisiológicos tales como el confort visual y el bienestar; requisitos para tareas visuales; ergonomía visual; experiencia práctica; seguridad; economía.\nEl valor de iluminancia puede ser ajustado en al menos un escalón en la escala de iluminancias, si las condiciones visuales difieren de las suposiciones normales. Un factor de aproximadamente 1,5 representa la menor diferencia significativa en el efecto subjetivo de iluminancia. En condiciones normales de iluminación se requieren aproximadamente 20 lux para discernir características de la cara humana y es el valor más bajo tomado para la escala de iluminancias.\nLa escala de iluminancias (en lux) recomendada es: 20 – 30 – 50 – 75 – 100 – 150 – 200 – 300 – 500 – 750 – 1000 – 1500 – 2000 – 3000 – 5000.\nLa iluminancia mantenida requerida debería ser aumentada, cuando: el trabajo visual es crítico; los errores son costosos de rectificar; la exactitud o la mayor productividad es de gran importancia; la capacidad visual del trabajador está por debajo de la normal; los detalles de la tarea son de tamaño inusualmente pequeño o de bajo contraste; la tarea es realizada durante un tiempo inusualmente largo.\nLa iluminancia mantenida requerida puede ser disminuida cuando: los detalles de la tarea son de un tamaño inusualmente grande o de un elevado contraste; la tarea es emprendida durante un tiempo inusualmente corto.\nEn áreas ocupadas de modo continuo, la iluminancia mantenida no debe ser menor de 200 lux.\n4.3.2 Iluminancias de áreas circundantes inmediatas. La iluminancia de áreas circundantes inmediatas debe estar relacionada con la iluminancia del área de tarea y debería proporcionar una distribución de luminancias bien equilibrada en el campo de visión. Las grandes variaciones espaciales en iluminancias alrededor del área de tarea pueden conducir a tensiones y molestias visuales. La iluminancia de las áreas circundantes inmediatas puede ser inferior a la iluminancia de la tarea, pero no debe ser menor que los valores dados en la tabla 1.",
+          "tabla": {
+            "nombre": "Tabla 1: Uniformidades y relación entre iluminancias de áreas circundantes inmediatas al área de tarea",
+            "columnas": ["Iluminancia de tarea [lux]", "Iluminancia de áreas circundantes inmediatas [lux]"],
+            "filas": [
+              ["≥750", 500],
+              ["500", 300],
+              ["300", 200],
+              ["≤200", "Etarea"]
+            ],
+            "notas": ["Uniformidad para iluminancia de tarea ≥ 0,7; uniformidad para iluminancia de áreas circundantes inmediatas ≥ 0,5."]
+          },
+          "nota_final": "4.3.3 Uniformidad. El área de tarea debe ser iluminada tan uniformemente como sea posible. La uniformidad del área de tarea y las áreas circundantes inmediatas no deben ser menores que los valores dados en la tabla 1. Además de la iluminancia de la tarea la iluminación debe proporcionar adecuada la luminancia de adaptación de acuerdo con el punto 4.2 del presente anexo."
+        },
+        {
+          "titulo": "4.4 Deslumbramiento",
+          "texto": "El deslumbramiento es la sensación producida por áreas brillantes dentro del campo de visión y puede ser experimentado bien como deslumbramiento molesto o perturbador. El deslumbramiento causado por la reflexiones en superficies especulares es usualmente conocido como reflexiones de velo o deslumbramiento reflejado.\nEs importante limitar el deslumbramiento para evitar errores, fatiga y accidentes.\nEn lugares de trabajo en interiores, el deslumbramiento molesto puede producirse directamente a partir de luminarias brillantes o ventanas. Si se satisfacen los límites del deslumbramiento molesto, el deslumbramiento perturbador no es usualmente un problema importante.\nNOTA: Es necesario un cuidado especial para evitar el deslumbramiento cuando la dirección de visión está por encima de la horizontal.\n4.4.1 Deslumbramiento molesto. El índice del deslumbramiento molesto procedente directamente de las luminarias de una instalación de iluminación interior debe ser determinado utilizando el método de tabulación del Índice de Deslumbramiento Unificado de la CIE (UGR, Unified Glare Rating).",
+          "formula": "UGR = 8·log10( (0,25/Lb) · Σ(L²·ω/p²) )",
+          "variables": {
+            "Lb": "Luminancia de fondo en cd·m⁻², calculada como Eind·π⁻¹, en la que Eind es la iluminancia indirecta vertical en el ojo del observador.",
+            "L": "Luminancia de las partes luminosas de cada luminaria en la dirección del ojo del observador, en cd·m⁻².",
+            "ω": "Ángulo sólido (estereorradianes) de las partes luminosas de cada luminaria en el ojo del observador.",
+            "p": "Índice de posición de Guth para cada luminaria individual, que se refiere a su desplazamiento de la línea de visión."
+          },
+          "notas_adicionales": [
+            "Todas las suposiciones hechas en la determinación del UGR deben ser establecidas en la documentación del proyecto. El valor de UGR de la instalación de iluminación no debe exceder del valor dado en el anexo 10.1.",
+            "NOTA 1: Las variaciones de UGR dentro de la sala pueden ser determinadas utilizando la fórmula (o la tabla completa) para diferentes posiciones de observador. Los límites para esta condición están en estudio.",
+            "NOTA 2: Si el valor máximo de UGR en la sala es mayor que el límite de UGR dado en el anexo 10.1, puede ser necesaria información sobre posiciones apropiadas para los lugares de trabajo con pantallas situadas dentro de la sala.",
+            "NOTA 3: El deslumbramiento molesto de las ventanas es aún motivo de investigación. No hay aún un método de evaluación del deslumbramiento adecuado disponible de modo habitual.",
+            "4.4.2 Apantallamiento contra el deslumbramiento. Las fuentes luminosas brillantes pueden causar deslumbramiento y pueden alterar la visión de los objetos. Se deben evitar por ejemplo mediante el apantallamiento adecuado de lámparas o el oscurecimiento de ventanas mediante cortinas. Deben aplicarse los ángulos de apantallamiento mínimos dados en la tabla 2 para las luminancias de lámparas especificadas. NOTA: Los valores dados en la tabla 2 no se aplican a luminarias que iluminan indirectamente o a luminarias montadas por debajo del nivel normal del ojo."
+          ],
+          "tablas": [
+            {
+              "nombre": "Tabla 2: Ángulos mínimos de apantallamiento para luminancias de lámpara especificadas",
+              "columnas": ["Luminancia de lámpara [kcd·m⁻²]", "Ángulo de apantallamiento mínimo"],
+              "filas": [
+                ["20 a < 50", "15°"],
+                ["50 a < 500", "20°"],
+                ["≥500", "30°"]
+              ]
+            }
+          ],
+          "nota_final": "4.4.3 Reflexiones de velo y deslumbramiento reflejado. Las reflexiones muy brillantes en la tarea visual pueden alterar usualmente de modo perjudicial la visibilidad de la tarea. Las reflexiones de velo y el deslumbramiento reflejado pueden ser impedidos o reducidos mediante la adopción de las siguientes medidas: disposición de luminarias y lugares de trabajo; acabado de las superficies (superficies mates); limitación de luminancia de luminarias; área luminosa aumentada de la luminaria; techo brillante y paredes brillantes."
+        },
+        {
+          "titulo": "4.5 Iluminación direccional",
+          "texto": "La iluminación direccional puede usarse para hacer resaltar objetos, revelar la textura y mejorar la apariencia de personas dentro del espacio. Esto se describe mediante el término \"modelado\". La iluminación direccional de una tarea visual puede también afectar a su visibilidad.\n4.5.1 Modelado. El modelado es el equilibrio entre luz difusa y luz direccional. Es un criterio válido de calidad de iluminación virtualmente en todos los tipos de interiores. La apariencia general de un interior resulta mejorada cuando sus características estructurales, las personas y objetos dentro de él son iluminados de modo que se revelen la forma y la textura de un modo claro y agradable. Esto ocurre cuando la luz procede predominantemente de una dirección; las sombras así esenciales para un buen modelado son formadas entonces sin confusión. La iluminación no debería ser demasiado direccional o producirá sombras fuertes, ni deberá ser demasiado difusa o el efecto de modelado se perderá totalmente, dando como resultado un ambiente luminoso muy apagado o monótono.\n4.5.2 Iluminación direccional de tareas visuales. La iluminación procedente de una dirección específica puede revelar detalles dentro de una tarea visual, aumentando su visibilidad y haciendo la tarea más fácil de realizar. Deberían evitarse reflexiones de velo y deslumbramiento reflejado, véase el apartado 4.4.3."
+        },
+        {
+          "titulo": "4.6 Aspectos de color",
+          "texto": "Las cualidades de color de una lámpara próxima al blanco están caracterizadas por dos atributos: la apariencia de color de la propia lámpara; sus capacidades para el rendimiento de colores, que afectan a la apariencia de color de objetos y personas iluminadas por la lámpara. Estos dos atributos deben ser considerados por separado.\n4.6.1 Apariencia de color. La \"apariencia de color\" de una lámpara se refiere al color aparente (cromaticidad) de la luz emitida. Es cuantificada por su temperatura de color correlacionada (TCP). La apariencia de color puede también ser descrita según la tabla 3.",
+          "tabla": {
+            "nombre": "Tabla 3: Grupos de apariencia de color de lámparas",
+            "columnas": ["Apariencia de color", "Temperatura de color correlacionada TCP [K]"],
+            "filas": [
+              ["Cálida", "inferior a 3 300 K"],
+              ["Intermedia", "3 300 K a 5 300 K"],
+              ["Fría", "superior a 5 300 K"]
+            ]
+          },
+          "nota_final": "La elección de apariencia de color es una cuestión psicológica, estética y de lo que se considera como natural. La elección dependerá del nivel de iluminancia, colores de la sala y muebles, clima circundante y la aplicación. En climas cálidos generalmente se prefiere una apariencia de color de luz más fría, mientras que en climas fríos se prefiere una apariencia de color de la luz más cálida.\n4.6.2 Rendimiento de colores. Es importante para las prestaciones visuales y la sensación de confort y bienestar, que los colores del entorno, de objetos y de la piel humana sean reproducidos de forma natural, correctamente y de tal modo que haga que las personas parezcan atractivas y saludables. Los colores de seguridad siempre deben ser reconocibles como tales. Para proporcionar una indicación objetiva de las propiedades de rendimiento de colores de una fuente luminosa se ha introducido el índice de rendimiento de colores general Ra. El valor máximo de Ra es 100. Esta cifra disminuye al disminuir la calidad de rendimiento de color. Las lámparas con un índice de rendimiento de color menor de 80 no deberían ser usadas en interiores en los que las personas trabajen o permanezcan durante periodos largos. Pueden hacerse excepciones para algunos lugares y/o actividades (por ejemplo iluminación de grandes alturas), pero deben tomarse medidas adecuadas para asegurar el alumbrado con el mayor rendimiento de colores en lugares de trabajo ocupados de modo continuo y cuando se hayan de reconocer los colores de seguridad. El valor mínimo del índice de rendimiento de colores para distintos tipos de interiores (áreas), tareas o actividades aparecen en el Anexo 10.1."
+        },
+        {
+          "titulo": "4.7 Flicker y efectos estroboscópicos",
+          "texto": "El flicker causa distracción y puede dar lugar a efectos fisiológicos tales como dolores de cabeza.\nLos efectos estroboscópicos pueden conducir a situaciones peligrosas cambiando el movimiento percibido de maquinaria giratoria o que se mueve en vaivén.\nLos sistemas de iluminación deberían estar diseñados para evitar el flicker y los efectos estroboscópicos.\nNOTA: Esto puede conseguirse usualmente por ejemplo mediante el uso de alimentación con corriente continua para lámparas incandescentes, o haciendo funcionar lámparas incandescentes o lámpara de descarga a altas frecuencias (alrededor de 30 kHz)."
+        },
+        {
+          "titulo": "4.8 Factor de mantenimiento",
+          "texto": "El proyecto de iluminación debería estar diseñado con un factor de mantenimiento total calculado para el equipo de alumbrado seleccionado, ambiente espacial y programa de mantenimiento especificado.\nLa iluminancia recomendada para cada tarea ésta dada como iluminancia mantenida. El factor de mantenimiento depende de las características de mantenimiento de la lámpara y del equipo eléctrico, la luminaria, el ambiente y el programa de mantenimiento.\nEl diseñador debe: establecer el factor de mantenimiento y anotar todas las suposiciones hechas en el establecimiento del valor; especificar el equipo de iluminación adecuado para el ambiente de aplicación; preparar un programa de mantenimiento completo que incluya la frecuencia de reemplazamiento de la lámpara, los intervalos de limpieza de la luminaria y de la sala y el método de limpieza."
+        },
+        {
+          "titulo": "4.9 Consideraciones sobre la energía",
+          "texto": "Una instalación de alumbrado debería satisfacer los requisitos de iluminación de un espacio particular sin malgastar energía. Sin embargo, es importante no comprometer ni los aspectos visuales de una instalación de iluminación simplemente para reducir el consumo de energía.\nEsto requiere la consideración de sistemas de alumbrado, equipos y controles apropiados y el uso de la luz natural disponible."
+        },
+        {
+          "titulo": "4.10 Luz natural",
+          "texto": "La luz natural puede proporcionar la totalidad o parte de la iluminación para tareas visuales. Varía de nivel y de composición espectral con el tiempo y por ello proporciona una variación en un interior. La luz natural puede crear un modelado específico y una distribución de luminancias debido a su flujo luminoso casi horizontal procedente de las ventanas laterales.\nLas ventanas pueden proporcionar un contacto visual con el mundo exterior, que es preferido por la mayor parte de la gente.\nEn interiores con ventanas laterales, la luz natural disponible disminuye rápidamente con la distancia a la ventana. Es necesario un alumbrado suplementario para asegurar la iluminancia requerida en el puesto de trabajo y para equilibrar la distribución de luminancias dentro de la sala. Puede usarse conmutación y/o regulación del flujo luminoso automática o manual para asegurar la integración apropiada entre alumbrado eléctrico y luz natural.\nPara reducir el deslumbramiento de las ventanas, debería preverse un apantallamiento cuando sea apropiado."
+        },
+        {
+          "titulo": "4.11 Iluminación de puestos de trabajo con Equipo con Pantalla de Visualización (EPV) incluidas Unidades de Presentación Visual",
+          "texto": "4.11.1 Generalidades. La iluminación para los puestos de trabajo (EPV) debe ser apropiado para todas las tareas realizadas en el puesto de trabajo, por ejemplo lectura de la pantalla, texto impreso, escritura en papel, trabajo con el teclado. Para estas áreas los criterios y el sistema de iluminación deben ser elegidos de acuerdo con el área de actividad, el tipo de tarea y el tipo de interior a partir del inventario del capítulo 5; algunos países tienen requisitos adicionales.\nEl EPV y, en algunas circunstancias el teclado puede presentar reflejos que provoquen el deslumbramiento incapacitivo y molesto. Es necesario por ello seleccionar, posicionar y disponer las luminarias para evitar reflexiones de alto brillo. El diseñador debe determinar la zona de montaje ofensiva y elegir el equipo y las posiciones de montaje en plano que no provoquen reflejos perturbadores.\n4.11.2 Límites de luminancia de luminarias con flujo hacia abajo. Este párrafo describe los límites de iluminancia para luminarias que pueden ser reflejadas en pantallas de EPV para direcciones de visión normales. La tabla 4 proporciona los límites de la luminancia media de la luminaria a ángulos de elevación de 65° y por encima de la vertical hacia abajo, radialmente alrededor de las luminarias para puestos de trabajo en los que se usan pantallas de presentación, que son verticales o están inclinadas hasta un ángulo de inclinación de 15°.\nNOTA: Para ciertos puestos especiales que utilizan por ejemplo pantallas sensibles o una inclinación variable, los límites de luminancia anteriores deberían ser aplicados para ángulos de elevación inferiores (por ejemplo 55°) de la luminaria.",
+          "tabla": {
+            "nombre": "Tabla 4: Límites de luminancia de luminarias que pueden ser reflejadas en la pantalla",
+            "columnas": ["Clases de pantallas de acuerdo con la Norma UNE-EN ISO 9241-302", "Calidad de la pantalla", "Luminancias medias de luminarias que son reflejadas en la pantalla"],
+            "filas": [
+              ["I", "buena", "≤1 000 cd·m⁻²"],
+              ["II", "media", "≤1 000 cd·m⁻²"],
+              ["III", "pobre", "≤200 cd·m⁻²"]
+            ]
+          }
+        }
+      ],
+      "referenciado_por": ["5.3.3"]
+    }
+  ],
+  "referencias_a_otros_pliegos": [
+    { "pliego": "RIC N°02", "puntos": ["6.6.2", "6.6.4.1"], "citado_en": ["5.1.3.1", "5.1.3.3", "5.1.3.7"] },
+    { "pliego": "RIC N°03", "puntos": ["5.1.3", "6.4"], "citado_en": ["5.1.5.2", "5.1.5.3"] },
+    { "pliego": "RIC N°04", "puntos": ["sección 7"], "citado_en": ["5.1.2.1"] },
+    { "pliego": "RIC N°11", "puntos": ["sección 6"], "citado_en": ["5.2.3", "5.3.12"] }
+  ],
+  "extensiones_no_previstas_en_v1": {
+    "subtermino_sin_id_numerico": "En la terminología (puntos 4.3 'Canalización', 4.6 'Circuito' y 4.8 'Conductor') el PDF trae sub-definiciones (\"A la vista\", \"Embutida\", \"Circuito de iluminación\", \"Conductor activo\", etc.) que no llevan numeral propio como 4.3.1/4.3.2 — a diferencia de RIC N°07, donde sub-términos equivalentes sí estaban numerados. Se representaron igual dentro de `subterminos`, pero con `\"id\": null`, siguiendo el mismo criterio ya usado para figuras sin numeral (RIC N°08, campo `numero: null`) — mismo patrón, ahora aplicado a terminología.",
+    "anexo_tipo_tabla_agrupada_multinivel": "El Anexo 10.1 (niveles de iluminación por tipo de recinto) es, con diferencia, la tabla más grande vista hasta ahora: 8 grupos temáticos numerados (1 a 8), la mayoría con sub-grupos (1.1, 1.2, ..., 8.2), cada sub-grupo siendo en sí mismo una tabla columnas/filas completa (más de 40 tablas en total). Se introdujo `\"tipo\": \"tabla_agrupada\"` con un array `grupos` (cada uno `{numero, titulo, subgrupos?: [{numero, titulo, tabla}], tabla?}` — un grupo puede tener sub-grupos anidados o, si no los tiene en el PDF (como el grupo 3 'Oficinas'), una `tabla` directamente). Es una extensión del patrón `secciones` ya usado para anexos con subdivisiones (RIC N°06, N°08), pero con un nivel adicional de anidamiento porque aquí las subdivisiones son netamente tablas, no texto con figuras.",
+    "anexo_tipo_mixto_con_formulas_y_tablas_intercaladas": "El Anexo 10.2 (criterios de diseño de iluminación) intercala, dentro de una misma subsección de texto, tablas normativas (ej. Tabla 1, Tabla 2, Tabla 3, Tabla 4) y una fórmula (UGR). Se usó el mismo patrón `secciones` ya definido para anexos `mixto` (RIC N°06/N°08), pero aquí una misma `seccion` combina simultáneamente `texto`, `formula`+`variables`, `tabla` (o `tablas` cuando hay más de una en la misma subsección) y `notas_adicionales` — no fue necesario ningún campo nuevo, solo confirma que estos campos pueden coexistir libremente dentro de una sección de anexo."
+  }
+}

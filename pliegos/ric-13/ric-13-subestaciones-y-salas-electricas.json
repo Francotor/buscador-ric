@@ -1,0 +1,433 @@
+{
+  "pliego_id": "RIC-13",
+  "numero": "13",
+  "materia": "Subestaciones y salas eléctricas",
+  "metadata": {
+    "fuente_legal": "Decreto con Fuerza de Ley N° 4/20.018, de 2006, del Ministerio de Economía, Fomento y Reconstrucción, Ley General de Servicios Eléctricos",
+    "fuente_reglamentaria": "Decreto N°8, de 2019, del Ministerio de Energía, Reglamento de Seguridad de las Instalaciones de Consumo de Energía Eléctrica",
+    "dictado_por": "Resolución Exenta N° 33.877, de fecha 30/12/2020, de la Superintendencia de Electricidad y Combustibles",
+    "vigencia_desde": "2021-07-12",
+    "estado": "vigente",
+    "paginas_documento_fuente": 13,
+    "archivo_fuente": "RIC-N13-Subestaciones-y-Salas-Electricas.pdf"
+  },
+  "referencias_normativas": [
+    { "id": "3.1", "norma": "IEC 60076-SER ed1.0", "anio": 2013, "titulo": "Power transformers - ALL PARTS." },
+    { "id": "3.2", "norma": "IEEE C57.12.00", "anio": 2015, "titulo": "Standard for General Requirements for Liquid-Immersed Distribution, Power, and Regulating Transformers." },
+    { "id": "3.3", "norma": "IEEE C57.12.20", "anio": 2017, "titulo": "Standard for Overhead-Type Distribution Transformers 500 kVA and Smaller: High Voltage, 34.500 V and Below; Low Voltage, 7.970/13.800Y V and Below." },
+    { "id": "3.4", "norma": "IEEE C57.12.70", "anio": 2011, "titulo": "Standard for Standard Terminal Markings and Connections for Distribution and Power Transformers." },
+    { "id": "3.5", "norma": "IEEE Std C57.12.80", "anio": 2010, "titulo": "Standard Terminology for Power and Distribution Transformers." },
+    { "id": "3.6", "norma": "IEEE C57.12.90", "anio": 2015, "titulo": "Standard Test Code for Liquid-Immersed Distribution, Power, and Regulating Transformers." },
+    { "id": "3.7", "norma": "UNE-EN 50541-1", "anio": 2012, "titulo": "Transformadores trifásicos de distribución tipo seco 50 Hz, de 100 kVA a 3.150 kVA, con tensión más elevada para el material de hasta 36 kV. Parte 1: Requisitos generales." },
+    { "id": "3.8", "norma": "UNE-EN 50541-2", "anio": 2014, "titulo": "Transformadores trifásicos de distribución tipo seco 50 Hz, de 100 kVA a 3.150 kVA, con tensión más elevada para el material de hasta 36 kV. Parte 2: Determinación de las características de potencia de un transformador cargado con corrientes no sinusoidales." },
+    { "id": "3.9", "norma": "IEC 61039", "anio": 2008, "titulo": "Classification of insulating liquids." }
+  ],
+  "notas_referencias": "Nota: Para la aplicación de este pliego técnico se podrá utilizar, en reemplazo de las normas IEC, las normas UNE equivalentes.",
+  "terminologia": [
+    { "id": "4.1", "termino": "Capacidad nominal", "definicion": "La capacidad nominal en un transformador es la potencia en kVA (kilo Volt Amperes) que entrega en el devanado secundario cuando está operando a sus valores nominales de tensión, frecuencia y corriente eléctricas." },
+    { "id": "4.2", "termino": "Cerco de delimitación", "definicion": "Cerco que forma los límites de una propiedad o área, pero no la parte del cerco perimetral de la subestación." },
+    { "id": "4.3", "termino": "Conductores de malla de tierra", "definicion": "Designa a los conductores enterrados horizontalmente, utilizados para interconectar las varillas de puesta a tierra o equipo similar, que conforman los electrodos de puesta a tierra de la subestación." },
+    { "id": "4.4", "termino": "Corriente nominal, aplicado a transformadores", "definicion": "Corrientes definidas en el diseño del equipo para establecer su trabajo normal a plena carga." },
+    { "id": "4.5", "termino": "Elevación del potencial de la malla de tierra", "definicion": "Producto de la resistencia de puesta a tierra de la malla por la máxima corriente de falla a tierra." },
+    { "id": "4.6", "termino": "Máxima corriente de falla a tierra", "definicion": "Magnitud de la mayor corriente de falla que puede fluir, entre la malla de tierra y la tierra que la rodea durante la vida de la instalación." },
+    { "id": "4.7", "termino": "Recinto de operación", "definicion": "Lugar destinado a la ubicación del equipo eléctrico de una subestación interior, que esta físicamente separado o aislado de los espacios de uso común y que es accesible exclusivamente a personal calificado. En el caso de subestaciones aéreas o subestaciones modulares, su forma constructiva se considerará suficiente separación con el medio ambiente." },
+    { "id": "4.8", "termino": "Subestación", "definicion": "Conjunto de equipos y accesorios que acogen la instalación de un transformador, cuya finalidad es transferir energía variando su nivel de tensión, incluyendo principalmente terminales de líneas eléctricas, equipos de maniobra, protección y control." },
+    { "id": "4.9", "termino": "Superintendencia", "definicion": "Superintendencia de Electricidad y Combustibles." },
+    { "id": "4.10", "termino": "Tensión eléctrica de impedancia", "definicion": "Es la tensión eléctrica a frecuencia nominal que se debe aplicar a las terminales de un devanado del transformador para que a través de este circule la corriente nominal cuando las terminales del otro devanado están en cortocircuito. La temperatura de referencia del transformador será de 120° C en conformidad con la norma UNE-EN 50541 parte 1 y 2.", "refs_cruzadas": ["UNE-EN 50541-1", "UNE-EN 50541-2"] },
+    { "id": "4.11", "termino": "Tensión eléctrica nominal", "definicion": "Es la que permite que el transformador entregue su capacidad nominal en condiciones normales de operación." },
+    { "id": "4.12", "termino": "Transformador", "definicion": "Dispositivo eléctrico que por inducción electromagnética transfiere energía eléctrica de uno o más circuitos, a uno o más circuitos a la misma frecuencia, usualmente aumentado o disminuyendo los valores de tensión y corriente eléctricas." },
+    { "id": "4.13", "termino": "Transformador tipo poste", "definicion": "Es aquel transformador que por su configuración externa está dispuesto en forma adecuada para sujetarse o instalarse en un poste o en alguna estructura similar." },
+    { "id": "4.14", "termino": "Transformador tipo subestación", "definicion": "Es aquel transformador que por su configuración externa está dispuesto en forma adecuada para ser instalado en una plataforma, cimentación o estructura aérea y su acceso está limitado por un área restrictiva." },
+    { "id": "4.15", "termino": "Transformador tipo sumergible", "definicion": "Es aquel transformador que por su configuración externa está fabricado para ser instalado en un pozo o bóveda y que estará expuesto a sufrir inundaciones." }
+  ],
+  "secciones": [
+    {
+      "numero": "1",
+      "titulo": "Objetivos",
+      "puntos": [
+        { "numero": "1.1", "texto": "El objetivo del presente pliego técnico es establecer las condiciones y exigencias para el diseño, la instalación, la operación, el mantenimiento, la inspección y la verificación de las subestaciones y salas eléctricas de las instalaciones de consumo de energía eléctrica del país. Estas condiciones y exigencias están destinadas a garantizar la seguridad de las personas, los animales y los bienes frente a los peligros y los daños susceptibles de producirse durante un uso razonable de este tipo de instalaciones eléctricas y a garantizar el funcionamiento correcto de sus equipos." }
+      ]
+    },
+    {
+      "numero": "2",
+      "titulo": "Alcance y campo de aplicación",
+      "puntos": [
+        { "numero": "2.1", "texto": "El presente pliego técnico, se aplica a instalaciones de subestaciones y salas eléctricas, con transformadores que operan a tensiones de hasta 23.000 V, en instalaciones de consumo de energía eléctrica, en adelante e indistintamente, instalaciones." },
+        { "numero": "2.2", "texto": "Las disposiciones contenidas en esta sección son complementarias a las del Pliego Técnico Normativo RIC N°02 y al DS N°109/2017 del Ministerio de Energía o las disposiciones que las reemplacen.", "refs_cruzadas": ["RIC N°02", "DS N°109/2017 del Ministerio de Energía"] }
+      ]
+    },
+    {
+      "numero": "5",
+      "titulo": "Conceptos generales",
+      "puntos": [
+        {
+          "numero": "5.1",
+          "titulo": "Clasificación de subestaciones de consumo",
+          "texto": "Atendiendo a su disposición constructiva las subestaciones se clasificarán en:",
+          "subpuntos": [
+            {
+              "numero": "5.1.1",
+              "texto": "Subestaciones a la intemperie",
+              "subpuntos": [
+                { "numero": "5.1.1.1", "texto": "Subestaciones aéreas." },
+                { "numero": "5.1.1.2", "texto": "Subestaciones al nivel de piso." }
+              ]
+            },
+            {
+              "numero": "5.1.2",
+              "texto": "Subestaciones bajo techo",
+              "subpuntos": [
+                { "numero": "5.1.2.1", "texto": "Subestaciones en recintos interiores para instalaciones o anexos a construcciones destinadas a otros fines tales como edificios de uso general." },
+                { "numero": "5.1.2.2", "texto": "Subestaciones en recintos aislados de otras construcciones." }
+              ]
+            },
+            {
+              "numero": "5.1.3",
+              "texto": "Subestaciones en bóvedas",
+              "subpuntos": [
+                { "numero": "5.1.3.1", "texto": "Subestaciones instaladas en recintos ubicados en el subsuelo bajo el nivel de piso y cuyo techo está a nivel con éste o sobresale no más de 0,80 m. de dicho nivel." }
+              ]
+            },
+            {
+              "numero": "5.1.4",
+              "texto": "Subestaciones compactas",
+              "subpuntos": [
+                { "numero": "5.1.4.1", "texto": "Son aquellas constituidas por unidades o módulos independientes, protegidos por cubiertas o cajas metálicas, mecánicamente acoplables y que se interconectan eléctricamente para formar un solo conjunto. En general, existirá un módulo de medición, el módulo de alimentación en MT; él o los transformadores y él o los módulos o tableros de BT." }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "6",
+      "titulo": "Exigencias generales",
+      "puntos": [
+        {
+          "numero": "6.1",
+          "titulo": "Exigencias generales de instalación y montaje",
+          "subpuntos": [
+            { "numero": "6.1.1", "texto": "Toda subestación deberá ser instalada de acuerdo a un proyecto técnicamente concebido el cual deberá asegurar que en ella no se presenten riesgos para sus operarios y usuarios, que se cumpla con los estándares de servicio, permita un fácil y adecuado mantenimiento y se pueda realizar ampliaciones si ellas son necesarias." },
+            { "numero": "6.1.2", "texto": "El proyecto de toda subestación para instalaciones debe ser ejecutado por un instalador eléctrico autorizado clase A." },
+            {
+              "numero": "6.1.3",
+              "texto": "A fin de controlar con facilidad el funcionamiento de una subestación se colocará en una ubicación visible, próxima a los tableros, un esquema unilineal de toda la instalación que comprenderá hasta la última protección de la instalación. En el esquema figurarán a lo menos los siguientes datos:",
+              "subpuntos": [
+                { "numero": "6.1.3.1", "texto": "Tensiones nominales de la red y de la instalación." },
+                { "numero": "6.1.3.2", "texto": "Clase y potencia de los transformadores, condensadores baterías de acumuladores y grupos electrógenos, si existen." },
+                { "numero": "6.1.3.3", "texto": "Designación de circuitos." },
+                { "numero": "6.1.3.4", "texto": "Protecciones y comandos: Clase, tipo, capacidad de ruptura, corriente nominal, relación y ajuste, si procede." },
+                { "numero": "6.1.3.5", "texto": "Sección de los alimentadores primarios y secundarios y su canalización." },
+                { "numero": "6.1.3.6", "texto": "Capacidad nominal de cada uno de los tableros dependientes de la subestación." },
+                { "numero": "6.1.3.7", "texto": "Características dimensionales y eléctricas de la puesta a tierra, así como su ubicación." }
+              ]
+            },
+            { "numero": "6.1.4", "texto": "En materias de diseño, construcción, operación, mantenimiento, reparación, modificación, inspección y término de operación, la Superintendencia podrá permitir el uso de tecnologías diferentes a las establecidas en el presente pliego técnico, siempre que se mantenga el nivel de seguridad que el texto normativo contempla. Estas tecnologías deberán estar técnicamente respaldadas en normas, códigos o especificaciones nacionales o extranjeras, así como en prácticas recomendadas de ingeniería internacionalmente reconocidas, o bien ser parte de instalaciones de prueba para nueva tecnología. Para ello el instalador deberá presentar el proyecto y un ejemplar completo de la versión vigente de la norma, código o especificación extranjera utilizada debidamente traducida, cuando corresponda, así como cualquier otro antecedente que solicite la Superintendencia." }
+          ]
+        },
+        {
+          "numero": "6.2",
+          "titulo": "Exigencias para los equipos",
+          "subpuntos": [
+            { "numero": "6.2.1", "texto": "Los transformadores se clasificarán según sus características de instalación, las que podrán ser a la intemperie, en el interior de edificaciones, en forma subterránea, o sobre plataformas a nivel de piso." },
+            { "numero": "6.2.2", "texto": "Los transformadores se deben seleccionar e instalar de acuerdo con las condiciones de servicio, seguridad para las personas, animales y medio ambiente." },
+            { "numero": "6.2.3", "texto": "Los transformadores deben ser diseñados y construidos para resistir sin daño los efectos térmicos y mecánicos de cortocircuito exteriores como interiores propios de la instalación, que se produzcan en terminales de baja tensión, considerando el caso más severo de cortocircuito." },
+            { "numero": "6.2.4", "texto": "Los transformadores deberán cumplir con lo definido en el protocolo de análisis y/o ensayos de seguridad de productos eléctricos respectivo definido por la Superintendencia. En ausencia de ellos se deberá cumplir con las normas IEC 60076-SER ed1.0, UNE-EN 50541-1, UNE-EN 50541-2 o IEEE C57.12.00, IEEE C57.12.20, IEEE C57.12.70, IEEE Std C57.12.80, IEEE C57.12.90, según corresponda.", "refs_cruzadas": ["IEC 60076-SER ed1.0", "UNE-EN 50541-1", "UNE-EN 50541-2", "IEEE C57.12.00", "IEEE C57.12.20", "IEEE C57.12.70", "IEEE Std C57.12.80", "IEEE C57.12.90"] },
+            {
+              "numero": "6.2.5",
+              "texto": "Todo transformador deberá contar con una placa de características, la cual, contendrá a lo menos los siguientes datos:",
+              "subpuntos": [
+                { "numero": "6.2.5.1", "texto": "La palabra \"Transformador\"." },
+                { "numero": "6.2.5.2", "texto": "Nombre del fabricante." },
+                { "numero": "6.2.5.3", "texto": "Número de serie y fecha de fabricación." },
+                { "numero": "6.2.5.4", "texto": "Número de fases." },
+                { "numero": "6.2.5.5", "texto": "Tensión nominal del primario y del secundario." },
+                { "numero": "6.2.5.6", "texto": "Potencia nominal (kVA)" },
+                { "numero": "6.2.5.7", "texto": "Frecuencia (Hz)." },
+                { "numero": "6.2.5.8", "texto": "Clase (kV)." },
+                { "numero": "6.2.5.9", "texto": "Derivaciones con su numeración y orden correspondiente." },
+                { "numero": "6.2.5.10", "texto": "Polaridad." },
+                { "numero": "6.2.5.11", "texto": "Relación vectorial." },
+                { "numero": "6.2.5.12", "texto": "Impedancia (%)." },
+                { "numero": "6.2.5.13", "texto": "Tipo de aislante y refrigerante." },
+                { "numero": "6.2.5.14", "texto": "Elevación de temperatura" },
+                { "numero": "6.2.5.15", "texto": "Peso total (kg) con aislante." },
+                { "numero": "6.2.5.16", "texto": "Diagrama de conexiones." },
+                { "numero": "6.2.5.17", "texto": "Nivel de ruido (db)." },
+                { "numero": "6.2.5.18", "texto": "Altura máxima se montaje (m)" }
+              ]
+            },
+            {
+              "numero": "6.2.6",
+              "texto": "Además, cuando corresponda:",
+              "subpuntos": [
+                { "numero": "6.2.6.1", "texto": "Cantidad de aceite (litros)." },
+                { "numero": "6.2.6.2", "texto": "Las palabras \"Sellado hermético\", cuando corresponda." },
+                { "numero": "6.2.6.3", "texto": "Distancia del nivel del aceite a la tapa en caso de transformadores herméticamente sellados." }
+              ]
+            },
+            { "numero": "6.2.7", "texto": "Todo transformador, deberá contar con un certificado de ensayos de seguridad de productos eléctricos, pruebas de diseño, tipo y rutina, con todas las características de la placa y los valores obtenidos en las pruebas efectuadas, proporcionado por el fabricante." },
+            { "numero": "6.2.8", "texto": "Todos los materiales y equipos empleados en el montaje de una subestación deberán cumplir con estándares nacionales o internacionales o estar aprobados para el uso y condición de montaje que se realizará." }
+          ]
+        },
+        {
+          "numero": "6.3",
+          "titulo": "Exigencias de instalación",
+          "subpuntos": [
+            { "numero": "6.3.1", "texto": "Las subestaciones instaladas a la intemperie deberán cumplir con las disposiciones del DS N°109/2017 del Ministerio de Energía o las disposiciones que lo reemplacen.", "refs_cruzadas": ["DS N°109/2017 del Ministerio de Energía"] },
+            { "numero": "6.3.2", "texto": "La zona en que está instalada una subestación, delimitada de acuerdo con las prescripciones del presente pliego, se considera como un recinto de operación." },
+            { "numero": "6.3.3", "texto": "En toda subestación eléctrica, cualquiera sea el tipo de montaje y condiciones de uso, las partes que la componen deben estar dimensionadas y establecidas para resistir los efectos de la corriente máxima de cortocircuito hasta el momento de su desconexión, sin que resulte peligro para las personas, medioambiente, riesgo de incendio, ni deterioro de las instalaciones o menoscabo de su vida útil." },
+            { "numero": "6.3.4", "texto": "Las condiciones de instalación y operación de los equipos y dispositivos, durante toda su vida útil, no deberán afectar su funcionamiento, o poner en peligro a los seres vivos o las cosas." },
+            { "numero": "6.3.5", "texto": "En el recinto de operación de una subestación, no se deberá instalar o almacenar ningún equipo ajeno a ella, ningún material o mobiliario, así como tampoco deberá servir de sitio de estadía de personas." },
+            { "numero": "6.3.6", "texto": "Las disposiciones de esta sección son aplicables en zonas cuya altitud no sea superior a los 1.000 m sobre el nivel del mar. Donde se exceda este valor se deberán tomar las precauciones y medidas indicadas por las normas respectivas o por los fabricantes de los equipos que se instalen." },
+            { "numero": "6.3.7", "texto": "Todo recinto de una subestación deberá cumplir con el nivel de iluminación para este tipo de lugares. Las intensidades de iluminación correspondientes a los distintos locales o zonas de una subestación serán como mínimo las señaladas en el anexo 10.1 del Pliego Técnico Normativo RIC N°10.", "refs_cruzadas": ["RIC N°10 anexo 10.1"] }
+          ]
+        },
+        {
+          "numero": "6.4",
+          "titulo": "Distancias de seguridad",
+          "subpuntos": [
+            {
+              "numero": "6.4.1",
+              "texto": "Los conductores y barras desnudas energizadas deberán instalarse de modo que las distancias entre fases y tierra no sean menores que las indicadas en la Tabla N°13.1.",
+              "tabla": {
+                "nombre": "Tabla Nº13.1: Distancias de seguridad en subestaciones",
+                "columnas": ["Tensión nominal (kV)", "Tensión máxima (kV)", "Interior - Entre fases (mm)", "Interior - Fase a tierra (mm)", "Intemperie - Entre fases (mm)", "Intemperie - Fase a tierra (mm)"],
+                "filas": [
+                  ["2,4", "2,75", "130", "100", "150", "100"],
+                  ["3,3", "3,6", "150", "120", "180", "120"],
+                  ["4,16", "5", "170", "130", "180", "120"],
+                  ["6,6", "7,2", "200", "150", "200", "150"],
+                  ["13,2", "15", "300", "200", "300", "200"],
+                  ["23", "25", "400", "300", "500", "400"]
+                ]
+              }
+            },
+            { "numero": "6.4.2", "texto": "Las distancias prescritas entre fases y tierra se medirán en el punto medio entre dos apoyos consecutivos; en los puntos en que el conductor se apoya sobre aisladores, las distancias a tierra estarán definidas por las dimensiones del aislador." },
+            { "numero": "6.4.3", "texto": "Tanto en subestaciones a la intemperie como en el interior de edificios, deberán protegerse las partes energizadas situadas al alcance de la mano para evitar que puedan ser tocadas accidentalmente." },
+            { "numero": "6.4.4", "texto": "Se considera zona alcanzable de la mano, aquella medida desde donde ésta pueda situarse hasta 2,5 m por arriba, 1,0 m lateralmente y 1,0 m hacia abajo, aumentada en 1 cm por cada kV de tensión nominal." },
+            { "numero": "6.4.5", "texto": "Para proteger las partes energizadas, de acuerdo con lo indicado en el punto 6.4.3 de este pliego, podrán emplearse cajas, celdas metálicas, barreras, barandas balaustradas y otros accesorios adecuados.", "refs_cruzadas": ["6.4.3"] },
+            {
+              "numero": "6.4.6",
+              "texto": "La distancia mínima entre el elemento de protección y las partes energizadas se fijará de acuerdo con la Tabla N°13.2.",
+              "tabla": {
+                "nombre": "Tabla Nº13.2: Distancias de seguridad entre elemento de protección y partes energizadas en subestaciones",
+                "columnas": ["Tensión nominal (kV)", "Cajas o celdas metálicas (mm)", "Barrera/baranda <1,6 m - interior (mm)", "Barrera/baranda <1,6 m - intemperie (mm)", "Barrera/baranda ≥1,6 m - interior (mm)", "Barrera/baranda ≥1,6 m - intemperie (mm)"],
+                "filas": [
+                  ["2,4", "80", "500", "600", "160", "250"],
+                  ["3,3", "80", "500", "600", "160", "250"],
+                  ["4,16", "100", "500", "600", "200", "280"],
+                  ["6,6", "120", "500", "600", "250", "300"],
+                  ["13,2", "150", "500", "600", "250", "300"],
+                  ["23", "200", "500", "600", "300", "400"]
+                ]
+              }
+            },
+            { "numero": "6.4.7", "texto": "Al frente o alrededor de los equipos de una subestación deberán existir espacios libres que permitan la circulación del personal y las maniobras de montaje, operación y mantenimiento." },
+            { "numero": "6.4.8", "texto": "Las dimensiones mínimas de estos espacios serán de un ancho de 1.000 mm y altura de 3.000 mm medidos entre piso y cielo, para equipo eléctrico a un lado y muros o barreras fijas al lado opuesto. Para equipos eléctricos a ambos lados del espacio, el ancho mínimo será de 1.200 mm y la altura mínima de 2.000 mm medidos entre piso y cielo." },
+            { "numero": "6.4.9", "texto": "Las distancias de seguridad y espacios de trabajo en salas eléctricas y tableros para baja tensión se diseñarán en conformidad con lo indicado en el punto 5.4 del Pliego Técnico Normativo RIC N°02.", "refs_cruzadas": ["RIC N°02 punto 5.4"] }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "7",
+      "titulo": "Instalación de subestaciones a la intemperie",
+      "puntos": [
+        {
+          "numero": "7.1",
+          "titulo": "Subestaciones aéreas.",
+          "subpuntos": [
+            { "numero": "7.1.1", "texto": "Las subestaciones aéreas se instalarán cumpliendo las disposiciones constructivas de subestaciones, establecidas en el DS N°109/2017 del Ministerio de Energía o las disposiciones que lo reemplacen.", "refs_cruzadas": ["DS N°109/2017 del Ministerio de Energía"] }
+          ]
+        },
+        {
+          "numero": "7.2",
+          "titulo": "Subestaciones a nivel de suelo.",
+          "subpuntos": [
+            { "numero": "7.2.1", "texto": "Las subestaciones se ubicarán en una zona tal que en condiciones normales de precipitaciones no se deberán inundar." },
+            { "numero": "7.2.2", "texto": "Todo el equipo eléctrico empleado en su montaje será a prueba de intemperie, o en su defecto protegido para estas condiciones." },
+            { "numero": "7.2.3", "texto": "El equipo eléctrico que la compone y que se instale a nivel del suelo, deberá ser montado sobre una base de concreto de 0,25 m de espesor como mínimo, la que deberá sobresalir horizontalmente 0,15 m por lo menos desde los ejes de los puntos de apoyo o anclaje." },
+            { "numero": "7.2.4", "texto": "Todo el recinto de operación de la subestación deberá estar delimitado por un cierre de protección que impida el acceso a personal no calificado y animales." },
+            { "numero": "7.2.5", "texto": "El cierre indicado en el punto 7.2.4 anterior podrá ser un cerco continuo o una reja. En caso de utilizar esta última, ella deberá tener mallas de 50 mm de abertura como máximo y deberá ser construida de alambre de acero galvanizado de 3 mm de diámetro como mínimo o de un material de resistencia mecánica y a la corrosión equivalentes; los marcos, si son metálicos, se protegerán contra la corrosión.", "refs_cruzadas": ["7.2.4"] },
+            { "numero": "7.2.6", "texto": "El cierre de protección tendrá una altura mínima de 2,00 m y deberá quedar a una distancia horizontal no menor de 1,50 m de la proyección de cualquier punto del equipo eléctrico. Esta altura deberá aumentarse por lo menos a 2,50 m si el cierre colinda con un sitio público y a la parte superior del cierre se le agregará una protección contra escalamiento." },
+            { "numero": "7.2.7", "texto": "El acceso al recinto de la subestación, delimitado por el cierre indicado anteriormente, se asegurará mediante puertas de resistencia y dimensiones adecuadas." },
+            { "numero": "7.2.8", "texto": "Si el cierre de protección es una reja metálica compuesta por varias secciones separables una de otra, el conjunto deberá ser eléctricamente continuo, debiendo conectarse las distintas secciones mediante conductores de una sección determinada de acuerdo con la tabla del anexo 6.7 del Pliego Técnico Normativo RIC N°06 de este reglamento. En caso de que estas conexiones sean soldadas, la soldadura empleada debe ser de alto punto de fusión y en caso de usar puentes apernados, tanto los pernos como las prensas y abrazaderas usadas deberán ser de bronce.", "refs_cruzadas": ["RIC N°06 anexo 6.7"] },
+            { "numero": "7.2.9", "texto": "Si la reja no llega hasta el suelo, la distancia entre la parte inferior de ésta y el nivel del suelo no debe exceder los 0,05 m." },
+            { "numero": "7.2.10", "texto": "La reja de protección metálica debe ser puesta a tierra cumpliendo las condiciones indicadas en la sección 7 del Pliego Técnico Normativo RIC N°06 de este reglamento, debiendo existir una conexión a tierra por cada 15 m de perímetro de cierre, con un mínimo de dos conexiones.", "refs_cruzadas": ["RIC N°06 sección 7"] },
+            { "numero": "7.2.11", "texto": "Si uno o más lados del cierre de protección lo constituyen muros de edificaciones adyacentes, sólo se aceptará esta solución si dichos muros son de material incombustible y tienen la resistencia mecánica adecuada. Se considerará que cumplen estas exigencias los muros de albañilería de 0,15 m de espesor y los muros de concreto armado de 0,10 m de espesor, como mínimo." },
+            { "numero": "7.2.12", "texto": "En los muros indicados en el punto 7.2.11 anterior no deberá existir ninguna abertura que comunique el interior del edificio con la subestación. Si estos muros corresponden a muros divisorios con otra propiedad deberán ser del tipo cortafuego.", "refs_cruzadas": ["7.2.11"] },
+            { "numero": "7.2.13", "texto": "Los elementos pasivos de la subestación, tales como postes, estructuras soportantes, etc., deberán quedar dentro del cierre de protección." },
+            { "numero": "7.2.14", "texto": "Si una parte conductora activa sobresale de la zona limitada por el cierre de protección, deberá cumplir con las alturas mínimas exigidas para líneas aéreas de la tensión correspondiente, establecidas en el DS N°109/2017 del Ministerio de Energía o las disposiciones que lo reemplacen.", "refs_cruzadas": ["DS N°109/2017 del Ministerio de Energía"] },
+            { "numero": "7.2.15", "texto": "El suelo de la zona de la subestación, fuera de la base definida en el punto 7.2.3 de este pliego deberá estar cubierto por una capa de gravilla de 0,05 m de espesor como mínimo, la que se extenderá hasta 1 m más afuera del cierre de protección en todas las direcciones libres.", "refs_cruzadas": ["7.2.3"] },
+            { "numero": "7.2.16", "texto": "La zona de la subestación debe estar dotada de un eficiente sistema de drenaje." },
+            { "numero": "7.2.17", "texto": "Para efectos de canalizaciones eléctricas que converjan en la zona interior del perímetro de la subestación a través de ductos o trincheras, su accesibilidad deberá ser exclusivamente desde el interior de dicho perímetro." }
+          ]
+        }
+      ]
+    },
+    {
+      "numero": "8",
+      "titulo": "Instalación de subestaciones en interior",
+      "puntos": [
+        { "numero": "8.1", "texto": "Las subestaciones en interior se instalarán cumpliendo las disposiciones constructivas de subestaciones, definidas en la presente sección y en el DS N°109/2017 del Ministerio de Energía o las disposiciones que lo reemplacen.", "refs_cruzadas": ["DS N°109/2017 del Ministerio de Energía"] },
+        { "numero": "8.2", "texto": "Los transformadores y el equipo asociado se instalarán de manera de permitir su retiro en caso de ser necesario y que sean fácilmente accesibles al personal que los opere o mantenga, de modo que sea posible abandonar el recinto sin obstáculos en caso de emergencia." },
+        { "numero": "8.3", "texto": "Los recintos de operación de estas subestaciones deberán contar con dos puertas, una de acceso de materiales y equipos, y la otra de servicio. Para cumplir con estas exigencias se construirán puertas de dos hojas o bien la puerta de servicio puede estar inscrita en la de acceso de materiales." },
+        { "numero": "8.4", "texto": "En caso de instalarse transformadores y equipos de dimensiones reducidas, que quepan libremente por la puerta de servicio, se podrá omitir la puerta de acceso de materiales." },
+        { "numero": "8.5", "texto": "Las puertas y las protecciones o controles de las aberturas de ventilación deberán ser de material incombustible, al igual que los recubrimientos de muros, pisos y cielos. Se prohíbe el uso de baldosines plásticos en subestaciones con transformadores en aceite." },
+        { "numero": "8.6", "texto": "La puerta de servicio deberá tener por lo menos 0,80 por 2,10 m, deberá abrir hacia el exterior y estar premunida de cerradura de seguridad que permita abrir desde dentro sin necesidad de llaves. La puerta de acceso de los materiales deberá tener dimensiones suficientes como para permitir el cambio de los transformadores y de los equipos asociados de la subestación." },
+        { "numero": "8.7", "texto": "Las puertas deberán permanecer cerradas con llave en todo momento y sólo podrán ser abiertas por personal calificado; sobre ellas deberá pintarse un letrero con la señalización correspondiente de acuerdo con las normas respectivas." },
+        { "numero": "8.8", "texto": "Los transformadores refrigerados por aceite se colocarán sobre fosos colectores con capacidad suficiente como para contener el aceite del transformador de mayor potencia, más el 30% del contenido de aceite de los demás. Si se construye un foso por cada transformador, cada uno de ellos deberá tener la capacidad correspondiente al volumen de aceite del respectivo transformador. Si no hay espacio suficiente para construir el o los fosos colectores, se construirán ductos de salida que conduzcan el aceite hacia el exterior a un estanque o foso recolector para estos fines." },
+        { "numero": "8.9", "texto": "En caso de no ser posible la construcción de los fosos considerados en el punto 8.8 anterior, el umbral de la puerta deberá tener una altura sobre el nivel del piso tal que impida la salida al exterior del aceite del transformador de mayor potencia, en caso de rotura del estanque de éste o de una falla similar. En todo caso la altura mínima deber ser de 0,10 m la evacuación del aceite se deberá hacer de modo de evitar la contaminación del ambiente o de napas subterráneas de agua. Se prohíbe su evacuación a través de sistema de alcantarillado.", "refs_cruzadas": ["8.8"] },
+        { "numero": "8.10", "texto": "Los recintos en que se instale una subestación deberán ser ventilados en forma adecuada. Si se utiliza ventilación por circulación natural de aire, la superficie libre debe ser de 20 cm² por cada kVA de potencia del o los transformadores, con un mínimo de 0,1 m². Si se emplea ventilación forzada, se deberá producir un mínimo de 20 renovaciones por hora del volumen total de aire del recinto." },
+        { "numero": "8.11", "texto": "Los recintos en que se instale una subestación deberán ubicarse de modo que en lo posible se pueda evacuar el aire caliente directamente al exterior, sin necesidad de ductos o chimeneas; en caso de que éstos sean necesarios, deberán construirse de material incombustible." },
+        { "numero": "8.12", "texto": "Las bocas de admisión y evacuación de aire deberán ubicarse lo más retiradas que sea posible de puertas, escapes o materiales combustibles y deberán provenir y conducir a espacios exteriores libres, sin poner en peligro a personas u objetos." },
+        { "numero": "8.13", "texto": "Las áreas de las bocas de admisión y evacuación de aire en la subestación deberán ser en lo posible iguales; se distribuirán en los muros cerca del piso y cerca del cielo, o bien en el cielo mismo. De no ser ello posible, el área total se ubicará en la parte superior de los muros o en el cielo. En todo caso la ubicación relativa de las bocas será tal que permita la renovación total del aire del recinto impidiendo la circulación directa de éste entre ellas." },
+        { "numero": "8.14", "texto": "En el caso de ventilación forzada los extractores se colocarán en la parte alta de los muros tomándose las mismas precauciones señaladas en el punto 8.13 anterior, respecto de su ubicación.", "refs_cruzadas": ["8.13"] },
+        { "numero": "8.15", "texto": "Si el aire fresco contiene polvos, gases, humos, etc., en cantidades suficientes como para producir contaminación, se usará ventilación forzada y en las bocas de admisión se instalarán filtros o separadores adecuados." },
+        { "numero": "8.16", "texto": "Para evitar la entrada de lluvia o cuerpos extraños a través de las aberturas de ventilación estas se construirán a una altura mínima de 0.20 m sobre el nivel del piso exterior y serán protegidas con rejillas metálicas cuyas mallas tengan una abertura mínima de 5 mm y máxima de 15 mm. El área ocupada por la rejilla deberá ser descontada del área libre de admisión o evacuación de aire." },
+        { "numero": "8.17", "texto": "En las subestaciones ubicadas en ambientes corrosivos o tóxicos deberá instalarse un sistema de absorción de aire fresco, que provenga de una zona no contaminada. El recinto de las subestaciones se mantendrá con una sobrepresión con respecto a la del ambiente corrosivo o tóxico y deberán existir dispositivos de alarma que indiquen cuando exista una falla en este sistema de ventilación." },
+        { "numero": "8.18", "texto": "Las subestaciones montadas en zonas peligrosas deberán cumplir las disposiciones específicas sobre la materia.", "refs_cruzadas": ["RIC N°12"] }
+      ]
+    },
+    {
+      "numero": "9",
+      "titulo": "Subestaciones dentro de edificios de uso general",
+      "puntos": [
+        { "numero": "9.1", "texto": "Dentro de edificios de uso general o salas eléctricas que se ubiquen en el interior de edificios se aceptará, solo la utilización de equipos eléctricos que utilicen aislantes tipo seco o líquido clase K, de acuerdo con la norma IEC 61039. (aislantes con T° de ignición superior a 300°C) y en conformidad con el punto 5.4.9 del Pliego Técnico Normativo RIC N°02.", "refs_cruzadas": ["IEC 61039", "RIC N°02 punto 5.4.9"] },
+        { "numero": "9.2", "texto": "Para los efectos de aplicación de esta disposición se considerará líquido no propagante a aquel sometido a una fuente de calor arda sin proyectar sus llamas." },
+        { "numero": "9.3", "texto": "En condiciones similares a las señaladas en el punto 9.1 precedente podrán instalarse también dentro de edificios de uso general transformadores secos.", "refs_cruzadas": ["9.1"] },
+        { "numero": "9.4", "texto": "Las subestaciones que tengan transformadores en aceite tendrán piso, muros y cielo resistentes al fuego. Si los muros están construidos de albañilería tendrán un espesor de 0,20 m considerando el enlucido. Si son construidos de concreto armado el espesor mínimo será de 0,10 m. Los pisos, si están sobre el suelo deberán ser de concreto de 0,10 m de espesor por lo menos; si la subestación está construida sobre otro recinto, el piso deberá ser una losa de concreto armado de resistencia mecánica adecuada a tal situación." },
+        { "numero": "9.5", "texto": "Las subestaciones que tengan transformadores en aceite deberán ser accesibles desde el exterior del edificio. En todo caso, la vía de escape desde el recinto de la subestación hasta el exterior deberá tener una distancia inferior a 10 m y no deberá interferir en los escapes del edificio, en caso de siniestro en la subestación." },
+        { "numero": "9.6", "texto": "Si en una subestación existe más de un transformador, entre ellos deberá existir un muro de separación de una altura no inferior a 2,50 m y de características similares a las indicadas en el punto 9.4 de este pliego.", "refs_cruzadas": ["9.4"] },
+        { "numero": "9.7", "texto": "Los transformadores secos, de potencia superior a 100 kVA, instalados dentro de edificios de uso general, deberán contar con sondas de temperatura (PT100) o dispositivos equivalentes que operen sobre la ventilación forzada o las protecciones del transformador." },
+        { "numero": "9.8", "texto": "Los transformadores en aceite, de potencia superior a 250 kVA, instalados dentro de edificios de uso general, deberán contar con detectores de sobre temperatura o relé Buchholz o dispositivos equivalentes que operen sobre las protecciones del transformador." },
+        { "numero": "9.9", "texto": "Los interruptores y transformadores de medida para subestaciones en edificios de uso general deberán ser con aislante resistente al fuego, autoextinguible, retardante a la llama y que emita humo de baja opacidad." }
+      ]
+    },
+    {
+      "numero": "10",
+      "titulo": "Subestaciones en recintos aislados de otras construcciones",
+      "puntos": [
+        { "numero": "10.1", "texto": "En caso de que la subestación se instale en una construcción aislada de otras y que esté dedicada exclusivamente a servir como recinto de la subestación, esta construcción deberá hacerse con material incombustible, pero no será necesario cumplir todas las exigencias de la sección 9 de este pliego respecto a la calidad de los materiales y disposiciones constructivas, siempre que una falla producida en la subestación no provoque riesgos a personas ni al medio ambiente que la rodee.", "refs_cruzadas": ["9"] }
+      ]
+    },
+    {
+      "numero": "11",
+      "titulo": "Instalación de subestaciones en bóvedas",
+      "puntos": [
+        { "numero": "11.1", "texto": "La bóveda deberá tener sus muros y losas impermeabilizados para evitar filtraciones de agua y deberá contar con un sistema de drenaje que permita evacuar el agua que eventualmente penetre en su interior en condiciones normales de precipitaciones. El drenaje podrá consistir en un foso construido bajo el piso del recinto de la subestación, salvo que la presencia de napas freáticas superficiales obligue a impermeabilizar el piso para evitar la entrada de agua, en esta situación deberán instalarse sistemas mecánicos de drenaje." },
+        { "numero": "11.2", "texto": "Los equipos eléctricos empleados en esta clase de subestaciones deberán ser del tipo sumergible." },
+        { "numero": "11.3", "texto": "Las aberturas de acceso deberán cumplir en general lo establecido en los puntos 8.3 y 8.6 de este pliego, excepto que el acceso este ubicado en el techo, en cuyo caso, las dimensiones del acceso de servicio podrán ser como mínimo 0,80 x 0,80 m.", "refs_cruzadas": ["8.3", "8.6"] },
+        { "numero": "11.4", "texto": "En el caso que la bóveda esté a nivel del suelo, será ventilada por aberturas hechas en su techo, estas aberturas deberán ser cubiertas por rejas metálicas de resistencia adecuada. Si el techo de la bóveda sobresale del nivel del suelo, podrá ventilarse indistintamente por aberturas en el techo o aberturas laterales. Las aberturas de ventilación deberán cumplir lo establecido en los puntos 8.10 y 8.16 de este pliego.", "refs_cruzadas": ["8.10", "8.16"] },
+        { "numero": "11.5", "texto": "Las aberturas de ventilación, si están ubicadas en el techo de la bóveda, podrán servir también como acceso a ésta siempre que cumplan lo indicado en el punto 8.7 de este pliego, omitiéndose la exigencia de colocar carteles indicadores.", "refs_cruzadas": ["8.7"] }
+      ]
+    },
+    {
+      "numero": "12",
+      "titulo": "Instalación de subestaciones compactas",
+      "puntos": [
+        { "numero": "12.1", "texto": "Los módulos de una subestación compacta deberán ser autosoportantes y de tamaño suficiente como para contener holgadamente los equipos en su interior y permitir que los trabajos de mantenimiento puedan efectuarse en forma cómoda." },
+        { "numero": "12.2", "texto": "El acceso al interior de los módulos deberá ser posible a través de puertas de dimensiones adecuadas. En los módulos en que exista media tensión, las puertas deberán estar enclavadas con el sistema eléctrico de modo que al abrirse una de ellas todos los circuitos queden sin tensión." },
+        { "numero": "12.3", "texto": "Las subestaciones compactas podrán instalarse tanto a la intemperie como en el interior de edificios. Si se instalan a la intemperie la construcción de los distintos módulos será del tipo a prueba de intemperie, si se instalan en el interior de edificios deberán cumplir las disposiciones de las secciones 8, 9 y 10 de este pliego, según corresponda.", "refs_cruzadas": ["8", "9", "10"] },
+        { "numero": "12.4", "texto": "Las distancias de seguridad dentro de los módulos de MT corresponderán a las prescritas en la tabla N°13.1 para instalaciones en el interior de edificios.", "refs_cruzadas": ["Tabla N°13.1"] },
+        { "numero": "12.5", "texto": "Las disposiciones de montaje, especificaciones constructivas, calidad de materiales, etc., en el módulo de BT se regularán por las prescripciones de este pliego técnico." },
+        { "numero": "12.6", "texto": "Una vez montados los distintos módulos, la cubierta metálica será eléctricamente continua y deberá conectarse a tierra de protección por lo menos en dos puntos. Tanto los módulos de MT como de BT podrán conectarse a una puesta a tierra de protección común, que cumpla con lo prescrito en la sección 7 del Pliego Técnico Normativo RIC N°06 de este reglamento. El neutro del sistema secundario deberá cumplir lo indicado en el punto 6.6.4 del Pliego Técnico Normativo RIC N°06.", "refs_cruzadas": ["RIC N°06 sección 7", "RIC N°06 punto 6.6.4"] },
+        { "numero": "12.7", "texto": "Cuando se usen ductos metálicos como canalización de BT, éstos no deberán quedar en contacto con la cubierta metálica de la subestación compacta o con cualquier parte metálica del equipo eléctrico que pueda estar al potencial de la puesta a tierra de protección común." },
+        { "numero": "12.8", "texto": "Para lograr el cumplimiento de esta exigencia se podrán intercalar en los ductos, tramos de ductos no conductores de longitud suficiente y dispuestos de tal modo que eviten la transferencia de la elevación de potencial de la puesta a tierra a la instalación de baja tensión o a puntos remotos." }
+      ]
+    },
+    {
+      "numero": "13",
+      "titulo": "Protecciones y control de subestaciones",
+      "puntos": [
+        { "numero": "13.1", "texto": "Todo transformador deberá tener un interruptor o desconectador adecuado, que permita desconectarlo de su alimentador primario." },
+        { "numero": "13.2", "texto": "Cada transformador que integre una subestación deberá estar protegido en su lado primario por una protección individual. Si se usan fusibles como protección, su capacidad nominal no deberá exceder de 1,5 veces la corriente nominal del transformador y si se usan interruptores automáticos, éstos no deberán tener una capacidad nominal o estar regulados a más de tres veces dicho valor." },
+        { "numero": "13.3", "texto": "La protección prescrita en el punto 13.2 anterior se podrá omitir cuando la protección del alimentador primario cumpla la exigencia hecha a la protección individual en cuanto a su capacidad o regulación y la longitud de este no sea superior a 200 m. Esta condición no es válida cuando la subestación sea de un propietario diferente al propietario de la alimentación o empresa distribuidora.", "refs_cruzadas": ["13.2"] },
+        { "numero": "13.4", "texto": "Cuando el valor de 1,5 veces la corriente nominal del transformador no corresponda a una capacidad comercial de fusible podrá tomarse la capacidad superior más próxima." },
+        {
+          "numero": "13.5",
+          "texto": "Se podrá omitir la protección individual del transformador siempre que la protección del alimentador primario tenga una capacidad nominal o esté regulada a valores que no excedan los indicados en la tabla N°13.3 y el secundario del transformador tenga un dispositivo de protección de capacidad nominal o que esté regulado a valores no superiores a los indicados en la citada tabla.",
+          "tabla": {
+            "nombre": "Tabla Nº13.3: Protección de transformadores",
+            "columnas": ["Impedancia del transformador en por unidad", "Protección primaria - Automático x In", "Protección primaria - Fusible x In", "Protección secundaria - Operando a más de 600V - Automático x In", "Protección secundaria - Operando a más de 600V - Fusible x In", "Protección secundaria - Operando a 600V o menos - Automático o Fusible x In"],
+            "filas": [
+              ["No más de 0,06", "6", "3", "3", "1,5", "2,5"],
+              ["Más de 0,06", "4", "2", "2,5", "1,25", "2,5"]
+            ]
+          }
+        },
+        { "numero": "13.6", "texto": "Se exigirá la protección de la subestación mediante interruptores automáticos o reconectadores siempre que los niveles de cortocircuito lo ameriten de acuerdo con las condiciones de cálculo de selectividad y coordinación de protecciones y en instalaciones que posean empalmes en media tensión cuya potencia sea igual o superior a 500 kW." },
+        { "numero": "13.7", "texto": "Cuando se conecten transformadores en paralelo se deberán disponer enclavamientos que eviten la realimentación del primario, a través del secundario, cuando cualquiera de los transformadores se desconecte de la alimentación en media tensión." },
+        { "numero": "13.8", "texto": "En subestaciones en el interior de edificios no se podrá usar como protecciones desconectadores fusible del tipo intemperie." },
+        { "numero": "13.9", "texto": "Las protecciones de una subestación interior deberán estar coordinadas con las protecciones del empalme de la empresa distribuidora de modo que actúen en forma selectiva. Con este fin se deberá efectuar el estudio de coordinación respectivo de acuerdo con los datos que deberá proporcionar la empresa eléctrica de distribución." }
+      ]
+    },
+    {
+      "numero": "14",
+      "titulo": "Puesta a tierra de subestaciones",
+      "puntos": [
+        {
+          "numero": "14.1",
+          "titulo": "Puesta a tierra de protección",
+          "subpuntos": [
+            { "numero": "14.1.1", "texto": "Las partes metálicas no activas de los equipos eléctricos que operen en media tensión y toda parte metálica dentro de una subestación, que no perteneciendo al circuito eléctrico puedan quedar energizados por fallas que produzcan un contacto directo a través de un arco eléctrico, deberán conectarse a una puesta a tierra de protección. La puesta a tierra de protección de los equipos y partes metálicas que puedan ser afectadas por el sistema de baja tensión deberán cumplir las exigencias establecidas en la sección 7 del Pliego Técnico Normativo RIC N°06 de este reglamento.", "refs_cruzadas": ["RIC N°06 sección 7"] },
+            {
+              "numero": "14.1.2",
+              "texto": "Dentro de las partes metálicas comprendidas en el alcance del punto 14.1.1 anterior deben considerarse:",
+              "refs_cruzadas": ["14.1.1"],
+              "subpuntos": [
+                { "numero": "14.1.2.1", "texto": "Las carcasas de transformadores y equipos que operen en media tensión." },
+                { "numero": "14.1.2.2", "texto": "Partes del recinto tales como puertas, ventanas, escaleras, escalerillas, cercos y similares." },
+                { "numero": "14.1.2.3", "texto": "Las rejas de protección desmontables o giratorias y las cubiertas que no estén unidas a otras partes conectadas a tierra. Las bisagras y dispositivos de suspensión similares se consideran unión conductiva cuando estén unidas con partes conectadas a tierra." },
+                { "numero": "14.1.2.4", "texto": "Los volantes, manivelas y pedales para accionamiento de equipos, cuando sus ejes, cadenas o varillajes son metálicas y pueden quedar en contacto con conductores activos." },
+                { "numero": "14.1.2.5", "texto": "Los soportes metálicos de aisladores." },
+                { "numero": "14.1.2.6", "texto": "Las camisas o envolturas metálicas, armaduras y pantallas de cables de media tensión." },
+                { "numero": "14.1.2.7", "texto": "Las cajas de unión de cables, mufas y similares." }
+              ]
+            },
+            { "numero": "14.1.3", "texto": "Los carros de maniobra de equipos eléctricos, así como los equipos enchufables deberán disponer de clavijas de puestas a tierra que entrarán en contacto primero que las clavijas activas al conectar y se separarán después de las clavijas activas al desconectar." },
+            { "numero": "14.1.4", "texto": "La puesta a tierra deberá dimensionarse de modo que las gradientes de potencial que aparezcan sobre ella o en su alrededor, en caso de fallas transitorias, no provoquen tensiones de contacto o de paso que ofrezcan riesgos a los operadores o usuarios de la instalación protegida (ver anexo 6.1 del Pliego Técnico Normativo RIC N°06).", "refs_cruzadas": ["RIC N°06 anexo 6.1"] },
+            { "numero": "14.1.5", "texto": "Para cumplir lo dispuesto en el punto 14.1.4 anterior se tendrá en cuenta la máxima corriente de falla transitoria que pueda pasar por el electrodo, la resistividad específica del terreno y el tiempo de permanencia de la falla.", "refs_cruzadas": ["14.1.4"] },
+            { "numero": "14.1.6", "texto": "La resistencia de la puesta a tierra deberá ser tal que para fallas permanentes no se deberán sobrepasar los límites de tensión de paso y de contacto en ninguna de las partes indicadas en el punto 14.1.2 de este pliego en conformidad al DS N°109/2017 del Ministerio de Energía o las disposiciones que lo reemplacen (ver anexo 6.1 del Pliego Técnico Normativo RIC N°06).", "refs_cruzadas": ["14.1.2", "DS N°109/2017 del Ministerio de Energía", "RIC N°06 anexo 6.1"] },
+            { "numero": "14.1.7", "texto": "Se considerará falla permanente aquella que es despejada en un tiempo superior a tres segundos." },
+            { "numero": "14.1.8", "texto": "El sistema de puesta a tierra deberá cubrir, en lo posible toda la zona del recinto bajo los equipos que se desea proteger y que se conecten a ella. En todo caso la forma y dimensionamiento de la puesta a tierra deberá ser tal que asegure el control de las gradientes de potencial que aparezcan en la zona de operación." },
+            { "numero": "14.1.9", "texto": "En las instalaciones a la intemperie se cubrirá toda la superficie del suelo bajo la cual esté enterrado el electrodo de tierra, con una capa de gravilla que se extenderá 1 m más allá del límite del electrodo. Se mantendrá una adecuada limpieza y un drenaje satisfactorio de dicha capa de gravilla." },
+            {
+              "numero": "14.1.10",
+              "texto": "La transferencia de tensiones de contacto peligrosas a partes metálicas o equipos situados fuera de la instalación de puesta a tierra deberá evitarse adoptando algunas de las siguientes medidas:",
+              "subpuntos": [
+                { "numero": "14.1.10.1", "texto": "Evitando el cruce de las líneas de comunicaciones, de control o de BT con un electrodo de tierra. En caso de no ser ello posible, se evitarán las transferencias de tensión aislando dichas líneas para la máxima elevación de potencial del electrodo o colocando transformadores de aislación tanto a la entrada de la línea a la zona del electrodo, como a su salida." },
+                { "numero": "14.1.10.2", "texto": "Separando los rieles ferroviarios o de carros de maniobra de equipos eléctricos que crucen la zona de la puesta a tierra, mediante piezas aislantes." },
+                { "numero": "14.1.10.3", "texto": "Evitando el cruce de ductos metálicos, eléctricos o de otros servicios, por la zona de puesta a tierra, o bien, si ello no es posible intercalando coplas aislantes en estas canalizaciones." },
+                { "numero": "14.1.10.4", "texto": "Se considerará que alguno de los elementos citados en los párrafos precedentes se cruza con un electrodo si pasa sobre o bajo él o corre paralelo a una distancia no superior a 5 m." }
+              ]
+            }
+          ]
+        },
+        {
+          "numero": "14.2",
+          "titulo": "Puesta a tierra de servicio",
+          "subpuntos": [
+            { "numero": "14.2.1", "texto": "Para dimensionar una puesta a tierra de servicio de una subestación se tomará como base la máxima corriente de falla a tierra que pueda circular a través de ella considerando su resistencia propia. El valor de resistencia que esta puesta a tierra deberá tener, se fijará de modo de asegurar que el funcionamiento del sistema eléctrico no sea afectado por ella." },
+            { "numero": "14.2.2", "texto": "En instalaciones de diversas tensiones nominales conectadas a una tierra de servicio común, ésta se dimensionará para la máxima corriente que pueda circular por ella." },
+            { "numero": "14.2.3", "texto": "En una puesta a tierra de servicio en que se presenten tensiones mayores de 125 V al producirse un contacto a tierra, las líneas de acometida a los electrodos de tierra se aislarán y se colocarán protegidas contra contactos directos." },
+            { "numero": "14.2.4", "texto": "La puesta a tierra de servicio se dimensionará y ejecutará de modo que no signifique peligro para las personas." },
+            { "numero": "14.2.5", "texto": "La puesta a tierra de servicio deberá cumplir con las disposiciones de la sección 6 del Pliego Técnico Normativo RIC N°06 de este reglamento.", "refs_cruzadas": ["RIC N°06 sección 6"] }
+          ]
+        }
+      ]
+    }
+  ],
+  "anexos": [],
+  "referencias_a_otros_pliegos": [
+    { "pliego": "RIC N°02", "puntos": ["punto 5.4", "punto 5.4.9"], "citado_en": ["2.2", "6.4.9", "9.1"] },
+    { "pliego": "RIC N°06", "puntos": ["sección 6", "sección 7", "anexo 6.1", "anexo 6.7", "punto 6.6.4"], "citado_en": ["7.2.8", "7.2.10", "12.6", "14.1.1", "14.1.4", "14.1.6", "14.2.5"] },
+    { "pliego": "RIC N°10", "puntos": ["anexo 10.1"], "citado_en": ["6.3.7"] },
+    { "pliego": "RIC N°12", "puntos": [], "citado_en": ["8.18"] },
+    { "pliego": "DS N°109/2017 del Ministerio de Energía", "puntos": [], "citado_en": ["2.2", "6.3.1", "7.1.1", "7.2.14", "8.1", "14.1.6"] }
+  ],
+  "extensiones_no_previstas_en_v1": {
+    "pliego_sin_anexos": "RIC N°12 es el primer pliego procesado hasta ahora que no contiene ningún anexo con diagrama, tabla independiente ni contenido complementario — todas sus tablas (13.1, 13.2, 13.3) están embebidas directamente dentro de puntos normativos del cuerpo (6.4.1, 6.4.6, 13.5). Se dejó `anexos: []` en vez de omitir el campo, manteniendo la forma del esquema consistente entre todos los pliegos."
+  }
+}
