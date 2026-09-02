@@ -264,6 +264,12 @@
   // 3) Potencia / Corriente / Voltaje (hoja "Potencia_Corriente_Voltaje")
   // ---------------------------------------------------------------------------
   //
+  //  V   = IF(Vpers<>"", Vpers, IF(mono, 220, 380))
+  //        Igual criterio que la celda B18 de la hoja "Caida_Tension": tensión
+  //        automática según el tipo de sistema, con un campo aparte y opcional
+  //        para sobrescribirla (110 / 400 / 415 V, etc.). La hoja original de
+  //        potencia pedía la tensión a mano; acá se unifica con el patrón de
+  //        caída de tensión para que cambiar mono/trifásico recalcule V solo.
   //  φ (B12) = DEGREES(ACOS(cosφ))
   //  sen(φ) (B13) = SIN(RADIANS(φ))
   //  I (B14) = IF(P<>"", P/((mono?1:√3)·V·cosφ), IF(I<>"", I, "—"))
@@ -274,11 +280,13 @@
   function potenciaCorrienteVoltaje(entrada, tablas) {
     var e = entrada || {};
     var esMono = (e.sistema || 'Monofásico') === 'Monofásico';
-    var V = num(e.V);
+    // Acepta `Vpersonalizada` (nuevo) o `V` (compatibilidad) como override opcional.
+    var override = num(e.Vpersonalizada !== undefined && e.Vpersonalizada !== '' ? e.Vpersonalizada : e.V);
+    var V = esNumeroFinito(override) ? override : (esMono ? 220 : 380);
     var cosPhi = num(e.cosPhi);
     var k = esMono ? 1 : Math.sqrt(3);
 
-    if (!esNumeroFinito(V) || V <= 0) return { error: 'Ingresa una tensión V válida.' };
+    if (esNumeroFinito(override) && override <= 0) return { error: 'La tensión personalizada debe ser mayor que 0.' };
     if (!esNumeroFinito(cosPhi) || cosPhi <= 0 || cosPhi > 1) return { error: 'El factor de potencia debe estar entre 0 y 1.' };
 
     var phiRad = Math.acos(cosPhi);
@@ -301,6 +309,8 @@
     var Q = S * senPhi;
 
     return {
+      V: V,
+      tensionAutomatica: !esNumeroFinito(override),
       phi_grados: phiDeg,
       senPhi: senPhi,
       I_A: I,
