@@ -97,6 +97,22 @@
     check('trifásico con V personalizada 400 → V', r4c.V, 400, 1e-9);
     check('con V personalizada NO es automática', r4c.tensionAutomatica ? 1 : 0, 0, 1e-9);
 
+    // ---- Caso 5: potencia aparente S sin cos(φ) ----
+    info('');
+    info('Caso 5 — Trifásico, S=10000 VA, sin cos(φ) → I = 10000/(√3·380), P y Q sin calcular');
+    var r5 = C.potenciaCorrienteVoltaje({ sistema: 'Trifásico', S: 10000 }, TABLAS);
+    check('V (automática trifásica)', r5.V, 380, 1e-9);
+    check('S [VA]', r5.S_VA, 10000, 1e-9);
+    check('I [A] = 10000/(√3·380)', r5.I_A, 15.19, 1e-2);
+    check('P sin calcular (null)', r5.P_W === null ? 1 : 0, 1, 1e-9);
+    check('Q sin calcular (null)', r5.Q_VAR === null ? 1 : 0, 1, 1e-9);
+    check('marca faltaCosPhi', r5.faltaCosPhi ? 1 : 0, 1, 1e-9);
+    check('fuente de la corriente = derivada de S', r5.fuenteCorriente === 'derivada de S' ? 1 : 0, 1, 1e-9);
+    // con cos(φ) sí calcula P y Q, y S manda sobre I/P si están los tres
+    var r5b = C.potenciaCorrienteVoltaje({ sistema: 'Trifásico', S: 10000, cosPhi: 0.9, I: 99, P: 99 }, TABLAS);
+    check('S > P > I: usa S aunque I y P estén llenos', r5b.S_VA, 10000, 1e-9);
+    check('con cos(φ)=0.9 → P = S·cosφ', r5b.P_W, 9000, 1e-9);
+
     render();
   }).catch(function (e) {
     document.getElementById('out').textContent =
