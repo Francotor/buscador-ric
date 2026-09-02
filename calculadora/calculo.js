@@ -270,12 +270,14 @@
   //        para sobrescribirla (110 / 400 / 415 V, etc.). La hoja original de
   //        potencia pedía la tensión a mano; acá se unifica con el patrón de
   //        caída de tensión para que cambiar mono/trifásico recalcule V solo.
-  //  φ (B12) = DEGREES(ACOS(cosφ))
-  //  sen(φ) (B13) = SIN(RADIANS(φ))
-  //  I (B14) = IF(P<>"", P/((mono?1:√3)·V·cosφ), IF(I<>"", I, "—"))
-  //  S (B15) = (mono?1:√3)·V·I
-  //  P (B16) = S·cosφ
-  //  Q (B17) = S·sen(φ)
+  //  Prioridad de entrada si hay más de un campo lleno: S > P > I.
+  //  S es el dato de placa más directo de un generador, por eso manda.
+  //  - S dado:  I = S/V (mono) o S/(√3·V) (trifásico). cos(φ) es opcional:
+  //             sin cos(φ) se devuelven S e I, y P/Q quedan sin calcular (null).
+  //  - P dado (y no S): I = P/((mono?1:√3)·V·cosφ)  — cos(φ) obligatorio.
+  //  - I dado (y no S ni P): I directo — cos(φ) obligatorio para S/P/Q.
+  //  φ = DEGREES(ACOS(cosφ)) ; sen(φ) = SIN(RADIANS(φ))
+  //  S = (mono?1:√3)·V·I ; P = S·cosφ ; Q = S·senφ
   //
   function potenciaCorrienteVoltaje(entrada, tablas) {
     var e = entrada || {};
@@ -285,28 +287,37 @@
     var V = esNumeroFinito(override) ? override : (esMono ? 220 : 380);
     var cosPhi = num(e.cosPhi);
     var k = esMono ? 1 : Math.sqrt(3);
+    var S_in = num(e.S), P_in = num(e.P), I_in = num(e.I);
 
     if (esNumeroFinito(override) && override <= 0) return { error: 'La tensión personalizada debe ser mayor que 0.' };
-    if (!esNumeroFinito(cosPhi) || cosPhi <= 0 || cosPhi > 1) return { error: 'El factor de potencia debe estar entre 0 y 1.' };
+    var cosCompletado = esNumeroFinito(cosPhi);
+    if (cosCompletado && (cosPhi <= 0 || cosPhi > 1)) return { error: 'El factor de potencia debe estar entre 0 y 1.' };
 
-    var phiRad = Math.acos(cosPhi);
-    var phiDeg = phiRad * 180 / Math.PI;
-    var senPhi = Math.sin(phiDeg * Math.PI / 180);
+    var phiDeg = cosCompletado ? Math.acos(cosPhi) * 180 / Math.PI : null;
+    var senPhi = cosCompletado ? Math.sin(Math.acos(cosPhi)) : null;
 
-    var I, fuenteCorriente;
-    if (esNumeroFinito(num(e.P))) {
-      I = num(e.P) / (k * V * cosPhi);
+    var I, S, P, Q, fuenteCorriente, faltaCosPhi = false;
+
+    if (esNumeroFinito(S_in)) {                          // 1º prioridad: S (dato de placa)
+      if (S_in <= 0) return { error: 'La potencia aparente S debe ser mayor que 0.' };
+      S = S_in;
+      I = S / (k * V);
+      fuenteCorriente = 'derivada de S';
+      if (cosCompletado) { P = S * cosPhi; Q = S * senPhi; }
+      else { P = null; Q = null; faltaCosPhi = true; }
+    } else if (esNumeroFinito(P_in)) {                   // 2º prioridad: P
+      if (!cosCompletado) return { error: 'Para calcular a partir de P necesitas el factor de potencia cos(φ).' };
+      I = P_in / (k * V * cosPhi);
       fuenteCorriente = 'derivada de P';
-    } else if (esNumeroFinito(num(e.I))) {
-      I = num(e.I);
+      S = k * V * I; P = S * cosPhi; Q = S * senPhi;
+    } else if (esNumeroFinito(I_in)) {                   // 3º prioridad: I
+      if (!cosCompletado) return { error: 'Para calcular a partir de I necesitas el factor de potencia cos(φ).' };
+      I = I_in;
       fuenteCorriente = 'ingresada';
+      S = k * V * I; P = S * cosPhi; Q = S * senPhi;
     } else {
-      return { error: 'Completa la corriente I o la potencia activa P (no ambas).' };
+      return { error: 'Completa la potencia aparente S, la potencia activa P o la corriente I.' };
     }
-
-    var S = k * V * I;
-    var P = S * cosPhi;
-    var Q = S * senPhi;
 
     return {
       V: V,
@@ -318,6 +329,7 @@
       S_VA: S,
       P_W: P,
       Q_VAR: Q,
+      faltaCosPhi: faltaCosPhi,
       formula: esMono ? 'S = V·I ; P = S·cosφ ; Q = S·senφ'
                       : 'S = √3·V·I ; P = S·cosφ ; Q = S·senφ'
     };
