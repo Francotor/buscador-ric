@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora eléctrica RIC</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --paper: #f6f2ea;
+    --paper-raised: #fffdf9;
+    --ink: #17232e;
+    --slate: #5b6472;
+    --slate-soft: #838d99;
+    --line: #d9d0bd;
+    --line-soft: #e8e1d1;
+    --copper: #a6551f;
+    --copper-deep: #7c3f18;
+    --copper-bright: #c96a29;
+    --copper-tint: #f0dcc6;
+    --mark-bg: #f3d9a8;
+    --mark-ink: #4a3006;
+    --focus: #2f6f8f;
+    --input-bg: #fbf1dd;
+    --ok-bg: #dce9d5;
+    --ok-ink: #35521f;
+    --bad-bg: #f2d6d0;
+    --bad-ink: #8a2b1c;
+    --shadow: 0 1px 2px rgba(23,35,46,0.06), 0 4px 14px rgba(23,35,46,0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #10181f;
+      --paper-raised: #172230;
+      --ink: #e9e2d3;
+      --slate: #a9b2bd;
+      --slate-soft: #7c8794;
+      --line: #2c3a48;
+      --line-soft: #22303d;
+      --copper: #dd8a49;
+      --copper-deep: #b56a2e;
+      --copper-bright: #f0a05e;
+      --copper-tint: #3a2a1a;
+      --mark-bg: #5a4218;
+      --mark-ink: #ffe3ad;
+      --focus: #7ec4e6;
+      --input-bg: #23303d;
+      --ok-bg: #24361f;
+      --ok-ink: #b9d7a6;
+      --bad-bg: #402019;
+      --bad-ink: #f0b3a6;
+      --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 6px 20px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #10181f;
+    --paper-raised: #172230;
+    --ink: #e9e2d3;
+    --slate: #a9b2bd;
+    --slate-soft: #7c8794;
+    --line: #2c3a48;
+    --line-soft: #22303d;
+    --copper: #dd8a49;
+    --copper-deep: #b56a2e;
+    --copper-bright: #f0a05e;
+    --copper-tint: #3a2a1a;
+    --mark-bg: #5a4218;
+    --mark-ink: #ffe3ad;
+    --focus: #7ec4e6;
+    --input-bg: #23303d;
+    --ok-bg: #24361f;
+    --ok-ink: #b9d7a6;
+    --bad-bg: #402019;
+    --bad-ink: #f0b3a6;
+    --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 6px 20px rgba(0,0,0,0.35);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  a { color: var(--copper); }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 3px; }
+  .num { font-variant-numeric: tabular-nums; font-family: "IBM Plex Mono", ui-monospace, monospace; }
+
+  .shell {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 28px 24px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  header.top { display: flex; flex-direction: column; gap: 4px; padding-bottom: 4px; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--copper); font-weight: 500;
+  }
+  h1 {
+    font-family: "Archivo", sans-serif; font-weight: 800;
+    font-size: clamp(28px, 4vw, 40px); line-height: 1.05;
+    letter-spacing: -0.01em; margin: 2px 0 0; text-wrap: balance;
+  }
+  .subhead { color: var(--slate); font-size: 14.5px; max-width: 64ch; line-height: 1.55; margin-top: 2px; }
+  .backlink { font-size: 13px; font-family: "IBM Plex Mono", monospace; margin-top: 8px; display: inline-flex; gap: 6px; align-items: center; text-decoration: none; }
+  .backlink:hover { text-decoration: underline; }
+
+  /* tabs */
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+  .tab {
+    border: 1px solid var(--line-soft); background: var(--paper-raised);
+    color: var(--slate); font-family: inherit; font-size: 13.5px; font-weight: 600;
+    padding: 8px 14px; border-radius: 8px; cursor: pointer;
+  }
+  .tab:hover { background: var(--line-soft); }
+  .tab.active { background: var(--copper-tint); border-color: var(--copper); color: var(--copper-deep); }
+
+  .panel { display: none; flex-direction: column; gap: 20px; }
+  .panel.active { display: flex; }
+
+  .card {
+    background: var(--paper-raised); border: 1px solid var(--line-soft);
+    border-radius: 12px; padding: 18px 18px 20px; box-shadow: var(--shadow);
+  }
+  .card h2 {
+    font-family: "Archivo", sans-serif; font-weight: 800; font-size: 14px;
+    letter-spacing: 0.02em; color: var(--copper); margin: 0 0 14px;
+    text-transform: uppercase;
+  }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px 16px; }
+  .field { display: flex; flex-direction: column; gap: 5px; }
+  .field.hidden { display: none; }
+  .field label { font-size: 12.5px; color: var(--slate); line-height: 1.35; }
+  .field input, .field select {
+    font-family: inherit; font-size: 14px; color: var(--ink);
+    background: var(--input-bg); border: 1px solid var(--line);
+    border-radius: 7px; padding: 8px 10px; width: 100%;
+  }
+  .field input:focus, .field select:focus { border-color: var(--copper); outline: none; }
+  .field .hint { font-size: 11.5px; color: var(--slate-soft); line-height: 1.4; }
+
+  .results { margin-top: 4px; }
+  .rrow {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 14px;
+    padding: 7px 0; border-bottom: 1px dashed var(--line-soft);
+  }
+  .rrow:last-child { border-bottom: none; }
+  .rrow .rl { font-size: 13px; color: var(--slate); }
+  .rrow .rv { font-size: 14px; font-weight: 600; text-align: right; }
+  .rrow.hero .rl { color: var(--ink); font-weight: 600; }
+  .rrow.hero .rv { font-size: 18px; color: var(--copper); font-family: "Archivo", sans-serif; font-weight: 800; }
+
+  .verdict { display: inline-block; font-size: 12.5px; font-weight: 600; padding: 3px 9px; border-radius: 6px; font-family: "IBM Plex Sans", sans-serif; }
+  .verdict.ok { background: var(--ok-bg); color: var(--ok-ink); }
+  .verdict.bad { background: var(--bad-bg); color: var(--bad-ink); }
+
+  .formula { font-size: 12px; color: var(--slate-soft); margin-top: 12px; line-height: 1.5; font-family: "IBM Plex Mono", monospace; }
+  .err { background: var(--bad-bg); color: var(--bad-ink); font-size: 13px; padding: 10px 12px; border-radius: 8px; margin-top: 4px; }
+
+  footer.note {
+    color: var(--slate-soft); font-size: 12px; text-align: center;
+    padding-top: 24px; border-top: 1px solid var(--line-soft); margin-top: 10px; line-height: 1.6;
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="top">
+    <span class="eyebrow">SEC · RIC N°03 y N°04</span>
+    <h1>Calculadora eléctrica RIC</h1>
+    <p class="subhead">Caída de tensión, selección de conductor por corriente admisible y relación potencia&nbsp;/&nbsp;corriente&nbsp;/&nbsp;voltaje, según los pliegos técnicos RIC N°03 y N°04 (SEC). Herramienta de apoyo — la responsabilidad del proyecto es siempre del instalador eléctrico a cargo.</p>
+    <a class="backlink" href="../index.html">&larr; Volver al buscador de pliegos</a>
+  </header>
+
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-tab="caida">Caída de tensión</button>
+    <button class="tab" data-tab="conductor">Selección de conductor</button>
+    <button class="tab" data-tab="pcv">Potencia / Corriente / Voltaje</button>
+  </div>
+
+  <!-- ================= CAÍDA DE TENSIÓN ================= -->
+  <section class="panel active" id="panel-caida">
+    <div class="card">
+      <h2>1 · Datos de entrada</h2>
+      <div class="grid">
+        <div class="field">
+          <label for="c_sistema">Tipo de sistema</label>
+          <select id="c_sistema"><option>Monofásico</option><option>Trifásico</option></select>
+        </div>
+        <div class="field">
+          <label for="c_I">Corriente de diseño I [A]</label>
+          <input id="c_I" type="text" inputmode="decimal" value="20">
+          <span class="hint">Si la conoces, tiene prioridad sobre P.</span>
+        </div>
+        <div class="field">
+          <label for="c_P">Potencia activa P [W]</label>
+          <input id="c_P" type="text" inputmode="decimal" placeholder="(opcional)">
+          <span class="hint">Se usa solo si dejas I vacío.</span>
+        </div>
+        <div class="field">
+          <label for="c_cos">Factor de potencia cos(φ)</label>
+          <input id="c_cos" type="text" inputmode="decimal" value="0.95">
+        </div>
+        <div class="field">
+          <label for="c_L">Longitud del tramo L [m]</label>
+          <input id="c_L" type="text" inputmode="decimal" value="15">
+          <span class="hint">Distancia física, no ida y vuelta.</span>
+        </div>
+        <div class="field">
+          <label for="c_V">Tensión nominal personalizada [V]</label>
+          <input id="c_V" type="text" inputmode="decimal" placeholder="auto: 220 mono / 380 trif.">
+        </div>
+        <div class="field">
+          <label for="c_material">Material del conductor</label>
+          <select id="c_material">
+            <option>Cobre</option>
+            <option>Aluminio genérico</option>
+            <option>Preensamblado aluminio</option>
+          </select>
+        </div>
+        <div class="field" id="c_field_seccion">
+          <label for="c_seccion">Sección del conductor [mm²]</label>
+          <select id="c_seccion"></select>
+        </div>
+        <div class="field" id="c_field_tipo">
+          <label for="c_tipo">Tipo constructivo (solo cobre)</label>
+          <select id="c_tipo">
+            <option>Sólido</option>
+            <option selected>Concéntrico o compacto</option>
+            <option>Flexible</option>
+          </select>
+        </div>
+        <div class="field hidden" id="c_field_ref">
+          <label for="c_ref">Referencia cable preensamblado</label>
+          <select id="c_ref"></select>
+        </div>
+        <div class="field">
+          <label for="c_acum">Caída acumulada aguas arriba [%]</label>
+          <input id="c_acum" type="text" inputmode="decimal" value="0">
+          <span class="hint">0 si es el primer tramo.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>2 · Resultados</h2>
+      <div class="results" id="c_out"></div>
+    </div>
+  </section>
+
+  <!-- ================= SELECCIÓN DE CONDUCTOR ================= -->
+  <section class="panel" id="panel-conductor">
+    <div class="card">
+      <h2>1 · Datos de entrada</h2>
+      <div class="grid">
+        <div class="field">
+          <label for="s_I">Corriente de diseño I [A]</label>
+          <input id="s_I" type="text" inputmode="decimal" value="15">
+        </div>
+        <div class="field">
+          <label for="s_fam">Familia de conductor (temperatura de servicio)</label>
+          <select id="s_fam"><option>70°C</option><option selected>90°C</option></select>
+        </div>
+        <div class="field">
+          <label for="s_metodo">Método de instalación (RIC N°04, Tabla 4.4)</label>
+          <select id="s_metodo"></select>
+          <span class="hint" id="s_metodo_desc"></span>
+        </div>
+        <div class="field">
+          <label for="s_n">Cantidad de conductores activos en el mismo ducto/cable</label>
+          <input id="s_n" type="text" inputmode="numeric" value="3">
+        </div>
+        <div class="field">
+          <label for="s_temp">Temperatura ambiente (o del suelo si es subterráneo) [°C]</label>
+          <input id="s_temp" type="text" inputmode="decimal" value="30">
+        </div>
+        <div class="field">
+          <label for="s_circ">Tipo de circuito (sección mínima RIC N°04, 5.4)</label>
+          <select id="s_circ"></select>
+        </div>
+      </div>
+      <p class="hint" style="margin-top:12px">La familia 70°C solo tiene datos para los métodos A1, B1 y E.</p>
+    </div>
+
+    <div class="card">
+      <h2>2 · Factores y resultado</h2>
+      <div class="results" id="s_out"></div>
+    </div>
+  </section>
+
+  <!-- ================= POTENCIA / CORRIENTE / VOLTAJE ================= -->
+  <section class="panel" id="panel-pcv">
+    <div class="card">
+      <h2>1 · Datos de entrada</h2>
+      <div class="grid">
+        <div class="field">
+          <label for="p_sistema">Tipo de sistema</label>
+          <select id="p_sistema"><option>Monofásico</option><option>Trifásico</option></select>
+        </div>
+        <div class="field">
+          <label for="p_V">Tensión V [V]</label>
+          <input id="p_V" type="text" inputmode="decimal" value="220">
+          <span class="hint">Fase-neutro en monofásico; entre fases en trifásico.</span>
+        </div>
+        <div class="field">
+          <label for="p_cos">Factor de potencia cos(φ)</label>
+          <input id="p_cos" type="text" inputmode="decimal" value="0.95">
+        </div>
+        <div class="field">
+          <label for="p_I">Corriente I [A]</label>
+          <input id="p_I" type="text" inputmode="decimal" value="20">
+          <span class="hint">Deja vacío si vas a ingresar P.</span>
+        </div>
+        <div class="field">
+          <label for="p_P">Potencia activa P [W]</label>
+          <input id="p_P" type="text" inputmode="decimal" placeholder="(opcional)">
+          <span class="hint">Si la llenas, tiene prioridad sobre I.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>2 · Resultados</h2>
+      <div class="results" id="p_out"></div>
+    </div>
+  </section>
+
+  <footer class="note">
+    Datos normativos tomados de <code>tablas_ric.json</code> (hoja «Tablas_RIC» de la planilla de TEC Ingeniería, transcrita de los pliegos RIC N°03 y N°04 de la SEC).
+    Esta calculadora no reemplaza al reglamento oficial vigente ni a los PDF fuente. Verifica todo resultado crítico contra el pliego correspondiente.
+  </footer>
+</div>
+
+<script src="calculo.js"></script>
+<script>
+(function () {
+  'use strict';
+  var TABLAS = null;
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  function fmt(x, dec) {
+    if (x === null || x === undefined || (typeof x === 'number' && !isFinite(x))) return '—';
+    if (typeof x !== 'number') return String(x);
+    var r = x.toFixed(dec == null ? 4 : dec);
+    // quita ceros finales innecesarios pero deja al menos 1 decimal si había parte decimal
+    if (r.indexOf('.') >= 0) r = r.replace(/0+$/, '').replace(/\.$/, '');
+    return r;
+  }
+  function verdict(ok, textoOk, textoBad) {
+    return '<span class="verdict ' + (ok ? 'ok' : 'bad') + '">' + (ok ? (textoOk || 'Cumple') : (textoBad || 'No cumple')) + '</span>';
+  }
+  function row(label, value, opts) {
+    opts = opts || {};
+    return '<div class="rrow' + (opts.hero ? ' hero' : '') + '">' +
+      '<span class="rl">' + label + '</span>' +
+      '<span class="rv ' + (opts.plain ? '' : 'num') + '">' + value + '</span></div>';
+  }
+  function errBox(msg) { return '<div class="err">' + msg + '</div>'; }
+
+  // ---- tabs ----
+  $('tabs').addEventListener('click', function (e) {
+    var b = e.target.closest('.tab');
+    if (!b) return;
+    var t = b.dataset.tab;
+    Array.prototype.forEach.call(document.querySelectorAll('.tab'), function (x) { x.classList.toggle('active', x === b); });
+    document.querySelectorAll('.panel').forEach(function (p) { p.classList.toggle('active', p.id === 'panel-' + t); });
+  });
+
+  // ---- poblar selects desde las tablas ----
+  function poblarSelect(sel, valores, selected) {
+    sel.innerHTML = '';
+    valores.forEach(function (v) {
+      var o = document.createElement('option');
+      o.value = v; o.textContent = v;
+      if (String(v) === String(selected)) o.selected = true;
+      sel.appendChild(o);
+    });
+  }
+
+  function initSelects() {
+    var secciones = TABLAS.tabla_4_1_resistencia_cc_20c.filas.map(function (f) { return f[0]; });
+    poblarSelect($('c_seccion'), secciones, 4);
+
+    var refs = TABLAS.cable_preensamblado_aluminio_enerlux_imersa.filas.map(function (f) { return f[1]; });
+    poblarSelect($('c_ref'), refs, refs[0]);
+
+    var metodos = TABLAS.metodos_instalacion.filas.map(function (f) { return f[0]; });
+    poblarSelect($('s_metodo'), metodos, 'A1');
+
+    var circuitos = TABLAS.seccion_minima_por_circuito.filas.map(function (f) { return f[0]; });
+    poblarSelect($('s_circ'), circuitos, 'Alimentadores');
+  }
+
+  function metodoDesc(m) {
+    var f = TABLAS.metodos_instalacion.filas.filter(function (r) { return r[0] === m; })[0];
+    return f ? f[1] : '';
+  }
+
+  // ---- caída de tensión ----
+  function syncCaidaFields() {
+    var mat = $('c_material').value;
+    $('c_field_seccion').classList.toggle('hidden', mat === 'Preensamblado aluminio');
+    $('c_field_tipo').classList.toggle('hidden', mat !== 'Cobre');
+    $('c_field_ref').classList.toggle('hidden', mat !== 'Preensamblado aluminio');
+  }
+
+  function runCaida() {
+    if (!TABLAS) return;
+    var r = CalculoRIC.caidaTension({
+      sistema: $('c_sistema').value,
+      I: $('c_I').value,
+      P: $('c_P').value,
+      cosPhi: $('c_cos').value,
+      L_m: $('c_L').value,
+      Vpersonalizada: $('c_V').value,
+      material: $('c_material').value,
+      seccion_mm2: $('c_seccion').value,
+      tipoConstructivo: $('c_tipo').value,
+      refPreensamblado: $('c_ref').value,
+      caidaAcumuladaArriba_pct: $('c_acum').value
+    }, TABLAS);
+
+    var el = $('c_out');
+    if (r.error) { el.innerHTML = errBox(r.error); return; }
+
+    var h = '';
+    h += row('Tensión nominal usada V', fmt(r.V, 2) + ' V');
+    h += row('Corriente usada en el cálculo I', fmt(r.I, 4) + ' A <span class="rl">(' + r.fuenteCorriente + ')</span>');
+    h += row('Resistencia del conductor R', fmt(r.R_ohm_km, 4) + ' Ω/km');
+    if (r.ampacidadPreensamblado_A != null) {
+      h += row('Ampacidad del cable preensamblado', fmt(r.ampacidadPreensamblado_A, 0) + ' A');
+      if (r.cumpleAmpacidadCable != null)
+        h += row('¿I de diseño dentro de la ampacidad del cable?', verdict(r.cumpleAmpacidadCable, 'OK', 'Supera ampacidad'), { plain: true });
+    }
+    h += row('Caída de tensión del tramo ΔV', fmt(r.deltaV_V, 4) + ' V');
+    h += row('Caída de tensión del tramo ΔV%', fmt(r.deltaV_pct, 5) + ' %');
+    h += row('Caída de tensión total acumulada', fmt(r.deltaV_total_pct, 5) + ' %');
+    h += row('Límite tramo (RIC N°03, ' + fmt(r.limiteTramo_pct, 0) + '%)', verdict(r.cumpleTramo), { plain: true });
+    h += row('Límite total (RIC N°03, ' + fmt(r.limiteTotal_pct, 0) + '%)', verdict(r.cumpleTotal), { plain: true });
+    h += '<p class="formula">' + r.formula + (r.notaR ? '<br>' + r.notaR : '') +
+      '<br>Se desprecia la reactancia inductiva (supuesto habitual para BT en secciones ≤25 mm²).</p>';
+    el.innerHTML = h;
+  }
+
+  // ---- selección de conductor ----
+  function runConductor() {
+    if (!TABLAS) return;
+    $('s_metodo_desc').textContent = metodoDesc($('s_metodo').value);
+    var r = CalculoRIC.seleccionConductor({
+      I_diseno: $('s_I').value,
+      familia: $('s_fam').value,
+      metodo: $('s_metodo').value,
+      nConductores: $('s_n').value,
+      tempAmbiente: $('s_temp').value,
+      tipoCircuito: $('s_circ').value
+    }, TABLAS);
+
+    var el = $('s_out');
+    if (r.error) {
+      var pre = '';
+      if (r.fn != null) pre += row('Factor fn', fmt(r.fn, 2)) + row('Factor ft', fmt(r.ft, 2));
+      el.innerHTML = pre + errBox(r.error);
+      return;
+    }
+
+    var h = '';
+    h += row('Factor fn (cantidad de conductores, Tabla N°4.6)', fmt(r.fn, 2));
+    h += row('Factor ft (temperatura ambiente, Tabla N°4.7)', fmt(r.ft, 2));
+    h += row('Sección mínima por ampacidad corregida', (r.seccionMinimaAmpacidad_mm2 == null ? '—' : fmt(r.seccionMinimaAmpacidad_mm2, 3) + ' mm²'));
+    h += row('Sección mínima normativa por tipo de circuito (5.4)', fmt(r.seccionMinimaNormativa_mm2, 3) + ' mm²');
+    h += row('SECCIÓN A UTILIZAR (el mayor de ambos criterios)', (r.seccionAUtilizar_mm2 == null ? '—' : fmt(r.seccionAUtilizar_mm2, 3) + ' mm²'), { hero: true });
+    if (r.excedeTabla) h += errBox('La corriente de diseño supera la ampacidad de todas las secciones de la tabla para ese método/familia — revisa el método de instalación o divide la carga.');
+    h += '<p class="formula">' + r.formulaCorreccion + '<br>La sección elegida es la primera cuya Ic corregida (It × fn × ft) es ≥ a la corriente de diseño.</p>';
+    el.innerHTML = h;
+  }
+
+  // ---- potencia / corriente / voltaje ----
+  function runPcv() {
+    if (!TABLAS) return;
+    var r = CalculoRIC.potenciaCorrienteVoltaje({
+      sistema: $('p_sistema').value,
+      V: $('p_V').value,
+      cosPhi: $('p_cos').value,
+      I: $('p_I').value,
+      P: $('p_P').value
+    }, TABLAS);
+
+    var el = $('p_out');
+    if (r.error) { el.innerHTML = errBox(r.error); return; }
+
+    var h = '';
+    h += row('Ángulo φ (a partir de cos φ)', fmt(r.phi_grados, 4) + ' °');
+    h += row('sen(φ)', fmt(r.senPhi, 6));
+    h += row('Corriente I', fmt(r.I_A, 4) + ' A <span class="rl">(' + r.fuenteCorriente + ')</span>');
+    h += row('Potencia aparente S', fmt(r.S_VA, 4) + ' VA');
+    h += row('Potencia activa P', fmt(r.P_W, 4) + ' W', { hero: true });
+    h += row('Potencia reactiva Q', fmt(r.Q_VAR, 4) + ' VAR');
+    h += '<p class="formula">' + r.formula + '<br>Convención: φ&gt;0 indica carga inductiva (Q positivo, atraso de corriente).</p>';
+    el.innerHTML = h;
+  }
+
+  function wire(ids, fn) {
+    ids.forEach(function (id) {
+      var e = $(id);
+      e.addEventListener('input', fn);
+      e.addEventListener('change', fn);
+    });
+  }
+
+  fetch('tablas_ric.json')
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function (data) {
+      TABLAS = data;
+      initSelects();
+      $('c_material').addEventListener('change', function () { syncCaidaFields(); runCaida(); });
+      syncCaidaFields();
+      wire(['c_sistema', 'c_I', 'c_P', 'c_cos', 'c_L', 'c_V', 'c_seccion', 'c_tipo', 'c_ref', 'c_acum'], runCaida);
+      wire(['s_I', 's_fam', 's_metodo', 's_n', 's_temp', 's_circ'], runConductor);
+      wire(['p_sistema', 'p_V', 'p_cos', 'p_I', 'p_P'], runPcv);
+      runCaida(); runConductor(); runPcv();
+    })
+    .catch(function (e) {
+      document.querySelectorAll('.results').forEach(function (el) {
+        el.innerHTML = errBox('No se pudo cargar tablas_ric.json (' + e.message + '). Abre esta página servida por un servidor web (GitHub Pages o un servidor local), no como archivo local.');
+      });
+    });
+})();
+</script>
+</body>
+</html>
