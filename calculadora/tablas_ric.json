@@ -1,0 +1,225 @@
+{
+  "_meta": {
+    "titulo": "Tablas normativas — RIC N°04 Conductores y Canalizaciones (SEC)",
+    "fuente": "sec.cl — RIC N°03 'Alimentadores y demanda de una instalación' y RIC N°04 'Conductores, materiales y sistemas de canalización', descargados y transcritos verbatim.",
+    "origen": "Extraído de la hoja 'Tablas_RIC' del archivo calculos_electricos_RIC_1.xlsx (planilla de TEC Ingeniería). No reemplaza al pliego oficial vigente.",
+    "base_normativa": "Pliegos Técnicos Normativos RIC (SEC), vigentes desde el 12-jul-2021 bajo el DS N°8/2019 del Ministerio de Energía."
+  },
+
+  "tabla_4_1_resistencia_cc_20c": {
+    "titulo": "Tabla N°4.1 — Resistencia eléctrica máxima en corriente continua a 20°C [ohm/km]",
+    "columnas": ["seccion_mm2", "awg_kcmil", "r_solido", "r_concentrico_comprimido", "r_flexible"],
+    "filas": [
+      [1.5, "-", null, 12.1, 13.3],
+      [2.08, "14", 8.45, 8.62, 9.58],
+      [2.5, "-", null, 7.41, 7.98],
+      [3.31, "12", 5.31, 5.43, 5.98],
+      [4, "-", null, 4.61, 4.95],
+      [5.26, "10", 3.34, 3.41, 3.76],
+      [6, "-", null, 3.08, 3.3],
+      [8.37, "8", 2.1, 2.14, 2.28],
+      [10, "-", null, 1.83, 1.91],
+      [13.3, "6", null, 1.35, 1.46],
+      [16, "-", null, 1.15, 1.21],
+      [21.1, "4", null, 0.85, 0.92],
+      [25, "-", null, 0.73, 0.78],
+      [26.7, "3", null, 0.67, 0.73],
+      [33.6, "2", null, 0.53, 0.58],
+      [35, "-", null, 0.52, 0.55],
+      [42.4, "1", null, 0.42, 0.46],
+      [50, "-", null, 0.39, 0.39],
+      [53.5, "1/0", null, 0.34, 0.36],
+      [67.4, "2/0", null, 0.27, 0.28],
+      [70, "-", null, 0.27, 0.27],
+      [85, "3/0", null, 0.21, 0.23],
+      [95, "-", null, 0.19, 0.21],
+      [107, "4/0", null, 0.17, 0.18],
+      [120, "-", null, 0.15, 0.16],
+      [127, "250", null, 0.14, 0.15],
+      [150, "-", null, 0.12, 0.13],
+      [152, "300", null, 0.11, 0.12],
+      [177, "350", null, 0.1, 0.11],
+      [185, "-", null, 0.09, 0.1],
+      [203, "400", null, 0.09, 0.1],
+      [240, "-", null, 0.08, 0.08],
+      [253, "500", null, 0.07, 0.08],
+      [300, "-", null, 0.06, 0.06]
+    ]
+  },
+
+  "tabla_4_4_70c_ampacidad": {
+    "titulo": "Tabla N°4.4 (70°C) — Ampacidad [A]. Aplica a H07V, H07Z1, THWN, NYIFY, ACOMETIDA. Temp. ambiente 30°C",
+    "columnas": ["seccion_mm2", "awg_kcmil", "A1", "B1", "E"],
+    "filas": [
+      [1.5, "-", 14, 16, 19],
+      [2.08, "14", 16, 19, 22],
+      [2.5, "-", 18, 21, 24],
+      [3.31, "12", 21, 25, 30],
+      [4, "-", 24, 28, 31],
+      [5.26, "10", 28, 34, 38],
+      [6, "-", 31, 36, 43],
+      [8.37, "8", 38, 45, 53],
+      [10, "-", 42, 50, 60],
+      [13.3, "6", 50, 60, 71],
+      [16, "-", 56, 68, 80],
+      [21.1, "4", 66, 80, 91],
+      [25, "-", 73, 89, 101],
+      [26.7, "3", 76, 93, 106],
+      [33.6, "2", 87, 108, 122],
+      [35, "-", 89, 110, 126],
+      [42.4, "1", 100, 125, 142],
+      [50, "-", 108, 134, 153],
+      [53.5, "1/0", 116, 144, 165],
+      [67.4, "2/0", 133, 167, 191],
+      [70, "-", 136, 171, 196],
+      [85, "3/0", 153, 193, 222],
+      [95, "-", 164, 207, 238],
+      [107.2, "4/0", 176, 223, 257],
+      [120, "-", 188, 239, 276],
+      [126.7, "250", 195, 248, 286],
+      [150, "-", 216, 262, 319],
+      [152, "300", 217, 264, 321],
+      [177.3, "350", 239, 289, 355],
+      [185, "-", 245, 296, 364],
+      [202.7, "400", 259, 315, 386],
+      [240, "-", 286, 346, 430],
+      [253.3, "500", 296, 356, 446],
+      [300, "-", 328, 394, 497]
+    ]
+  },
+
+  "tabla_4_4_90c_ampacidad": {
+    "titulo": "Tabla N°4.4 (90°C) — Ampacidad [A]. Aplica a THHN, RV, RV-K, RZ1, RZ1-K. Temp. ambiente 30°C (A1,A2,B1,B2,E,F) / 20°C (D1,D2)",
+    "columnas": ["seccion_mm2", "awg_kcmil", "A1", "A2", "B1", "B2", "D1", "D2", "E", "F"],
+    "filas": [
+      [1.5, "-", 17, 17, 18, 19, 19, 23, 19, null],
+      [2.08, "14", 21, 20, 24, 24, 30, 31, 28, null],
+      [2.5, "-", 23, 22, 24, 24, 33, 38, 32, null],
+      [3.31, "12", 28, 26, 31, 31, 38, 39, 38, null],
+      [4, "-", 31, 30, 37, 35, 42, 59, 42, 42],
+      [5.26, "10", 37, 35, 39, 38, 48, 69, 50, 50],
+      [6, "-", 40, 38, 48, 44, 52, 74, 54, 55],
+      [8.37, "8", 49, 46, 59, 54, 63, 89, 67, 68],
+      [10, "-", 54, 51, 66, 60, 68, 98, 75, 77],
+      [13.3, "6", 65, 61, 79, 72, 80, 114, 89, 93],
+      [16, "-", 73, 68, 88, 80, 89, 126, 100, 105],
+      [21.1, "4", 86, 80, 105, 95, 103, 147, 114, 126],
+      [25, "-", 95, 89, 117, 105, 113, 161, 127, 141],
+      [26.7, "3", 99, 92, 122, 109, 117, 167, 133, 147],
+      [33.6, "2", 114, 106, 141, 125, 132, 189, 154, 172],
+      [35, "-", 117, 109, 144, 128, 136, 194, 158, 176],
+      [42.4, "1", 132, 122, 163, 144, 150, 216, 178, 200],
+      [50, "-", 141, 130, 175, 154, 159, 230, 192, 216],
+      [53.5, "1/0", 152, 140, 188, 165, 170, 245, 207, 234],
+      [67.4, "2/0", 175, 161, 217, 190, 192, 278, 240, 273],
+      [70, "-", 179, 164, 222, 194, 197, 282, 246, 279],
+      [85, "3/0", 201, 185, 251, 218, 218, 315, 278, 318],
+      [95, "-", 216, 197, 269, 233, 232, 339, 298, 342],
+      [107.2, "4/0", 232, 212, 290, 251, 248, 362, 322, 371],
+      [120, "-", 249, 227, 312, 268, 263, 386, 346, 400],
+      [126.7, "250", 257, 234, 322, 277, 270, 396, 358, 415],
+      [150, "-", 285, 259, 342, 300, 296, 431, 399, 464],
+      [152, "300", 287, 261, 344, 302, 299, 437, 402, 468],
+      [177.3, "350", 316, 287, 374, 331, 325, 474, 444, 518],
+      [185, "-", 324, 295, 384, 340, 332, 486, 456, 533],
+      [202.7, "400", 342, 312, 405, 358, 349, 510, 483, 567],
+      [240, "-", 380, 346, 450, 398, 382, 563, 538, 634],
+      [253.3, "500", 392, 357, 464, 410, 393, 576, 557, 657],
+      [300, "-", 435, 396, 514, 455, 431, 629, 621, 736]
+    ]
+  },
+
+  "tabla_4_6_fn": {
+    "titulo": "Tabla N°4.6 — Factor de corrección fn por cantidad de conductores en ductos",
+    "columnas": ["cantidad_minima", "cantidad_maxima", "fn"],
+    "filas": [
+      [1, 3, 1],
+      [4, 6, 0.8],
+      [7, 24, 0.7],
+      [25, 42, 0.6],
+      [43, 999, 0.5]
+    ],
+    "notas": [
+      "Nota: fila '1 a 3 → 1,0' no está en la tabla original (el pliego solo corrige sobre 3 conductores); se agrega como supuesto razonable — verificar si tu caso exacto cae en el límite."
+    ]
+  },
+
+  "tabla_4_7_ft": {
+    "titulo": "Tabla N°4.7 — Factor de corrección ft por temperatura ambiente",
+    "columnas": ["temp_minima_c", "temp_maxima_c", "ft_70c_A1_B1_E", "ft_90c_A1_A2_B1_B2_E", "ft_90c_D1_D2_subterraneo"],
+    "filas": [
+      [5, 10, 1.22, 1.15, 1.07],
+      [11, 15, 1.17, 1.12, 1.04],
+      [16, 20, 1.12, 1.08, 1],
+      [21, 25, 1.06, 1.04, 0.96],
+      [26, 30, 1, 1, 0.93],
+      [31, 35, 0.94, 0.96, 0.89],
+      [36, 40, 0.87, 0.91, 0.85],
+      [41, 45, 0.79, 0.87, 0.8],
+      [46, 50, 0.71, 0.82, 0.76],
+      [51, 55, 0.61, 0.76, 0.71],
+      [56, 60, 0.5, 0.71, 0.65]
+    ]
+  },
+
+  "seccion_minima_por_circuito": {
+    "titulo": "RIC N°04, punto 5.4 — Sección mínima de conductores por tipo de circuito",
+    "columnas": ["tipo_circuito", "seccion_minima_mm2"],
+    "filas": [
+      ["Circuitos de iluminación", 1.5],
+      ["Circuitos de enchufes", 2.5],
+      ["Circuitos mixtos", 2.5],
+      ["Subalimentadores", 2.5],
+      ["Alimentadores", 4]
+    ]
+  },
+
+  "limites_caida_tension": {
+    "titulo": "RIC N°03, punto 5.1 — Límites de caída de tensión",
+    "caida_max_alimentador_subalimentador": 0.03,
+    "caida_max_total_punto_mas_desfavorable": 0.05
+  },
+
+  "resistividad_material_20c": {
+    "titulo": "Resistividad por material a 20°C — IEC 60228 (cobre) / UNE 21096 (aluminio). El RIC N°04 solo cubre conductores de cobre (punto 5.1); estos valores se usan para calcular la resistencia de conductores de aluminio, que no tienen tabla propia en el pliego.",
+    "columnas": ["material", "resistividad_ohm_mm2_por_m"],
+    "filas": [
+      ["Cobre", 0.01724],
+      ["Aluminio", 0.028]
+    ],
+    "notas": [
+      "Nota: para cobre se usa la Tabla N°4.1 del RIC (valores exactos, contempla cableado real). Para aluminio se calcula R = ρ / Sección × 1000 (Ω/km) — es una aproximación física estándar, no un valor tabulado por SEC. Para cable preensamblado real, el fabricante suele entregar su propia tabla de ampacidad — no confundir resistencia (aquí calculada) con capacidad de corriente (no cubierta para aluminio en esta V1)."
+    ]
+  },
+
+  "metodos_instalacion": {
+    "titulo": "Descripción resumida de los métodos de instalación (RIC N°04, Tabla N°4.4, nota e)",
+    "columnas": ["metodo", "descripcion"],
+    "filas": [
+      ["A1", "Hasta 3 conductores monopolares con carga, en ductos embutidos en pared."],
+      ["A2", "Cable multiconductor (3 conductores con carga) en ductos embutidos en pared."],
+      ["B1", "Hasta 3 conductores monopolares en ductos o bandejas adosadas a pared."],
+      ["B2", "Cable multiconductor (3 conductores con carga) en ductos o bandejas adosadas a pared."],
+      ["D1", "Cables mono o multiconductores en ductos enterrados."],
+      ["D2", "Cables con cubierta, directamente enterrados (sin ducto)."],
+      ["E", "Cables multiconductores al aire libre, en escalerillas, canastillos o bandejas perforadas."],
+      ["F", "Cables monoconductores en contacto, disposición plana, al aire libre en escalerillas/canastillos/bandejas."]
+    ]
+  },
+
+  "cable_preensamblado_aluminio_enerlux_imersa": {
+    "titulo": "Cable preensamblado de aluminio — Catálogo comercial ENERLUX, importado y distribuido por IMERSA Chile S.A. (imersachile.cl). NO es una tabla del RIC — es un dato de fabricante para cable preensamblado real vendido en Chile. Aleación fase 1350-H19, mensajero/neutro 6201, aislación XLPE, 90°C servicio normal / 250°C cortocircuito.",
+    "columnas": ["codigo", "medida", "r_fase_ohm_km", "r_neutro_ohm_km", "i_admisible_fase_a", "embalaje_m"],
+    "filas": [
+      ["160100", "1x16 (XLPE/AAC) + 1x16 (Desnudo AAAC)", 1.9, 2.22, 90, 1000],
+      ["160199", "1x25 (XLPE/AAC) + 1x25 (Desnudo AAAC)", 1.2, 1.39, 163, 2500],
+      ["160150", "1x16 (XLPE/AAC) + 1x16 (XLPE/AAC)", 1.9, 1.9, 85, 2500],
+      ["160200", "1x25 (XLPE/AAC) + 1x25 (XLPE/AAC)", 1.2, 1.2, 113, 2500],
+      ["160205", "3x25 (XLPE/AAC) + 1x50 (XLPE/AAAC)", 1.2, 0.74, 102, 1000],
+      ["160300", "3x35 (XLPE/AAC) + 1x50 (XLPE/AAAC)", 0.87, 0.74, 135, 1000],
+      ["160305", "3x50 (XLPE/AAC) + 1x50 (XLPE/AAAC)", 0.64, 0.74, 168, 1000],
+      ["160307", "3x70 (XLPE/AAC) + 1x50 (XLPE/AAAC)", 0.44, 0.74, 205, 500],
+      ["160309", "3x95 (XLPE/AAC) + 1x50 (XLPE/AAAC)", 0.32, 0.74, 247, 500]
+    ]
+  }
+}
