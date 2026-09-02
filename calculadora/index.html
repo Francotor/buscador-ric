@@ -307,9 +307,9 @@
           <select id="p_sistema"><option>Monofásico</option><option>Trifásico</option></select>
         </div>
         <div class="field">
-          <label for="p_V">Tensión V [V]</label>
-          <input id="p_V" type="text" inputmode="decimal" value="220">
-          <span class="hint">Fase-neutro en monofásico; entre fases en trifásico.</span>
+          <label for="p_V">Tensión nominal personalizada [V]</label>
+          <input id="p_V" type="text" inputmode="decimal" placeholder="auto: 220 mono / 380 trif.">
+          <span class="hint">Opcional (110 / 400 / 415 V, etc.). Vacío = automática según el tipo de sistema. Fase-neutro en monofásico; entre fases en trifásico.</span>
         </div>
         <div class="field">
           <label for="p_cos">Factor de potencia cos(φ)</label>
@@ -489,7 +489,7 @@
     if (!TABLAS) return;
     var r = CalculoRIC.potenciaCorrienteVoltaje({
       sistema: $('p_sistema').value,
-      V: $('p_V').value,
+      Vpersonalizada: $('p_V').value,
       cosPhi: $('p_cos').value,
       I: $('p_I').value,
       P: $('p_P').value
@@ -499,6 +499,8 @@
     if (r.error) { el.innerHTML = errBox(r.error); return; }
 
     var h = '';
+    h += row('Tensión nominal usada V', fmt(r.V, 2) + ' V' +
+      (r.tensionAutomatica ? ' <span class="rl">(automática)</span>' : ' <span class="rl">(personalizada)</span>'));
     h += row('Ángulo φ (a partir de cos φ)', fmt(r.phi_grados, 4) + ' °');
     h += row('sen(φ)', fmt(r.senPhi, 6));
     h += row('Corriente I', fmt(r.I_A, 4) + ' A <span class="rl">(' + r.fuenteCorriente + ')</span>');
