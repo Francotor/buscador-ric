@@ -314,18 +314,23 @@
         <div class="field">
           <label for="p_cos">Factor de potencia cos(φ)</label>
           <input id="p_cos" type="text" inputmode="decimal" value="0.95">
+          <span class="hint">Opcional si ingresas S. Obligatorio si ingresas P o I.</span>
         </div>
         <div class="field">
-          <label for="p_I">Corriente I [A]</label>
-          <input id="p_I" type="text" inputmode="decimal" value="20">
-          <span class="hint">Deja vacío si vas a ingresar P.</span>
+          <label for="p_S">Potencia aparente S [VA]</label>
+          <input id="p_S" type="text" inputmode="decimal" placeholder="(opcional)">
+          <span class="hint">Ej: capacidad nominal de un generador.</span>
         </div>
         <div class="field">
           <label for="p_P">Potencia activa P [W]</label>
           <input id="p_P" type="text" inputmode="decimal" placeholder="(opcional)">
-          <span class="hint">Si la llenas, tiene prioridad sobre I.</span>
+        </div>
+        <div class="field">
+          <label for="p_I">Corriente I [A]</label>
+          <input id="p_I" type="text" inputmode="decimal" value="20">
         </div>
       </div>
+      <p class="hint" style="margin-top:12px">Completá <strong>S</strong>, <strong>P</strong> o <strong>I</strong>. Si hay más de uno lleno, se usa el de mayor prioridad: <strong>S &gt; P &gt; I</strong> (S manda porque es el dato de placa más directo de un generador).</p>
     </div>
 
     <div class="card">
@@ -491,6 +496,7 @@
       sistema: $('p_sistema').value,
       Vpersonalizada: $('p_V').value,
       cosPhi: $('p_cos').value,
+      S: $('p_S').value,
       I: $('p_I').value,
       P: $('p_P').value
     }, TABLAS);
@@ -498,16 +504,18 @@
     var el = $('p_out');
     if (r.error) { el.innerHTML = errBox(r.error); return; }
 
+    var faltaCos = r.faltaCosPhi ? ' <span class="rl">(falta cos φ)</span>' : '';
     var h = '';
     h += row('Tensión nominal usada V', fmt(r.V, 2) + ' V' +
       (r.tensionAutomatica ? ' <span class="rl">(automática)</span>' : ' <span class="rl">(personalizada)</span>'));
-    h += row('Ángulo φ (a partir de cos φ)', fmt(r.phi_grados, 4) + ' °');
-    h += row('sen(φ)', fmt(r.senPhi, 6));
+    h += row('Ángulo φ (a partir de cos φ)', r.phi_grados == null ? '—' + faltaCos : fmt(r.phi_grados, 4) + ' °');
+    h += row('sen(φ)', r.senPhi == null ? '—' : fmt(r.senPhi, 6));
     h += row('Corriente I', fmt(r.I_A, 4) + ' A <span class="rl">(' + r.fuenteCorriente + ')</span>');
     h += row('Potencia aparente S', fmt(r.S_VA, 4) + ' VA');
-    h += row('Potencia activa P', fmt(r.P_W, 4) + ' W', { hero: true });
-    h += row('Potencia reactiva Q', fmt(r.Q_VAR, 4) + ' VAR');
-    h += '<p class="formula">' + r.formula + '<br>Convención: φ&gt;0 indica carga inductiva (Q positivo, atraso de corriente).</p>';
+    h += row('Potencia activa P', r.P_W == null ? '—' + faltaCos : fmt(r.P_W, 4) + ' W', { hero: true });
+    h += row('Potencia reactiva Q', r.Q_VAR == null ? '—' + faltaCos : fmt(r.Q_VAR, 4) + ' VAR');
+    if (r.faltaCosPhi) h += errBox('Con solo S se obtienen S e I. Para P y Q completá el factor de potencia cos(φ).');
+    h += '<p class="formula">' + r.formula + '<br>Prioridad de entrada: S &gt; P &gt; I. Convención: φ&gt;0 indica carga inductiva (Q positivo, atraso de corriente).</p>';
     el.innerHTML = h;
   }
 
@@ -528,7 +536,7 @@
       syncCaidaFields();
       wire(['c_sistema', 'c_I', 'c_P', 'c_cos', 'c_L', 'c_V', 'c_seccion', 'c_tipo', 'c_ref', 'c_acum'], runCaida);
       wire(['s_I', 's_fam', 's_metodo', 's_n', 's_temp', 's_circ'], runConductor);
-      wire(['p_sistema', 'p_V', 'p_cos', 'p_I', 'p_P'], runPcv);
+      wire(['p_sistema', 'p_V', 'p_cos', 'p_S', 'p_I', 'p_P'], runPcv);
       runCaida(); runConductor(); runPcv();
     })
     .catch(function (e) {
