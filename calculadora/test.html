@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Tests — calculo.js</title>
+<style>
+  body { font-family: ui-monospace, "IBM Plex Mono", monospace; background: #10181f; color: #e9e2d3; padding: 24px; line-height: 1.6; }
+  h1 { font-size: 18px; }
+  .pass { color: #7ec98a; }
+  .fail { color: #f0857a; font-weight: 700; }
+  .resumen { font-size: 16px; margin-top: 16px; padding: 10px 14px; border-radius: 8px; display: inline-block; }
+  .resumen.ok { background: #24361f; color: #b9d7a6; }
+  .resumen.no { background: #402019; color: #f0b3a6; }
+  pre { white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<h1>Validación de calculo.js contra la planilla original (LibreOffice)</h1>
+<pre id="out">cargando…</pre>
+
+<script src="calculo.js"></script>
+<script>
+(function () {
+  'use strict';
+  var C = window.CalculoRIC;
+  var out = [];
+  var fallos = 0;
+
+  function approx(a, b, tol) { return typeof a === 'number' && isFinite(a) && Math.abs(a - b) <= tol; }
+  function check(nombre, obtenido, esperado, tol) {
+    var ok = approx(obtenido, esperado, tol);
+    if (!ok) fallos++;
+    out.push((ok ? '  PASS ' : '  FAIL ') + nombre + '  →  obtenido=' + obtenido + '  esperado=' + esperado);
+    return ok;
+  }
+  function info(t) { out.push(t); }
+  function render() {
+    var el = document.getElementById('out');
+    el.innerHTML = out.map(function (l) {
+      var cls = l.indexOf('PASS') >= 0 ? 'pass' : (l.indexOf('FAIL') >= 0 ? 'fail' : '');
+      return cls ? '<span class="' + cls + '">' + l + '</span>' : l;
+    }).join('\n') +
+      '\n\n<span class="resumen ' + (fallos === 0 ? 'ok' : 'no') + '">' +
+      (fallos === 0 ? 'TODOS LOS CASOS PASAN' : fallos + ' COMPROBACIÓN(ES) FALLAN') + '</span>';
+  }
+
+  fetch('tablas_ric.json').then(function (r) { return r.json(); }).then(function (TABLAS) {
+
+    // ---- Caso 1: Caída de tensión — monofásico ----
+    info('Caso 1 — Caída de tensión (monofásico, I=20A, cosφ=0.95, L=15m, Cu 4mm² concéntrico/compacto)');
+    var r1 = C.caidaTension({
+      sistema: 'Monofásico', I: 20, cosPhi: 0.95, L_m: 15,
+      material: 'Cobre', seccion_mm2: 4, tipoConstructivo: 'Concéntrico o compacto',
+      caidaAcumuladaArriba_pct: 0
+    }, TABLAS);
+    check('V', r1.V, 220, 1e-9);
+    check('R [Ω/km]', r1.R_ohm_km, 4.61, 1e-9);
+    check('ΔV [V]', r1.deltaV_V, 2.6277, 1e-4);
+    check('ΔV %', r1.deltaV_pct, 1.19441, 1e-4);
+    info('  ' + (r1.cumpleTramo && r1.cumpleTotal ? 'PASS' : 'FAIL') + ' cumple tramo (≤3%) y total (≤5%)');
+    if (!(r1.cumpleTramo && r1.cumpleTotal)) fallos++;
+
+    // ---- Caso 2: Selección de conductor ----
+    info('');
+    info('Caso 2 — Selección de conductor (I=15A, 90°C, método A1, 3 activos, 30°C, Alimentadores)');
+    var r2 = C.seleccionConductor({
+      I_diseno: 15, familia: '90°C', metodo: 'A1', nConductores: 3,
+      tempAmbiente: 30, tipoCircuito: 'Alimentadores'
+    }, TABLAS);
+    check('fn', r2.fn, 1, 1e-9);
+    check('ft', r2.ft, 1, 1e-9);
+    check('sección mínima por ampacidad [mm²]', r2.seccionMinimaAmpacidad_mm2, 1.5, 1e-9);
+    check('sección mínima normativa [mm²]', r2.seccionMinimaNormativa_mm2, 4, 1e-9);
+    check('SECCIÓN A UTILIZAR [mm²]', r2.seccionAUtilizar_mm2, 4, 1e-9);
+
+    // ---- Caso 3: Potencia / Corriente / Voltaje ----
+    info('');
+    info('Caso 3 — Potencia/Corriente/Voltaje (monofásico, V=220, cosφ=0.95, I=20A)');
+    var r3 = C.potenciaCorrienteVoltaje({
+      sistema: 'Monofásico', Vpersonalizada: 220, cosPhi: 0.95, I: 20
+    }, TABLAS);
+    check('φ [°]', r3.phi_grados, 18.1949, 1e-3);
+    check('S [VA]', r3.S_VA, 4400, 1e-6);
+    check('P [W]', r3.P_W, 4180, 1e-6);
+    check('Q [VAR]', r3.Q_VAR, 1373.8996, 1e-3);
+
+    // ---- Caso 4: la tensión sigue al tipo de sistema si no hay valor personalizado ----
+    info('');
+    info('Caso 4 — Cambiar de Monofásico (V=220) a Trifásico SIN tocar la tensión → debe pasar a 380V solo');
+    var r4a = C.potenciaCorrienteVoltaje({ sistema: 'Monofásico', cosPhi: 0.95, I: 20 }, TABLAS);
+    check('mono sin V personalizada → V', r4a.V, 220, 1e-9);
+    var r4b = C.potenciaCorrienteVoltaje({ sistema: 'Trifásico', cosPhi: 0.95, I: 20 }, TABLAS);
+    check('trifásico sin V personalizada → V', r4b.V, 380, 1e-9);
+    check('trifásico marca tensión automática', r4b.tensionAutomatica ? 1 : 0, 1, 1e-9);
+    // y si SÍ hay valor personalizado, se respeta y no lo pisa el tipo de sistema
+    var r4c = C.potenciaCorrienteVoltaje({ sistema: 'Trifásico', Vpersonalizada: 400, cosPhi: 0.95, I: 20 }, TABLAS);
+    check('trifásico con V personalizada 400 → V', r4c.V, 400, 1e-9);
+    check('con V personalizada NO es automática', r4c.tensionAutomatica ? 1 : 0, 0, 1e-9);
+
+    render();
+  }).catch(function (e) {
+    document.getElementById('out').textContent =
+      'No se pudo cargar tablas_ric.json (' + e.message + ').\n' +
+      'Abrí esta página servida por un servidor web (no como archivo local):\n' +
+      '  powershell -ExecutionPolicy Bypass -File serve.ps1\n' +
+      '  y entrá a  http://localhost:<puerto>/calculadora/test.html  (el puerto lo imprime serve.ps1)';
+  });
+})();
+</script>
+</body>
+</html>
