@@ -220,9 +220,19 @@
           <input id="c_V" type="text" inputmode="decimal" placeholder="auto: 220 mono / 380 trif.">
         </div>
         <div class="field">
-          <label for="c_R">Resistencia del conductor R [Ω/km] *</label>
-          <input id="c_R" type="text" inputmode="decimal" placeholder="obligatorio">
-          <span class="hint">Dato de entrada obligatorio — no hay tabla normativa de respaldo. Sacalo de la ficha técnica del conductor.</span>
+          <label for="c_R">Resistencia del conductor R [Ω/km]</label>
+          <input id="c_R" type="text" inputmode="decimal" placeholder="(directa)">
+          <span class="hint">Si la conoces, tiene prioridad sobre ρ + S. Sacala de la ficha técnica del conductor.</span>
+        </div>
+        <div class="field">
+          <label for="c_rho">Resistividad ρ del conductor [Ω·mm²/m]</label>
+          <input id="c_rho" type="text" inputmode="decimal" placeholder="(opcional si ya pusiste R)">
+          <span class="hint">Alternativa a R: se usa junto con la sección para calcular R = ρ/S × 1000.</span>
+        </div>
+        <div class="field">
+          <label for="c_S">Sección del conductor S [mm²]</label>
+          <input id="c_S" type="text" inputmode="decimal" placeholder="(opcional si ya pusiste R)">
+          <span class="hint">Obligatoria solo si estás calculando R a partir de ρ.</span>
         </div>
         <div class="field">
           <label for="c_acum">Caída acumulada aguas arriba [%]</label>
@@ -230,6 +240,7 @@
           <span class="hint">0 si es el primer tramo.</span>
         </div>
       </div>
+      <p class="hint" style="margin-top:12px">Completá <strong>R</strong> o <strong>ρ + S</strong>. Si llenás R y ρ a la vez, <strong>R manda</strong> (el dato más directo) y S no se usa.</p>
     </div>
 
     <div class="card">
@@ -397,6 +408,8 @@
       L_m: $('c_L').value,
       Vpersonalizada: $('c_V').value,
       R_ohm_km: $('c_R').value,
+      rho: $('c_rho').value,
+      seccion_mm2: $('c_S').value,
       caidaAcumuladaArriba_pct: $('c_acum').value
     }, TABLAS);
 
@@ -406,7 +419,7 @@
     var h = '';
     h += row('Tensión nominal usada V', fmt(r.V, 2) + ' V');
     h += row('Corriente usada en el cálculo I', fmt(r.I, 4) + ' A <span class="rl">(' + r.fuenteCorriente + ')</span>');
-    h += row('Resistencia del conductor R', fmt(r.R_ohm_km, 4) + ' Ω/km');
+    h += row('Resistencia del conductor R', fmt(r.R_ohm_km, 4) + ' Ω/km <span class="rl">(' + r.fuenteR + ')</span>');
     h += row('Caída de tensión del tramo ΔV', fmt(r.deltaV_V, 4) + ' V');
     h += row('Caída de tensión del tramo ΔV%', fmt(r.deltaV_pct, 5) + ' %');
     h += row('Caída de tensión total acumulada', fmt(r.deltaV_total_pct, 5) + ' %');
@@ -492,7 +505,7 @@
     .then(function (data) {
       TABLAS = data;
       initSelects();
-      wire(['c_sistema', 'c_I', 'c_P', 'c_cos', 'c_L', 'c_V', 'c_R', 'c_acum'], runCaida);
+      wire(['c_sistema', 'c_I', 'c_P', 'c_cos', 'c_L', 'c_V', 'c_R', 'c_rho', 'c_S', 'c_acum'], runCaida);
       wire(['s_I', 's_fam', 's_metodo', 's_n', 's_temp', 's_circ'], runConductor);
       wire(['p_sistema', 'p_V', 'p_cos', 'p_S', 'p_I', 'p_P'], runPcv);
       runCaida(); runConductor(); runPcv();
