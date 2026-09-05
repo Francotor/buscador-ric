@@ -47,10 +47,14 @@
   fetch('tablas_ric.json').then(function (r) { return r.json(); }).then(function (TABLAS) {
 
     // ---- Caso 1: Caída de tensión — monofásico ----
-    info('Caso 1 — Caída de tensión (monofásico, I=20A, cosφ=0.95, L=15m, Cu 4mm² concéntrico/compacto)');
+    // R=4.61 Ω/km viene de lo que era la Tabla N°4.1 (sección 4mm², cobre
+    // concéntrico/compacto) — esa tabla ya no existe en tablas_ric.json, R es
+    // ahora un dato de entrada directo. Se usa el mismo valor para no perder
+    // el caso de referencia original.
+    info('Caso 1 — Caída de tensión (monofásico, I=20A, cosφ=0.95, L=15m, R=4.61 Ω/km)');
     var r1 = C.caidaTension({
       sistema: 'Monofásico', I: 20, cosPhi: 0.95, L_m: 15,
-      material: 'Cobre', seccion_mm2: 4, tipoConstructivo: 'Concéntrico o compacto',
+      R_ohm_km: 4.61,
       caidaAcumuladaArriba_pct: 0
     }, TABLAS);
     check('V', r1.V, 220, 1e-9);
@@ -112,6 +116,36 @@
     var r5b = C.potenciaCorrienteVoltaje({ sistema: 'Trifásico', S: 10000, cosPhi: 0.9, I: 99, P: 99 }, TABLAS);
     check('S > P > I: usa S aunque I y P estén llenos', r5b.S_VA, 10000, 1e-9);
     check('con cos(φ)=0.9 → P = S·cosφ', r5b.P_W, 9000, 1e-9);
+
+    // ---- Caso A: R obligatoria — sin R no calcula (ni con valor por defecto, ni con tabla) ----
+    info('');
+    info('Caso A — R vacío con el resto de los datos válidos → debe dar error, sin ΔV');
+    var rA = C.caidaTension({ sistema: 'Monofásico', I: 6.08, cosPhi: 0.97, L_m: 120 }, TABLAS);
+    check('sin R → hay error', typeof rA.error === 'string' ? 1 : 0, 1, 1e-9);
+    check('sin R → NO hay deltaV_V', rA.deltaV_V === undefined ? 1 : 0, 1, 1e-9);
+
+    // ---- Caso B: caída de tensión monofásica con R manual ----
+    info('');
+    info('Caso B — Monofásico, I=6.08A, cosφ=0.97, L=120m, R=4.8 Ω/km → ΔV=6.794V');
+    var rB = C.caidaTension({ sistema: 'Monofásico', I: 6.08, cosPhi: 0.97, L_m: 120, R_ohm_km: 4.8 }, TABLAS);
+    check('ΔV [V]', rB.deltaV_V, 6.794, 1e-3);
+
+    // ---- Caso C: mismo caso en trifásico — confirma que el factor √3 sigue aplicándose ----
+    info('');
+    info('Caso C — Trifásico, I=6.08A, cosφ=0.97, L=120m, R=4.8 Ω/km → ΔV=5.884V');
+    var rC = C.caidaTension({ sistema: 'Trifásico', I: 6.08, cosPhi: 0.97, L_m: 120, R_ohm_km: 4.8 }, TABLAS);
+    check('ΔV [V]', rC.deltaV_V, 5.884, 1e-3);
+
+    // ---- Confirmación: Tabla 4.1 fuera, Tabla 4.4 (ampacidad) intacta ----
+    info('');
+    info('Confirmación — Tabla N°4.1 eliminada de tablas_ric.json; Tabla N°4.4 (ampacidad) intacta');
+    check('tabla_4_1_resistencia_cc_20c ya NO existe', TABLAS.tabla_4_1_resistencia_cc_20c === undefined ? 1 : 0, 1, 1e-9);
+    check('tabla_4_4_70c_ampacidad sigue presente', Array.isArray(TABLAS.tabla_4_4_70c_ampacidad && TABLAS.tabla_4_4_70c_ampacidad.filas) ? 1 : 0, 1, 1e-9);
+    check('tabla_4_4_90c_ampacidad sigue presente', Array.isArray(TABLAS.tabla_4_4_90c_ampacidad && TABLAS.tabla_4_4_90c_ampacidad.filas) ? 1 : 0, 1, 1e-9);
+    check('tabla_4_4_90c_ampacidad conserva sus 34 filas', (TABLAS.tabla_4_4_90c_ampacidad || {}).filas ? TABLAS.tabla_4_4_90c_ampacidad.filas.length : 0, 34, 1e-9);
+    // Selección de conductor sigue funcionando sin cambios (mismo caso de referencia original)
+    var r2check = C.seleccionConductor({ I_diseno: 15, familia: '90°C', metodo: 'A1', nConductores: 3, tempAmbiente: 30, tipoCircuito: 'Alimentadores' }, TABLAS);
+    check('Selección de conductor no se rompió (SECCIÓN A UTILIZAR)', r2check.seccionAUtilizar_mm2, 4, 1e-9);
 
     render();
   }).catch(function (e) {
