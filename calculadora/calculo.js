@@ -67,11 +67,11 @@
   //
   //  V   (B18) = IF(Vpers<>"", Vpers, IF(mono, 220, 380))
   //  I   (B19) = IF(I<>"", I, IF(P<>"", P/((mono?1:√3)*V*cosφ), "—"))
-  //  R   = parámetro de entrada OBLIGATORIO, en Ω/km. Ya no se busca en ninguna
-  //        tabla ni se calcula por material/tipo constructivo/sección — la
-  //        Tabla N°4.1 (resistencia CC a 20°C) se eliminó de tablas_ric.json
-  //        y no queda ningún valor por defecto. Si no llega R numérica y > 0,
-  //        la función retorna error y no calcula ningún ΔV.
+  //  R   = dos caminos posibles, sin tabla ni valor por defecto de por medio:
+  //        - R dado directo [Ω/km] → se usa tal cual (manda si además viene ρ).
+  //        - R vacío y ρ dado [Ω·mm²/m] → exige también la sección S [mm²] y
+  //          calcula R = ρ/S × 1000. Sin R ni ρ → error. Con ρ pero sin S → error
+  //          (no se asume ninguna sección).
   //  ΔV  (B23) = (mono?2:√3) * (L/1000) * R * I * cosφ
   //  ΔV% (B24) = ΔV / V
   //  ΔV% total (B25) = ΔV% + caídaAcumuladaArriba/100
@@ -101,10 +101,26 @@
       return { error: 'Ingresa la corriente de diseño I, o la potencia activa P.' };
     }
 
-    // Resistencia del conductor R [Ω/km] — obligatoria, sin tabla de respaldo.
-    var R = num(e.R_ohm_km);
-    if (!esNumeroFinito(R) || R <= 0) {
-      return { error: 'Ingresa la resistencia del conductor R (Ω/km). Es un dato obligatorio — ya no hay una tabla normativa de respaldo para calcularla.' };
+    // Resistencia del conductor R [Ω/km] — sin tabla de respaldo. Dos caminos:
+    // R directa, o ρ [Ω·mm²/m] + sección S [mm²] (R = ρ/S × 1000). R manda si
+    // llegan los dos.
+    var R, fuenteR;
+    var R_in = num(e.R_ohm_km);
+    var rho_in = num(e.rho);
+    if (esNumeroFinito(R_in)) {
+      if (R_in <= 0) return { error: 'La resistencia R debe ser mayor que 0.' };
+      R = R_in;
+      fuenteR = 'ingresada';
+    } else if (esNumeroFinito(rho_in)) {
+      if (rho_in <= 0) return { error: 'La resistividad ρ debe ser mayor que 0.' };
+      var seccion = num(e.seccion_mm2);
+      if (!esNumeroFinito(seccion) || seccion <= 0) {
+        return { error: 'Ingresa la sección del conductor para calcular R a partir de ρ.' };
+      }
+      R = rho_in / seccion * 1000;
+      fuenteR = 'calculada de ρ y S';
+    } else {
+      return { error: 'Ingresa la resistencia (R) o la resistividad (ρ) del conductor.' };
     }
 
     // Caída de tensión
@@ -122,6 +138,7 @@
       I: I,
       fuenteCorriente: fuenteCorriente,
       R_ohm_km: R,
+      fuenteR: fuenteR,
       deltaV_V: deltaV,
       deltaV_pct: deltaVpct * 100,          // en porcentaje legible
       deltaV_total_pct: deltaVtotalPct * 100,
