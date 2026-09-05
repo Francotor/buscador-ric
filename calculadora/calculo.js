@@ -67,9 +67,11 @@
   //
   //  V   (B18) = IF(Vpers<>"", Vpers, IF(mono, 220, 380))
   //  I   (B19) = IF(I<>"", I, IF(P<>"", P/((mono?1:√3)*V*cosφ), "—"))
-  //  R   (B20) = Cobre  -> Tabla 4.1 col {sólido | concéntrico/comprimido | flexible}
-  //              Aluminio genérico -> ρ_Al / sección * 1000
-  //              Preensamblado aluminio -> Tabla ENERLUX col "r fase"
+  //  R   = parámetro de entrada OBLIGATORIO, en Ω/km. Ya no se busca en ninguna
+  //        tabla ni se calcula por material/tipo constructivo/sección — la
+  //        Tabla N°4.1 (resistencia CC a 20°C) se eliminó de tablas_ric.json
+  //        y no queda ningún valor por defecto. Si no llega R numérica y > 0,
+  //        la función retorna error y no calcula ningún ΔV.
   //  ΔV  (B23) = (mono?2:√3) * (L/1000) * R * I * cosφ
   //  ΔV% (B24) = ΔV / V
   //  ΔV% total (B25) = ΔV% + caídaAcumuladaArriba/100
@@ -99,40 +101,10 @@
       return { error: 'Ingresa la corriente de diseño I, o la potencia activa P.' };
     }
 
-    // Resistencia del conductor R [Ω/km]
-    var t41 = tablas.tabla_4_1_resistencia_cc_20c;
-    var material = e.material || 'Cobre';
-    var R, notaR = null, ampacidadPreensamblado = null, cumpleAmpacidadCable = null;
-
-    if (material === 'Cobre') {
-      var col;
-      if (e.tipoConstructivo === 'Sólido') col = colIdx(t41, 'r_solido');
-      else if (e.tipoConstructivo === 'Concéntrico o compacto') col = colIdx(t41, 'r_concentrico_comprimido');
-      else col = colIdx(t41, 'r_flexible');
-      R = matchExacto(t41.filas, colIdx(t41, 'seccion_mm2'), num(e.seccion_mm2), col, null);
-      if (R === null || R === undefined) {
-        return { error: 'Sección ' + e.seccion_mm2 + ' mm² no está en la Tabla N°4.1 para ese tipo constructivo.' };
-      }
-    } else if (material === 'Aluminio genérico') {
-      var rhoAl = matchExacto(
-        tablas.resistividad_material_20c.filas, 0, 'Aluminio', 1, null);
-      var s = num(e.seccion_mm2);
-      if (!esNumeroFinito(s) || s <= 0) return { error: 'Ingresa una sección válida para el aluminio genérico.' };
-      R = rhoAl / s * 1000;
-      notaR = 'R calculada como ρ_Al / sección × 1000 (aproximación IEC 60228 / UNE 21096, no tabulada por SEC).';
-    } else if (material === 'Preensamblado aluminio') {
-      var cat = tablas.cable_preensamblado_aluminio_enerlux_imersa;
-      R = matchExacto(cat.filas, colIdx(cat, 'medida'), e.refPreensamblado,
-        colIdx(cat, 'r_fase_ohm_km'), 'Ref. no encontrada');
-      if (R === 'Ref. no encontrada') return { error: 'Referencia de cable preensamblado no encontrada en el catálogo.' };
-      ampacidadPreensamblado = matchExacto(cat.filas, colIdx(cat, 'medida'),
-        e.refPreensamblado, colIdx(cat, 'i_admisible_fase_a'), null);
-      if (esNumeroFinito(ampacidadPreensamblado)) {
-        cumpleAmpacidadCable = I <= ampacidadPreensamblado;
-      }
-      notaR = 'R y ampacidad tomadas del catálogo comercial ENERLUX / IMERSA Chile (dato de fabricante, no del RIC).';
-    } else {
-      return { error: 'Material de conductor no reconocido: ' + material };
+    // Resistencia del conductor R [Ω/km] — obligatoria, sin tabla de respaldo.
+    var R = num(e.R_ohm_km);
+    if (!esNumeroFinito(R) || R <= 0) {
+      return { error: 'Ingresa la resistencia del conductor R (Ω/km). Es un dato obligatorio — ya no hay una tabla normativa de respaldo para calcularla.' };
     }
 
     // Caída de tensión
@@ -150,9 +122,6 @@
       I: I,
       fuenteCorriente: fuenteCorriente,
       R_ohm_km: R,
-      notaR: notaR,
-      ampacidadPreensamblado_A: ampacidadPreensamblado,
-      cumpleAmpacidadCable: cumpleAmpacidadCable,
       deltaV_V: deltaV,
       deltaV_pct: deltaVpct * 100,          // en porcentaje legible
       deltaV_total_pct: deltaVtotalPct * 100,
