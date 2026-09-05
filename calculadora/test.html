@@ -186,6 +186,44 @@
     var r2check = C.seleccionConductor({ I_diseno: 15, familia: '90°C', metodo: 'A1', nConductores: 3, tempAmbiente: 30, tipoCircuito: 'Alimentadores' }, TABLAS);
     check('Selección de conductor no se rompió (SECCIÓN A UTILIZAR)', r2check.seccionAUtilizar_mm2, 4, 1e-9);
 
+    // ---- Cálculo de ducto (RIC N°04, Tabla N°4.21) ----
+    // Nota: el Caso A tolera 0.01mm en Dd_min — el informe Icafal de referencia
+    // (verificado manualmente) redondeó a 19.70; la fórmula exacta sqrt(128/0.33)
+    // da 19.6946, una diferencia de rounding de ~0.005mm, sin relevancia práctica.
+
+    // ---- Caso A (ducto) — 2 conductores, Dec=8mm, sin marcar 60% ----
+    info('');
+    info('Caso A (ducto) — N=2, Dec=8mm, sin casilla 60% → %=33, Dd_min=19.70mm, 3/4"');
+    var dA = C.calculoDucto({ nConductores: 2, Dec_mm: 8 }, TABLAS);
+    check('% aplicado', dA.porcentaje_max, 33, 1e-9);
+    check('Dd_min [mm]', dA.ddMin_mm, 19.70, 1e-2);
+    check('diámetro comercial', dA.diametroComercial === '3/4"' ? 1 : 0, 1, 1e-9);
+    check('diámetro comercial interior [mm]', dA.diametroComercialInterior_mm, 21.0, 1e-9);
+
+    // ---- Caso B (ducto) — 1 conductor ----
+    info('');
+    info('Caso B (ducto) — N=1, Dec=9mm → %=50, Dd_min=sqrt(81/0.5)=12.73mm, 3/4"');
+    var dB = C.calculoDucto({ nConductores: 1, Dec_mm: 9 }, TABLAS);
+    check('% aplicado', dB.porcentaje_max, 50, 1e-9);
+    check('Dd_min [mm]', dB.ddMin_mm, 12.73, 1e-2);
+    check('diámetro comercial', dB.diametroComercial === '3/4"' ? 1 : 0, 1, 1e-9);
+
+    // ---- Caso C (ducto) — tubería de unión de tablero ≤1m marcada ----
+    info('');
+    info('Caso C (ducto) — N=2, Dec=9mm, casilla marcada → %=60 (no 33), Dd_min=sqrt(162/0.6)=16.43mm, 3/4"');
+    var dC = C.calculoDucto({ nConductores: 2, Dec_mm: 9, unionTableros1m: true }, TABLAS);
+    check('% aplicado (60%, no 33%)', dC.porcentaje_max, 60, 1e-9);
+    check('Dd_min [mm]', dC.ddMin_mm, 16.43, 1e-2);
+    check('diámetro comercial', dC.diametroComercial === '3/4"' ? 1 : 0, 1, 1e-9);
+
+    // ---- Confirmación: validaciones de ducto ----
+    info('');
+    info('Confirmación — cálculo de ducto: validaciones básicas');
+    var dSinDatos = C.calculoDucto({}, TABLAS);
+    check('sin N ni Dec → error', typeof dSinDatos.error === 'string' ? 1 : 0, 1, 1e-9);
+    var dNfraccionario = C.calculoDucto({ nConductores: 1.5, Dec_mm: 8 }, TABLAS);
+    check('N no entero → error', typeof dNfraccionario.error === 'string' ? 1 : 0, 1, 1e-9);
+
     render();
   }).catch(function (e) {
     document.getElementById('out').textContent =
