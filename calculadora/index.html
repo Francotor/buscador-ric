@@ -185,6 +185,7 @@
     <button class="tab active" data-tab="caida">Caída de tensión</button>
     <button class="tab" data-tab="conductor">Selección de conductor</button>
     <button class="tab" data-tab="pcv">Potencia / Corriente / Voltaje</button>
+    <button class="tab" data-tab="ducto">Cálculo de ducto</button>
   </div>
 
   <!-- ================= CAÍDA DE TENSIÓN ================= -->
@@ -328,6 +329,35 @@
     <div class="card">
       <h2>2 · Resultados</h2>
       <div class="results" id="p_out"></div>
+    </div>
+  </section>
+
+  <!-- ================= CÁLCULO DE DUCTO ================= -->
+  <section class="panel" id="panel-ducto">
+    <div class="card">
+      <h2>1 · Datos de entrada</h2>
+      <div class="grid">
+        <div class="field">
+          <label for="d_n">Cantidad de conductores</label>
+          <input id="d_n" type="text" inputmode="numeric" value="2">
+          <span class="hint">Entero, mínimo 1.</span>
+        </div>
+        <div class="field">
+          <label for="d_dec">Diámetro exterior del conductor Dec [mm]</label>
+          <input id="d_dec" type="text" inputmode="decimal" placeholder="obligatorio">
+          <span class="hint">Sacalo de la ficha técnica del cable — no hay tabla de respaldo por tipo/calibre.</span>
+        </div>
+      </div>
+      <label style="display:flex; align-items:center; gap:8px; margin-top:14px; font-size:13.5px; cursor:pointer;">
+        <input id="d_union" type="checkbox" style="width:16px; height:16px; accent-color:var(--copper); cursor:pointer;">
+        Tubería de unión de gabinetes/tableros ≤1m (60%)
+      </label>
+      <p class="hint" style="margin-top:10px">Si todos los conductores del haz no son del mismo diámetro, esta versión no lo soporta — es una limitación conocida (quedaría para una vuelta futura con una fila de Dec por conductor).</p>
+    </div>
+
+    <div class="card">
+      <h2>2 · Resultados</h2>
+      <div class="results" id="d_out"></div>
     </div>
   </section>
 
@@ -492,6 +522,31 @@
     el.innerHTML = h;
   }
 
+  // ---- cálculo de ducto ----
+  function runDucto() {
+    if (!TABLAS) return;
+    var r = CalculoRIC.calculoDucto({
+      nConductores: $('d_n').value,
+      Dec_mm: $('d_dec').value,
+      unionTableros1m: $('d_union').checked
+    }, TABLAS);
+
+    var el = $('d_out');
+    if (r.error) { el.innerHTML = errBox(r.error); return; }
+
+    var h = '';
+    h += row('Porcentaje máximo de ocupación admisible', fmt(r.porcentaje_max, 0) + ' % <span class="rl">(' + r.fuentePorcentaje + ')</span>');
+    h += row('Área ocupada por los conductores', fmt(r.areaConductores_mm2, 2) + ' mm²');
+    h += row('Diámetro interior mínimo de tubería Dd mín', fmt(r.ddMin_mm, 2) + ' mm', { hero: true });
+    if (r.excedeTabla) {
+      h += errBox('Ningún diámetro comercial de la tabla (hasta 4", Schedule 40) alcanza — revisa la cantidad/diámetro de conductores o separa el haz en más de un ducto.');
+    } else {
+      h += row('Diámetro comercial recomendado', r.diametroComercial + ' <span class="rl">(' + fmt(r.diametroComercialInterior_mm, 1) + ' mm interior, Schedule 40)</span>', { hero: true });
+    }
+    h += '<p class="formula">' + r.formula + '<br>Tabla N°4.21 (RIC N°04): 1 conductor → 50% ; 2 o más → 33% ; unión de gabinetes/tableros ≤1m → 60%.</p>';
+    el.innerHTML = h;
+  }
+
   function wire(ids, fn) {
     ids.forEach(function (id) {
       var e = $(id);
@@ -508,7 +563,8 @@
       wire(['c_sistema', 'c_I', 'c_P', 'c_cos', 'c_L', 'c_V', 'c_R', 'c_rho', 'c_S', 'c_acum'], runCaida);
       wire(['s_I', 's_fam', 's_metodo', 's_n', 's_temp', 's_circ'], runConductor);
       wire(['p_sistema', 'p_V', 'p_cos', 'p_S', 'p_I', 'p_P'], runPcv);
-      runCaida(); runConductor(); runPcv();
+      wire(['d_n', 'd_dec', 'd_union'], runDucto);
+      runCaida(); runConductor(); runPcv(); runDucto();
     })
     .catch(function (e) {
       document.querySelectorAll('.results').forEach(function (el) {
