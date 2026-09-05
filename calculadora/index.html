@@ -220,28 +220,9 @@
           <input id="c_V" type="text" inputmode="decimal" placeholder="auto: 220 mono / 380 trif.">
         </div>
         <div class="field">
-          <label for="c_material">Material del conductor</label>
-          <select id="c_material">
-            <option>Cobre</option>
-            <option>Aluminio genérico</option>
-            <option>Preensamblado aluminio</option>
-          </select>
-        </div>
-        <div class="field" id="c_field_seccion">
-          <label for="c_seccion">Sección del conductor [mm²]</label>
-          <select id="c_seccion"></select>
-        </div>
-        <div class="field" id="c_field_tipo">
-          <label for="c_tipo">Tipo constructivo (solo cobre)</label>
-          <select id="c_tipo">
-            <option>Sólido</option>
-            <option selected>Concéntrico o compacto</option>
-            <option>Flexible</option>
-          </select>
-        </div>
-        <div class="field hidden" id="c_field_ref">
-          <label for="c_ref">Referencia cable preensamblado</label>
-          <select id="c_ref"></select>
+          <label for="c_R">Resistencia del conductor R [Ω/km] *</label>
+          <input id="c_R" type="text" inputmode="decimal" placeholder="obligatorio">
+          <span class="hint">Dato de entrada obligatorio — no hay tabla normativa de respaldo. Sacalo de la ficha técnica del conductor.</span>
         </div>
         <div class="field">
           <label for="c_acum">Caída acumulada aguas arriba [%]</label>
@@ -393,12 +374,6 @@
   }
 
   function initSelects() {
-    var secciones = TABLAS.tabla_4_1_resistencia_cc_20c.filas.map(function (f) { return f[0]; });
-    poblarSelect($('c_seccion'), secciones, 4);
-
-    var refs = TABLAS.cable_preensamblado_aluminio_enerlux_imersa.filas.map(function (f) { return f[1]; });
-    poblarSelect($('c_ref'), refs, refs[0]);
-
     var metodos = TABLAS.metodos_instalacion.filas.map(function (f) { return f[0]; });
     poblarSelect($('s_metodo'), metodos, 'A1');
 
@@ -412,13 +387,6 @@
   }
 
   // ---- caída de tensión ----
-  function syncCaidaFields() {
-    var mat = $('c_material').value;
-    $('c_field_seccion').classList.toggle('hidden', mat === 'Preensamblado aluminio');
-    $('c_field_tipo').classList.toggle('hidden', mat !== 'Cobre');
-    $('c_field_ref').classList.toggle('hidden', mat !== 'Preensamblado aluminio');
-  }
-
   function runCaida() {
     if (!TABLAS) return;
     var r = CalculoRIC.caidaTension({
@@ -428,10 +396,7 @@
       cosPhi: $('c_cos').value,
       L_m: $('c_L').value,
       Vpersonalizada: $('c_V').value,
-      material: $('c_material').value,
-      seccion_mm2: $('c_seccion').value,
-      tipoConstructivo: $('c_tipo').value,
-      refPreensamblado: $('c_ref').value,
+      R_ohm_km: $('c_R').value,
       caidaAcumuladaArriba_pct: $('c_acum').value
     }, TABLAS);
 
@@ -442,17 +407,12 @@
     h += row('Tensión nominal usada V', fmt(r.V, 2) + ' V');
     h += row('Corriente usada en el cálculo I', fmt(r.I, 4) + ' A <span class="rl">(' + r.fuenteCorriente + ')</span>');
     h += row('Resistencia del conductor R', fmt(r.R_ohm_km, 4) + ' Ω/km');
-    if (r.ampacidadPreensamblado_A != null) {
-      h += row('Ampacidad del cable preensamblado', fmt(r.ampacidadPreensamblado_A, 0) + ' A');
-      if (r.cumpleAmpacidadCable != null)
-        h += row('¿I de diseño dentro de la ampacidad del cable?', verdict(r.cumpleAmpacidadCable, 'OK', 'Supera ampacidad'), { plain: true });
-    }
     h += row('Caída de tensión del tramo ΔV', fmt(r.deltaV_V, 4) + ' V');
     h += row('Caída de tensión del tramo ΔV%', fmt(r.deltaV_pct, 5) + ' %');
     h += row('Caída de tensión total acumulada', fmt(r.deltaV_total_pct, 5) + ' %');
     h += row('Límite tramo (RIC N°03, ' + fmt(r.limiteTramo_pct, 0) + '%)', verdict(r.cumpleTramo), { plain: true });
     h += row('Límite total (RIC N°03, ' + fmt(r.limiteTotal_pct, 0) + '%)', verdict(r.cumpleTotal), { plain: true });
-    h += '<p class="formula">' + r.formula + (r.notaR ? '<br>' + r.notaR : '') +
+    h += '<p class="formula">' + r.formula +
       '<br>Se desprecia la reactancia inductiva (supuesto habitual para BT en secciones ≤25 mm²).</p>';
     el.innerHTML = h;
   }
@@ -532,9 +492,7 @@
     .then(function (data) {
       TABLAS = data;
       initSelects();
-      $('c_material').addEventListener('change', function () { syncCaidaFields(); runCaida(); });
-      syncCaidaFields();
-      wire(['c_sistema', 'c_I', 'c_P', 'c_cos', 'c_L', 'c_V', 'c_seccion', 'c_tipo', 'c_ref', 'c_acum'], runCaida);
+      wire(['c_sistema', 'c_I', 'c_P', 'c_cos', 'c_L', 'c_V', 'c_R', 'c_acum'], runCaida);
       wire(['s_I', 's_fam', 's_metodo', 's_n', 's_temp', 's_circ'], runConductor);
       wire(['p_sistema', 'p_V', 'p_cos', 'p_S', 'p_I', 'p_P'], runPcv);
       runCaida(); runConductor(); runPcv();
