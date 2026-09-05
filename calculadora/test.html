@@ -117,24 +117,63 @@
     check('S > P > I: usa S aunque I y P estén llenos', r5b.S_VA, 10000, 1e-9);
     check('con cos(φ)=0.9 → P = S·cosφ', r5b.P_W, 9000, 1e-9);
 
-    // ---- Caso A: R obligatoria — sin R no calcula (ni con valor por defecto, ni con tabla) ----
+    // ---- Caso 6 (ex-A, tarea "R obligatoria"): sin R ni ρ no calcula ----
     info('');
-    info('Caso A — R vacío con el resto de los datos válidos → debe dar error, sin ΔV');
-    var rA = C.caidaTension({ sistema: 'Monofásico', I: 6.08, cosPhi: 0.97, L_m: 120 }, TABLAS);
-    check('sin R → hay error', typeof rA.error === 'string' ? 1 : 0, 1, 1e-9);
-    check('sin R → NO hay deltaV_V', rA.deltaV_V === undefined ? 1 : 0, 1, 1e-9);
+    info('Caso 6 — R y ρ vacíos con el resto de los datos válidos → debe dar error, sin ΔV');
+    var r6 = C.caidaTension({ sistema: 'Monofásico', I: 6.08, cosPhi: 0.97, L_m: 120 }, TABLAS);
+    check('sin R ni ρ → hay error', typeof r6.error === 'string' ? 1 : 0, 1, 1e-9);
+    check('sin R ni ρ → NO hay deltaV_V', r6.deltaV_V === undefined ? 1 : 0, 1, 1e-9);
 
-    // ---- Caso B: caída de tensión monofásica con R manual ----
+    // ---- Caso 7 (ex-B): caída de tensión monofásica con R manual ----
     info('');
-    info('Caso B — Monofásico, I=6.08A, cosφ=0.97, L=120m, R=4.8 Ω/km → ΔV=6.794V');
-    var rB = C.caidaTension({ sistema: 'Monofásico', I: 6.08, cosPhi: 0.97, L_m: 120, R_ohm_km: 4.8 }, TABLAS);
-    check('ΔV [V]', rB.deltaV_V, 6.794, 1e-3);
+    info('Caso 7 — Monofásico, I=6.08A, cosφ=0.97, L=120m, R=4.8 Ω/km → ΔV=6.794V');
+    var r7 = C.caidaTension({ sistema: 'Monofásico', I: 6.08, cosPhi: 0.97, L_m: 120, R_ohm_km: 4.8 }, TABLAS);
+    check('ΔV [V]', r7.deltaV_V, 6.794, 1e-3);
 
-    // ---- Caso C: mismo caso en trifásico — confirma que el factor √3 sigue aplicándose ----
+    // ---- Caso 8 (ex-C): mismo caso en trifásico — confirma que el factor √3 sigue aplicándose ----
     info('');
-    info('Caso C — Trifásico, I=6.08A, cosφ=0.97, L=120m, R=4.8 Ω/km → ΔV=5.884V');
-    var rC = C.caidaTension({ sistema: 'Trifásico', I: 6.08, cosPhi: 0.97, L_m: 120, R_ohm_km: 4.8 }, TABLAS);
-    check('ΔV [V]', rC.deltaV_V, 5.884, 1e-3);
+    info('Caso 8 — Trifásico, I=6.08A, cosφ=0.97, L=120m, R=4.8 Ω/km → ΔV=5.884V');
+    var r8 = C.caidaTension({ sistema: 'Trifásico', I: 6.08, cosPhi: 0.97, L_m: 120, R_ohm_km: 4.8 }, TABLAS);
+    check('ΔV [V]', r8.deltaV_V, 5.884, 1e-3);
+
+    // ---- Tarea "ρ + sección": Caso A — ni R ni ρ ----
+    info('');
+    info('Caso A (ρ) — R y ρ vacíos → error de validación, no calcula');
+    var rhoA = C.caidaTension({ sistema: 'Monofásico', I: 6.08, cosPhi: 0.97, L_m: 120 }, TABLAS);
+    check('hay error', typeof rhoA.error === 'string' ? 1 : 0, 1, 1e-9);
+    check('mensaje pide R o ρ', /resistencia.*ρ|ρ.*resistencia/i.test(rhoA.error || '') ? 1 : 0, 1, 1e-9);
+
+    // ---- Caso B (ρ) — ρ sin sección ----
+    info('');
+    info('Caso B (ρ) — ρ=0.01724 sin sección → error pidiendo la sección, no asume nada');
+    var rhoB = C.caidaTension({ sistema: 'Monofásico', I: 6.08, cosPhi: 0.97, L_m: 120, rho: 0.01724 }, TABLAS);
+    check('hay error', typeof rhoB.error === 'string' ? 1 : 0, 1, 1e-9);
+    check('mensaje pide la sección', /sección/i.test(rhoB.error || '') ? 1 : 0, 1, 1e-9);
+    check('NO calcula deltaV_V', rhoB.deltaV_V === undefined ? 1 : 0, 1, 1e-9);
+
+    // ---- Caso C (ρ) — R directa (regresión de la tarea anterior) ----
+    info('');
+    info('Caso C (ρ) — Monofásico, I=6.08A, cosφ=0.97, L=120m, R=4.8 Ω/km → ΔV=6.794V');
+    var rhoC = C.caidaTension({ sistema: 'Monofásico', I: 6.08, cosPhi: 0.97, L_m: 120, R_ohm_km: 4.8 }, TABLAS);
+    check('R = la ingresada', rhoC.R_ohm_km, 4.8, 1e-9);
+    check('ΔV [V]', rhoC.deltaV_V, 6.794, 1e-3);
+    check('fuenteR = ingresada', rhoC.fuenteR === 'ingresada' ? 1 : 0, 1, 1e-9);
+
+    // ---- Caso D (ρ) — vía ρ + sección, sin R ----
+    info('');
+    info('Caso D (ρ) — Monofásico, I=6.08A, cosφ=0.97, L=120m, ρ=0.01724, S=5.26 → R=3.278, ΔV=4.639V');
+    var rhoD = C.caidaTension({ sistema: 'Monofásico', I: 6.08, cosPhi: 0.97, L_m: 120, rho: 0.01724, seccion_mm2: 5.26 }, TABLAS);
+    check('R calculada = ρ/S×1000', rhoD.R_ohm_km, 3.278, 1e-3);
+    check('ΔV [V]', rhoD.deltaV_V, 4.639, 1e-3);
+    check('fuenteR = calculada de ρ y S', rhoD.fuenteR === 'calculada de ρ y S' ? 1 : 0, 1, 1e-9);
+
+    // ---- Confirmación: si llenás R y ρ a la vez, R manda (no ρ) ----
+    info('');
+    info('Confirmación — R y ρ juntos → el resultado es el del Caso C (R manda), no el del Caso D');
+    var rhoManda = C.caidaTension({ sistema: 'Monofásico', I: 6.08, cosPhi: 0.97, L_m: 120, R_ohm_km: 4.8, rho: 0.01724, seccion_mm2: 5.26 }, TABLAS);
+    check('R usada = 4.8 (la directa, no la de ρ)', rhoManda.R_ohm_km, 4.8, 1e-9);
+    check('ΔV coincide con Caso C (6.794V), no con Caso D (4.639V)', rhoManda.deltaV_V, 6.794, 1e-3);
+    check('fuenteR = ingresada (ρ se ignoró)', rhoManda.fuenteR === 'ingresada' ? 1 : 0, 1, 1e-9);
 
     // ---- Confirmación: Tabla 4.1 fuera, Tabla 4.4 (ampacidad) intacta ----
     info('');
