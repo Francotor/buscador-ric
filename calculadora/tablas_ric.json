@@ -180,5 +180,35 @@
       ["160307", "3x70 (XLPE/AAC) + 1x50 (XLPE/AAAC)", 0.44, 0.74, 205, 500],
       ["160309", "3x95 (XLPE/AAC) + 1x50 (XLPE/AAAC)", 0.32, 0.74, 247, 500]
     ]
+  },
+
+  "tabla_4_21_pct_ocupacion_ducto": {
+    "titulo": "Tabla N°4.21 — Porcentaje máximo de ocupación de tuberías según cantidad de conductores (RIC N°04)",
+    "1": 50,
+    "2": 33,
+    "3_o_mas": 33
+  },
+
+  "tabla_4_21_pct_union_tableros_1m": 60,
+
+  "ductos_pvc_diametros_interiores": {
+    "titulo": "Diámetros interiores de tuberías PVC (mm) — ficha técnica comercial Alfaplas. NO es una tabla del RIC — dato de fabricante para la selección del diámetro comercial. Diámetro interior = diámetro exterior nominal − 2×espesor de pared.",
+    "schedule_40": {
+      "columnas": ["nominal", "interior_mm"],
+      "filas": [
+        ["3/4\"", 21.0],
+        ["1\"", 26.6],
+        ["1 1/4\"", 35.0],
+        ["1 1/2\"", 40.9],
+        ["2\"", 52.5],
+        ["2 1/2\"", 62.7],
+        ["3\"", 77.9],
+        ["4\"", 102.3]
+      ]
+    },
+    "schedule_80": {
+      "columnas": ["nominal", "interior_mm"],
+      "filas": []
+    }
   }
 }
