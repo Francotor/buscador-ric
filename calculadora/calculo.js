@@ -322,6 +322,85 @@
   }
 
   // ---------------------------------------------------------------------------
+  // 4) Cálculo de ducto (RIC N°04, Tabla N°4.21)
+  // ---------------------------------------------------------------------------
+  //
+  //  El diámetro exterior del conductor (Dec, mm) es un dato de entrada manual
+  //  directo — igual criterio que R en caída de tensión: no se embebe ninguna
+  //  tabla de diámetros de conductor por tipo/calibre (Tablas 4.17 a 4.20 del
+  //  RIC). Se saca de la ficha técnica del cable a usar.
+  //
+  //  Versión simple: un solo Dec aplicado a los N conductores del haz (todos
+  //  del mismo diámetro). Limitación conocida: no soporta conductores de
+  //  distinta sección en un mismo ducto — quedaría para una vuelta futura con
+  //  una fila de Dec por conductor.
+  //
+  //  % máximo admisible (Tabla N°4.21): 1 conductor → 50% ; 2 o más → 33% ;
+  //  tubería de unión de gabinetes/tableros ≤1m → 60% (sobrescribe lo anterior,
+  //  sin importar N).
+  //
+  //  Área ocupada por los conductores = N × π×(Dec/2)²
+  //  Dd_min = √( (N×Dec²) / (%/100) )
+  //    — se simplifica de: Dd_min = √( 4×(áreaConductores/(%/100)) / π ),
+  //    ya que el π/4 de la sección circular del conductor se cancela con el
+  //    de la sección circular del ducto.
+  //  Diámetro comercial recomendado = el menor diámetro interior de la tabla
+  //  Schedule 40 que sea ≥ Dd_min. Si ninguno alcanza, se marca `excedeTabla`.
+  //
+  function calculoDucto(entrada, tablas) {
+    var e = entrada || {};
+    var n = num(e.nConductores);
+    if (!esNumeroFinito(n) || n < 1 || Math.floor(n) !== n) {
+      return { error: 'Ingresa una cantidad de conductores válida (entero, mínimo 1).' };
+    }
+
+    var dec = num(e.Dec_mm);
+    if (!esNumeroFinito(dec) || dec <= 0) {
+      return { error: 'Ingresa el diámetro exterior del conductor Dec (mm).' };
+    }
+
+    var tabla421 = tablas.tabla_4_21_pct_ocupacion_ducto;
+    var pct, fuentePorcentaje;
+    if (e.unionTableros1m) {
+      pct = tablas.tabla_4_21_pct_union_tableros_1m;
+      fuentePorcentaje = 'tubería de unión de gabinetes/tableros ≤1m';
+    } else if (n === 1) {
+      pct = tabla421['1'];
+      fuentePorcentaje = '1 conductor';
+    } else if (n === 2) {
+      pct = tabla421['2'];
+      fuentePorcentaje = '2 conductores';
+    } else {
+      pct = tabla421['3_o_mas'];
+      fuentePorcentaje = '3 o más conductores';
+    }
+
+    var sumaDec2 = n * dec * dec;
+    var areaConductores = n * Math.PI * Math.pow(dec / 2, 2);
+    var ddMin = Math.sqrt(sumaDec2 / (pct / 100));
+
+    var sch40 = tablas.ductos_pvc_diametros_interiores.schedule_40;
+    var elegido = null;
+    for (var i = 0; i < sch40.filas.length; i++) {
+      if (sch40.filas[i][1] >= ddMin) { elegido = sch40.filas[i]; break; }
+    }
+
+    return {
+      n: n,
+      Dec_mm: dec,
+      sumaDec2_mm2: sumaDec2,
+      areaConductores_mm2: areaConductores,
+      porcentaje_max: pct,
+      fuentePorcentaje: fuentePorcentaje,
+      ddMin_mm: ddMin,
+      diametroComercial: elegido ? elegido[0] : null,
+      diametroComercialInterior_mm: elegido ? elegido[1] : null,
+      excedeTabla: elegido === null,
+      formula: 'Dd_min = √( N×Dec² / (%/100) )  (RIC N°04, Tabla N°4.21)'
+    };
+  }
+
+  // ---------------------------------------------------------------------------
   // Coerción de entrada: acepta number, string con coma o punto, o vacío.
   // ---------------------------------------------------------------------------
   function num(x) {
@@ -334,6 +413,7 @@
     caidaTension: caidaTension,
     seleccionConductor: seleccionConductor,
     potenciaCorrienteVoltaje: potenciaCorrienteVoltaje,
+    calculoDucto: calculoDucto,
     _internos: { matchExacto: matchExacto, vlookupAprox: vlookupAprox, num: num }
   };
 });
